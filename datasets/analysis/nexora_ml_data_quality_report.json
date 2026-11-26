@@ -1,0 +1,384 @@
+{
+  "project": "Nexora",
+  "status": "complete",
+  "sources": {
+    "nexora_clean_datasets": "C:\\Users\\Ravi\\OneDrive\\Documents\\Sem 7\\SGP\\Nexora\\datasets\\nexora",
+    "external_datasets": "C:\\Users\\Ravi\\OneDrive\\Documents\\Sem 7\\SGP\\Nexora\\datasets\\external"
+  },
+  "answer_intelligence": {
+    "observations": {
+      "rows": 729,
+      "columns": [
+        "response_id",
+        "student_id",
+        "question_id",
+        "question",
+        "student_answer",
+        "source_dataset",
+        "source_type",
+        "answer_language",
+        "response_valid"
+      ],
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "missing_by_column": {}
+    },
+    "labels": {
+      "rows": 61965,
+      "columns": [
+        "evaluation_id",
+        "response_id",
+        "evaluator_type",
+        "evaluator_id",
+        "label_level",
+        "criterion",
+        "criterion_description",
+        "criterion_score",
+        "overall_score",
+        "feedback",
+        "label_source",
+        "needs_teacher_review"
+      ],
+      "duplicate_rows": 0,
+      "missing_cells": 193185,
+      "missing_by_column": {
+        "evaluator_id": 3645,
+        "criterion_description": 61965,
+        "criterion_score": 61965,
+        "feedback": 18225,
+        "needs_teacher_review": 47385
+      }
+    },
+    "unique_students": 73,
+    "unique_questions": 15,
+    "unique_responses": 729,
+    "duplicate_answer_text_rows": 428,
+    "unique_answer_texts": 324,
+    "labels_per_response": {
+      "min": 85,
+      "median": 85.0,
+      "max": 85,
+      "mean": 85.0
+    },
+    "evaluator_type_counts": {
+      "llm": 43740,
+      "human": 18225
+    },
+    "label_level_counts": {
+      "criterion": 47385,
+      "overall": 14580
+    },
+    "overall_score": {
+      "count": 61965,
+      "min": 0.0,
+      "max": 90.0,
+      "mean": 17.25685338497539,
+      "median": 20.0
+    },
+    "criterion_score": {
+      "count": 0,
+      "min": null,
+      "max": null,
+      "mean": null,
+      "median": null
+    },
+    "human_ground_truth": {
+      "label_rows": 18225,
+      "unique_responses": 729,
+      "overall_score_rows": 18225,
+      "criterion_score_rows": 0
+    },
+    "llm_auxiliary": {
+      "label_rows": 43740,
+      "unique_responses": 729,
+      "overall_score_rows": 43740,
+      "criterion_score_rows": 0
+    },
+    "same_answer_across_multiple_students": 21
+  },
+  "question_knowledge": {
+    "rows": 720,
+    "columns": [
+      "knowledge_id",
+      "question",
+      "reference_answer",
+      "topic",
+      "concepts",
+      "source_dataset",
+      "source_repository",
+      "source_record_id",
+      "inference_method",
+      "inference_confidence",
+      "license_review_status"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 2880,
+    "missing_by_column": {
+      "topic": 720,
+      "concepts": 720,
+      "inference_method": 720,
+      "inference_confidence": 720
+    },
+    "repository_counts": {
+      "astropy": 48,
+      "conan": 48,
+      "django": 48,
+      "flask": 48,
+      "matplotlib": 48,
+      "pylint": 48,
+      "pytest": 48,
+      "reflex": 48,
+      "requests": 48,
+      "scikit-learn": 48,
+      "sphinx": 48,
+      "sqlfluff": 48,
+      "streamlink": 48,
+      "sympy": 48,
+      "xarray": 48
+    },
+    "unique_questions": 720,
+    "duplicate_question_rows": 0,
+    "unique_reference_answers": 720
+  },
+  "readiness": {
+    "rows": 9494,
+    "columns": [
+      "cgpa",
+      "internships",
+      "projects",
+      "certifications",
+      "aptitude_score",
+      "soft_skills_rating",
+      "extracurricular_activities",
+      "placement_training",
+      "ssc_marks",
+      "hsc_marks",
+      "placement_status",
+      "source_split",
+      "source_dataset"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 37976,
+    "missing_by_column": {
+      "aptitude_score": 9494,
+      "soft_skills_rating": 9494,
+      "extracurricular_activities": 9494,
+      "placement_training": 9494
+    },
+    "source_split_counts": {
+      "train": 6756,
+      "test": 1481,
+      "validation": 1257
+    },
+    "placement_status_counts": {
+      "NotPlaced": 5486,
+      "Placed": 4008
+    },
+    "numeric_statistics": {
+      "cgpa": {
+        "count": 9494,
+        "min": 6.5,
+        "max": 9.1,
+        "mean": 7.702570044238466,
+        "median": 7.7
+      },
+      "internships": {
+        "count": 9494,
+        "min": 0.0,
+        "max": 2.0,
+        "mean": 1.039393301032231,
+        "median": 1.0
+      },
+      "projects": {
+        "count": 9494,
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 2.0339161575732043,
+        "median": 2.0
+      },
+      "certifications": {
+        "count": 9494,
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 1.0134821992837582,
+        "median": 1.0
+      },
+      "aptitude_score": {
+        "count": 0,
+        "min": null,
+        "max": null,
+        "mean": null,
+        "median": null
+      },
+      "soft_skills_rating": {
+        "count": 0,
+        "min": null,
+        "max": null,
+        "mean": null,
+        "median": null
+      },
+      "ssc_marks": {
+        "count": 9494,
+        "min": 55.0,
+        "max": 90.0,
+        "mean": 69.36791657889194,
+        "median": 71.0
+      },
+      "hsc_marks": {
+        "count": 9494,
+        "min": 57.0,
+        "max": 88.0,
+        "mean": 74.54255319148936,
+        "median": 73.0
+      }
+    }
+  },
+  "ml_systems_interview_bench": {
+    "status": "ok",
+    "files": 1,
+    "file_reports": [
+      {
+        "file": "datasets\\external\\ml_systems_interview_bench\\data\\questions.jsonl",
+        "rows": 30,
+        "top_level_types": {
+          "dict": 30
+        },
+        "top_level_keys": {
+          "id": 30,
+          "domain": 30,
+          "difficulty": 30,
+          "question_type": 30,
+          "question": 30,
+          "expected_concepts": 30,
+          "reference_answer": 30,
+          "evaluation_rubric": 30,
+          "follow_up_questions": 30,
+          "tags": 30,
+          "skills": 30,
+          "answer_dimensions": 30,
+          "max_score": 30
+        },
+        "sample_shape": {
+          "type": "object",
+          "keys": {
+            "id": {
+              "type": "str"
+            },
+            "domain": {
+              "type": "str"
+            },
+            "difficulty": {
+              "type": "str"
+            },
+            "question_type": {
+              "type": "str"
+            },
+            "question": {
+              "type": "str"
+            },
+            "expected_concepts": {
+              "type": "array",
+              "length": 5,
+              "item_shape": {
+                "type": "str"
+              }
+            },
+            "reference_answer": {
+              "type": "str"
+            },
+            "evaluation_rubric": {
+              "type": "object",
+              "keys": {
+                "excellent": {
+                  "type": "str"
+                },
+                "acceptable": {
+                  "type": "str"
+                },
+                "weak": {
+                  "type": "str"
+                }
+              }
+            },
+            "follow_up_questions": {
+              "type": "array",
+              "length": 2,
+              "item_shape": {
+                "type": "str"
+              }
+            },
+            "tags": {
+              "type": "array",
+              "length": 3,
+              "item_shape": {
+                "type": "str"
+              }
+            },
+            "skills": {
+              "type": "array",
+              "length": 3,
+              "item_shape": {
+                "type": "str"
+              }
+            },
+            "answer_dimensions": {
+              "type": "array",
+              "length": 4,
+              "item_shape": {
+                "type": "str"
+              }
+            },
+            "max_score": {
+              "type": "int"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resume_skill_extractor": {
+    "status": "ok",
+    "files": 1,
+    "file_reports": [
+      {
+        "file": "datasets\\external\\resume_skill_extractor\\data\\train-00000-of-00001.parquet",
+        "rows_inspected": 1000,
+        "columns": [
+          "title",
+          "source",
+          "job_description",
+          "summary",
+          "required_skills"
+        ],
+        "dtypes": {
+          "title": "str",
+          "source": "str",
+          "job_description": "str",
+          "summary": "str",
+          "required_skills": "object"
+        },
+        "missing_by_column": {},
+        "nested_columns": [],
+        "sample_record": {
+          "title": "Data Science Director",
+          "source": "nathansutton",
+          "job_description": "Altoida is a pioneer in developing digital biomarkers of neurological disease using augmented reality and machine learning. Our technology platform is designed to enable an objective evaluation of an individual’s neurological health, allowing for more accurate patient selection and stratification for clinical trials, as well as sensitive monitoring of disease progression. Altoida’s mission is to provide life sciences companies with actionable insights using real-world data to increase the success rate for novel therapeutics, and usher in a new era of precision neurology using digital biomarkers. Our proprietary evidence-based platform is founded on more than 20 years of scientific research and published in multiple peer-reviewed papers including Nature Digital Medicine. For more information, visit www.altoida.com. Follow us on Twitter @altoida. Altoida’s culture is united around six core principles: - Patient-First - Open Communication - Collaborative - Reliable - Embrace Positive Change - Think and Build at Scale We are looking for an entrepreneurial Data Science leader who values moving quickly to innovate and execute product initiatives. The Director of Data Science helps develop product strategies and lays out the analytic vision and roadmap to help the integrated Product Development team to deliver accordingly. This leader will bring robust, end-to-end analytics leadership experience that includes data science life cycle processes and data engineering, and work closely with other leaders, including Product Management and Engineering, to establish a world-class culture of data analytics and machine learning. They will report to the Vice President of Product and Software Development. Responsibilities (Leadership) Influence leadership and peers across functional lines within Altoida to develop a consistent and transparent digital and data science strategy Build and maintain partnerships with internal and external stakeholders to augment data science capability and innovation Responsibilities (Data Science) Demonstrated experience and understanding of generative, discriminative, and contrastive ML methods with application in classification and gradient boosting techniques, knowledge discovery and causal inference Broad understanding of applied mathematics and statistics (e.g., Bayesian, Multi-Objective Optimization, Topological Data Analysis) and effective application in addressing multiple comparison problems, data independence, collinearity and other factors that improve overall interpretation of results Willing to take a hands-on role to deliver on multiple, highly visible projects, plus the ability to develop and coach others, and guide other team members to achieve outcomes that create meaningful business impact Serve as an ambassador for Data Science at Altoida by presenting and publishing articles Build a bridge between academia, technology, and industry partners to drive improvements in data science capability & processes, including access to external data from regulatory and other 3rd party sources, as applicable Partner internally and cross-functionally on data-driven strategies to ensure an optimized and consistent approach (data standards) to metrics, thresholds, etc. that meet stakeholder needs Assess, influence and ensure data quality / validation procedures, including managing the curation, documentation, protection, and storage as per policy Explore / coordinate implementation advancements in AI, ML and related technology / tools, including external benchmarking to pharma and other leading organizations Strong ability to explain ML and AI concepts internally and to regulators, as applicable to our products, including how to minimize bias in the product and increase scale Guide the continuous calibration of model outputs to maximize performance and external validity, while following data security protocols Provide objective assessments to assist leadership in prioritizing investments in data-science capabilities and projects Keep pace with latest developments in the field and mentor associates accordingly Responsibilities (Operational Excellence) Accountable for design and timely delivery of the digital / data science strategies Accountable for ensuring validation / controls are in place to support data science capabilities and models, including the consistent application of data quality standards Accountable for delivering on ML research & development across multiple concurrent projects and smooth transition to production, as applicable Desired Skills and Experiences 10+ years of work experience leading data teams, working collaboratively with Product, Engineering and cross-functional partners, and guiding data-driven product planning, prioritization, and strategy development Executive-level communication skills for cross-functional collaboration across teams Able to think innovatively and to develop and execute strategic plans pursuant to the responsibilities of the role, solving complex and unique problems Previous people leadership experience and experience leading the development and technical growth of colleagues to support business transformation Experience in hiring, retaining, and scaling geographically dispersed, high-performing teams Experience influencing product strategy and driving change across organizational boundaries through clear and compelling communication of data-driven insights and analyses Experience in a technical leadership role, such as Statistics, Mathematics, Computer Science, or a related field with strong analytical skills to assess information, draw conclusions and recommend improvements Well-developed interpersonal skills with ability to collaborate across functions and work effectively across all levels of the organization Knowledge of Quality Management Systems, healthcare data standards and regulations, including HIPAA Experience with Python object-oriented development and related scientific & statistical packages, SQL, and other programming languages The position is remote with Greater Boston, MA candidates preferred. Minor travel is expected. Compensation Altoida provides competitive and comprehensive compensation and benefits programs. Specific benefit offerings may vary by location, position, and/or business unit. The full-time salary range is commensurate with experience. Location Altoida’s US headquarters is located in Washington, DC. The position is remote. Equal Opportunity Altoida does not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender, age, status as a protected veteran, status as an individual with a disability, or other applicable legally protected characteristics. Altoida is committed to providing reasonable accommodations for candidates with disabilities in our recruiting process.",
+          "summary": "The Director of Data Science will lead product strategies and develop the analytic vision and roadmap for Altoida, a pioneer in digital biomarkers for neurological disease. This leadership role involves robust, end-to-end analytics, covering the data science life cycle and data engineering, while fostering a world-class culture of data analytics and machine learning.",
+          "required_skills": "['Generative ML methods' 'Discriminative ML methods' 'Contrastive ML methods' 'Classification techniques' 'Gradient boosting techniques' 'Knowledge discovery' 'Causal inference' 'Applied mathematics' 'Statistics (Bayesian, Multi-Objective Optimization, Topological Data Analysis)' 'AI' 'Machine Learning' 'Data quality management' 'Data validation procedures' 'Data curation' 'Data documentation' 'Data protection' 'Data storage' 'Model output calibration' 'Data security protocols' 'Python (object-oriented development)' 'Scientific Python packages' 'Statistical Python packages' 'SQL' 'Programming languages' 'Quality Management Systems' 'Healthcare data standards' 'HIPAA regulations']"
+        }
+      }
+    ]
+  },
+  "decisions": {
+    "status": "inspection_complete",
+    "decisions": [
+      "HARMOGEN-R human-labeled coverage is limited; do not treat it as sufficient by itself for a broad software-interview model.",
+      "Use human/teacher evaluations as the primary supervised ground truth; keep LLM evaluations as auxiliary/benchmark data.",
+      "Split answer-intelligence data by student before training so answers from the same student cannot leak across train/validation/test.",
+      "SWE-QA should support software-engineering knowledge/reference learning, not be treated as student-answer grading data.",
+      "Campus Recruitment should remain a separate readiness model dataset and should preserve its source split.",
+      "ML Systems Interview Bench and Resume Skill Extractor require schema/provenance inspection before incorporation."
+    ],
+    "next_phase": "After reviewing this report, define the first Nexora model's target, labels, feature representation, split strategy, and evaluation metrics. Do not train until those are fixed."
+  }
+}

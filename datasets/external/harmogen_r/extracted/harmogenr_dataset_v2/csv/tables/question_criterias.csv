@@ -1,0 +1,1893 @@
+﻿"id","question_id","title","description","score_criteria","score","source","is_active","created_at","updated_at"
+"39","21","Indicar se é possível ou não alterar do tamanho do array depois de declarado","O aluno deve indicar que não é possível alterar o tamanho de um array após a sua declaração.","Se indicar corretamente que não é possível: 15 pontos.
+Se indicar que é possível: 0 pontos.","15.0","1","1","2025-02-05T16:11:22",""
+"40","21","Justificar a resposta anterior referindo à alocação de memória","O aluno deve explicar que, em C++, quando um array é declarado, a memória para os seus elementos é alocada de forma fixa e contínua, o que impede qualquer alteração do seu tamanho durante a execução do programa.","Descrição completa e correta: 25 pontos.
+Descrição parcial (entre 5 a 15 pontos): Se a explicação for incompleta ou não abranger todos os aspetos relevantes.
+Ausência ou incorreção significativa: 0 pontos.
+","25.0","1","1","2025-02-05T16:12:52",""
+"41","21","Explicação sobre o armazenamento de valores fora dos limites do array","O aluno deve explicar que, ao tentar guardar elementos fora do intervalo definido, pode ocorrer a sobrescrita de dados na memória, o que poderá causar erros no programa.","Descrição completa e correta: 10 pontos.
+Se mencionar a ocorrência de um overflow, a pontuação total de 10 pontos deverá ser atribuída.
+Descrição parcial (entre 3 a 6 pontos): Se a explicação for apenas parcialmente correta.
+Ausência ou incorreção significativa: 0 pontos.
+","10.0","1","1","2025-02-05T16:12:52",""
+"42","22","Identificação da resposta correta","O aluno deve indicar a alínea c) ou o valor 2.","Se indicar a alínea c) ou o valor 2: 20 pontos.
+Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","1","1","2025-02-05T16:15:10",""
+"43","23","Identificação da resposta correta","O aluno deve indicar a alínea b) ou o valor 1016.","Se indicar a alínea b) ou o valor 1016: 20 pontos.
+Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","1","1","2025-02-05T16:15:10",""
+"44","24","Identificação da resposta correta","O aluno deve indicar a alínea d) ou o valor 42.","Se indicar a alínea d) ou o valor 42: 20 pontos.
+Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","1","1","2025-02-05T16:15:56",""
+"45","25","Função preencherSalarios  - Definição da função preencherSalarios","O aluno deve definir a função com o identificador preencherSalarios() e com 2 parâmetros, ambos com o tipo correto.","Se a definição estiver correta (identificador e 2 parâmetros com os tipos adequados): 10 pontos.
+Se for definido erradamente o tipo de um parâmetro: descontar 5 pontos.
+Atribuir 0 pontos se ocorrer qualquer uma das seguintes situações: O identificador estiver definido de forma errada; Não forem adicionados ambos os parâmetros; Nenhum dos parâmetros tiver o tipo declarado corretamente; A ordem dos parâmetros estiver incorreta; Não responder.
+","10.0","1","1","2025-02-05T16:21:21",""
+"46","25","Função preencherSalarios  - Preenchimento do array","A função deverá:
+Utilizar obrigatoriamente um ciclo for para percorrer o array até o valor da variável numFuncionarios (ou o identificador utilizado como argumento).
+Apresentar, para cada funcionário, uma mensagem exatamente com o formato:
+""Insira o salario do funcionario X:""
+onde X representa o índice + 1.
+Ler o valor do salário e armazená-lo na posição correta do array.
+","Utilização correta do ciclo for e percurso do array até numFuncionarios: 8 pontos.
+
+Formatação da mensagem: Se a mensagem corresponder exatamente ao formato especificado ou apresentar pequenas variações em pontuação, acentuação ou espaçamento, desde que a estrutura e o conteúdo essenciais sejam mantidos, atribuir 7 pontos; Se o formato não for respeitado (por exemplo, ausência de parte do conteúdo ou alteração significativa na estrutura) mas for escrito o valor do índice + 1: 4 pontos; Se não for apresentado o índice + 1 do funcionário: 0 pontos.
+
+Leitura e armazenamento do salário na posição correta: 10 pontos. o	Se o salário for armazenado na posição errada ou não for lido: 0 pontos.","25.0","1","1","2025-02-05T16:23:59",""
+"47","25","Função imprimirSalariosAcima  - Definição da função imprimirSalariosAcima","O aluno deve definir a função com o identificador imprimirSalariosAcima() e com 3 parâmetros, todos com o tipo correto e na respetiva ordem.","Se a definição estiver correta (identificador e 3 parâmetros com os tipos adequados): 12 pontos.
+Se for definido erradamente o tipo de um dos parâmetros: descontar 6 pontos (permitindo no máximo uma falha na declaração correta de um parâmetro).
+Se o identificador estiver incorreto, ou se faltar mais que parâmetro ou forem declarados parâmetros em excesso com tipo incorreto: 0 pontos.
+","12.0","1","1","2025-02-05T16:24:50",""
+"48","25","Função imprimirSalariosAcima  - Definição do título","A função deverá apresentar um título com o seguinte formato: ""Listagem de funcionarios cujo salario seja maior que X:"" onde X representa o valor mínimo indicado pelo utilizador.","Se o título corresponder exatamente ao formato indicado ou apresentar pequenas variações em pontuação, acentuação ou espaçamento, desde que a estrutura e o conteúdo essenciais sejam mantidos, atribuir 8 pontos.
+Se o título tiver variações no formato significativas, mas indicar o valor da variável valorMinimo: 4 pontos.
+Se não apresentar o valor da variável valorMinimo ou não escrever o título: 0 pontos.
+","8.0","1","1","2025-02-05T16:25:48",""
+"49","25","Função imprimirSalariosAcima  - Listagem de salários acima do mínimo","A função deverá:
+Percorrer o array até numFuncionarios (usando o identificador conforme o argumento) e, para cada funcionário, comparar o salário atual com a variável valorMinimo.
+Se o salário for superior a valorMinimo, apresentar uma linha com o formato: ""Funcionario i com salario Y Euros"" onde i representa o índice + 1 e Y o valor do salário.
+","Percorrer corretamente o array até numFuncionarios: 8 pontos.
+Comparar corretamente o salário na posição atual com valorMinimo: 7 pontos. Se a comparação não for efetuada, mesmo que o formato da mensagem esteja correto: 0 pontos.
+Formatação da mensagem: Se a mensagem corresponder exatamente ao formato especificado ou apresentar pequenas variações em pontuação, acentuação ou espaçamento, desde que a estrutura e o conteúdo essenciais sejam mantidos, atribuir 7 pontos; Se o formato da mensagem não for respeitado, mas indicar o número do funcionário (índice + 1) e o respetivo salário: 5 pontos; Se não apresentar o número e o salário ou não escrever a mensagem: 0 pontos.","22.0","1","1","2025-02-05T16:27:43",""
+"50","25","Função imprimirSalariosAcima  - Verificação de inexistência de funcionários com salário acima de valorMinimo","A função deverá:
+Inicializar uma variável de controlo (pode ser do tipo bool ou int) para verificar se algum funcionário cumpre o critério de ter um salário superior a valorMinimo.
+Atualizar essa variável sempre que um funcionário que cumpre o critério for encontrado (ou seja, quando se imprimir um funcionário com salário acima de valorMinimo).
+Caso nenhum funcionário cumpra o critério, apresentar a mensagem com o formato: ""Nenhum funcionario possui salario acima de X."" onde X representa o valor da variável valorMinimo.
+","Inicialização correta da variável de controlo: 4 pontos. Se a variável não for inicializada: 0 pontos.
+Atualização correta da variável de controlo quando um funcionário cumpre o critério: 4 pontos.
+Exibição da mensagem no formato indicado, caso nenhum funcionário seja encontrado: Se a mensagem corresponder exatamente ao formato especificado ou apresentar apenas pequenas variações em pontuação, acentuação ou espaçamento, mas mantendo a estrutura e o conteúdo essenciais: 5 pontos; Se o formato da mensagem não for respeitado, mas indicar o valor de valorMinimo: 3 pontos; Se não apresentar o valor da variável valorMinimo ou não escrever a mensagem: 0 pontos.","13.0","1","1","2025-02-05T16:29:45",""
+"63","22","Identificação da resposta correta","O aluno deve identificar corretamente o número de erros de sintaxe no programa e selecionar a alínea **c)** ou o valor **2**.","**Critérios de Pontuação para a Questão:**  
+
+**Identificação da resposta correta:**  
+
+- **Resposta correta (""c"" ou ""2""):** 20 pontos  
+- **Resposta incorreta:** 0 pontos","20.0","2","1","2025-02-11T21:57:08",""
+"64","23","Identificação da resposta correta","O aluno deve indicar a alínea **b)** ou o valor **1016**.","### Critérios de Avaliação  
+
+**Critério: Identificação da resposta correta**  
+
+- **Resposta correta (""b) 1016"")** → **20 pontos**  
+- **Resposta incorreta** → **0 pontos**","20.0","2","1","2025-02-11T22:03:18",""
+"65","24","Identificação da resposta correta","O aluno deve indicar a alínea **d)** ou o valor **42**.","### Critérios de Avaliação para a Questão  
+
+**Critério: Identificação da resposta correta**  
+
+- **Resposta correta (""d"" ou ""42"")** → **20 pontos**  
+- **Resposta incorreta** → **0 pontos**  
+
+**Justificação:** A questão exige apenas a identificação do valor correto armazenado na posição `matriz[1][2]`. Como se trata de uma resposta objetiva, a pontuação é binária (correto/incorreto).","20.0","2","1","2025-02-11T22:03:46",""
+"205","21","Indicar se é possível ou não alterar do tamanho do array depois de declarado","Este critério avalia se o estudante identificou corretamente que o tamanho de um array não pode ser alterado após sua declaração em C++.","•	Resposta correta (15 pontos): O estudante afirma explicitamente que **não é possível alterar o tamanho de um array após sua declaração**.  A resposta deve ser clara e sem ambiguidades, mencionando que o tamanho do array é fixo em C++.  
+•	Resposta incorreta ou ausência da informação (0 pontos): Caso o estudante afirme que é possível alterar o tamanho do array ou não mencione nada sobre a impossibilidade de alteração.
+","15.0","2","1","2025-02-12T02:42:48",""
+"206","21","Justificar a resposta anterior referindo à alocação de memória","Este critério avalia a justificativa do estudante, com foco na explicação de como a alocação de memória em C++ impede a alteração do tamanho do array. A pontuação é dividida em três subcritérios:","Subcritério 1: Explicação sobre a Alocação Estática e Contígua da Memória
+
+•	Descrição completa e correta (10 pontos): O estudante explica que, em C++, a memória para os elementos de um array é alocada de forma **estática** e **contígua**, ou seja, o espaço reservado é fixo e determinado no momento da declaração. A resposta deve mencionar explicitamente os termos ""estática"", ""contígua"" ou ""fixa"".  
+•	Descrição parcial (5-7 pontos): O estudante menciona apenas um dos aspetos essenciais (por exemplo, apenas ""estática"" ou ""contígua"") ou apresenta uma explicação incompleta.
+•	Ausência de explicação ou informações incorretas (0 pontos): O estudante não menciona a alocação de memória ou apresenta informações equivocadas.
+
+Subcritério 2: Relação entre a Alocação de Memória e a Impossibilidade de Alteração do Tamanho
+
+•	Descrição completa e correta (7 pontos): O estudante relaciona que, devido à alocação estática e contígua da memória, **não é possível redimensionar o array** durante a execução do programa, pois o espaço reservado já foi previamente definido.  
+•	Descrição parcial (3-5 pontos): O estudante menciona a alocação de memória, mas não esclarece totalmente como isso impede a alteração do tamanho do array.  
+•	Ausência de relação ou explicação incorreta (0 pontos): O estudante não estabelece a conexão entre a alocação de memória e a impossibilidade de redimensionamento.
+
+Subcritério 3: Detalhamento sobre a Imutabilidade do Espaço Alocado
+
+•	Descrição completa e correta (8 pontos): O estudante detalha que a impossibilidade de alterar o tamanho do array decorre da necessidade de manter a memória de forma **contínua e organizada**, e que alterar o tamanho comprometeria a integridade dos dados e a estabilidade do programa.  
+•	Descrição parcial (4-6 pontos): O estudante menciona os riscos de alterar o tamanho do array, mas não explora completamente o conceito de alocação contínua e seus impactos.  
+•	Ausência de explicação ou informações incorretas (0 pontos): O estudante não menciona a imutabilidade do espaço alocado ou apresenta informações equivocadas.
+","25.0","2","1","2025-02-12T02:42:54",""
+"207","21","Explicação sobre o armazenamento de valores fora dos limites do array","Este critério avalia se o estudante explica de forma clara os riscos e comportamentos decorrentes do acesso a índices fora dos limites do array.","Subcritério 1: Descrição dos Riscos de Sobrescrever Áreas de Memória
+
+•	Descrição completa e correta (5 pontos): O estudante explica que aceder índices fora dos limites do array pode resultar na **sobrescrita de dados em áreas de memória não reservadas para o array**, afetando outras variáveis ou partes do sistema.  
+•	Descrição parcial (2-3 pontos): O estudante menciona apenas o conceito de sobrescrita de memória, mas não detalha as implicações.  
+•	Ausência de explicação ou informações incorretas (0 pontos): O estudante não menciona os riscos de sobrescrita de memória ou apresenta informações equivocadas.
+
+
+Subcritério 2: Indicação de Comportamento Indefinido e Erros no Programa
+
+•	Descrição completa e correta (5 pontos): O estudante explica que o acesso fora dos limites pode levar a **comportamentos indefinidos**, como corrupção de memória, erros de execução ou falhas graves (crashes) no programa.  
+•	Descrição parcial (2-3 pontos): O estudante menciona apenas um ou alguns dos riscos (por exemplo, apenas ""comportamento indefinido"" ou ""falhas""), sem explorar a diversidade dos possíveis danos.  
+•	Ausência de explicação ou informações incorretas (0 pontos): O estudante não menciona os riscos de comportamento indefinido ou apresenta informações equivocadas.
+","10.0","2","1","2025-02-12T02:43:00",""
+"208","25","Função preencherSalarios  - Definição da função preencherSalarios","O estudante deve definir corretamente a função `preencherSalarios` com os parâmetros corretos e a estrutura básica.","Descrição: O estudante deve definir corretamente a função preencherSalarios com os parâmetros corretos e a estrutura básica.
+Subcritério 1: Nome e Parâmetros da Função
+•	Nome da função exatamente como `preencherSalarios` (4 pontos).  
+•	Parâmetros corretos: `float salarios[]` e `int numFuncionarios`, nesta ordem (4 pontos).  
+•	Pontuação parcial:
+o	Nome correto, mas parâmetros incorretos (2 pontos).  
+o	Nome incorreto ou ausência da função (0 pontos).  
+Subcritério 2: Estrutura Básica
+•	Inclusão correta das chaves de abertura e fechamento da função (2 pontos). 
+•	Estrutura incorreta ou ausente (0 pontos).
+","10.0","2","1","2025-02-12T02:44:10",""
+"209","25","Função preencherSalarios  - Preenchimento do array","A função deve preencher o array `salarios` com os valores fornecidos pelo usuário, utilizando um laço `for` e exibindo mensagens formatadas corretamente.","Descrição: A função deve preencher o array salarios com os valores fornecidos pelo usuário, utilizando um ciclo for e exibindo mensagens formatadas corretamente.
+
+Subcritério 1: Utilização do Ciclo for
+•	Uso correto de um laço `for` que itere de 0 até `numFuncionarios - 1` (10 pontos).
+•	Pontuação parcial:
+o	Ciclo presente, mas com erros na lógica ou limites (5 pontos).  
+o	Ausência do ciclo ou implementação incorreta (0 pontos).  
+
+Subcritério 2: Mensagem de Solicitação Formatada
+•	Impressão da mensagem para cada funcionário no formato exato:
+`""Insira o salario do funcionario X:""`, onde `X` é o índice + 1 (8 pontos).
+•	Pontuação parcial:
+o	Mensagem presente, mas com formatação incorreta (ex.: índice errado, texto incompleto) (4 pontos).
+o	Mensagem ausente ou completamente incorreta (0 pontos).
+
+Subcritério 3: Leitura e Armazenamento dos Salários
+•	Leitura correta do input (usando `cin`) e armazenamento no array na posição correspondente (7 pontos)
+•	Pontuação parcial:
+o	Leitura realizada, mas com problemas no armazenamento (ex.: valores armazenados em posições erradas) (3 pontos);
+o	Leitura ou armazenamento ausentes ou incorretos (0 pontos).
+","25.0","2","1","2025-02-12T02:44:17",""
+"210","25","Função imprimirSalariosAcima  - Definição da função imprimirSalariosAcima","O estudante deve definir corretamente a função `imprimirSalariosAcima` com os parâmetros corretos e a estrutura básica.","Descrição: O estudante deve definir corretamente a função `imprimirSalariosAcima` com os parâmetros corretos e a estrutura básica.
+
+Subcritério 1: Nome e Parâmetros da Função
+•	Nome da função exatamente como `imprimirSalariosAcima` (5 pontos).
+•	Parâmetros corretos: `float salarios[]`, `int numFuncionarios`, `float valorMinimo`, nesta ordem (4 pontos).
+•	Pontuação parcial:
+o	Nome correto, mas parâmetros incorretos (3 pontos).
+o	Nome incorreto ou ausência da função (0 pontos).
+
+Subcritério 2: Estrutura básica
+•	Inclusão correta das chaves de abertura e fechamento da função (3 pontos);
+•	Estrutura incorreta ou ausente (0 pontos).
+","12.0","2","1","2025-02-12T02:44:24",""
+"211","25","Função imprimirSalariosAcima  - Definição do título","A função deve exibir um título formatado corretamente antes de listar os salários.","Descrição: A função deve exibir um título formatado corretamente antes de listar os salários.
+
+Subcritério 1: Mensagem de Título Exata
+•	Impressão do título no formato:
+""Listagem de funcionarios cujo salario seja maior que X:"", onde `X` é o valor de `valorMinimo` (8 pontos).
+•	Pontuação parcial:
+o	Mensagem presente, mas com erros na formatação ou texto (ex.: palavras ausentes, erro de maiúsculas/minúsculas) (4 pontos);
+o	Mensagem ausente ou completamente incorreta (0 pontos).
+","8.0","2","1","2025-02-12T02:44:32",""
+"212","25","Função imprimirSalariosAcima  - Listagem de salários acima do mínimo","A função deve listar os funcionários com salários acima de `valorMinimo`, exibindo mensagens formatadas corretamente.","Descrição: A função deve listar os funcionários com salários acima de `valorMinimo`, exibindo mensagens formatadas corretamente.
+
+Subcritério 1: Iteração Correta sobre o Array
+•	Uso de um ciclo (ex.: `for`) para percorrer todos os funcionários (8 pontos);
+•	Pontuação parcial:
+o	Iteração presente, mas com erros na lógica ou limites (4 pontos);
+o	Ausência de iteração ou implementação incorreta (0 pontos).
+
+Subcritério 2: Verificação Condicional
+•	Verificação correta se o salário do funcionário é maior que `valorMinimo` (6 pontos).
+•	Pontuação parcial:
+o	Verificação presente, mas com erros na lógica (ex.: condição invertida) (3 pontos);
+o	Ausência da verificação ou implementação incorreta (0 pontos).
+
+Subcritério 3: Impressão Formatada para Cada Funcionário
+•	Exibição de cada funcionário que atenda à condição no formato:
+""Funcionario i com salario Y Euros"", onde `i` é o índice + 1 e `Y` é o salário (8 pontos).  
+•	Pontuação parcial:
+o	Mensagem presente, mas com erros na formatação (ex.: ausência da palavra ""Euros"", índice errado) (4 pontos);
+o	Mensagem ausente ou completamente incorreta (0 pontos).
+","22.0","2","1","2025-02-12T02:44:41",""
+"213","25","Função imprimirSalariosAcima  - Verificação de inexistência de funcionários com salário acima de valorMinimo","A função deve verificar se nenhum funcionário possui salário acima de `valorMinimo` e exibir a mensagem apropriada.","Descrição: A função deve verificar se nenhum funcionário possui salário acima de valorMinimo e exibir a mensagem apropriada.
+
+Subcritério 1: Implementação da Verificação
+•	Uso de uma variável auxiliar (ex.: booleano) ou lógica equivalente para determinar se nenhum salário excede valorMinimo (5 pontos).
+•	Pontuação parcial:
+o	Verificação presente, mas com erros na lógica (ex.: flag não reiniciada corretamente) (3 pontos);
+o	Ausência da verificação ou implementação incorreta (0 pontos).
+
+Subcritério 2: Impressão da Mensagem de Inexistência
+•	Exibição da mensagem no formato:
+""Nenhum funcionario possui salario acima de X."", onde `X` é o valor de `valorMinimo` (8 pontos).
+•	Pontuação parcial:
+o	Mensagem presente, mas com erros na formatação ou texto (ex.: palavras ausentes, valor mal posicionado) (4 pontos);
+o	Mensagem ausente ou completamente incorreta (0 pontos).
+","13.0","2","1","2025-02-12T02:44:49",""
+"235","23","**Resposta Correta – Alínea ou Valor","O aluno deve indicar a alínea **b)** ou o valor **1016**.","**Critério de Pontuação:**  
+
+- Resposta correta (alínea **b)** ou valor **1016**): **20 pontos**  
+- Resposta incorreta ou ausência de resposta: **0 pontos**","20.0","3","1","2025-02-12T03:05:37",""
+"236","24","Resposta Correta – Alínea ou Valor","O aluno deve indicar a alínea **d)** ou o valor **42**.","**Resposta correta (alínea ""d)"" ou valor ""42""): 20 pontos**  
+**Resposta incorreta: 0 pontos**","20.0","3","1","2025-02-12T03:06:02",""
+"239","21","Resposta Direta","Avaliar se o aluno responde de forma clara e inequívoca à pergunta sobre a possibilidade de alterar o tamanho de um array após sua declaração.","Descrição: Avaliar se o aluno responde de forma clara e inequívoca à pergunta sobre a possibilidade de alterar o tamanho de um array após sua declaração.
+
+Pontuação:
+
+•	Resposta correta (20 pontos):  O aluno deve afirmar de forma direta e sem ambiguidades que **não é possível alterar o tamanho de um array depois de declarado**.  Exemplo esperado: “Não, não é possível alterar o tamanho de um array depois de declarado.”
+•	Resposta incorreta ou omissa (0 pontos): Caso o aluno afirme que é possível alterar o tamanho do array, apresente uma resposta ambígua ou não forneça nenhuma resposta.  
+","20.0","3","1","2025-02-12T03:13:09",""
+"240","21","Alocação de Memória Estática","Avaliar se o aluno justifica corretamente a resposta, explicando como ocorre a alocação de memória para arrays em C++.","Descrição: Avaliar se o aluno justifica corretamente a resposta, explicando como ocorre a alocação de memória para arrays em C++. 
+
+Pontuação:
+
+Subcritério 1:  Mencionar que a memória para o array é alocada de forma estática no momento da declaração
+•	Descrição completa e correta (7 pontos): O aluno deve explicar que, em C++, a memória para um array é alocada de forma fixa no momento da declaração, e o tamanho do array não pode ser alterado durante a execução do programa.
+•	Descrição parcial (3-5 pontos): Se o aluno mencionar a alocação estática, mas de forma incompleta ou com imprecisões.  
+•	Pontuação nula (0 pontos): Se o aluno não mencionar a alocação estática ou apresentar informações incorretas.  
+
+Subcritério 2: Explicar que a memória é alocada de forma contínua (contígua) e fixa
+•	Descrição completa e correta (8 pontos): O aluno deve evidenciar que os elementos do array são armazenados de forma contígua na memória, o que impede o redimensionamento dinâmico.  
+•	Descrição parcial (3-6 pontos): Se o aluno mencionar a continuidade da memória, mas sem relacionar adequadamente com a impossibilidade de redimensionamento ou apresentar explicações incompletas.  
+•	Pontuação nula (0 pontos): Se o aluno não mencionar a continuidade da memória ou apresentar informações incorretas. 
+","15.0","3","1","2025-02-12T03:13:16",""
+"241","21","Comportamento ao Ultrapassar Limites","Avaliar se o aluno explica corretamente o que acontece ao tentar aceder ou guardar valores fora dos limites de um array.  ","Descrição: Avaliar se o aluno explica corretamente o que acontece ao tentar aceder ou guardar valores fora dos limites de um array.
+
+Pontuação:
+
+Subcritério 1:  Indicar que aceder ou guardar valores fora dos limites do array é inválido e resulta em comportamento indefinido:
+•	Descrição completa e correta (7 pontos): O aluno deve mencionar que aceder ou armazenar valores fora dos limites do array é uma operação inválida, que pode causar comportamento indefinido.  
+•	Descrição parcial (3-5 pontos): Se o aluno mencionar que a operação é inválida, mas não explicar o conceito de comportamento indefinido ou apresentar explicações incompletas.  
+•	Pontuação nula (0 pontos): Se o aluno não mencionar que a operação é inválida ou apresentar informações incorretas.
+
+Subcritério 2: Explicar os riscos e consequências da ultrapassagem dos limites:
+•	Descrição completa e correta (8 pontos): O aluno deve descrever que, ao tentar aceder ou guardar valores fora dos limites, podem ocorrer consequências como:  
+o	Sobrescrição de outras áreas de memória;
+o	Corrupção de dados;
+o	Erros em tempo de execução (ex.: falhas de segmentação).  
+•	Descrição parcial (3-6 pontos): Se o aluno mencionar apenas alguns dos riscos ou consequências, sem detalhar adequadamente.  
+•	Pontuação nula (0 pontos): Se o aluno não mencionar os riscos ou apresentar informações incorretas.  
+","15.0","3","1","2025-02-12T03:13:22",""
+"242","22","Resposta Correta","O aluno deve identificar que o programa contém **2 erros de sintaxe** e selecionar a opção **c)** ou o valor **2**.","**Resposta correta: 20 pontos**  
+O aluno deve indicar a alínea **c)** ou o valor **2**.  
+Respostas incorretas recebem **0 pontos**.","20.0","3","1","2025-02-12T03:13:53",""
+"286","25","Função `preencherSalarios`: Definição e Assinatura","Avalia se a função `preencherSalarios` foi corretamente definida, com o nome, tipo de retorno, parâmetros e estrutura básica adequados.","Descrição: Avalia se a função preencherSalarios foi corretamente definida, com o nome, tipo de retorno, parâmetros e estrutura básica adequados.
+
+
+Subcritério 1: Nome da função correto
+•	Se o nome for exatamente preencherSalarios: 4 pontos
+•	Se o nome estiver incorreto: 0 pontos
+
+Subcritério 2: Tipo de retorno e parâmetros corretos
+•	Tipo de retorno void e parâmetros float salarios[] e int numFuncionarios na ordem correta: 4 pontos  
+•	Se houver erro no tipo de retorno ou nos parâmetros: 0 pontos
+Subcritério 3: Estrutura básica da função
+•	Presença das chaves de abertura e fechamento corretamente posicionadas: 2 pontos
+•	Se as chaves estiverem ausentes ou incorretas: 0 pontos
+","10.0","3","1","2025-03-03T14:34:41",""
+"287","25","Função `preencherSalarios`: Uso Correto do Ciclo `for` para Iterar nos Funcionários (15 pontos)","Avalia a implementação do ciclo `for` para percorrer o array de salários.","Descrição: Avalia a implementação do ciclo `for` para percorrer o array de salários.
+
+Subcritério 1: Declaração e inicialização do índice do ciclo
+•	Inicialização correta do índice (ex.: `int i = 0`): 3 pontos
+•	- Se a inicialização estiver ausente ou incorreta: 0 pontos
+
+Subcritério 2: Condição e incremento do ciclo
+•	Condição correta (ex.: i < numFuncionarios): 5 pontos
+•	Incremento correto (ex.: i++): 5 pontos
+•	Se a condição ou o incremento estiverem ausentes ou incorretos: 0 pontos
+Subcritério 3: Iteração completa do array
+•	O ciclo percorre todos os elementos do array sem erros: 2 pontos
+•	Se o ciclo não percorrer todos os elementos ou apresentar erros lógicos: 0 pontos
+","15.0","3","1","2025-03-03T14:35:37",""
+"288","25","Função `preencherSalarios`: Exibição da Mensagem ""Insira o salario do funcionario X:"" com Formatação Correta","Avalia a exibição da mensagem solicitando o salário de cada funcionário.","Descrição: Avalia a exibição da mensagem solicitando o salário de cada funcionário.
+
+Subcritério 1: Texto fixo da mensagem
+•	Impressão correta do texto “Insira o salario do funcionario”: 4 pontos
+•	Se o texto estiver incorreto ou ausente: 0 pontos
+
+Subcritério 2: Substituição correta do valor `X`
+•	Exibição do índice incrementado em 1 (ex.: `i + 1`): 3 pontos
+•	Se o valor exibido estiver incorreto ou ausente: 0 pontos
+
+Subcritério 3: Formatação final da mensagem
+•	Inclusão do caractere “:” ao final da mensagem: 3 pontos
+•	Se o caractere estiver ausente ou incorreto: 0 pontos
+","10.0","3","1","2025-03-03T14:36:10",""
+"289","25","Função `preencherSalarios`: Leitura e Armazenamento dos Salários no Array","Descrição: Avalia a leitura dos salários e o armazenamento correto no array.
+
+Subcritério 1: Leitura correta do salário
+•	Uso do `cin >>` para capturar o salário: 5 pontos
+•	Se a leitura estiver ausente ou incorreta: 0 pontos
+Subcritério 2: Armazenamento correto no array
+•	Atribuição do valor lido à posição correta do array (ex.: `salarios[i]`): 5 pontos
+•	Se o armazenamento estiver ausente ou incorreto: 0 pontos
+","","10.0","3","1","2025-03-03T14:36:32",""
+"290","25","Função `imprimirSalariosAcima`: Definição e Assinatura","Avalia se a função `imprimirSalariosAcima` foi corretamente definida, com o nome, tipo de retorno, parâmetros e estrutura básica adequados.","Descrição: Avalia se a função imprimirSalariosAcima foi corretamente definida, com o nome, tipo de retorno, parâmetros e estrutura básica adequados.
+
+Subcritério 1: Nome da função correto
+•	Se o nome for exatamente `imprimirSalariosAcima`: 4 pontos
+•	Se o nome estiver incorreto: 0 pontos
+Subcritério 2: Tipo de retorno e parâmetros corretos
+•	Tipo de retorno `void` e parâmetros `float salarios[]`, `int numFuncionarios`, `float valorMinimo` na ordem correta: 4 pontos
+•	Se houver erro no tipo de retorno ou nos parâmetros: 0 pontos
+Subcritério 3: Estrutura básica da função
+•	Presença das chaves de abertura e fechamento corretamente posicionadas: 2 pontos
+•	Se as chaves estiverem ausentes ou incorretas: 0 pontos
+","10.0","3","1","2025-03-03T14:37:01",""
+"291","25","Função `imprimirSalariosAcima`: Impressão do Título com Formatação Correta","Avalia a impressão do título “Listagem de funcionarios cujo salario seja maior que X:”","Descrição: Avalia a impressão do título “Listagem de funcionarios cujo salario seja maior que X:”.
+
+Subcritério 1: Texto fixo do título 
+•	Impressão correta do texto “Listagem de funcionarios cujo salario seja maior que”: 5 pontos
+•	Se o texto estiver incorreto ou ausente: 0 pontos
+Subcritério 2: Substituição correta do valor `X` 
+•	Exibição do valor mínimo fornecido pelo utilizador: 3 pontos
+•	Se o valor exibido estiver incorreto ou ausente: 0 pontos
+
+Subcritério 3: Formatação final do título 
+•	Inclusão dos dois pontos (“:”) ao final do título: 2 pontos
+•	Se os dois pontos estiverem ausentes ou incorretos: 0 pontos
+","10.0","3","1","2025-03-03T14:37:40",""
+"292","25","Função `imprimirSalariosAcima`: Uso do Ciclo `for` e Condicional para Identificar Salários Superiores","Avalia a implementação do ciclo `for` e da condicional para verificar salários superiores ao valor mínimo.","Descrição: Avalia a implementação do ciclo `for` e da condicional para verificar salários superiores ao valor mínimo.
+
+
+Subcritério 1: Uso do ciclo for
+•	Implementação correta do ciclo para percorrer o array: 5 pontos
+•	Se o ciclo estiver ausente ou incorreto: 0 pontos
+Subcritério 2: Uso da condicional `if`
+•	Implementação correta da condição (ex.: `if (salarios[i] > valorMinimo)`): 5 pontos
+•	Se a condição estiver ausente ou incorreta: 0 pontos
+","10.0","3","1","2025-03-03T14:38:22",""
+"293","25","Função `imprimirSalariosAcima`: Impressão dos Resultados ou Mensagem Alternativa","Avalia a impressão dos resultados para funcionários com salários acima do valor mínimo ou, alternativamente, a mensagem indicando que nenhum funcionário atende ao critério.","Descrição: Avalia a impressão dos resultados para funcionários com salários acima do valor mínimo ou, alternativamente, a mensagem indicando que nenhum funcionário atende ao critério.
+
+Subcritério 1: Funcionários com salário acima do valor mínimo
+•	Impressão correta da mensagem “Funcionario i com salario Y Euros” para cada funcionário que atende ao critério: 10 pontos
+•	Se a mensagem estiver incorreta ou ausente: 0 pontos
+Subcritério 2: Nenhum funcionário com salário acima do valor mínimo
+•	Impressão correta da mensagem “Nenhum funcionario possui salario acima de X.”: 5 pontos
+•	Se a mensagem estiver incorreta ou ausente: 0 pontos
+","15.0","3","1","2025-03-03T14:38:49",""
+"298","21","Identificação da Impossibilidade de Alterar o Tamanho","Identificação da Impossibilidade de Alterar o Tamanho","•	Resposta Correta (15 pontos): O estudante identifica corretamente que não é possível alterar o tamanho de um array após sua declaração em C++
+•	Resposta Incorreta ou Ausência da Informação (0 pontos): O estudante não identifica corretamente a impossibilidade de alterar o tamanho do array ou não responde.
+","15.0","4","1","2025-03-04T19:08:05",""
+"299","21","Justificação Relacionada à Alocação de Memória","Justificação Relacionada à Alocação de Memória","•	Explicação Completa da Alocação de Memória (25 pontos): O estudante explica que, em C++, a memória para um array é alocada de forma estática e contígua no momento da declaração, e que qualquer tentativa de alterar o tamanho resultaria em problemas de gerenciamento de memória.
+•	Explicação Parcial da Alocação de Memória (15 a 18 pontos): O estudante menciona a alocação de memória, mas não detalha completamente como isso impede a alteração do tamanho do array. Atribuir entre 15 e 18 pontos, conforme a explicação.
+•	Resposta Incorreta ou Ausência da Justificativa (0 pontos): O estudante não menciona a alocação de memória ou explica de forma incorreta.
+","25.0","4","1","2025-03-04T19:08:32",""
+"300","21","Explicação das Consequências de Acesso Fora dos Limites","Explicação das Consequências de Acesso Fora dos Limites","•	Explicação Completa das Consequências (10 pontos): O estudante explica que aceder ou armazenar valores fora dos limites do array pode resultar na sobrescrita de áreas de memória adjacentes, causando comportamentos indesejados, erros no programa ou até mesmo falhas de execução.
+•	Explicação Parcial das Consequências (5 a 7 pontos): O estudante menciona que aceder fora dos limites é perigoso, mas não detalha completamente as consequências, como a sobrescrita de memória ou impactos no programa. Atribuir entre 5 e 7 pontos, conforme a explicação.
+•	Resposta Incorreta ou Ausência da Explicação (0 pontos): O estudante não explica ou explica incorretamente as consequências de aceder fora dos limites do array.
+","10.0","4","1","2025-03-04T19:08:53",""
+"301","22","Identificação da resposta correta","O aluno deve identificar corretamente o número de erros de sintaxe no programa e selecionar a alínea c) ou o valor 2.","Resposta correta (""c"" ou ""2""): 20 pontos
+Resposta incorreta: 0 pontos","20.0","4","1","2025-03-04T19:09:58",""
+"302","23","Identificação da resposta correta","O aluno deve indicar a alínea b) ou o valor 1016.","Resposta correta b ou 1016: 20 pontos.
+Resposta incorreta: 0 pontos.
+","20.0","4","1","2025-03-04T19:10:42",""
+"303","24","Identificação da resposta correta","O aluno deve indicar a alínea d) ou o valor 42.","Resposta correta (d ou 42): 20 pontos.
+Resposta incorreta: 0 pontos.
+","20.0","4","1","2025-03-04T19:11:19",""
+"304","25","Função preencherSalarios - Definição da função preencherSalarios","Função preencherSalarios - Definição da função preencherSalarios","•	Definição correta da função: (10 pontos)
+o	Nome da função: `void preencherSalarios(float salarios[], int numFuncionarios)`.
+o	Parâmetros corretos: `float salarios[]` e `int numFuncionarios`.
+o	Estrutura básica da função (abertura e fecho de chaves).
+
+•	Definição parcialmente correta: (4 pontos)
+o	Nome da função correto, mas parâmetros incorretos.
+
+•	Definição incorreta ou ausência da função: (0 pontos)
+o	Nome incorreto, parâmetros incorretos ou ausência de definição.
+","10.0","4","1","2025-03-04T19:14:10",""
+"305","25","Função preencherSalarios - Preenchimento do array","Função preencherSalarios - Preenchimento do array","•	Utilização correta do ciclo `for`:
+o	Implementação correta do ciclo `for` para percorrer o array de `0` a `numFuncionarios - 1`: 10 pontos
+o	Implementação parcial ou com pequenos erros (ex.: limite de iterações incorreto): 5 pontos
+o	Implementação incorreta ou ausência do ciclo `for`: 0 pontos
+
+•	Mensagem de solicitação corretamente formatada:
+o	Apresentação da mensagem exatamente no formato solicitado: ""Insira o salário do funcionário X:"", onde `X` é o índice +1: 8 pontos
+o	Mensagem apresentada, mas com formato ligeiramente diferente: 4 pontos
+o	Mensagem ausente ou completamente incorreta: 0 pontos
+
+
+•	Leitura e armazenamento corretos dos salários:
+o	Leitura correta do valor do salário via `cin` e armazenamento na posição correta do array: 7 pontos
+o	Leitura realizada, mas armazenamento incorreto: 3 pontos
+o	Leitura ou armazenamento ausentes ou incorretos: 0 pontos
+","25.0","4","1","2025-03-04T19:14:50",""
+"306","25","Função imprimirSalariosAcima - Definição da função imprimirSalariosAcima","Função imprimirSalariosAcima - Definição da função imprimirSalariosAcima","•	Definição correta da função: (12 pontos)
+o	Nome da função: `void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo)`.
+o	Parâmetros corretos: `float salarios[]`, `int numFuncionarios`, e `float valorMinimo`.
+o	Estrutura básica da função (abertura e fechamento de chaves).
+
+•	Definição parcialmente correta: (4 pontos)
+o	Nome da função correto, mas parâmetros incorretos
+
+•	Definição incorreta ou ausência da função: (0 pontos)
+o	Nome incorreto, parâmetros incorretos ou ausência de definição
+","12.0","4","1","2025-03-04T19:15:16",""
+"307","25","Função imprimirSalariosAcima - Definição do título","Função imprimirSalariosAcima - Definição do título","•	Título corretamente formatado: (8 pontos)
+o	Apresentação do título exatamente no formato: ""Listagem de funcionários cujo salário seja maior que X:"", onde `X` é o valor mínimo.
+
+•	Título apresentado, mas com pequenas inconsistências: (4 pontos)
+o	Formato ligeiramente diferente ou ausência de algum elemento do título.
+
+•	Título ausente ou incorretamente formatado: (0 pontos)
+o	Ausência do título ou formatação incorreta.
+","8.0","4","1","2025-03-04T19:16:04",""
+"308","25","Função imprimirSalariosAcima - Listagem de salários acima do mínimo","Função imprimirSalariosAcima - Listagem de salários acima do mínimo","•	Implementação correta do loop:
+o	Uso correto de um `for` para percorrer o array de `0` a `numFuncionarios - 1`: 10 pontos
+o	Loop implementado, mas com pequenos erros (ex.: limite de iterações incorreto): 5 pontos
+o	Loop ausente ou totalmente incorreto: 0 pontos
+
+•	Condição correta para salários acima do valor mínimo:
+o	Uso correto da condição if (salarios[i] > valorMinimo) : 7 pontos
+o	Condição implementada, mas com pequenos erros (ex.: operador incorreto, como `>=` em vez de `>`): 3 pontos
+o	Condição ausente ou incorretamente implementada: 0 pontos
+
+•	Formatação correta da saída:
+o	Impressão da mensagem ""Funcionário `i+1` com salário `Y` Euros"", onde `Y` é o salário do funcionário: 5 pontos
+o	Mensagem apresentada, mas com pequenas inconsistências no formato (ex.: falta de um espaço ou ponto final): 3 pontos
+o	Ausência da mensagem ou formato incorreto: 0 pontos.
+","22.0","4","1","2025-03-04T19:16:30",""
+"309","25","Função imprimirSalariosAcima - Verificação de inexistência de funcionários com salário acima de valorMinimo","Função imprimirSalariosAcima - Verificação de inexistência de funcionários com salário acima de valorMinimo","•	Implementação correta da verificação: (13 pontos)
+o	Uso correto de uma variável do tipo `bool` (ex.: `encontrou`) para indicar se algum salário foi encontrado
+o	Apresentação da mensagem ""Nenhum funcionário possui salário acima de X."" quando nenhum salário estiver acima do valor mínimo
+
+•	Implementação parcialmente correta: (7 pontos)
+o	Verificação implementada, mas a mensagem está incorretamente formatada
+
+•	Implementação incorreta ou ausência da verificação: (0 pontos)
+o	Verificação não implementada ou ausente
+","13.0","4","1","2025-03-04T19:17:09",""
+"310","21","Resposta Direta","O estudante deve indicar corretamente que não é possível alterar o tamanho de um array depois de declarado.","Descrição: O estudante deve indicar corretamente que não é possível alterar o tamanho de um array depois de declarado.
+
+Pontuação:
+•	Resposta correta (20 pontos): O estudante afirma corretamente que, após a declaração, o tamanho do array não pode ser alterado.
+•	Resposta incorreta ou ausência da informação (0 pontos): O estudante afirma incorretamente que é possível alterar o tamanho do array ou não fornece resposta clara.
+","20.0","5","1","2025-03-04T19:20:32",""
+"311","21","Explicação da Memória Alocada","O estudante deve explicar que, em C++, a memória para um array é alocada de forma estática e contínua no momento da declaração, e que isso impede a alteração do tamanho do array.","Descrição: O estudante deve explicar que, em C++, a memória para um array é alocada de forma estática e contínua no momento da declaração, e que isso impede a alteração do tamanho do array.
+
+Pontuação:
+•	Explicação completa e correta da alocação de memória (15 pontos):
+o	O estudante menciona que a memória é alocada de forma estática e contínua no momento da declaração do array
+o	Explica claramente que essa alocação fixa impede qualquer alteração no tamanho do array após a declaração.
+
+•	Explicação parcial ou ambígua da alocação de memória (8 a 11 pontos):
+o	O estudante menciona a alocação de memória, mas a explicação está parcialmente correta ou falta clareza.
+
+•	Resposta incorreta ou ausência da justificativa (0 pontos):
+o	O estudante não menciona a alocação de memória ou explica incorretamente.
+","15.0","5","1","2025-03-04T19:21:03",""
+"312","21","Explicação das Consequências","O estudante deve explicar o que acontece se tentar armazenar valores além dos limites do array.","Descrição: O estudante deve explicar o que acontece se tentar armazenar valores além dos limites do array.
+
+Pontuação:
+•	Explicação completa e correta das consequências (15 pontos):
+o	O estudante explica que tentar armazenar valores além dos limites do array pode resultar na sobrescrita de áreas de memória adjacentes, potencialmente afetando outras variáveis ou partes do programa
+o	Menciona que isso pode causar comportamentos indesejados, como resultados imprevisíveis ou erros no programa.
+•	Explicação parcial ou ambígua das consequências (8 a 11 pontos):
+o	O estudante menciona algumas consequências, mas a explicação está incompleta ou falta clareza.
+
+•	Resposta incorreta ou ausência da justificativa (0 pontos):
+o	O estudante não menciona as consequências ou explica incorretamente.
+","15.0","5","1","2025-03-04T19:22:06",""
+"313","22","Identificação da resposta correta","O aluno deve identificar corretamente o número de erros de sintaxe no programa e selecionar a alínea c) ou o valor 2.","Resposta correta (""c"" ou ""2""): 20 pontos
+Resposta incorreta: 0 pontos
+","20.0","5","1","2025-03-04T19:23:03",""
+"314","23","Identificação da resposta correta","O aluno deve indicar a alínea b) ou o valor 1016.","Resposta correta b ou 1016: 20 pontos.
+Resposta incorreta: 0 pontos.
+","20.0","5","1","2025-03-04T19:24:53",""
+"315","24","Identificação da resposta correta","O aluno deve indicar a alínea d) ou o valor 42.","Resposta correta (d ou 42): 20 pontos.
+Resposta incorreta: 0 pontos.
+","20.0","5","1","2025-03-04T19:26:08",""
+"316","25","Definição da Função preencherSalarios","Definição da Função preencherSalarios","Pontuação:
+•	Definição correta da função com nome exato e parâmetros corretos (void preencherSalarios(float salarios[], int numFuncionarios))
+o	Definição correta da função (10 pontos)
+o	Definição incorreta ou ausente (0 pontos)
+
+•	Utilização correta de um ciclo `for` para percorrer o array de 0 a `numFuncionarios - 1`
+o	Ciclo `for` implementado corretamente (15 pontos)
+o	Ciclo `for` implementado de forma parcial ou com erros (10 pontos)
+o	Ciclo `for` ausente ou implementado incorretamente (0 pontos)
+
+•	Armazenamento correto dos salários no array na posição correta
+o	Armazenamento correto de todos os salários (10 pontos)
+o	Armazenamento incorreto ou parcial dos salários (5 pontos)
+o	Armazenamento ausente ou totalmente incorreto (0 pontos)
+
+•	Apresentação de mensagens de solicitação corretamente formatadas
+o	Mensagens apresentadas corretamente no formato solicitado (10 pontos)
+o	Mensagens apresentadas com formato parcialmente correto (5 pontos)
+o	Mensagens ausentes ou incorretamente formatadas (0 pontos)
+
+•	Estrutura básica da função (abertura e fechamento de chaves)
+o	Estrutura correta (5 pontos)
+o	Estrutura incorreta ou ausente (0 pontos)
+","50.0","5","1","2025-03-04T19:27:24",""
+"317","25","Definição da Função imprimirSalariosAcima","Definição da Função imprimirSalariosAcima","Pontuação:
+•	Definição correta da função com nome exato e parâmetros corretos (`void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo)`)
+o	Definição correta da função (10 pontos)
+o	Definição incorreta ou ausente (0 pontos)
+
+•	Verificação correta de cada salário para identificar se é maior que o valor mínimo
+o	Verificação correta de todos os salários (10 pontos)
+o	Verificação parcial ou com erros (5 pontos)
+o	Verificação ausente ou totalmente incorreta (0 pontos)
+
+•	Impressão do cabeçalho no formato correto
+o	Cabeçalho correto (10 pontos)
+o	Cabeçalho parcial ou com erros (5 pontos)
+o	Cabeçalho ausente ou incorreto (0 pontos)
+
+•	Impressão das linhas de funcionários no formato correto
+o	Linha formatada corretamente para todos os funcionários (5 pontos)
+o	Linha formatada corretamente para alguns funcionários (3 pontos)
+o	Linha ausente ou totalmente incorreta (0 pontos)
+
+•	Impressão da mensagem de nenhum funcionário acima do valor mínimo
+o	Mensagem correta (5 pontos)
+o	Mensagem ausente ou incorreta (0 pontos)
+","40.0","5","1","2025-03-04T19:28:01",""
+"318","26","Distingue e descreve ambos os modos de acesso","O aluno deve explicar como funciona o modo de acesso ""ios::in"" e ""ios::out"". Deverá indicar claramente a diferença entre ambos.","Explica como funciona o acesso ""ios::in"": 7 pontos. Explicação parcial: 3 a 5 pontos.
+Explica como funciona o acesso ""ios::out"": 7 pontos. Explicação parcial: 3 a 5 pontos.
+Distingue ambos: 6 pontos
+Ausência ou incorreção significativa: 0 pontos.
+","20.0","1","1","2025-03-18T11:53:26",""
+"319","26","Escreve um exemplo de código simples que efetue a leitura de um ficheiro de texto","O aluno deve escrever um extrato simples de uma leitura de um ficheiro de texto.","Inicializar o ficheiro: 3 pontos
+Abertura do ficheiro em modelo de leitura e no modo correto: 4 pontos
+Verificação correta da abertura do ficheiro (uso de is_open() ou equivalente): 4 pontos
+Fecha corretamente o ficheiro no fluxo do programa: 4 pontos
+Penalização por elementos desnecessários ou errados: Entre -5% a -20% se o aluno adicionar elementos que alterem o comportamento esperado ou introduzam confusão na resposta.
+Ausência ou incorreção significativa: 0 pontos.
+","15.0","1","1","2025-03-18T12:02:00",""
+"320","26","Descreve a finalidade da Função close","O aluno deve explicar a finalidade da função close() e justificar por que é essencial utilizá-la.","- Explica corretamente a finalidade da função close() (libertar recursos, garantir a escrita correta dos dados no ficheiro, permitir acesso a outros processos): 8 pontos. Explicação parcial (3 a 5 pontos): Se mencionar apenas um ou dois dos aspetos principais.
+- Justifica corretamente por que é importante utilizá-la: 7 pontos. Explicação parcial (3 a 5 pontos): Se a justificativa for vaga ou incompleta.
+- Ausência ou incorreção significativa: 0 pontos.
+","15.0","1","1","2025-03-18T12:03:08",""
+"321","27","Identificação da resposta correta","O aluno deve indicar a alínea c) ou “É possível comparar duas strings usando o operador de igualdade (==)”.","•	Se indicar a alínea c) ou” É possível comparar duas strings usando o operador de igualdade (==)”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","1","1","2025-03-18T12:04:49",""
+"322","28","Identificação da resposta correta","O aluno deve indicar a alínea b) ou “int* arr = new int[10]”.","•	Se indicar a alínea b) ou ”int* arr = new int[10]”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","1","1","2025-03-18T12:06:18",""
+"323","29","Identificação da resposta correta","O aluno deve indicar a alínea a) ou “Aluno a = {123, ""Ana"", 16.5}”.","•	Se indicar a alínea a) ou “Aluno a = {123, ""Ana"", 16.5}”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","1","1","2025-03-18T12:07:21",""
+"324","31","Definição da Estrutura Morada (12 pontos)","O aluno deve definir corretamente a estrutura Morada de acordo com os parâmetros definidos no enunciado.","•	Definir corretamente a estrutura e o seu identificador: 3 pontos;
+•	Definir os 3 atributos corretamente (tipo correto, identificador ao critério do aluno, desde que seja descritivo e razoável): 9 pontos;
+•	Caso o aluno defina incorretamente um atributo (tipo correto, identificador fica ao critério do aluno) deverá ser descontado 3 pontos. Se falhar mais que 1 atributo: 0 pontos;
+•	Penalização por elementos desnecessários ou errados: 
+o	-5% a -10% por elementos desnecessários que não afetam o funcionamento;
+o	-10% a -20% por erros que alteram o comportamento esperado.
+•	Atribuir 0 pontos se ocorrer qualquer uma das seguintes situações:
+o	Não responder.
+","12.0","1","1","2025-03-18T12:08:41",""
+"325","31","Definição da Estrutura Pessoa","O aluno deve definir corretamente a estrutura Pessoa, de acordo com os parâmetros definidos no enunciado.","•	Definir corretamente a estrutura e o seu identificador: 3 pontos;
+•	Definir os 4 atributos corretamente (tipo correto, identificador ao critério do aluno, desde que seja descritivo e razoável): 12 pontos;
+•	Caso o aluno defina incorretamente um atributo deverá ser descontado 3 pontos. Se falhar mais que 1 atributo: 0 pontos;
+•	Penalização por elementos desnecessários ou errados: 
+o	-5% a -10% por elementos desnecessários que não afetam o funcionamento;
+o	-10% a -20% por erros que alteram o comportamento esperado.
+•	Atribuir 0 pontos se ocorrer qualquer uma das seguintes situações:
+o	Não responder.
+","15.0","1","1","2025-03-18T12:09:06",""
+"326","31","Implementar a função inserirPessoa","O aluno deve definir e implementar corretamente a função inserirPessoa, garantindo que todos os atributos são preenchidos dentro da função.","•	Definir corretamente o tipo de retorno e o identificador da função inserirPessoa (sem parâmetros): 6 pontos;
+•	Inicializar uma estrutura Pessoa dentro da função: 4 pontos;
+•	O utilizador deverá preencher todos os atributos da pessoa (incluindo a morada) num total de 6 atributos: 18 pontos. Descontar 3 pontos por cada atributo não preenchido. Se o aluno preencher menos de 3 atributos corretamente, a resposta recebe 0 pontos;
+•	Retornar a estrutura Pessoa corretamente preenchida: 5 pontos;
+•	Penalização por elementos desnecessários ou errados: 
+o	-5% a -10% por elementos desnecessários que não afetam o funcionamento;
+o	-10% a -20% por erros que alteram o comportamento esperado.
+•	Atribuir 0 pontos se ocorrer qualquer uma das seguintes situações:
+o	Não responder.
+","33.0","1","1","2025-03-18T12:09:42",""
+"327","31","Implementação das Instruções no main","O aluno deve realizar todas as instruções definidas no enunciado dentro da função main.","•	Ler corretamente o número de pessoas (com cin): 2 pontos;
+•	Inicializar corretamente um vetor dinâmico (new Pessoa[n]): 6 pontos;
+•	Preencher o vetor chamando a função inserirPessoa para cada pessoa:
+o	Utilizar um ciclo for ou while para iterar até n: 6 pontos;
+o	Preencher corretamente uma posição do vetor com uma Pessoa retornada de inserirPessoa: 6 pontos; 
+•	Imprimir corretamente o total de pessoas registadas: 4 pontos;
+•	Libertar a memória alocada dinamicamente (delete[]): 6 pontos;
+•	Penalização por elementos desnecessários ou errados: 
+o	-5% a -10% por elementos desnecessários que não afetam o funcionamento;
+o	-10% a -20% por erros que alteram o comportamento esperado.
+•	Atribuir 0 pontos se ocorrer qualquer uma das seguintes situações:
+o	Não responder.","30.0","1","1","2025-03-18T12:10:47",""
+"328","27","Identificação da resposta correta","O aluno deve indicar a alínea c) ou “É possível comparar duas strings usando o operador de igualdade (==)”.","•	Se indicar a alínea c) ou” É possível comparar duas strings usando o operador de igualdade (==)”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","2","1","2025-03-18T12:04:49",""
+"329","27","Identificação da resposta correta","O aluno deve indicar a alínea c) ou “É possível comparar duas strings usando o operador de igualdade (==)”.","•	Se indicar a alínea c) ou” É possível comparar duas strings usando o operador de igualdade (==)”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","3","1","2025-03-18T12:04:49",""
+"330","27","Identificação da resposta correta","O aluno deve indicar a alínea c) ou “É possível comparar duas strings usando o operador de igualdade (==)”.","•	Se indicar a alínea c) ou” É possível comparar duas strings usando o operador de igualdade (==)”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","4","1","2025-03-18T12:04:49",""
+"331","27","Identificação da resposta correta","O aluno deve indicar a alínea c) ou “É possível comparar duas strings usando o operador de igualdade (==)”.","•	Se indicar a alínea c) ou” É possível comparar duas strings usando o operador de igualdade (==)”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","5","1","2025-03-18T12:04:49",""
+"334","28","Identificação da resposta correta","O aluno deve indicar a alínea b) ou “int* arr = new int[10]”.","•	Se indicar a alínea b) ou ”int* arr = new int[10]”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","2","1","2025-03-18T12:06:18",""
+"335","28","Identificação da resposta correta","O aluno deve indicar a alínea b) ou “int* arr = new int[10]”.","•	Se indicar a alínea b) ou ”int* arr = new int[10]”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","3","1","2025-03-18T12:06:18",""
+"336","28","Identificação da resposta correta","O aluno deve indicar a alínea b) ou “int* arr = new int[10]”.","•	Se indicar a alínea b) ou ”int* arr = new int[10]”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","4","1","2025-03-18T12:06:18",""
+"337","28","Identificação da resposta correta","O aluno deve indicar a alínea b) ou “int* arr = new int[10]”.","•	Se indicar a alínea b) ou ”int* arr = new int[10]”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","5","1","2025-03-18T12:06:18",""
+"340","29","Identificação da resposta correta","O aluno deve indicar a alínea a) ou “Aluno a = {123, ""Ana"", 16.5}”.","•	Se indicar a alínea a) ou “Aluno a = {123, ""Ana"", 16.5}”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","2","1","2025-03-18T12:07:21",""
+"341","29","Identificação da resposta correta","O aluno deve indicar a alínea a) ou “Aluno a = {123, ""Ana"", 16.5}”.","•	Se indicar a alínea a) ou “Aluno a = {123, ""Ana"", 16.5}”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","3","1","2025-03-18T12:07:21",""
+"342","29","Identificação da resposta correta","O aluno deve indicar a alínea a) ou “Aluno a = {123, ""Ana"", 16.5}”.","•	Se indicar a alínea a) ou “Aluno a = {123, ""Ana"", 16.5}”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","4","1","2025-03-18T12:07:21",""
+"343","29","Identificação da resposta correta","O aluno deve indicar a alínea a) ou “Aluno a = {123, ""Ana"", 16.5}”.","•	Se indicar a alínea a) ou “Aluno a = {123, ""Ana"", 16.5}”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","5","1","2025-03-18T12:07:21",""
+"346","26","Distingue e descreve ambos os modos de acesso","Este critério avalia a capacidade do estudante de identificar, explicar e diferenciar os modos ""ios::in"" e ""ios::out"", destacando suas finalidades e implicações.","Descrição: Este critério avalia a capacidade do estudante de identificar, explicar e diferenciar os modos ""ios::in"" e ""ios::out"", destacando suas finalidades e implicações.
+
+Subcritério 1: Descrição do modo ios::in
+a)	Identificação correta do modo:
+Descrição: Explica que ""ios::in"" abre o ficheiro exclusivamente para leitura, sem permitir alterações ao conteúdo.
+Pontuação:
+•	Resposta completa e correta (4 pontos)
+•	Resposta parcialmente correta (ex.: menciona leitura, mas não especifica que o conteúdo é preservado) (2 a 3 pontos)
+•	Resposta incorreta ou ausente (0 pontos)
+
+b)	Descrição complementar
+Descrição: Esclarece que, ao utilizar ""ios::in"", o conteúdo original do ficheiro é preservado e somente pode ser extraído para utilização (ex.: leitura de dados).
+Pontuação:
+•	Resposta completa e correta (4 pontos)
+•	esposta parcialmente correta (ex.: menciona leitura, mas não explica a preservação do conteúdo) (2 a 3 pontos)
+•	Resposta incorreta ou ausente (0 pontos)
+
+
+
+
+Subcritério 2: Descrição do modo ios::out
+
+a)	Identificação correta do modo
+Descrição: Explica que ""ios::out"" abre o ficheiro para escrita e, se o ficheiro já existir, geralmente sobrescreve o conteúdo pré-existente (ou cria o ficheiro, se não existir).
+Pontuação:
+•	Resposta completa e correta (4 pontos)
+•	Resposta parcialmente correta (ex.: menciona escrita, mas não especifica a sobrescrita ou criação) (2 a 3 pontos)
+•	Resposta incorreta ou ausente (0 pontos)
+
+b)	Descrição complementar
+Descrição: Explica que o uso de ""ios::out"" destina-se à modificação ou criação de dados, evidenciando as implicações que esse comportamento possui para a integridade dos dados previamente armazenados.
+Pontuação:
+•	Resposta completa e correta (4 pontos)
+•	Resposta parcialmente correta (ex.: menciona escrita, mas não detalha as implicações) (2 a 3 pontos)
+•	Resposta incorreta ou ausente (0 pontos)
+
+Subcritério 3: Comparação clara entre os dois modos
+Descrição: Destaca, de forma objetiva, a diferença essencial:  ""ios::in"" é utilizado para leitura (não altera os dados), enquanto ""ios::out"" é usado para escrita (possivelmente alterando ou substituindo os dados).
+Pontuação:
+•	Comparação clara e correta (4 pontos)
+•	Comparação incompleta ou ambígua (2 a 3 pontos)
+•	Resposta incorreta ou ausente (0 pontos)
+
+Penalização: Se a resposta incluir informações contraditórias ou confusas (ex.: misturar funções dos modos ou atribuir comportamentos incorretos), aplicar uma dedução de até -4 pontos (20% do total deste critério)
+","20.0","2","1","2025-03-30T13:23:08",""
+"347","26","Escreve um exemplo de código simples que efetue a leitura de um ficheiro de texto","Escreve um exemplo de código simples que efetue a leitura de um ficheiro de texto","Subcritério 1: Abertura do ficheiro em modo de leitura
+Descrição: O exemplo deve declarar um objeto (ex.: do tipo `fstream` ou `ifstream`) e utilizar o método `open()` com o argumento ""ios::in"". 
+Pontuação:
+•	Declaração e abertura corretas (5 pontos)
+•	Declaração ou abertura parcialmente correta (ex.: omite o uso de ""ios::in"", mas o exemplo ainda funciona) (2 a 4 pontos)
+•	Declaração ou abertura ausente ou incorreta (0 pontos)
+
+Subcritério 2: Estrutura para leitura do ficheiro
+Descrição: O código precisa demonstrar a leitura do conteúdo do ficheiro (ex.: utilizando um `while` com `getline` ou outra técnica adequada).
+Pontuação:
+•	Estrutura funcional e completa (7 pontos)
+•	Estrutura parcialmente funcional (ex.: leitura incompleta ou com erros menores) (4 a 6 pontos)
+•	Estrutura ausente ou incorreta (0 pontos)
+
+Subcritério 3: Exibição dos dados lidos
+Descrição: O exemplo deve demonstrar, mesmo que de forma simples, como os dados lidos são utilizados ou exibidos (ex.: usando `cout`).
+Pontuação:
+•	Exibição clara e funcional (3 pontos)
+•	Exibição parcial ou incompleta (1 a 2 pontos)
+•	Exibição ausente ou incorreta (0 pontos)
+
+Penalização: Se o exemplo incluir elementos que desviem do objetivo (ex.: misturar operações de escrita ou incluir códigos que causem confusão na leitura do ficheiro), aplicar uma dedução de até -3 pontos (20% do total deste critério).
+","15.0","2","1","2025-03-30T13:23:59",""
+"348","26","Descreve a finalidade da função close()","Descreve a finalidade da função close()","Subcritério 1: Identificação da ação da função close()
+Descrição: Descreve que `close()` efetivamente encerra o fluxo de comunicação com o ficheiro, fechando-o.
+Pontuação:
+•	Resposta completa e correta (7 pontos)
+•	Resposta parcialmente correta (ex.: menciona fechamento, mas não explica o encerramento do fluxo) (4 a 6 pontos)
+•	Resposta ausente ou incorreta (0 pontos)
+
+Subcritério 2: Explicação da importância de utilizar close()
+Descrição: Detalha que fechar o ficheiro é fundamental para garantir que todos os dados sejam escritos (no caso de operações de saída), para prevenir corrupção de dados e para liberar recursos, permitindo que outros processos possam acessar o ficheiro.
+Pontuação:
+•	Resposta completa e correta (5 pontos)
+•	Resposta parcialmente correta (ex.: menciona liberação de recursos, mas não detalha a prevenção de problemas) (3 a 4 pontos)
+•	Resposta ausente ou incorreta (0 pontos)
+
+Subcritério 3: Relevância do uso da função close() para prevenir problemas futuros
+Descrição: Ressalta que utilizar `close()` é importante para evitar bloqueios no ficheiro, garantir que outros processos possam acessá-lo posteriormente e que o comportamento geral do programa se mantenha estável.
+Pontuação:
+•	Resposta completa e correta (3 pontos)
+•	Resposta parcialmente correta (1 a 2 pontos)
+•	Resposta ausente ou incorreta (0 pontos)
+Penalização: Caso a explicação inclua informações incorretas ou irrelevantes que possam induzir confusão, aplicar uma dedução de até -3 pontos (20% do total deste critério).
+","15.0","2","1","2025-03-30T13:24:26",""
+"349","31","Definição da Estrutura Morada","Definição da Estrutura Morada","Pontuação:
+•	Declaração correta da estrutura com o nome exato ""Morada"" e abertura/fechamento de chaves adequados (2 pontos)
+o	A estrutura deve ser declarada como `struct Morada` e conter abertura `{` e fechamento `}` corretos, seguidos de `;`.
+•	Inclusão do atributo ""rua"" com tipo adequado (3 pontos)
+o	O atributo deve ser declarado com o nome ""rua"" e um tipo apropriado para armazenar texto (ex.: `std::string`)
+•	Inclusão do atributo ""codigoPostal"" com tipo adequado (3 pontos)
+o	O atributo deve ser declarado com o nome ""codigoPostal"" (ou equivalente sem acentos) e um tipo apropriado (ex.: `std::string`).
+•	Inclusão do atributo ""localidade"" com tipo adequado (4 pontos)
+o	O atributo deve ser declarado com o nome ""localidade"" e um tipo apropriado (ex.: `std::string`).
+•	Penalização: Deduzir até 2 pontos (≈20%) se forem incluídos atributos extras ou nomes confusos que desvirtuem a estrutura simples exigida.
+","12.0","2","1","2025-03-30T13:26:06",""
+"350","31","Definição da Estrutura Pessoa","Definição da Estrutura Pessoa","Pontuação:
+•	Declaração correta da estrutura com o nome exato ""Pessoa"" e abertura/fechamento de chaves adequados (2 pontos)
+o	A estrutura deve ser declarada como `struct Pessoa` e conter abertura `{` e fechamento `}` corretos, seguidos de `;`.
+•	Inclusão do atributo ""id"" com tipo adequado (3 pontos) 
+o	O atributo deve ser declarado com o nome ""id"" e tipo `int`.
+•	Inclusão do atributo ""nome"" com tipo adequado (3 pontos)
+o	O atributo deve ser declarado com o nome ""nome"" e tipo apropriado para texto (ex.: `std::string`)
+•	Inclusão do atributo ""dataNascimento"" com tipo adequado (3 pontos)
+o	O atributo deve ser declarado com o nome ""dataNascimento"" e tipo apropriado para texto (ex.: `std::string`).
+•	Inclusão do atributo ""morada"" do tipo Morada (4 pontos)
+o	O atributo deve ser declarado com o nome ""morada"" e tipo `Morada`, garantindo a associação entre as estruturas.
+•	Penalização: Deduzir até 3 pontos (≈20%) se houver erros na associação de tipos ou inclusão de atributos extras que causem confusão.
+","15.0","2","1","2025-03-30T13:26:43",""
+"351","31","Implementar a função inserirPessoa","Implementar a função inserirPessoa","Pontuação:
+•	Definição correta do cabeçalho da função `inserirPessoa` (3 pontos)
+o	A função deve ser declarada com o nome exato `inserirPessoa`, não receber parâmetros e retornar um objeto do tipo `Pessoa`.
+•	Declaração e criação da variável local do tipo Pessoa (3 pontos)
+o	Dentro da função, deve ser declarada uma variável do tipo `Pessoa` (ex.: `Pessoa p;`)
+•	Leitura e armazenamento do atributo ""id"" (4 pontos)
+o	Deve ser apresentada uma mensagem solicitando o valor do ""id"", realizar a leitura (ex.: `std::cin >> p.id`) e limpar o buffer de entrada, se necessário (ex.: `std::cin.ignore()`)
+•	Leitura e armazenamento do atributo ""nome"" (4 pontos)
+o	Deve ser apresentada uma mensagem solicitando o ""nome"" e a leitura deve ser feita com um método que permita capturar espaços (ex.: `std::getline(std::cin, p.nome)`).
+•	Leitura e armazenamento do atributo ""dataNascimento"" (4 pontos)
+o	Deve ser apresentada uma mensagem solicitando a ""data de nascimento"" e a leitura deve ser feita corretamente (ex.: `std::getline(std::cin, p.dataNascimento)`).
+•	Leitura e armazenamento dos atributos da estrutura Morada:
+o	Rua: Solicitar e ler o valor para ""rua"" (4 pontos)
+o	Código Postal: Solicitar e ler o valor para ""codigoPostal"" (4 pontos)
+o	Localidade: Solicitar e ler o valor para ""localidade"" (4 pontos)
+•	Retorno correto da variável do tipo Pessoa (3 pontos)
+o	A função deve retornar a variável do tipo `Pessoa` preenchida corretamente (ex.: `return p;`).
+•	Penalização: Deduzir até 6 pontos (≈18%) se houver inclusão de código desnecessário, ausência de limpeza de buffer ou inconsistências que comprometam a funcionalidade.
+","33.0","2","1","2025-03-30T13:27:05",""
+"352","31","Implementação das Instruções no main","Implementação das Instruções no main","Pontuação:
+•	Inclusão correta das bibliotecas necessárias (3 pontos)
+o	O programa deve incluir as bibliotecas necessárias para entrada/saída e manipulação de strings (ex.: `<iostream>`, `<string>`).
+•	Solicitação do número de pessoas a adicionar (4 pontos)
+o	Deve ser apresentada uma mensagem perguntando quantas pessoas serão adicionadas e o valor deve ser lido corretamente (ex.: `std::cin >> totalPessoas`)
+•	Inicialização correta do vetor dinâmico de Pessoa (5 pontos)
+o	O vetor deve ser alocado dinamicamente com o operador `new` (ex.: `Pessoa* vetor = new Pessoa[totalPessoas];`).
+•	Preenchimento do vetor por meio de chamadas à função `inserirPessoa`:
+o	Uso correto de um ciclo (ex.: `for`) para iterar o número de vezes indicado (5 pontos)
+o	Chamada correta da função `inserirPessoa` para preencher cada posição do vetor (4 pontos)
+•	Impressão do número total de pessoas registradas (3 pontos)
+o	Após o preenchimento, o programa deve exibir corretamente o total de pessoas registradas (ex.: `std::cout << ""Total de pessoas registradas: "" << totalPessoas << std::endl;`).
+•	Libertação correta da memória alocada dinamicamente (6 pontos)
+o	O vetor deve ser libertado corretamente com o operador `delete[]` (ex.: `delete[] vetor;`).
+•	Penalização: Deduzir até 6 pontos (≈20%) se houver problemas na alocação/desalocação de memória ou inclusão de elementos que alterem o comportamento esperado.
+","30.0","2","1","2025-03-30T13:27:33",""
+"353","26","Explicação dos Modos de Acesso ios::in e ios::out","Explicação dos Modos de Acesso ios::in e ios::out","Subcritério 1: Explicação do Modo `ios::in`
+Pontuação:
+•	Descrição completa e correta (10 pontos)
+o	O estudante deve explicar que o modo `ios::in` é utilizado para abrir um ficheiro com permissão exclusiva para leitura, preservando o conteúdo original sem permitir alterações.
+•	Descrição parcial (5 a 7 pontos)
+o	O estudante menciona que `ios::in` é para leitura, mas não aborda a preservação do conteúdo ou apresenta informações incompletas.
+•	Ausência ou descrição incorreta (0 pontos)
+o	O estudante não menciona o modo `ios::in` ou apresenta informações incorretas.
+
+
+Subcritério 2: Explicação do Modo `ios::out`
+Pontuação:
+•	Descrição completa e correta (10 pontos)
+o	O estudante deve explicar que o modo `ios::out` abre o ficheiro para escrita, podendo apagar o conteúdo anterior se o ficheiro já existir ou criá-lo se não existir.
+•	Descrição parcial (5 a 7 pontos)
+o	O estudante menciona que `ios::out` é para escrita, mas não aborda a questão da substituição do conteúdo ou apresenta informações incompletas.
+•	Ausência ou descrição incorreta (0 pontos)
+o	O estudante não menciona o modo `ios::out` ou apresenta informações incorretas.
+
+Penalização: Se o estudante incluir informações contraditórias ou confusas que distorçam o funcionamento dos modos `ios::in` e `ios::out`, aplicar uma penalização de até -20% dos 20 pontos (máximo de -4 pontos).
+","20.0","3","1","2025-03-30T13:28:36",""
+"356","26","Exemplo de Código para Leitura","Exemplo de Código para Leitura","Subcritério 1: Declaração e Abertura do Ficheiro com `ios::in`
+Pontuação:
+•	Código completo e correto (5 pontos)
+o	O exemplo deve demonstrar a criação de um objeto do tipo `fstream` (ou similar) e a abertura de um ficheiro em modo leitura utilizando `ios::in`.
+•	Código parcial ou com erros menores (2 a 3 pontos)
+o	O exemplo indica a intenção de abrir o ficheiro, mas apresenta erros ou omissões (por exemplo, não especifica o modo `ios::in` corretamente).
+•	Ausência ou uso incorreto (0 pontos)
+o	O exemplo não demonstra a abertura do ficheiro ou utiliza modos de abertura incorretos.
+
+Subcritério 2: Verificação de Sucesso na Abertura do Ficheiro (5 pontos)
+Pontuação:
+•	Verificação explícita e correta (5 pontos)
+o	O exemplo deve incluir uma verificação (como `is_open()` ou equivalente) para confirmar que o ficheiro foi aberto com sucesso antes de proceder à leitura.
+•	 Verificação incompleta ou ambígua (2 a 3 pontos)
+o	O exemplo apresenta uma verificação implícita ou incompleta (por exemplo, verifica a abertura, mas de forma inadequada ou com lógica falha).
+•	Ausência de verificação (0 pontos)
+o	O exemplo não verifica se o ficheiro foi aberto corretamente.
+
+Subcritério 3: Estrutura de Leitura do Ficheiro (5 pontos)
+Pontuação:
+•	Estrutura completa e correta (5 pontos)
+o	O exemplo deve demonstrar a leitura do conteúdo do ficheiro utilizando uma estrutura de repetição (como `while` com `getline()` ou equivalente), evidenciando a extração dos dados.
+•	Estrutura parcial ou incompleta (2 a 3 pontos)
+o	O exemplo apresenta uma tentativa de leitura, mas com erros ou omissões (por exemplo, lê apenas uma linha ou não utiliza uma estrutura de repetição adequada).
+•	Ausência ou erro que inviabilize a leitura (0 pontos)
+o	O exemplo não demonstra a leitura do ficheiro ou apresenta erros que tornam a leitura impossível.
+
+Penalização: Se o exemplo incluir elementos desnecessários (como bibliotecas ou declarações de função, quando não solicitados) ou comandos confusos que comprometam a clareza, aplicar uma penalização de até -20% dos 15 pontos (máximo de -3 pontos).
+","15.0","3","1","2025-03-30T13:29:56",""
+"357","26","Função close() e sua Importância","Função close() e sua Importância","Subcritério 1: Explicação da Finalidade da Função `close()`
+Pontuação:
+•	Descrição completa e correta (7 pontos)
+o	O estudante deve explicar que a função `close()` fecha o fluxo do ficheiro, liberando os recursos do sistema e garantindo a finalização correta do acesso ao ficheiro.
+•	 Descrição parcial (3 a 5 pontos)
+o	O estudante menciona que `close()` fecha o ficheiro, mas não detalha a liberação de recursos ou o impacto de um fechamento inadequado.
+•	Ausência ou explicação incorreta (0 pontos)
+o	O estudante não menciona a função `close()` ou apresenta informações incorretas.
+
+Subcritério 2: Explicação da importância de utilizar close()
+Pontuação:
+•	Justificação completa e clara (8 pontos):
+o	O estudante deve justificar que o uso da função `close()` é importante para:
+	Garantir que todas as operações pendentes (como gravações) sejam finalizadas corretamente;
+	Libertar os recursos do sistema, prevenindo vazamentos;
+	Evitar bloqueios ou corrupção do ficheiro.
+•	 Justificação parcial (3 a 6 pontos)
+o	O estudante menciona apenas um ou dois motivos, sem explorar completamente os benefícios do uso de `close()`.
+•	Ausência ou explicação incorreta (0 pontos)
+o	O estudante não justifica a importância de `close()` ou apresenta informações incorretas.
+
+Penalização: Se o estudante incluir informações equivocadas ou irrelevantes que confundam o conceito ou a importância de `close()`, aplicar uma penalização de até -20% dos 15 pontos (máximo de -3 pontos).
+","15.0","3","1","2025-03-30T13:30:27",""
+"358","31","Estruturas de Dados","Este critério avalia a definição correta das estruturas de dados solicitadas: Morada e Pessoa.","Subcritério 1: Declaração da estrutura `Morada`
+Pontuação:
+•	Declaração da estrutura com o nome `Morada` e abertura/fechamento corretos (1 ponto)
+•	Campo `rua` declarado com tipo adequado (ex.: `string`) (3 pontos)
+•	Campo `codigoPostal` declarado com tipo adequado (ex.: `string`) (3 pontos)
+•	Campo `localidade` declarado com tipo adequado (ex.: `string`) (3 pontos)
+
+Subcritério 2: Declaração da estrutura `Pessoa`
+Pontuação:
+•	Declaração da estrutura com o nome `Pessoa` e abertura/fechamento corretos (1 ponto)
+•	Campo `id` declarado com tipo adequado (ex.: `int`) (3 pontos)
+•	Campo `nome` declarado com tipo adequado (ex.: `string`) (3 pontos)
+•	Campo `dataNascimento` declarado com tipo adequado (ex.: `string`) (2 pontos)
+•	Campo `morada` declarado com tipo `Morada` (1 ponto)
+Penalização: Se forem adicionados elementos desnecessários ou incorretos que alterem a funcionalidade ou a clareza, aplicar penalização de até -20% (máximo de -4 pontos neste critério).
+","20.0","3","1","2025-03-30T13:31:31",""
+"359","31","Função inserirPessoa","Este critério avalia a implementação da função inserirPessoa, que deve criar, preencher e retornar uma estrutura `Pessoa` com todos os seus atributos.","Subcritério 1: Assinatura e estrutura básica da função (5 pontos)
+Pontuação:
+•	Assinatura correta da função com o nome `inserirPessoa`, sem parâmetros e com retorno do tipo `Pessoa` (3 pontos)
+•	Inclusão correta das chaves de abertura e fechamento da função (2 pontos)
+
+Subcritério 2: Leitura e armazenamento dos atributos da `Pessoa`
+Pontuação:
+•	Leitura e armazenamento do `id` com uso correto de `cin` e, se necessário, `cin.ignore()` (5 pontos)
+•	Leitura e armazenamento do `nome` (preferencialmente com `getline` para capturar strings com espaços) (5 pontos)
+•	Leitura e armazenamento da `dataNascimento` (5 pontos)
+
+Subcritério 3: Leitura e armazenamento dos atributos da `Morada`
+Pontuação:
+•	Leitura e armazenamento do campo `rua` (3 pontos)
+•	Leitura e armazenamento do campo `codigoPostal` (3 pontos)
+•	Leitura e armazenamento do campo `localidade` (3 pontos)
+
+Subcritério 4: Retorno da estrutura preenchida
+Pontuação:
+•	Uso correto da instrução `return` para devolver a estrutura `Pessoa` preenchida (1 ponto)
+
+Penalizações: Se forem adicionados elementos desnecessários ou incorretos que alterem a funcionalidade ou a clareza, aplicar penalização de até -20% (máximo de -6 pontos neste critério).
+","30.0","3","1","2025-03-30T13:32:09",""
+"360","31","Lógica no `main` e Gerenciamento Dinâmico de Memória","Este critério avalia a implementação da lógica no main, incluindo a interação com o usuário, a alocação dinâmica de memória, o preenchimento do vetor e a liberação da memória.","Subcritério 1: Leitura do número de pessoas a serem adicionadas
+Pontuação:
+•	Solicitação ao usuário para informar o número de pessoas (2 pontos)
+•	Leitura correta do valor com `cin` e, se necessário, uso de `cin.ignore()` (3 pontos)
+
+Subcritério 2: Inicialização do vetor dinâmico de `Pessoa`
+Pontuação:
+•	Uso correto do operador `new` para alocar dinamicamente um vetor do tipo `Pessoa` com o tamanho informado (8 pontos)
+
+Subcritério 3: Preenchimento do vetor com chamadas à função `inserirPessoa`
+Pontuação:
+•	Implementação correta de um laço (ex.: `for`) para iterar de 0 até o número de pessoas informado (5 pontos)
+•	Chamada correta à função `inserirPessoa` em cada iteração e armazenamento adequado no vetor (5 pontos)
+
+Subcritério 4: Impressão do número total de pessoas registradas
+Pontuação:
+•	Impressão correta do número total de pessoas registradas (4 pontos)
+
+Subcritério 5: Liberação da memória alocada dinamicamente
+Pontuação:
+•	Uso correto do operador `delete[]` para liberar a memória do vetor de `Pessoa` (3 pontos)
+
+Penalizações: Se forem adicionados elementos desnecessários ou incorretos que alterem a funcionalidade ou a clareza, aplicar penalização de até -20% (máximo de -6 pontos neste critério).
+","30.0","3","1","2025-03-30T13:32:45",""
+"361","31","Inclusão de Bibliotecas Necessárias","Este critério avalia se as bibliotecas essenciais foram incluídas corretamente no programa.","Subcritério 1: Inclusão das bibliotecas fundamentais
+Pontuação:
+•	Inclusão correta da biblioteca `<iostream>` (4 pontos)
+•	Inclusão correta da biblioteca `<string>` (4 pontos)
+
+Subcritério 2: Uso do namespace padrão
+Pontuação:
+•	Inclusão correta da diretiva `using namespace std;` ou uso explícito do namespace em chamadas (ex.: `std::cin`, `std::cout`) (2 pontos)
+
+Penalização: Se forem incluídas bibliotecas desnecessárias ou houver ausência de alguma biblioteca essencial, aplicar penalização de até -20% (máximo de -2 pontos neste critério).
+","10.0","3","1","2025-03-30T13:33:19",""
+"362","26","Distingue e descreve ambos os modos de acesso","O aluno deve diferenciar e explicar corretamente os modos ios::in e `os::out do fstream.","Subcritério 1: Descrição do modo `ios::in`
+Pontuação:
+•	Pontuação Completa (10 pts)
+o	Explica que `ios::in` abre o arquivo **apenas para leitura**, preservando seu conteúdo original.
+•	Pontuação Parcial (5 pts)
+o	Descrição vaga ou incompleta (ex.: ""usado para ler"" sem detalhes).
+•	Pontuação Nula (0 pts)
+o	Descrição incorreta ou ausente.
+
+Subcritério 2: Descrição do modo `ios::out`
+Pontuação:
+•	Pontuação Completa (10 pts)
+o	Explica que `ios::out` abre o arquivo **para escrita**, sobrescrevendo o conteúdo existente (se o arquivo já existir).
+•	Pontuação Parcial (5 pts)
+o	Descrição vaga (ex.: ""usado para escrever"" sem mencionar sobrescrita).
+•	Pontuação Nula (0 pts)
+o	Descrição incorreta ou ausente.
+Penalização: -4 pontos (20% do critério) se houver confusão entre os modos ou informações incorretas (ex.: afirmar que `ios::out` preserva o conteúdo).
+","20.0","4","1","2025-03-30T13:34:39",""
+"363","26","Exemplo de código para leitura de um ficheiro de texto","O aluno deve fornecer um código funcional que demonstre a abertura, leitura e fechamento de um arquivo em modo ios::in.","Subcritério 1: Abertura correta do arquivo
+Pontuação:
+•	Pontuação Completa (5 pts)
+o	Usa `fstream` ou `ifstream` com `ios::in` (ex.: `arquivo.open(""nome.txt"", ios::in)`).
+•	Pontuação Nula (0 pts)
+o	Modo incorreto (ex.: `ios::out`) ou sintaxe errada.
+
+Subcritério 2: Leitura do conteúdo
+Pontuação:
+•	Pontuação Completa (5 pts)
+o	Inclui operação de leitura válida (ex.: `getline(arquivo, linha)` ou `arquivo >> dados`)
+•	Pontuação Parcial (3 pts)
+o	Leitura incompleta (ex.: lê apenas um caractere).
+•	Pontuação Nula (0 pts)
+o	Ausência de leitura ou método incorreto.
+
+Subcritério 3: Fecho do ficheiro
+Pontuação:
+•	Pontuação Completa (5 pts)
+o	Chama `arquivo.close()` após a leitura.
+•	Pontuação Nula (0 pts)
+o	Ausência de `close()`.
+
+Penalização: -3 pontos (20% do critério) por erros de sintaxe, elementos desnecessários ou lógica que impeça a execução.  
+","15.0","4","1","2025-03-30T13:35:10",""
+"364","26","Descreve a finalidade da função close()","O aluno deve explicar a importância de usar close() após operações com arquivos.","Subcritério 1: Explicação da função
+Pontuação:
+•	Pontuação Completa (10 pts)
+o	Descreve que `close()` libera recursos do sistema operacional, fecha o fluxo do arquivo e garante que os dados sejam salvos.
+•	Pontuação Parcial (5 pts)
+o	Menciona apenas uma das finalidades (ex.: ""fecha o arquivo"").
+•	Pontuação Nula (0 pts)
+o	Explicação incorreta ou ausente.
+
+Subcritério 2: Importância do uso
+Pontuação:
+•	Pontuação Completa (5 pts)
+o	Explica consequências de não usar `close()` (ex.: vazamento de recursos, corrupção de dados ou bloqueio do arquivo).
+•	Pontuação Parcial (5 pts)
+o	Menção genérica (ex.: ""é importante fechar"").
+•	Pontuação Nula (0 pts)
+o	Explicação incorreta ou ausente.
+Penalização: -3 pontos (20% do critério) por informações irrelevantes ou incorretas (ex.: ""`close()` apaga o arquivo"").
+","15.0","4","1","2025-03-30T13:35:41",""
+"365","31","Definição da Estrutura Morada","Definição da Estrutura Morada","Pontuação:
+•	Definição correta da estrutura `Morada` (12 pontos)
+o	A estrutura deve conter **exatamente** os atributos:
+	`rua` (tipo `string`)
+	`codigoPostal` (tipo `string`)
+	`localidade` (tipo `string`)
+o	Declaração correta: `struct Morada { ... };`.
+•	Pontuação parcial:
+o	Atributos corretos, mas com erros de tipo (ex.: `char[]` em vez de `string`) (6 pontos)
+o	Nome da estrutura incorreto (ex.: `Endereco`) (0 pontos)
+•	Implementação incorreta ou ausente (0 pontos)
+
+Penalização: Atributos extras não solicitados: -2 pontos
+","12.0","4","1","2025-03-30T13:36:24",""
+"366","31","Definição da Estrutura Pessoa","Definição da Estrutura Pessoa","Pontuação:
+•	Definição correta da estrutura `Pessoa` (15 pontos)
+o	A estrutura deve conter **exatamente** os atributos:
+	`id` (tipo `int`)
+	`nome` (tipo `string`)
+	`dataNascimento` (tipo `string`)
+	`morada` (tipo `Morada`, usando a estrutura definida anteriormente).
+o	Declaração correta: ` struct Pessoa { ... };`.
+•	Pontuação parcial:
+o	Atributos corretos, mas com erros de tipo (ex.: `morada` como `string`) (8 pontos)
+o	Nome da estrutura incorreto (ex.: `Individuo`) (0 pontos)
+•	Implementação incorreta ou ausente (0 pontos)
+•	Penalização: Atributos extras não solicitados: -3 pontos
+","15.0","4","1","2025-03-30T13:37:00",""
+"367","31","Implementação da Função inserirPessoa","Implementação da Função inserirPessoa","Pontuação:
+•	Definição da função:
+o	Nome correto (`inserirPessoa`) e retorno do tipo `Pessoa` (5 pontos)
+o	Nome incorreto ou retorno errado (0 pontos)
+•	Leitura e armazenamento dos dados:
+o	ID (5 pontos):
+	Leitura com `cin` e armazenamento em `p.id`
+	Erro: Uso de `getline` ou tipo incorreto (0 pontos)
+o	Nome e Data de Nascimento (6 pontos, 3 cada)
+o	Morada:
+	Leitura de `rua`, `codigoPostal` e `localidade` (9 pontos, cada 3 pontos)
+	Erro parcial: Leitura correta de apenas 2 campos (6 pontos)
+•	Retorno da estrutura:
+o	Retorno correto da variável `Pessoa` preenchida (5 pontos)
+o	Erro: Retorno de tipo incorreto ou ausente (0 pontos)
+•	Estrutura básica:
+o	Abertura/fecho de chaves e lógica organizada (3 pontos)
+o	Erro: Falta de chaves ou estrutura confusa (0 pontos)
+Penalização: Mensagens de prompt inconsistentes ou desnecessárias – 3 pontos
+","33.0","4","1","2025-03-30T13:37:42",""
+"368","31","Implementação das Instruções no main","Implementação das Instruções no main","Pontuação:
+•	Leitura do número de pessoas:
+o	Mensagem clara (""Quantas pessoas deseja adicionar? "") e leitura com `cin` (5 pontos)
+o	Erro: Mensagem ausente ou leitura incorreta (0 pontos)
+•	Alocação dinâmica do vetor:
+o	Uso correto de `new Pessoa[N]` (5 pontos)
+o	Erro: Uso de array estático ou sintaxe incorreta (0 pontos)
+•	Preenchimento do vetor:
+o	Loop `for` com chamada correta de `inserirPessoa()` para cada posição (10 pontos)
+o	Erro parcial: Loop incorreto (ex.: `while` sem condição adequada) (5 pontos)
+•	Impressão do total de pessoas:
+o	Mensagem exata: ""Número total de pessoas registadas: "" + `N` (5 pontos)
+o	Erro: Formato ou valor incorreto (0 pontos)
+•	Libertação de memória:
+o	Uso de `delete[] pessoas` (5 pontos)
+o	Erro: Ausência ou uso incorreto (ex.: `delete` sem `[]`) (0 pontos)
+Penalização:
+•	Vazamento de memória (falta de `delete[]`) (- 5 pontos)
+•	Variáveis não utilizadas ou redundantes (-2 pontos)
+","30.0","4","1","2025-03-30T13:38:11",""
+"369","26","Explicação do Modo ios::in","Explicação do Modo ios::in","Pontuação:
+•	Explicação completa e correta, destacando que: (10 pontos)
+o	`ios::in` abre o arquivo somente para leitura;
+o	Preserva o conteúdo original do arquivo;
+o	Não permite modificações no arquivo.
+•	Descrição parcial (5 a 7 pontos)
+o	Explicação parcial, mencionando apenas a função de leitura sem detalhes sobre preservação de conteúdo.
+•	Ausência ou descrição incorreta (0 pontos)
+o	Explicação ausente, incorreta ou que confunde `ios::in` com outros modos.
+•	Penalização: Se incluir informações irrelevantes ou erradas (ex.: afirmar que `ios::in` permite escrita) (-2 pontos)
+","10.0","5","1","2025-03-30T13:39:56",""
+"370","26","Explicação do Modo ios::out","Explicação do Modo ios::out","Pontuação:
+•	Explicação completa e correta, destacando que: (10 pontos)
+o	`ios::out` abre o arquivo para escrita;
+o	Substitui o conteúdo existente (se o arquivo já existir) ou cria um novo arquivo;
+o	Pode ser combinado com outros modos (ex.: `ios::app` para evitar sobrescrita).
+•	Descrição parcial (5 a 7 pontos)
+o	Explicação parcial, mencionando apenas a função de escrita sem detalhes sobre sobrescrita/criação.
+•	Ausência ou descrição incorreta (0 pontos)
+o	Explicação ausente, incorreta ou que confunde `ios::out` com outros modos.
+•	Penalização: Se incluir informações irrelevantes ou erradas (ex.: afirmar que `ios::out` preserva o conteúdo original) (-2 pontos)
+","10.0","5","1","2025-03-30T13:40:22",""
+"371","26","Exemplo de Código Demonstrativo","Exemplo de Código Demonstrativo","Pontuação:
+•	Código completo e funcional, contendo: (15 pontos)
+o	Abertura do arquivo com `ios::in`;
+o	Verificação de sucesso (`is_open()` ou similar);
+o	Leitura do conteúdo (ex.: uso de `getline` ou `>>`);
+o	Fecho explícito com `close()`.
+•	Descrição parcial (8 a 12 pontos)
+o	Código parcialmente correto, mas com omissões (ex.: falta verificação de abertura ou fecho).
+•	Ausência ou descrição incorreta (0 pontos)
+o	Código ausente, sintaticamente incorreto ou que não demonstra o uso de `ios::in`.
+•	Penalização: Se incluir elementos desnecessários (ex.: modo `ios::out` no exemplo) ou erros graves (ex.: leitura incorreta) (-3 pontos)
+","15.0","5","1","2025-03-30T13:40:52",""
+"372","26","Explicação da Função close()","Explicação da Função close()","Pontuação:
+•	Explicação completa e correta, cobrindo: (15 pontos)
+o	Propósito: Liberta recursos do sistema operacional e finaliza o fluxo de arquivo.
+o	Importância:
+	Garante que todos os dados sejam gravados;
+	Evita corrupção de arquivos;
+	Permite que outros programas acedam ao ficheiro.
+•	Descrição parcial (8 a 12 pontos)
+o	Explicação parcial, mencionando apenas liberação de recursos ou importância de forma vaga.
+•	Ausência ou descrição incorreta (0 pontos)
+o	Explicação ausente, incorreta ou que confunde `close()` com outras funções.
+•	Penalização: Se incluir informações irrelevantes (ex.: afirmar que `close()` é opcional) (-3 pontos)
+","15.0","5","1","2025-03-30T13:41:15",""
+"377","31","Definição das estruturas Morada e Pessoa","Definição das estruturas Morada e Pessoa","Subcritério 1: Estrutura Morada
+Pontuação:
+•	Declaração correta de todos os atributos (string rua, string código postal, string localidade) (8 pontos)
+•	Nome exato ""Morada"" e sintaxe correta (abertura/fechamento de chaves) (2 pontos)
+•	Implementação incorreta ou ausente: 0 pontos
+
+Subcritério 2: estrutura Pessoa
+Pontuação:
+•	Declaração correta de todos os atributos (int id, string nome, string data_nascimento, Morada morada) (8 pontos)
+•	Nome exato ""Pessoa"" e sintaxe correta (abertura/fechamento de chaves) (2 pontos)
+•	Implementação incorreta ou ausente: 0 pontos
+Penalização: -2 pontos (-10% da pontuação do critério) por elementos desnecessários que confundam a lógica
+","20.0","5","1","2025-03-30T14:18:41",""
+"378","31","Implementação da função inserirPessoa","Implementação da função inserirPessoa","Subcritério 1: Definição básica
+Pontuação:
+•	Nome exato ""inserirPessoa"" (3 pontos)
+•	Retorno do tipo Pessoa (1 ponto)
+•	Sintaxe correta (abertura/fechamento de chaves) (1 ponto)
+•	Implementação incorreta ou ausente: 0 pontos
+
+Subcritério 2: Recolha de dados
+Pontuação:
+•	Leitura correta de todos os atributos (3 pontos cada: id, nome, data_nascimento, rua, código postal, localidade)
+•	Uso adequado de cin/getline para evitar problemas de buffer (3 pontos)
+•	Mensagens de prompt claras (3 pontos)
+•	Implementação parcial: Pontos proporcionais aos atributos corretamente lidos
+•	Implementação incorreta ou ausente: 0 pontos
+
+Subcritério 3: Retorno da estrutura
+Pontuação:
+•	Atribuição correta de todos os valores à estrutura retornada (5 pontos)
+•	Implementação incorreta ou ausente: 0 pontos
+Penalização: -2.5 pontos (-10% da pontuação do critério) por elementos desnecessários que confundam a lógica
+","25.0","5","1","2025-03-30T14:19:08",""
+"379","31","Lógica principal no main","Lógica principal no main","Subcritério 1: Solicitação do número de pessoas
+Pontuação:
+•	Mensagem correta ao usuário (2 pontos)
+•	Leitura correta do valor (3 pontos)
+•	Implementação incorreta ou ausente: 0 pontos
+
+Subcritério 2: Alocação dinâmica
+Pontuação:
+•	Declaração correta do ponteiro (2 pontos)
+•	Uso correto de new Pessoa[] (3 pontos)
+•	Implementação incorreta ou ausente: 0 pontos
+
+Subcritério 3: Preenchimento do vetor
+Pontuação:
+•	Loop for corretamente implementado (5 pontos)
+•	Chamada correta de inserirPessoa para cada posição (5 pontos)
+•	Implementação parcial: Pontos proporcionais aos componentes corretos
+•	Implementação incorreta ou ausente: 0 pontos
+
+Subcritério 4: Saída e liberação de memória
+Pontuação:
+•	Impressão correta do total de pessoas (2 pontos)
+•	Uso correto de delete[] (3 pontos)
+•	Implementação incorreta ou ausente: 0 pontos
+
+Penalização: -2.5 pontos (-10% da pontuação do critério) por elementos desnecessários que confundam a lógica
+","25.0","5","1","2025-03-30T14:19:30",""
+"380","31","Tratamento de entrada/saída e bibliotecas","Tratamento de entrada/saída e bibliotecas","Subcritério 1: Bibliotecas necessárias
+Pontuação:
+•	#include <iostream> (5 pontos)
+•	#include <string> (5 pontos)
+•	Implementação incorreta ou ausente: 0 pontos
+
+Subcritério 2: Preenchimento do vetor
+Pontuação:
+•	Mensagens claras para o utilizador (5 pontos)
+•	Formatação correta das saídas (5 pontos)
+•	Implementação incorreta ou ausente: 0 pontos
+Penalização: -2 pontos (-10% da pontuação do critério) por elementos desnecessários que confundam a lógica
+","20.0","5","1","2025-03-30T14:20:47",""
+"399","32","Descreve a remoção por fusão numa árvore binária de pesquisa","O aluno deve explicar, de forma teórica e geral, como funciona o método de remoção por fusão em BSTs. ","•	15 pontos: Explicação completa e correta, detalhando: (1) a remoção do nó N; (2) a subárvore esquerda L (ou direita R, conforme convenção) toma o lugar de N; (3) o nó M com o maior valor na subárvore L (ou menor em R) é encontrado; (4) a subárvore direita R original (ou esquerda L) de N torna-se a subárvore direita (ou esquerda) de M, garantindo a manutenção da propriedade da BST.
+•	10-14 pontos: Explicação correta na generalidade, mas omite um detalhe chave (ex: como se garante a manutenção da ordem ao ligar as subárvores) OU contém uma pequena imprecisão que não invalida o conceito geral.
+•	5-9 pontos: Identifica a ideia principal (substituir o nó por uma subárvore e ""juntar"" a outra), mas a explicação do mecanismo exato de fusão (encontrar M e ligar R/L) é vaga, incompleta ou contém erros significativos.
+•	1-4 pontos: Tentativa muito básica, mencionando apenas a remoção ou a ideia de juntar subárvores, sem detalhe correto ou com erros conceptuais graves.
+•	0 pontos: Ausência de resposta ou explicação totalmente incorreta.
+","15.0","1","1","2025-05-06T14:02:24",""
+"400","32","Descreve a remoção por cópia numa árvore binária de pesquisa","O aluno deve explicar, de forma teórica e geral, como funciona o método de remoção por cópia em BSTs.","•	15 pontos: Explicação completa e correta, detalhando: (1) a identificação do nó N a remover; (2) a escolha de um valor substituto - o maior valor da subárvore esquerda (predecessor) OU o menor valor da subárvore direita (sucessor) de N; (3) a cópia desse valor para N; (4) a remoção (recursiva) do nó P que continha originalmente o valor copiado (explicando que P é mais fácil de remover por ser folha ou ter no máximo um filho).
+•	10-14 pontos: Explicação correta na generalidade, mas omite um detalhe (ex: não menciona explicitamente ambas as opções de substituição - predecessor/sucessor, OU não explica porque a remoção recursiva de P é mais simples) OU contém uma pequena imprecisão.
+•	5-9 pontos: Identifica a ideia principal de copiar um valor (predecessor ou sucessor) e remover o nó original P, mas a explicação é vaga, incompleta, não justifica a escolha ou não explica bem a remoção de P.
+•	1-4 pontos: Tentativa muito básica, mencionando apenas a cópia de valor sem explicar de onde ou como o nó original P é tratado, ou com erros conceptuais graves.
+•	0 pontos: Ausência de resposta ou explicação totalmente incorreta.
+","15.0","1","1","2025-05-06T14:03:30",""
+"401","32","Apresenta a estrutura final da árvore após a remoção do valor 31 utilizando o método de remoção por fusão","O aluno deve apresentar a estrutura final correta da árvore fornecida após remover o nó com valor 31, usando o método de fusão","•	10 pontos: Apresenta a estrutura final exata e correta.
+•	1-5 pontos: Tentativa de aplicação do método, nó 31 removido, mas a estrutura contém múltiplos erros ou viola a propriedade da BST de forma significativa.
+•	0 pontos: Ausência de resposta, método errado aplicado, ou estrutura totalmente incorreta/não resultante da fusão.
+","10.0","1","1","2025-05-06T14:04:05",""
+"402","32","Apresenta a estrutura final da árvore após a remoção do valor 31 utilizando o método de remoção por cópia","O aluno deve apresentar a estrutura final correta da árvore fornecida após remover o nó com valor 31, usando o método de cópia.","•	10 pontos: Apresenta a estrutura final exata e correta
+•	1-5 pontos: Tentativa de aplicação do método, valor 31 substituído, mas a estrutura contém múltiplos erros, não remove corretamente o nó de origem do valor copiado, ou viola a propriedade da BST.
+•	0 pontos: Ausência de resposta, método errado aplicado, ou estrutura totalmente incorreta/não resultante da cópia.
+","10.0","1","1","2025-05-06T14:04:41",""
+"403","38","Identificação da resposta correta","O aluno deve indicar a alínea b) ou “16 49 4”.","•	Se indicar a alínea b) ou” 16 49 4”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","1","1","2025-05-06T14:05:35",""
+"404","39","Identificação da resposta correta","O aluno deve indicar a alínea c) ou “1 2 6 3 8 9”.","•	Se indicar a alínea c) ou ”1 2 6 3 8 9”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","1","1","2025-05-06T14:06:19",""
+"405","40","Identificação da resposta correta","O aluno deve indicar a alínea a) ou “O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa”.","•	Se indicar a alínea a) ou “O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","1","1","2025-05-06T14:06:57",""
+"406","41","Definição da Estrutura nodo e Implementação da Função inserirNodo","O aluno deve usar a estrutura nodo fornecida e implementar corretamente a função inserirNodo para adicionar um novo valor a uma BST.","•	Utilização da Estrutura nodo (2 pontos):
+o	Garante que a struct nodo está definida ou incluída conforme o enunciado (com int dados; nodo* esq; nodo* dir;): 2 pontos. (Se a estrutura estiver incorreta ou ausente: 0 pontos).
+•	Assinatura da Função inserirNodo (3 pontos):
+o	Define a função com o identificador inserirNodo e o tipo de retorno nodo*: 1 ponto. (Nome ou tipo de retorno incorreto: 0 pontos).
+o	Define os parâmetros corretamente: um nodo* (para a raiz/sub-raiz) e um int (para o valor): 2 pontos. (Tipos ou número de parâmetros incorretos: 0 pontos).
+•	Implementação Correta do Caso Base (Nó Nulo) (7 pontos):
+o	Verifica corretamente a condição raiz == NULL: 2 pontos.
+o	Aloca memória para um novo nó (usando new nodo; ou uma função auxiliar novoNodo): 2 pontos.
+o	Inicializa corretamente os campos do novo nó (dados com o valor recebido, esq e dir com NULL): 2 pontos.
+o	Retorna o ponteiro para o novo nó criado nesta condição: 1 ponto.
+•	Implementação Correta do Passo Recursivo (8 pontos):
+o	Compara o valor a inserir com raiz->dados para determinar se deve ir para a esquerda ou direita (usando <, <=, > ou >= de forma consistente com a regra da BST): 2 pontos.
+o	Faz a chamada recursiva à função inserirNodo, passando o ponteiro da subárvore apropriada (raiz->esq ou raiz->dir) e o valor a inserir: 2 pontos.
+o	Atribui o ponteiro retornado pela chamada recursiva de volta ao ponteiro da subárvore correspondente (raiz->esq = ... ou raiz->dir = ...): 2 pontos.
+o	Inclui a instrução return raiz; no final da função (fora das condições if/else do passo recursivo) para devolver o ponteiro da raiz da (sub)árvore atual: 2 pontos.
+•	Penalização por elementos desnecessários ou errados:
+o	-5% a -10% por elementos desnecessários que não afetam o funcionamento;
+o	-10% a -20% por erros que alteram o comportamento esperado.
+•	Atribuir 0 pontos se ocorrer qualquer uma das seguintes situações:
+o	Não responder / Função não implementada / Implementação totalmente incorreta.
+","20.0","1","1","2025-05-06T14:08:19",""
+"407","41","Criação e População da Árvore na Função main (ou equivalente)","O aluno deve demonstrar a criação correta da árvore e a sua população com os valores especificados no enunciado, utilizando a função inserirNodo dentro de um contexto C++ válido (tipicamente a função main).","•	Estrutura Básica e Inicialização (4 pontos):
+o	Define a função main corretamente (assinatura int main()): 1 ponto.
+o	Inclui a diretiva #include <iostream>: 1 ponto.
+o	Declara corretamente uma variável ponteiro do tipo nodo* para a raiz (ex: nodo* root;): 1 ponto.
+o	Inicializa este ponteiro da raiz com NULL antes de qualquer operação de inserção: 1 ponto. (Falta de inicialização ou incorreta: 0 pontos).
+•	População Correta da Árvore (11 pontos):
+o	Utiliza um mecanismo apropriado para processar a lista de valores a inserir (ex: um array e um loop for, ou chamadas sequenciais individuais inserirNodo(root, valor);): 3 pontos.
+o	Dentro do mecanismo escolhido, chama a função inserirNodo corretamente, passando a variável que representa a raiz atual e o valor a ser inserido em cada passo: 3 pontos.
+o	Garante que todos os 10 valores especificados no enunciado ({28, 14, 37, 6, 19, 42, 3, 25, 31, 48}) são efetivamente passados para a função inserirNodo: 3 pontos. (Descontar 0.5 pontos por cada valor em falta ou incorreto na sequência de inserção. Se menos de 5 valores corretos forem processados: 0 pontos nesta sub-alínea).
+o	Atribui o ponteiro retornado pela função inserirNodo de volta à variável que armazena a raiz da árvore (ex: root = inserirNodo(root, valor);), assegurando que a estrutura da árvore é corretamente construída/atualizada: 2 pontos. (Falta desta atribuição compromete a construção da árvore: 0 pontos).
+•	Penalização por elementos desnecessários ou errados:
+o	-5% a -10% por elementos desnecessários que não afetam o funcionamento;
+o	-10% a -20% por erros que alteram o comportamento esperado.
+•	Atribuir 0 pontos (no critério total) se ocorrer qualquer uma das seguintes situações:
+o	Não responder / Código relevante na main ausente / Código totalmente incorreto que não tenta criar ou popular a árvore.
+","15.0","1","1","2025-05-06T14:09:18",""
+"408","41","Implementação da Função existe (Recursiva)","O aluno deve implementar a função existe utilizando uma abordagem estritamente recursiva para determinar se um determinado valor está presente na árvore binária de pesquisa iniciada em raiz.","•	Assinatura da Função (3 pontos):
+o	Define a função com um identificador apropriado (ex: existe) e o tipo de retorno bool: 1 ponto. (Nome inadequado ou tipo de retorno incorreto: 0 pontos).
+o	Define os parâmetros corretamente: um ponteiro nodo* para a raiz/sub-raiz e um int para o valor a ser procurado: 2 pontos. (Tipos, ordem ou número de parâmetros incorretos: 0 pontos).
+•	Implementação Correta do Caso Base 1 (Nó Nulo) (5 pontos):
+o	Verifica corretamente a condição de paragem primária: se raiz == NULL: 3 pontos.
+o	Se a condição raiz == NULL for verdadeira, retorna false (indicando que o valor não foi encontrado nesse ramo): 2 pontos.
+o	Falta desta verificação ou retorno incorreto: 0 pontos no critério Implementação Correta do Caso Base 1.
+•	Implementação Correta do Caso Base 2 (Valor Encontrado) (5 pontos):
+o	Verifica, após a confirmação de que raiz não é NULL, se raiz->dados == valor: 3 pontos.
+o	Se a condição raiz->dados == valor for verdadeira, retorna true (indicando que o valor foi encontrado): 2 pontos.
+o	Falta desta verificação ou retorno incorreto: 0 pontos no critério Implementação Correta do Caso Base 2.
+•	Implementação Correta do Passo Recursivo (7 pontos):
+o	Compara o valor procurado com raiz->dados para decidir se continua a busca na subárvore esquerda ou direita: 2 pontos.
+o	Faz a chamada obrigatoriamente recursiva à própria função existe, passando como argumentos o ponteiro da subárvore correta (raiz->esq ou raiz->dir) e o valor que continua a ser procurado: 3 pontos.
+o	Retorna o valor booleano (true ou false) que é o resultado direto da chamada recursiva realizada no passo anterior: 2 pontos. (Ex: return existe(raiz->esq, valor); ou return existe(raiz->dir, valor);).
+o	Se for utilizada qualquer estrutura iterativa, como while ou for, para a pesquisa principal: 0 pontos no critério Implementação Correta do Passo Recursivo, pois viola o requisito de recursividade.
+•	Penalização por elementos desnecessários ou errados:
+o	-5% a -10% por elementos desnecessários que não afetam o funcionamento;
+o	-10% a -20% por erros que alteram o comportamento esperado.
+•	Atribuir 0 pontos (no critério total) se ocorrer qualquer uma das seguintes situações:
+o	Não responder / Código relevante na main ausente / Código totalmente incorreto que não tenta criar ou popular a árvore.
+","20.0","1","1","2025-05-06T14:10:00",""
+"409","41","Implementação da Função imprimirFolhas","O aluno deve implementar a função imprimirFolhas que percorre a árvore binária de pesquisa iniciada em raiz e imprime no ecrã os valores (dados) de todos os nós que são considerados ""folha"" (ou seja, não possuem filhos nem à esquerda nem à direita).","•	Assinatura da Função (2 pontos):
+o	Define a função com um identificador apropriado (ex: imprimirFolhas) e o tipo de retorno void: 1 ponto. (Nome inadequado ou tipo de retorno incorreto: 0 pontos).
+o	Define o parâmetro corretamente: um ponteiro nodo* para a raiz/sub-raiz da árvore a processar: 1 ponto. (Tipo ou número de parâmetros incorretos: 0 pontos).
+•	Tratamento Correto do Caso Base (Nó Nulo) (3 pontos):
+o	Inclui uma verificação inicial para o caso de raiz == NULL: 2 pontos.
+o	Se raiz == NULL, a função deve simplesmente retornar (return;) ou garantir que nenhuma operação sobre raiz (como raiz->dados ou raiz->esq) seja tentada, prevenindo erros: 1 ponto.
+o	Ausência desta verificação resultará em erro de execução para ramos vazios: 0 pontos no critério Tratamento Correto do Caso Base (Nó Nulo).
+•	Identificação e Ação sobre Nós Folha (5 pontos):
+o	Verifica corretamente a condição que define um nó como folha: raiz->esq == NULL && raiz->dir == NULL: 3 pontos. (A condição deve verificar ambos os ponteiros. Condição incompleta (1 ponto) ou incorreta: 0 pontos).
+o	Se a condição de nó folha for verdadeira (e raiz não for NULL), imprime o valor do nó (raiz->dados) no ecrã (usando cout ou printf): 2 pontos. (Impressão ausente, do valor errado, ou feita em nós não-folha: 0 pontos).
+•	Percurso Recursivo Correto para Visitar Todos os Nós (5 pontos):
+o	Inclui uma chamada recursiva à função imprimirFolhas para a subárvore esquerda, passando raiz->esq: 2 pontos.
+o	Inclui uma chamada recursiva à função imprimirFolhas para a subárvore direita, passando raiz->dir: 2 pontos.
+o	As chamadas recursivas devem ser feitas de forma a garantir que todos os nós da árvore sejam eventualmente visitados: 1 ponto;
+o	Falta de uma ou ambas as chamadas impedem o percurso completo: 0 a 2 pontos no critério Percurso Recursivo Correto para Visitar Todos os Nós.
+•	Penalização por elementos desnecessários ou errados:
+o	-5% a -10% por elementos desnecessários que não afetam o funcionamento;
+o	-10% a -20% por erros que alteram o comportamento esperado.
+•	Atribuir 0 pontos (no critério total) se ocorrer qualquer uma das seguintes situações:
+o	Não responder / Código relevante na main ausente / Código totalmente incorreto que não tenta criar ou popular a árvore.
+","15.0","1","1","2025-05-06T14:10:38",""
+"410","41","Implementação da Função somaValores (Recursiva)","O aluno deve implementar a função somaValores utilizando uma abordagem estritamente recursiva para calcular e retornar um valor inteiro (int) que representa a soma de todos os campos dados dos nós presentes na árvore binária de pesquisa iniciada em raiz.","•	Assinatura da Função (3 pontos):
+o	Define a função com um identificador apropriado (ex: somaValores) e o tipo de retorno int (ou um tipo numérico compatível, como long se a soma puder ser muito grande): 1 ponto. (Nome inadequado ou tipo de retorno incorreto/não numérico: 0 pontos).
+o	Define o parâmetro corretamente: um ponteiro nodo* para a raiz/sub-raiz da árvore cuja soma se pretende calcular: 2 pontos. (Tipo ou número de parâmetros incorretos: 0 pontos).
+•	Implementação Correta do Caso Base (Nó Nulo) (6 pontos):
+o	Inclui uma verificação inicial para a condição de paragem da recursão: raiz == NULL: 3 pontos.
+o	Se a condição raiz == NULL for verdadeira (representando uma árvore ou subárvore vazia), a função retorna o valor 0, pois a soma de uma árvore vazia é zero: 3 pontos.
+o	Falta desta verificação ou retorno de um valor diferente de 0 para o caso base: 0 pontos no critério Implementação Correta do Caso Base (Nó Nulo).
+•	Implementação Correta do Passo Recursivo e Cálculo da Soma (11 pontos):
+o	Realiza a chamada obrigatoriamente recursiva à função somaValores para a subárvore esquerda, passando raiz->esq: 3 pontos.
+o	Realiza a chamada obrigatoriamente recursiva à função somaValores para a subárvore direita, passando raiz->dir: 3 pontos.
+o	Acede corretamente ao valor do nó atual, raiz->dados: 2 pontos.
+o	Combina corretamente os valores para formar o resultado final: retorna a soma de raiz->dados com os resultados retornados pelas duas chamadas recursivas (soma da subárvore esquerda e soma da subárvore direita). Exemplo: return raiz->dados + somaValores(raiz->esq) + somaValores(raiz->dir);: 3 pontos. (Fórmula incorreta, falta de um dos três componentes na soma: 0 a 2 pontos).
+•	Penalização por elementos desnecessários ou errados:
+o	-5% a -10% por elementos desnecessários que não afetam o funcionamento;
+o	-10% a -20% por erros que alteram o comportamento esperado.
+•	Atribuir 0 pontos (no critério total) se ocorrer qualquer uma das seguintes situações:
+o	Não responder / Código relevante na main ausente / Código totalmente incorreto que não tenta criar ou popular a árvore.
+","20.0","1","1","2025-05-06T14:11:13",""
+"411","32","Descreve a remoção por fusão numa árvore binária de pesquisa","O aluno deve explicar, de forma teórica e geral, como funciona o método de remoção por fusão em BSTs.","a)	Subcritério 1: Explicação clara de que o nó a ser removido é eliminado e que a subárvore esquerda é utilizada para ocupar sua posição:
+•	Resposta completa: Explica que o nó é removido e que a subárvore esquerda sobe para ocupar sua posição. (5 pontos)
+•	Resposta parcial: Menciona apenas a remoção ou a substituição sem relacionar os dois processos. (2-4 pontos)
+•	Resposta ausente/incorreta: Não menciona o conceito ou apresenta informações incorretas. (0 pontos)
+b)	Subcritério 2: Descrição do processo de fusão, mencionando que o maior valor da subárvore esquerda é identificado e conectado à subárvore direita.
+•	Resposta completa: Explica que o maior valor da subárvore esquerda é utilizado para conectar à subárvore direita, garantindo a ordem da BST. (5 pontos)
+•	Resposta parcial: Menciona a fusão sem detalhar o papel do maior valor ou a conexão com a subárvore direita. (2-4 pontos)
+•	Resposta ausente/incorreta: Não menciona o processo de fusão ou apresenta informações incorretas. (0 pontos)
+
+
+c)	Evidência de que o método mantém a ordem e a estrutura lógica da árvore.
+•	Resposta completa: Relaciona o método à preservação da ordem e da estrutura da BST. (5 pontos)
+•	Resposta parcial: Menciona a manutenção da ordem de forma incompleta ou ambígua. (2-4 pontos)
+•	Resposta ausente/incorreta: Não menciona a preservação da ordem ou apresenta informações incorretas. (0 pontos)
+Penalização critério geral: Dedução de até -3 pontos (20%) se houver informações adicionais ou confusas que comprometam a compreensão do método de fusão.
+","15.0","2","1","2025-05-06T14:15:38",""
+"412","32","Descreve a remoção por cópia numa árvore binária de pesquisa","O aluno deve explicar, de forma teórica e geral, como funciona o método de remoção por cópia em BSTs.","a)	Subcritério 1: Explicação clara de que o método consiste em copiar o valor de um nó substituto (geralmente o maior da subárvore esquerda ou o menor da subárvore direita) para o nó a ser removido.
+•	Resposta completa: Explica que o valor do nó substituto é copiado para o nó a ser removido. (5 pontos)
+•	Resposta parcial: Menciona a cópia sem detalhar o conceito ou a origem do valor copiado. (2-4 pontos)
+•	Resposta ausente/incorreta: Não menciona o conceito ou apresenta informações incorretas. (0 pontos)
+b)	Subcritério 2: Justificação da escolha do nó substituto, mencionando que ele possui no máximo um filho, o que simplifica a remoção.
+•	Resposta completa: Explica que o nó substituto é escolhido por ser o maior da subárvore esquerda ou o menor da subárvore direita e que possui no máximo um filho. (5 pontos)
+•	Resposta parcial: Menciona a escolha do nó substituto sem justificar adequadamente. (2-4 pontos)
+•	Resposta ausente/incorreta: Não menciona a escolha do nó substituto ou apresenta informações incorretas. (0 pontos)
+c)	Subcritério 3: Descrição do procedimento subsequente, mencionando que o nó original de onde o valor foi copiado é removido.
+•	Resposta completa: Explica que, após a cópia, o nó original é removido, preservando a ordem da BST. (5 pontos)
+•	Resposta parcial: Menciona a remoção do nó original de forma incompleta ou ambígua. (2-4 pontos)
+•	Resposta ausente/incorreta: Não menciona a remoção do nó original ou apresenta informações incorretas. (0 pontos)
+
+Penalização critério geral: Dedução de até -3 pontos (20%) se houver informações adicionais ou confusas que comprometam a compreensão do método de cópia.
+","15.0","2","1","2025-05-06T14:16:14",""
+"413","32","Apresenta a estrutura final da árvore após a remoção do valor 31 utilizando o método de remoção por fusão","O aluno deve apresentar a estrutura final correta da árvore fornecida após remover o nó com valor 31, usando o método de fusão","a)	Subcritério 1:  Representação correta da estrutura geral da árvore, evidenciando que o nó 31 foi removido.
+•	Resposta completa: Apresenta a árvore reestruturada com clareza, evidenciando a remoção do nó 31. (4 pontos)
+•	Resposta parcial: Apresenta a árvore de forma incompleta ou com erros na remoção. (2-3 pontos)
+•	Resposta ausente/incorreta: Não apresenta a árvore ou apresenta informações incorretas. (0 pontos)
+b)	Subcritério 2: Demonstração do posicionamento adequado dos nós resultantes da fusão.
+•	Resposta completa: Mostra que a subárvore esquerda foi fundida corretamente com a subárvore direita. (3 pontos)
+•	Resposta parcial: Mostra a fusão de forma incompleta ou com erros. (1-2 pontos)
+•	Resposta ausente/incorreta: Não demonstra a fusão ou apresenta informações incorretas. (0 pontos)
+c)	Subcritério 3: Manutenção da ordem e coerência da BST.
+•	Resposta completa: A estrutura apresentada preserva a propriedade de ordenação da BST. (3 pontos)
+•	Resposta parcial: A estrutura apresentada contém erros na ordenação. (1-2 pontos)
+•	Resposta ausente/incorreta: Não preserva a ordenação ou apresenta informações incorretas. (0 pontos)
+
+Penalização critério geral: Dedução de até -2 pontos (20%) se a estrutura apresentada contiver elementos incorretos ou confusos.
+","10.0","2","1","2025-05-06T14:16:51",""
+"414","32","Apresenta a estrutura final da árvore após a remoção do valor 31 utilizando o método de remoção por cópia","O aluno deve apresentar a estrutura final correta da árvore fornecida após remover o nó com valor 31, usando o método de cópia.","a)	Subcritério 1:  Representação correta da substituição do nó 31 pelo nó copiado.
+•	Resposta completa: Mostra que o valor 31 foi substituído pelo nó copiado (por exemplo, 27). (4 pontos)
+•	Resposta parcial: Mostra a substituição de forma incompleta ou com erros. (2-3 pontos)
+•	Resposta ausente/incorreta: Não mostra a substituição ou apresenta informações incorretas. (0 pontos)
+b)	Subcritério 2: Representação correta e completa da árvore reestruturada.
+•	Resposta completa: Apresenta a árvore reorganizada de forma correta, preservando a propriedade da BST. (3 pontos)
+•	Resposta parcial: Apresenta a árvore de forma incompleta ou com erros. (1-2 pontos)
+•	Resposta ausente/incorreta: Não apresenta a árvore ou apresenta informações incorretas. (0 pontos)
+c)	Subcritério 3: Indicação da remoção do nó original que teve seu valor copiado.
+•	Resposta completa: Mostra que o nó original foi removido corretamente. (3 pontos)
+•	Resposta parcial: Mostra a remoção de forma incompleta ou com erros. (1-2 pontos)
+•	Resposta ausente/incorreta: Não mostra a remoção ou apresenta informações incorretas. (0 pontos)
+
+Penalização critério geral: Dedução de até -2 pontos (20%) se a estrutura apresentada contiver elementos incorretos ou confusos.
+","10.0","2","1","2025-05-06T14:17:25",""
+"415","38","Identificação da resposta correta","O aluno deve indicar a alínea b) ou “16 49 4”.","•	Se indicar a alínea b) ou” 16 49 4”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","2","1","2025-05-06T14:18:17",""
+"416","39","Identificação da resposta correta","O aluno deve indicar a alínea c) ou “1 2 6 3 8 9”.","•	Se indicar a alínea c) ou ”1 2 6 3 8 9”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","2","1","2025-05-06T14:18:56",""
+"417","40","Identificação da resposta correta","O aluno deve indicar a alínea a) ou “O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa”.","•	Se indicar a alínea a) ou “O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","2","1","2025-05-06T14:19:23",""
+"418","41","Definição da Estrutura nodo e Implementação da Função inserirNodo","O aluno deve usar a estrutura nodo fornecida e implementar corretamente a função inserirNodo para adicionar um novo valor a uma BST.","a)	Subcritério 1: Definição da Estrutura `nodo`
+•	Declaração correta da struct com o nome `nodo` e inclusão dos campos essenciais:
+o	Campo `int dados`: 3 pontos
+o	Ponteiro `nodo* esq`: 2 pontos
+o	Ponteiro `nodo* dir`: 2 pontos
+•	Uso correto de terminadores e ausência de erros de sintaxe na estrutura: 1 ponto
+b)	Subcritério 2: Implementação da Função `inserirNodo`
+•	Definição correta da assinatura da função com nome exato, tipo de retorno (`nodo`) e parâmetros adequados (`nodo raiz, int valor`): 2 pontos
+•	Verificação correta se a árvore está vazia (`raiz == NULL`) e criação de um novo nodo utilizando `new`: 4 pontos
+•	Comparação correta entre o valor a ser inserido e o conteúdo do nodo atual:
+o	Inserção na subárvore esquerda (quando `valor <= raiz->dados`): 3 pontos
+o	Inserção na subárvore direita (quando `valor > raiz->dados`): 3 pontos
+
+Penalização: Deduzir até 20% (máximo -4 pontos) se forem incluídos elementos desnecessários ou confusos que comprometam a clareza ou o comportamento esperado do código.
+Observações Gerais sobre Penalizações
+- Em cada critério, se o aluno incluir elementos ou trechos de código desnecessários que alterem ou confundam o comportamento esperado, deverá ser aplicada uma dedução de até **20% da pontuação daquele critério**, conforme descrito nas orientações.
+- A avaliação deve considerar também a clareza, legibilidade e aderência ao enunciado da questão, sem exigir requisitos não solicitados.
+","20.0","2","1","2025-05-06T14:21:07",""
+"419","41","Criação e População da Árvore na Função main (ou equivalente)","O aluno deve demonstrar a criação correta da árvore e a sua população com os valores especificados no enunciado, utilizando a função inserirNodo dentro de um contexto C++ válido (tipicamente a função main).","a)	Inicialização da Estrutura da Árvore
+•	Atribuição correta da raiz com `NULL`: 3 pontos
+b)	Inserção dos Valores na Árvore
+•	Inserção correta de todos os valores `{28, 14, 37, 6, 19, 42, 3, 25, 31, 48}` utilizando chamadas à função `inserirNodo`:
+o	Inserção de todos os valores de forma completa e funcional: 9 pontos
+o	Inserção parcial (ex.: valores faltando ou ordem incorreta): 4-6 pontos
+o	Inserção ausente ou incorreta: 0 pontos
+c)	Estrutura e Organização da Função `main`
+•	Presença da função `main` (ou equivalente) com declaração e chaves de abertura/fechamento corretas: 1 ponto
+•	Código organizado e legível, com separação clara das etapas (inicialização, inserção e, possivelmente, chamadas para testar as funções implementadas): 2 pontos
+
+Penalização: Deduzir até 20% (máximo -3 pontos) se forem incluídos elementos desnecessários ou confusos que comprometam a clareza ou o comportamento esperado do código.
+Observações Gerais sobre Penalizações
+- Em cada critério, se o aluno incluir elementos ou trechos de código desnecessários que alterem ou confundam o comportamento esperado, deverá ser aplicada uma dedução de até **20% da pontuação daquele critério**, conforme descrito nas orientações.
+- A avaliação deve considerar também a clareza, legibilidade e aderência ao enunciado da questão, sem exigir requisitos não solicitados.
+
+","15.0","2","1","2025-05-06T14:21:57",""
+"420","41","Implementação da Função existe (Recursiva)","O aluno deve implementar a função existe utilizando uma abordagem estritamente recursiva para determinar se um determinado valor está presente na árvore binária de pesquisa iniciada em raiz.","a)	Assinatura e Estrutura Básica da Função
+•	Declaração correta da função com nome `existe` e parâmetros `(nodo* raiz, int valor)`, incluindo abertura e fechamento de chaves: 2 pontos
+b)	Implementação da Lógica Recursiva
+•	Tratamento do caso base: Verificação correta se `raiz == NULL` e retorno de `false`: 4 pontos
+•	Verificação do valor no nodo atual: Comparação correta (`if (raiz->dados == valor)`) e retorno de `true`: 4 pontos
+•	Recursão para a subárvore esquerda: Chamada recursiva correta para a subárvore esquerda (quando `valor < raiz->dados`): 5 pontos
+•	Recursão para a subárvore direita: Chamada recursiva correta para a subárvore direita (quando `valor > raiz->dados`): 5 pontos
+
+Penalização: Deduzir até 20% (máximo -4 pontos) se forem incluídos elementos desnecessários ou confusos que comprometam a clareza ou o comportamento esperado do código.
+Observações Gerais sobre Penalizações
+- Em cada critério, se o aluno incluir elementos ou trechos de código desnecessários que alterem ou confundam o comportamento esperado, deverá ser aplicada uma dedução de até **20% da pontuação daquele critério**, conforme descrito nas orientações.
+- A avaliação deve considerar também a clareza, legibilidade e aderência ao enunciado da questão, sem exigir requisitos não solicitados.
+","20.0","2","1","2025-05-06T14:22:36",""
+"421","41","Implementação da Função imprimirFolhas","O aluno deve implementar a função imprimirFolhas que percorre a árvore binária de pesquisa iniciada em raiz e imprime no ecrã os valores (dados) de todos os nós que são considerados ""folha"" (ou seja, não possuem filhos nem à esquerda nem à direita).","a)	Assinatura e Estrutura Básica da Função
+•	Declaração correta da função `imprimirFolhas` com o parâmetro adequado `(nodo* raiz)` e uso correto das chaves: 1 ponto
+b)	Lógica para Identificação e Impressão dos Nós Folha
+•	Verificação do caso base: Implementação correta: se `raiz == NULL`, a função deve retornar imediatamente: 3 pontos
+•	Identificação correta do nó folha: Verificar se ambos os ponteiros `esq` e `dir` são `NULL` para identificar o nó como folha: 5 pontos
+•	Impressão correta dos valores dos nós folha: Impressão do valor do nó folha (ex.: `cout << raiz->dados << "" ""`) de forma adequada: 3 pontos
+•	Recursão para percorrer os demais nós: Chamada recursiva para percorrer as subárvores esquerda e direita, garantindo que todos os nós folha sejam avaliados: 3 pontos
+Penalização: Deduzir até 20% (máximo -3 pontos) se forem incluídos elementos desnecessários ou confusos que comprometam a clareza ou o comportamento esperado do código.
+Observações Gerais sobre Penalizações
+- Em cada critério, se o aluno incluir elementos ou trechos de código desnecessários que alterem ou confundam o comportamento esperado, deverá ser aplicada uma dedução de até **20% da pontuação daquele critério**, conforme descrito nas orientações.
+- A avaliação deve considerar também a clareza, legibilidade e aderência ao enunciado da questão, sem exigir requisitos não solicitados.
+","15.0","2","1","2025-05-06T14:23:08",""
+"422","41","Implementação da Função somaValores (Recursiva)","O aluno deve implementar a função somaValores utilizando uma abordagem estritamente recursiva para calcular e retornar um valor inteiro (int) que representa a soma de todos os campos dados dos nós presentes na árvore binária de pesquisa iniciada em raiz.","a)	Assinatura e Estrutura Básica da Função
+•	Declaração correta da função `somaValores` com o parâmetro `(nodo* raiz)` e uso adequado das chaves: 1 ponto
+b)	Lógica Recursiva para Calcular a Soma dos Valores
+•	Tratamento do caso base: Verificação correta: se `raiz == NULL`, a função deve retornar `0`: 4 pontos
+•	Soma recursiva da subárvore esquerda: Chamada recursiva correta para calcular a soma dos valores na subárvore esquerda: 5 pontos
+•	Soma recursiva da subárvore direita: Chamada recursiva correta para calcular a soma dos valores na subárvore direita: 5 pontos
+•	Combinação correta dos valores: Soma do valor do nó atual (`raiz->dados`) com as somas obtidas das subárvores esquerda e direita, retornando o resultado da expressão: 5 pontos
+Penalização: Deduzir até 20% (máximo -4 pontos) se forem incluídos elementos desnecessários ou confusos que comprometam a clareza ou o comportamento esperado do código.
+Observações Gerais sobre Penalizações
+- Em cada critério, se o aluno incluir elementos ou trechos de código desnecessários que alterem ou confundam o comportamento esperado, deverá ser aplicada uma dedução de até **20% da pontuação daquele critério**, conforme descrito nas orientações.
+- A avaliação deve considerar também a clareza, legibilidade e aderência ao enunciado da questão, sem exigir requisitos não solicitados.
+","20.0","2","1","2025-05-06T14:23:40",""
+"423","32","Explicação do método de remoção por fusão","O estudante deve demonstrar compreensão do método de remoção por fusão, explicando como o nó removido é substituído pela subárvore esquerda e como as subárvores são fundidas para manter a propriedade de ordenação da árvore binária de pesquisa (BST).","a)	Subcritério 1: Descrição do mecanismo básico de remoção e promoção da subárvore esquerda
+•	Explicação completa e correta de que o nó removido é substituído pela subárvore esquerda: 5 pontos.  
+•	Explicação parcial (ex.: menciona a promoção da subárvore esquerda, mas sem detalhar o processo): 2–3 pontos.  
+•	Ausência ou explicação incorreta: 0 pontos.
+b)	Subcritério 2: Explicação da fusão entre subárvores
+•	Explicação completa e correta de que o maior elemento da subárvore esquerda (ou o nó mais à direita) é utilizado para conectar a subárvore direita, garantindo a manutenção da ordem: 5 pontos.  
+•	Explicação parcial (ex.: menciona a fusão sem detalhar o papel do maior elemento): 2–3 pontos.  
+•	Ausência ou explicação incorreta: 0 pontos.
+c)	Justificação da preservação da propriedade BST
+•	Explicação completa e correta de que a fusão mantém a ordenação da árvore: 3 pontos.  
+•	Explicação parcial (ex.: menciona a preservação da ordem sem detalhar como isso ocorre): 1–2 pontos.  
+•	Ausência ou explicação incorreta: 0 pontos.
+d)	Clareza e organização da explicação
+•	Resposta clara, lógica e bem estruturada: 2 pontos.  
+•	Resposta confusa, mas com algum entendimento demonstrado: 1 ponto.  
+•	Resposta desorganizada ou incoerente: 0 pontos.
+Penalização critério geral: Se o estudante incluir informações contraditórias ou confusas (ex.: misturar conceitos de remoção por fusão e cópia), deduzir até -20% (3 pontos) do total deste critério.
+","15.0","3","1","2025-05-06T14:25:19",""
+"424","32","Explicação do método de remoção por cópia","O estudante deve demonstrar compreensão do método de remoção por cópia, explicando como o valor do nó removido é substituído pelo maior elemento da subárvore esquerda (ou menor da direita) e como o nó de origem do valor copiado é removido.","Descrição: O estudante deve demonstrar compreensão do método de remoção por cópia, explicando como o valor do nó removido é substituído pelo maior elemento da subárvore esquerda (ou menor da direita) e como o nó de origem do valor copiado é removido.
+
+Pontuação:
+a)	Subcritério 1: Descrição do processo de cópia do valor
+•	Explicação completa e correta de que o maior valor da subárvore esquerda (ou o menor da direita) é copiado para o nó a ser removido: 5 pontos.  
+•	Explicação parcial (ex.: menciona a cópia sem especificar qual valor é copiado): 2–3 pontos.  
+•	Ausência ou explicação incorreta: 0 pontos.
+b)	Subcritério 2: Explicação da remoção do nó original de onde o valor foi copiado
+•	Explicação completa e correta de que o nó de origem do valor copiado é removido, geralmente por ter no máximo um filho: 5 pontos.  
+•	Explicação parcial (ex.: menciona a remoção sem detalhar o processo): 2–3 pontos.  
+•	Ausência ou explicação incorreta: 0 pontos.
+c)	Subcritério 3: Justificação da preservação da propriedade BST
+•	Explicação completa e correta de que o método mantém a ordenação da árvore: 3 pontos.  
+•	Explicação parcial (ex.: menciona a preservação da ordem sem detalhar como isso ocorre): 1–2 pontos.  
+•	Ausência ou explicação incorreta: 0 pontos.
+d)	Clareza e organização da explicação
+•	Resposta clara, lógica e bem estruturada: 2 pontos.  
+•	Resposta confusa, mas com algum entendimento demonstrado: 1 ponto.  
+•	Resposta desorganizada ou incoerente: 0 pontos.
+
+Penalização critério geral: Se o estudante incluir informações contraditórias ou confusas (ex.: misturar conceitos de remoção por cópia e fusão), deduzir até -20% (3 pontos) do total deste critério.
+","15.0","3","1","2025-05-06T14:26:11",""
+"425","32","Árvore final após remoção por fusão","O estudante deve apresentar a estrutura final da árvore após a remoção do valor 31 utilizando o método de fusão. A representação deve ser clara, organizada e preservar a propriedade de ordenação da BST.","Descrição: O estudante deve apresentar a estrutura final da árvore após a remoção do valor 31 utilizando o método de fusão. A representação deve ser clara, organizada e preservar a propriedade de ordenação da BST.
+
+Pontuação:
+a)	Subcritério 1:  Representação correta da estrutura da árvore
+•	Estrutura completa e correta, com os nós remanescentes posicionados adequadamente: 4 pontos.  
+•	Estrutura parcialmente correta (ex.: pequenos erros na disposição dos nós): 2–3 pontos.  
+•	Estrutura incorreta ou ausente: 0 pontos.
+b)	Subcritério 2: Incorporação correta dos elementos resultantes da fusão
+•	Evidência clara de que o nó 31 foi removido e que a subárvore esquerda foi promovida e fundida corretamente com a subárvore direita: 4 pontos.  
+•	Representação parcial (ex.: fusão incompleta ou incorreta): 2–3 pontos.  
+•	Representação incorreta ou ausente: 0 pontos.
+c)	Subcritério 3: Clareza e organização da apresentação gráfica
+•	Representação clara e bem organizada: 2 pontos.  
+•	Representação confusa, mas compreensível: 1 ponto.  
+•	Representação desorganizada ou ilegível: 0 pontos.
+Penalização critério geral: Se a representação incluir erros que comprometam a ordenação ou a clareza (ex.: nós em posições que quebram a propriedade BST), deduzir até -20% (2 pontos) do total deste critério.
+","10.0","3","1","2025-05-06T14:26:47",""
+"426","32","Árvore final após remoção por cópia","O estudante deve apresentar a estrutura final da árvore após a remoção do valor 31 utilizando o método de cópia. A representação deve ser clara, organizada e preservar a propriedade de ordenação da BST.","Descrição: O estudante deve apresentar a estrutura final da árvore após a remoção do valor 31 utilizando o método de cópia. A representação deve ser clara, organizada e preservar a propriedade de ordenação da BST.
+
+Pontuação:
+a)	Subcritério 1:  Representação correta da estrutura da árvore
+•	Estrutura completa e correta, com o nó 31 substituído pelo valor copiado e os demais nós posicionados adequadamente: 4 pontos.  
+•	Estrutura parcialmente correta (ex.: pequenos erros na disposição dos nós): 2–3 pontos.  
+•	Estrutura incorreta ou ausente: 0 pontos.
+b)	Subcritério 2: Demonstração correta da remoção do nó original do qual o valor foi copiado
+•	Evidência clara de que o nó de origem do valor copiado foi removido: 3 pontos.  
+•	Representação parcial (ex.: remoção indicada de forma vaga): 1–2 pontos.  
+•	Representação incorreta ou ausente: 0 pontos.
+c)	Subcritério 3: Clareza e organização da apresentação gráfica
+•	Representação clara e bem organizada: 3 pontos.  
+•	Representação confusa, mas compreensível: 1–2 pontos.  
+•	Representação desorganizada ou ilegível: 0 pontos.
+Penalização critério geral: Se a representação incluir erros que comprometam a ordenação ou a clareza (ex.: duplicidade de nós ou posições que quebram a propriedade BST), deduzir até -20% (2 pontos) do total deste critério.
+","10.0","3","1","2025-05-06T14:27:19",""
+"427","38","Identificação da resposta correta","O aluno deve indicar a alínea b) ou “16 49 4”.","•	Se indicar a alínea b) ou” 16 49 4”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","3","1","2025-05-06T14:28:09",""
+"428","39","Identificação da resposta correta","O aluno deve indicar a alínea c) ou “1 2 6 3 8 9”.","•	Se indicar a alínea c) ou ”1 2 6 3 8 9”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","3","1","2025-05-06T14:28:37",""
+"429","40","Identificação da resposta correta","O aluno deve indicar a alínea a) ou “O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa”.","•	Se indicar a alínea a) ou “O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","3","1","2025-05-06T14:29:09",""
+"430","41","Critério 1: Árvore BST e função inserirNodo","Critério 1: Árvore BST e função inserirNodo","Pontuação:
+a)	Subcritério 1: Definição da estrutura da árvore (struct nodo)
+•	Estrutura definida corretamente com os campos `dados`, `esq` e `dir`: 5 pontos.  
+•	Estrutura definida parcialmente correta (ex.: campos ausentes ou incorretos): 2 pontos.  
+•	Estrutura ausente ou completamente incorreta: 0 pontos.
+b)	Subcritério 2: Inicialização correta da raiz
+•	Descrição: A raiz da árvore deve ser inicializada corretamente com `NULL` antes das inserções.  
+•	Inicialização correta da raiz com `NULL`: 5 pontos.  
+•	Inicialização ausente ou incorreta: 0 pontos.
+c)	Implementação da função inserirNodo
+•	Descrição: A função `inserirNodo` deve ser implementada corretamente para inserir valores na árvore BST, respeitando as seguintes etapas:
+o	Verificar se a posição atual está vazia (`raiz == NULL`) e criar um novo nodo.  
+o	Comparar o valor a ser inserido com o valor do nodo atual (`raiz->dados`) e direcionar a inserção para a subárvore esquerda (se menor ou igual) ou direita (se maior).  
+o	Retornar o ponteiro atualizado da raiz.
+•	Criação correta de um novo nodo (alocação dinâmica, inicialização de `dados`, `esq` e `dir`): 5 pontos.  
+•	Comparação correta e chamadas recursivas para subárvores esquerda/direita: 7 pontos.  
+•	Retorno correto da raiz atualizada: 3 pontos.  
+d)	Inserção dos valores e formação da árvore BST
+•	Descrição: O programa deve inserir corretamente os 10 valores `{28, 14, 37, 6, 19, 42, 3, 25, 31, 48}` na árvore, respeitando a propriedade da BST (valores menores ou iguais à esquerda e maiores à direita).
+•	Inserção correta de todos os valores e formação de uma BST válida: 5 pontos.  
+•	Inserção parcial ou com erros que não comprometam a estrutura da BST: 3 pontos.  
+•	Inserção ausente ou incorreta: 0 pontos.
+
+Penalizações de até 20% podem ser aplicadas em cada critério caso sejam incluídos elementos desnecessários ou incorretos que alterem o comportamento esperado do código.
+","30.0","3","1","2025-05-06T14:30:07",""
+"431","41","Função existe – definição e uso correto","Este critério avalia a implementação da função `existe`, que realiza a pesquisa recursiva na árvore.","a)	Declaração e assinatura correta da função
+•	Descrição: A função deve ser declarada corretamente como `bool existe(nodo* raiz, int valor)`.
+•	Declaração correta com nome, tipo de retorno e parâmetros: 3 pontos.  
+•	Declaração parcialmente correta (ex.: nome correto, mas parâmetros incorretos): 1 ponto.  
+•	Declaração ausente ou completamente incorreta: 0 pontos.
+b)	Implementação do caso base
+•	Descrição: A função deve verificar se a árvore (ou subárvore) está vazia (`raiz == NULL`) e retornar `false` nesse caso.
+•	Caso base implementado corretamente: 5 pontos.  
+•	Caso base parcialmente correto (ex.: lógica incompleta): 2 pontos.  
+•	Caso base ausente ou incorreto: 0 pontos.
+c)	Verificação do valor no nodo atual
+•	Descrição: A função deve verificar se o valor do nodo atual (`raiz->dados`) é igual ao valor procurado e retornar `true` nesse caso.
+•	Verificação correta e retorno de `true`: 5 pontos.  
+•	Verificação parcialmente correta (ex.: lógica incompleta): 2 pontos.  
+•	Verificação ausente ou incorreta: 0 pontos.
+d)	Implementação das chamadas recursivas
+•	Descrição: A função deve realizar chamadas recursivas para a subárvore esquerda (se o valor procurado for menor que `raiz->dados`) ou direita (caso contrário).
+•	Chamadas recursivas implementadas corretamente: 7 pontos.  
+•	Chamadas recursivas parcialmente corretas: 3 pontos.  
+•	Chamadas recursivas ausentes ou incorretas: 0 pontos.
+Penalizações de até 20% podem ser aplicadas em cada critério caso sejam incluídos elementos desnecessários ou incorretos que alterem o comportamento esperado do código.
+","20.0","3","1","2025-05-06T14:30:49",""
+"432","41","Função imprimirFolhas – verificação de folhas com lógica recursiva","Este critério avalia a implementação da função `imprimirFolhas`, que imprime os valores dos nós folha da árvore.","Descrição: Este critério avalia a implementação da função `imprimirFolhas`, que imprime os valores dos nós folha da árvore.
+
+Pontuação:
+a)	Declaração e assinatura correta da função
+•	Descrição: A função deve ser declarada corretamente como `void imprimirFolhas(nodo* raiz)`.
+•	Declaração correta: 3 pontos.  
+•	Declaração parcialmente correta: 1 ponto.  
+•	Declaração ausente ou incorreta: 0 pontos.
+b)	Implementação do caso base
+•	Descrição: A função deve verificar se a raiz é `NULL` e retornar imediatamente.
+•	Caso base implementado corretamente: 5 pontos.  
+•	Caso base parcialmente correto: 2 pontos.  
+•	Caso base ausente ou incorreto: 0 pontos.
+c)	Identificação e impressão de nós folha
+•	Descrição: A função deve identificar nós folha (nós sem filhos) e imprimir seus valores.
+•	Identificação correta de nós folha: 6 pontos.  
+•	Impressão correta dos valores: 6 pontos.  
+•	Implementação parcial: 3 pontos.  
+•	Implementação ausente ou incorreta: 0 pontos.
+
+Penalizações de até 20% podem ser aplicadas em cada critério caso sejam incluídos elementos desnecessários ou incorretos que alterem o comportamento esperado do código.
+","20.0","3","1","2025-05-06T14:31:29",""
+"433","41","Função somaValores – cálculo recursivo da soma dos valores","Este critério avalia a implementação da função `somaValores`, que calcula a soma total dos valores da árvore.","Descrição: Este critério avalia a implementação da função `somaValores`, que calcula a soma total dos valores da árvore.
+
+Pontuação:
+a)	Declaração e assinatura correta da função
+•	Descrição: A função deve ser declarada corretamente como `int somaValores(nodo* raiz)`.
+•	Declaração correta: 3 pontos.  
+•	Declaração parcialmente correta: 1 ponto.  
+•	Declaração ausente ou incorreta: 0 pontos.
+b)	Implementação do caso base
+•	Descrição: A função deve retornar `0` se a raiz for `NULL`.
+•	Caso base implementado corretamente: 5 pontos.  
+•	Caso base parcialmente correto: 2 pontos.  
+•	Caso base ausente ou incorreto: 0 pontos.
+c)	Cálculo recursivo da soma
+•	Descrição: A função deve calcular a soma do valor do nodo atual com as somas das subárvores esquerda e direita.
+•	Cálculo recursivo correto: 12 pontos.  
+•	Cálculo parcialmente correto: 6 pontos.  
+•	Cálculo ausente ou incorreto: 0 pontos.
+
+Penalizações de até 20% podem ser aplicadas em cada critério caso sejam incluídos elementos desnecessários ou incorretos que alterem o comportamento esperado do código.
+","20.0","3","1","2025-05-06T14:32:07",""
+"434","32","Descreve a remoção por fusão numa árvore binária de pesquisa","O aluno deve explicar, de forma teórica e geral, como funciona o método de remoção por fusão em BSTs. ","Descrição: O aluno deve explicar, de forma teórica e geral, como funciona o método de remoção por fusão em BSTs. 
+Pontuação:
+a)	Subcritério 1: Explicação Geral do Processo
+•	Descrição: Descreve que o nó removido é substituído pela fusão de suas subárvores esquerda e direita, com a esquerda assumindo a posição do nó removido.
+•	Completa e correta (6 pontos).  
+•	Parcial (explica apenas a substituição ou a fusão, mas não ambas) (3 pontos).  
+•	Incorreta/ausente (0 pontos).
+b)	Subcritério 2: Detalhamento da Fusão
+•	Descrição: Explica que o maior valor da subárvore esquerda é ligado à subárvore direita para manter a propriedade da BST.
+•	Completa e correta (6 pontos).  
+•	Parcial (menciona apenas a ligação ou o maior valor, mas não ambos) (3 pontos).  
+•	Incorreta/ausente (0 pontos).
+c)	Manutenção da BST
+•	Descrição: Menciona explicitamente que a operação preserva a ordem da BST.
+•	Menção clara (3 pontos).  
+•	Parcial/ambígua (1-2 pontos).  
+•	Incorreta/ausente (0 pontos).
+Penalização: -3 pontos (20%) por informações incorretas ou confusas.
+","15.0","4","1","2025-05-06T14:34:42",""
+"435","32","Descrição da Remoção por Cópia","O aluno deve explicar, de forma teórica e geral, como funciona o método de remoção por cópia em BSTs.","Descrição: O aluno deve explicar, de forma teórica e geral, como funciona o método de remoção por cópia em BSTs.
+
+Pontuação:
+a)	Subcritério 1: Explicação Geral do Processo
+•	Descrição: Descreve que o nó removido é substituído pelo maior valor da subárvore esquerda (ou menor da direita), e o nó copiado é eliminado.
+•	Completa e correta (6 pontos).  
+•	Parcial (explica apenas a cópia ou a remoção, mas não ambas) (3 pontos).  
+•	Incorreta/ausente (0 pontos).  
+b)	Subcritério 2: Simplificação da Remoção
+•	Descrição: Explica que o nó copiado tem no máximo um filho, facilitando sua remoção.
+•	Completa e correta (6 pontos).  
+•	Parcial (menciona a facilidade, mas não o motivo) (3 pontos).  
+•	Incorreta/ausente (0 pontos).
+c)	Subcritério 3: Manutenção da BST
+•	Descrição: Menciona explicitamente que a operação preserva a ordem da BST.
+•	Menção clara (3 pontos).  
+•	Parcial/ambígua (1-2 pontos).  
+•	Incorreta/ausente (0 pontos).
+
+Penalização critério geral: -3 pontos (20%) por informações incorretas ou confusas.  
+","15.0","4","1","2025-05-06T14:35:26",""
+"436","32","Estrutura Final após Remoção por Fusão ","O aluno deve apresentar a estrutura final correta da árvore fornecida após remover o nó com valor 31, usando o método de fusão","Descrição: O aluno deve apresentar a estrutura final correta da árvore fornecida após remover o nó com valor 31, usando o método de fusão
+Pontuação:
+a)	Subcritério 1:  Substituição do Nó 31
+•	Descrição: Representa corretamente o nó 20 substituindo o 31.
+•	Correto (5 pontos).  
+•	Parcial (erro na posição do 20) (2-3 pontos).  
+•	Incorreto/ausente (0 pontos).
+b)	Subcritério 2: Ligação da Subárvore Direita
+•	Descrição: Mostra o nó 27 ligado ao 39 (subárvore direita original do 31).
+•	Correto (5 pontos).  
+•	Parcial (erro na ligação do 27) (2-3 pontos).  
+•	Incorreto/ausente (0 pontos).
+Penalização critério geral: -2 pontos (20%) por nós adicionais ou incorretos.
+","10.0","4","1","2025-05-06T14:35:59",""
+"437","32","Estrutura Final após Remoção por Cópia","O aluno deve apresentar a estrutura final correta da árvore fornecida após remover o nó com valor 31, usando o método de cópia.","Descrição: O aluno deve apresentar a estrutura final correta da árvore fornecida após remover o nó com valor 31, usando o método de cópia.
+Pontuação:
+a)	Subcritério 1:  Substituição do Nó 31
+•	Descrição: Representa corretamente o nó 31 substituído pelo 27.
+•	Correto (5 pontos).  
+•	Parcial (erro na posição do 27) (2-3 pontos).  
+•	Incorreto/ausente (0 pontos).
+b)	Subcritério 2: Remoção do Nó Original 27
+•	Descrição: Mostra a subárvore esquerda do 20 sem o nó 27 original.
+•	Correto (5 pontos).  
+•	Parcial (nó 27 não removido ou posição errada) (2-3 pontos).  
+•	Incorreto/ausente (0 pontos).
+Penalização critério geral: 2 pontos (20%) por nós adicionais ou incorretos.
+","10.0","4","1","2025-05-06T14:36:31",""
+"438","38","Identificação da resposta correta","O aluno deve indicar a alínea b) ou “16 49 4”.","•	Se indicar a alínea b) ou” 16 49 4”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","4","1","2025-05-06T14:37:20",""
+"439","39","Identificação da resposta correta","O aluno deve indicar a alínea c) ou “1 2 6 3 8 9”.","•	Se indicar a alínea c) ou ”1 2 6 3 8 9”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","4","1","2025-05-06T14:37:57",""
+"440","40","Identificação da resposta correta","O aluno deve indicar a alínea a) ou “O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa”.","•	Se indicar a alínea a) ou “O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","4","1","2025-05-06T14:38:26",""
+"441","41","Definição da Estrutura nodo e Implementação da Função inserirNodo","O aluno deve usar a estrutura nodo fornecida e implementar corretamente a função inserirNodo para adicionar um novo valor a uma BST.","Descrição: O aluno deve usar a estrutura nodo fornecida e implementar corretamente a função inserirNodo para adicionar um novo valor a uma BST.
+Pontuação:
+a)	Subcritério 1: Definição correta da estrutura `nodo`
+•	Estrutura com campos `int dados`, `nodo* esq`, e `nodo* dir` : 5 pontos
+b)	Subcritério 2: Implementação recursiva de `inserirNodo`
+•	Lógica correta:
+o	Caso base: `raiz == NULL` (cria novo nó) : 5 pontos
+•	Caso recursivo:
+o	chama `inserirNodo` para `esq` ou `dir` conforme comparação de valores : 5 pontos
+c)	Estrutura básica da função
+•	Abertura/fechamento de chaves e sintaxe correta : 1 ponto
+d)	Implementação incorreta ou ausente: 0 pontos
+
+Penalização: -4 pontos (20%) se houver elementos desnecessários (ex.: lógica iterativa em vez de recursiva).
+","20.0","4","1","2025-05-06T14:39:24",""
+"442","41","Criação e População da Árvore na Função main (ou equivalente)","O aluno deve demonstrar a criação correta da árvore e a sua população com os valores especificados no enunciado, utilizando a função inserirNodo dentro de um contexto C++ válido (tipicamente a função main).","Descrição: O aluno deve demonstrar a criação correta da árvore e a sua população com os valores especificados no enunciado, utilizando a função inserirNodo dentro de um contexto C++ válido (tipicamente a função main).
+Pontuação:
+a)	Inicialização correta da raiz
+•	`nodo* root = NULL : 3 pontos
+b)	Inserção de todos os valores
+•	Valores `{28, 14, 37, 6, 19, 42, 3, 25, 31, 48}` inseridos via `inserirNodo`. 1 ponto por valor inserido corretamente (máx. 10)
+c)	Uso correto de `inserirNodo`
+•	Chamada adequada da função para cada valor: 2 pontos
+d)	Implementação incorreta ou ausente:
+•	Raiz não inicializada ou valores não inseridos : 0 pontos
+
+Penalização: -3 pontos (20%) se houver valores extras ou erros na inserção.
+","15.0","4","1","2025-05-06T14:40:00",""
+"443","41","Implementação da Função existe (Recursiva)","O aluno deve implementar a função existe utilizando uma abordagem estritamente recursiva para determinar se um determinado valor está presente na árvore binária de pesquisa iniciada em raiz.","Descrição: O aluno deve implementar a função existe utilizando uma abordagem estritamente recursiva para determinar se um determinado valor está presente na árvore binária de pesquisa iniciada em raiz.
+Pontuação:
+a)	Caso base: `raiz == NULL`
+•	Retorna `false` se a árvore/subárvore estiver vazia : 5 pontos
+b)	Caso base: valor encontrado
+•	Retorna `true` se `raiz->dados == valor` : 5 pontos
+c)	Chamadas recursivas
+•	`valor < raiz->dados`: chama `existe(raiz->esq, valor)` : 5 pontos
+•	`valor > raiz->dados`: chama `existe(raiz->dir, valor)` : 5 pontos
+d)	Estrutura básica da função
+•	Abertura/fechamento de chaves e sintaxe correta : 1 ponto
+e)	Implementação incorreta ou ausente: 
+•	Função não recursiva ou com lógica errada : 0 pontos
+Penalização: -4 pontos (20%) se houver verificações redundantes ou não recursivas.
+","20.0","4","1","2025-05-06T14:40:32",""
+"444","41","Implementação da Função imprimirFolhas","O aluno deve implementar a função imprimirFolhas que percorre a árvore binária de pesquisa iniciada em raiz e imprime no ecrã os valores (dados) de todos os nós que são considerados ""folha"" (ou seja, não possuem filhos nem à esquerda nem à direita).","Descrição: O aluno deve implementar a função imprimirFolhas que percorre a árvore binária de pesquisa iniciada em raiz e imprime no ecrã os valores (dados) de todos os nós que são considerados ""folha"" (ou seja, não possuem filhos nem à esquerda nem à direita).
+Pontuação:
+a)	Caso base: `raiz == NULL`
+•	Retorna sem ação se a árvore/subárvore estiver vazia : 5 pontos
+b)	Identificação de folhas
+•	Verifica `raiz->esq == NULL && raiz->dir == NULL` e imprime `raiz->dados` : 5 pontos
+c)	Chamadas recursivas
+•	Chama `imprimirFolhas(raiz->esq)` e `imprimirFolhas(raiz->dir)` : 5 pontos
+d)	Estrutura básica da função
+•	Abertura/fechamento de chaves e sintaxe correta : 1 ponto
+e)	Implementação incorreta ou ausente
+•	Função não identifica folhas ou não imprime valores : 0 pontos
+Penalização: -3 pontos (20%) se imprimir nós não folha.
+","15.0","4","1","2025-05-06T14:41:14",""
+"445","41","Implementação da Função somaValores (Recursiva)","O aluno deve implementar a função somaValores utilizando uma abordagem estritamente recursiva para calcular e retornar um valor inteiro (int) que representa a soma de todos os campos dados dos nós presentes na árvore binária de pesquisa iniciada em raiz.","Descrição: O aluno deve implementar a função somaValores utilizando uma abordagem estritamente recursiva para calcular e retornar um valor inteiro (int) que representa a soma de todos os campos dados dos nós presentes na árvore binária de pesquisa iniciada em raiz.
+Pontuação:
+a)	Caso base: `raiz == NULL`
+•	Retorna `0` se a árvore/subárvore estiver vazia : 5 pontos
+b)	Soma recursiva
+•	Retorna `raiz->dados + somaValores(raiz->esq) + somaValores(raiz->dir)` : 15 pontos
+c)	Estrutura básica da função
+•	Abertura/fechamento de chaves e sintaxe correta : 1 ponto
+d)	Implementação incorreta ou ausente
+•	Função não recursiva ou soma incorreta : 0 pontos
+Penalização: -4 pontos (20%) se houver somas parciais incorretas. 
+","20.0","4","1","2025-05-06T14:42:18",""
+"446","32","Explicação Teórica do Método de Fusão","Explicação Teórica do Método de Fusão","Pontuação:
+•	Explicação clara e completa (Substituição do nó removido pela subárvore esquerda, Ligação do maior valor da subárvore esquerda à subárvore direita, Menção à preservação da propriedade da BST, Uso correto de termos técnicos (e.g., ""subárvore esquerda/direita"", ""fusão"")) : 10 pontos
+•	Explicação parcial, faltando um dos elementos essenciais (ex.: não menciona a ligação do maior valor ou a manutenção da ordem) : 5 pontos
+•	Explicação incorreta, ausente ou com informações irrelevantes : 0 pontos
+Regras Adicionais  
+•	Penalização por Informações Incorretas: -3 pontos (por critério) se o aluno incluir detalhes errados ou confusos (ex.: afirmar que a fusão usa a subárvore direita).  
+•	Clareza e Organização: Respostas desorganizadas ou ambíguas podem perder até 2 pontos por critério (a critério do avaliador).  
+•	Notação da Árvore: Representações não padronizadas (ex.: falta de hierarquia clara) podem perder 1-2 pontos.
+","10.0","5","1","2025-05-06T14:49:10",""
+"447","32","Explicação Teórica do Método de Cópia","Explicação Teórica do Método de Cópia","Pontuação:
+•	Explicação clara e completa (Cópia do maior valor da subárvore esquerda (ou menor da direita) para o nó removido, Remoção do nó original copiado (geralmente um nó folha ou com apenas um filho), Uso correto de termos técnicos (e.g., ""cópia"", ""nó predecessor/sucessor"")) : 10 pontos
+•	Explicação parcial, faltando um dos elementos essenciais (ex.: não menciona a remoção do nó original) : 5 pontos
+•	Explicação incorreta, ausente ou com informações irrelevantes : 0 pontos
+
+Regras Adicionais  
+•	Penalização por Informações Incorretas: -3 pontos (por critério) se o aluno incluir detalhes errados ou confusos (ex.: afirmar que a fusão usa a subárvore direita).  
+•	Clareza e Organização: Respostas desorganizadas ou ambíguas podem perder até 2 pontos por critério (a critério do avaliador).  
+•	Notação da Árvore: Representações não padronizadas (ex.: falta de hierarquia clara) podem perder 1-2 pontos.
+","10.0","5","1","2025-05-06T14:49:42",""
+"448","32","Estrutura da Árvore após Remoção por Fusão","Estrutura da Árvore após Remoção por Fusão","Pontuação:
+•	Representação correta da árvore após remoção do nó 31 (Nó 31 substituído por 20, Nó 27 ligado ao nó 39, Estrutura claramente ilustrada (ex.: diagrama ou descrição textual precisa)) : 15 pontos
+•	Erro parcial (ex.: substituição correta, mas ligação incorreta de 27) : 8 pontos
+•	Estrutura incorreta, ausente ou com incoerências graves : 0 pontos
+Regras Adicionais  
+•	Penalização por Informações Incorretas: -3 pontos (por critério) se o aluno incluir detalhes errados ou confusos (ex.: afirmar que a fusão usa a subárvore direita).  
+•	Clareza e Organização: Respostas desorganizadas ou ambíguas podem perder até 2 pontos por critério (a critério do avaliador).  
+•	Notação da Árvore: Representações não padronizadas (ex.: falta de hierarquia clara) podem perder 1-2 pontos.
+","15.0","5","1","2025-05-06T14:50:07",""
+"449","32","Estrutura da Árvore após Remoção por Cópia","Pontuação:
+•	Representação correta da árvore após remoção do nó 31 (Nó 31 substituído por 27, Nó original 27 removido, Estrutura claramente ilustrada (ex.: diagrama ou descrição textual precisa)) : 15 pontos
+•	Erro parcial (ex.: substituição correta, mas falha na remoção do nó original 27) : 8 pontos
+•	Estrutura incorreta, ausente ou com incoerências graves : 0 pontos
+Regras Adicionais  
+•	Penalização por Informações Incorretas: -3 pontos (por critério) se o aluno incluir detalhes errados ou confusos (ex.: afirmar que a fusão usa a subárvore direita).  
+•	Clareza e Organização: Respostas desorganizadas ou ambíguas podem perder até 2 pontos por critério (a critério do avaliador).  
+•	Notação da Árvore: Representações não padronizadas (ex.: falta de hierarquia clara) podem perder 1-2 pontos.
+","","15.0","5","1","2025-05-06T14:50:53",""
+"450","38","Identificação da resposta correta","O aluno deve indicar a alínea b) ou “16 49 4”.","•	Se indicar a alínea b) ou” 16 49 4”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","5","1","2025-05-06T14:51:33",""
+"451","39","Identificação da resposta correta","O aluno deve indicar a alínea c) ou “1 2 6 3 8 9”.","•	Se indicar a alínea c) ou ”1 2 6 3 8 9”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","5","1","2025-05-06T14:51:58",""
+"452","40","Identificação da resposta correta","O aluno deve indicar a alínea a) ou “O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa”.","•	Se indicar a alínea a) ou “O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa”: 20 pontos.
+•	Se indicar outra alínea ou valor diferente do correto: 0 pontos.
+","20.0","5","1","2025-05-06T14:52:26",""
+"453","41","Definição da Estrutura e Inserção de Nodos","Definição da Estrutura e Inserção de Nodos
+","Pontuação:
+a)	Subcritério 1: Definição correta da estrutura `nodo`
+•	Implementação correta com `int dados`, `nodo* esq` e `nodo* dir` : 5 pontos
+•	Implementação incorreta ou ausente : 0 pontos
+b)	Subcritério 2: Implementação da função `inserirNodo`
+•	Função implementada corretamente com lógica recursiva : 5 pontos
+•	Implementação incorreta ou ausente : 0 pontos
+c)	Subcritério 3: Inicialização e uso correto da raiz
+•	Raiz inicializada como NULL e atualizada corretamente : 3 pontos
+•	Todos os valores {28,...,48} inseridos corretamente : 2 pontos
+•	Implementação incorreta ou ausente : 0 pontos
+
+Penalizações adicionais (não excedendo 20% por critério): 
+•	-3 pontos por código desnecessário que cause confusão
+•	-2 pontos por erros de sintaxe não críticos
+•	-1 ponto por pequenos desvios na formatação
+","15.0","5","1","2025-05-06T14:53:09",""
+"454","41","Implementação da Função `existe`","Implementação da Função `existe`","Pontuação:
+a)	Subcritério 1: Definição correta da função
+•	Nome, parâmetros (`nodo* raiz, int valor`) e tipo de retorno `bool` corretos : 5 pontos
+•	Definição incorreta ou ausente : 0 pontos
+b)	Subcritério 2: Lógica de pesquisa recursiva
+•	Implementação recursiva correta seguindo propriedades BST : 10 pontos
+•	Implementação iterativa correta (não recursiva) : 8 pontos
+•	Lógica incorreta ou ausente : 0 pontos
+c)	Subcritério 3: Retorno correto
+•	Retorna `true` se valor existe, `false` caso contrário : 5 pontos
+•	Retorno incorreto ou ausente : 0 pontos
+
+Penalizações adicionais (não excedendo 20% por critério): 
+•	-3 pontos por código desnecessário que cause confusão
+•	-2 pontos por erros de sintaxe não críticos
+•	-1 ponto por pequenos desvios na formatação
+","20.0","5","1","2025-05-06T14:53:42",""
+"455","41","Implementação da Função `imprimirFolhas` ","Implementação da Função `imprimirFolhas` ","Pontuação:
+a)	Subcritério 1: Definição correta da função
+•	Nome, parâmetro (`nodo* raiz`) e tipo `void` corretos: 5 pontos
+•	Definição incorreta ou ausente : 0 pontos
+b)	Subcritério 2: Identificação correta de nós folha
+•	Identifica e imprime apenas nós sem filhos : 10 pontos
+•	Imprime alguns nós folha corretamente : 5 pontos
+•	Lógica incorreta ou ausente : 0 pontos
+c)	Subcritério 3: Formatação da saída
+•	Valores impressos corretamente (ex: separados por espaços) : 5 pontos
+•	Formatação incorreta ou ausente : 0 pontos
+
+Penalizações adicionais (não excedendo 20% por critério): 
+•	-3 pontos por código desnecessário que cause confusão
+•	-2 pontos por erros de sintaxe não críticos
+•	-1 ponto por pequenos desvios na formatação
+","20.0","5","1","2025-05-06T14:54:15",""
+"456","41","Implementação da Função `somaValores`","Implementação da Função `somaValores`","Pontuação:
+a)	Subcritério 1: Definição correta da função
+•	Nome, parâmetro (`nodo* raiz`) e tipo `int` corretos: 5 pontos
+•	Definição incorreta ou ausente : 0 pontos
+b)	Subcritério 2: Lógica de soma recursiva
+•	Soma recursiva correta de todos os valores : 10 pontos
+•	Soma parcialmente correta : 5 pontos
+•	Lógica incorreta ou ausente : 0 pontos
+c)	Subcritério 3: Retorno correto
+•	Retorna soma total correta : 5 pontos
+•	Retorno incorreto ou ausente : 0 pontos
+
+Penalizações adicionais (não excedendo 20% por critério): 
+•	-3 pontos por código desnecessário que cause confusão
+•	-2 pontos por erros de sintaxe não críticos
+•	-1 ponto por pequenos desvios na formatação
+","20.0","5","1","2025-05-06T14:54:51",""
+"457","41","Uso Correto no Programa Principal","Uso Correto no Programa Principal","Pontuação:
+a)	Subcritério 1: Inicialização e construção da árvore
+•	Raiz declarada e inicializada corretamente: 2 pontos
+•	Todos valores inseridos via `inserirNodo` : 3 pontos
+•	Implementação incorreta ou ausente : 0 pontos
+b)	Subcritério 2: Chamada das funções implementadas
+•	Chamadas corretas para `existe`, `imprimirFolhas` e `somaValores` : 5 pontos
+•	Chamadas parcialmente corretas : 2 pontos
+•	Chamadas incorretas ou ausentes : 0 pontos
+c)	Subcritério 3: Exibição dos resultados
+•	Resultados exibidos de forma clara e organizada : 5 pontos
+•	Exibição parcial ou incorreta : 2 pontos
+•	Exibição ausente : 0 pontos
+
+Penalizações adicionais (não excedendo 20% por critério): 
+•	-3 pontos por código desnecessário que cause confusão
+•	-2 pontos por erros de sintaxe não críticos
+•	-1 ponto por pequenos desvios na formatação
+","15.0","5","1","2025-05-06T14:55:43",""

@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "model_name": "gpt-4.1",
+    "lanchain_class": "CustomChatOpenAI",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-11T22:03:28",
+    "updated_at": "2025-06-14T11:49:17",
+    "temperature": 0.1
+  },
+  {
+    "id": 2,
+    "model_name": "gpt-4.1-mini",
+    "lanchain_class": "CustomChatOpenAI",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-11T22:03:28",
+    "updated_at": "2025-06-14T11:49:19",
+    "temperature": 0.1
+  },
+  {
+    "id": 3,
+    "model_name": "gpt-4.1-nano",
+    "lanchain_class": "CustomChatOpenAI",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-11T22:03:28",
+    "updated_at": "2025-06-14T11:49:22",
+    "temperature": 0.1
+  },
+  {
+    "id": 4,
+    "model_name": "gpt-4o",
+    "lanchain_class": "CustomChatOpenAI",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-11T22:03:28",
+    "updated_at": "2025-06-14T11:49:24",
+    "temperature": 0.1
+  },
+  {
+    "id": 5,
+    "model_name": "gpt-4o-mini",
+    "lanchain_class": "CustomChatOpenAI",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-11T22:03:28",
+    "updated_at": "2025-06-14T11:49:26",
+    "temperature": 0.1
+  },
+  {
+    "id": 6,
+    "model_name": "o3",
+    "lanchain_class": "CustomChatOpenAI",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-11T22:03:28",
+    "updated_at": "2025-06-11T22:04:24",
+    "temperature": 1.0
+  },
+  {
+    "id": 7,
+    "model_name": "o4-mini",
+    "lanchain_class": "CustomChatOpenAI",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-11T22:03:28",
+    "updated_at": "2025-06-11T22:04:27",
+    "temperature": 1.0
+  },
+  {
+    "id": 8,
+    "model_name": "o1",
+    "lanchain_class": "CustomChatOpenAI",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-11T22:03:28",
+    "updated_at": "2025-06-11T22:04:30",
+    "temperature": 1.0
+  },
+  {
+    "id": 9,
+    "model_name": "o1-mini",
+    "lanchain_class": "CustomChatOpenAI",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-11T22:03:28",
+    "updated_at": "2025-06-11T22:04:34",
+    "temperature": 1.0
+  },
+  {
+    "id": 10,
+    "model_name": "o1-preview",
+    "lanchain_class": "CustomChatOpenAI",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-11T22:03:28",
+    "updated_at": "2025-06-11T22:04:38",
+    "temperature": 1.0
+  },
+  {
+    "id": 11,
+    "model_name": "o3-mini",
+    "lanchain_class": "CustomChatOpenAI",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-11T22:03:28",
+    "updated_at": "2025-06-11T22:04:42",
+    "temperature": 1.0
+  },
+  {
+    "id": 12,
+    "model_name": "deepseek-r1-distill-llama-70b",
+    "lanchain_class": "CustomChatGroq",
+    "type": "open-source",
+    "is_active": 1,
+    "created_at": "2025-06-12T14:42:44",
+    "updated_at": null,
+    "temperature": 1.0
+  },
+  {
+    "id": 13,
+    "model_name": "deepseek-chat",
+    "lanchain_class": "CustomDeepSeekChat",
+    "type": "open-source",
+    "is_active": 1,
+    "created_at": "2025-06-12T14:42:44",
+    "updated_at": "2025-06-14T11:49:28",
+    "temperature": 0.1
+  },
+  {
+    "id": 14,
+    "model_name": "claude-sonnet-4-20250514",
+    "lanchain_class": "CustomClaudeChat",
+    "type": "premium",
+    "is_active": 1,
+    "created_at": "2025-06-12T16:13:43",
+    "updated_at": "2025-06-14T11:49:31",
+    "temperature": 0.1
+  }
+]

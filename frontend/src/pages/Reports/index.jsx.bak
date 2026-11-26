@@ -1,0 +1,237 @@
+import { TopNav } from '@/components/layout/top-nav'
+import { Badge } from '@/components/ui/badge'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { usePageTitle } from '@/hooks/use-page-title'
+import { interviewService } from '@/services/interview-service'
+import { useEffect, useState } from 'react'
+
+const metrics = [
+  ['Technical relevance', 'technical_relevance'],
+  ['Concept coverage', 'concept_coverage'],
+  ['Answer structure', 'answer_structure'],
+  ['Communication', 'communication'],
+]
+
+function FeedbackList({ title, items, emptyText }) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-2">
+        {items?.length ? (
+          items.map((item, index) => (
+            <p
+              key={`${title}-${index}`}
+              className="border-l-2 border-accent px-3 py-2 text-sm text-muted-foreground"
+            >
+              {item}
+            </p>
+          ))
+        ) : (
+          <p className="text-sm text-muted-foreground">{emptyText}</p>
+        )}
+      </CardContent>
+    </Card>
+  )
+}
+
+export function ReportsPage() {
+  usePageTitle('Reports')
+
+  const [reports, setReports] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
+
+  useEffect(() => {
+    interviewService.reports()
+      .then((response) => setReports(response.reports || []))
+      .catch((err) => setError(err.message || 'Could not load reports.'))
+      .finally(() => setLoading(false))
+  }, [])
+
+  return (
+    <div>
+      <TopNav
+        title="Interview Intelligence Reports"
+        subtitle="Review your saved interview analyses and answer-level feedback"
+      />
+
+      {loading ? (
+        <div className="h-64 animate-pulse bg-muted/40" />
+      ) : error ? (
+        <div className="border border-dashed border-border p-10 text-center text-sm text-muted-foreground">
+          {error}
+        </div>
+      ) : reports.length === 0 ? (
+        <div className="border border-dashed border-border p-10 text-center text-sm text-muted-foreground">
+          No saved reports were returned for your account. Your completed interviews may still exist; we should verify report storage before asking you to repeat an interview.
+        </div>
+      ) : (
+        <div className="space-y-8">
+          <p className="text-sm text-muted-foreground">
+            {reports.length} saved {reports.length === 1 ? 'interview report' : 'interview reports'}
+          </p>
+
+          {reports.map((report, reportIndex) => {
+            const analysis = report.analysis || {}
+            const answers = analysis.answers || []
+
+            return (
+              <section
+                key={report._id || report.interviewId || reportIndex}
+                className="space-y-5 border-b border-border pb-8"
+              >
+                <div className="flex flex-wrap items-start justify-between gap-3">
+                  <div>
+                    <h2 className="font-display text-xl text-foreground">
+                      Interview report {reports.length - reportIndex}
+                    </h2>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      {report.createdAt
+                        ? `Generated ${new Date(report.createdAt).toLocaleString()}`
+                        : 'Saved interview analysis'}
+                    </p>
+                  </div>
+
+                  <Badge>
+                    {analysis.status || 'saved'}
+                  </Badge>
+                </div>
+
+                <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                  {metrics.map(([label, key]) => {
+                    const value = analysis[key]
+                    const valid = Number.isFinite(Number(value)) && value !== null && value !== undefined
+
+                    return (
+                      <Card key={key}>
+                        <CardContent className="p-5">
+                          <p className="eyebrow">{label}</p>
+                          <p className="mt-3 font-data text-3xl text-foreground">
+                            {valid ? `${value}%` : 'N/A'}
+                          </p>
+                        </CardContent>
+                      </Card>
+                    )
+                  })}
+                </div>
+
+                <p className="text-sm text-muted-foreground">
+                  Analyzed answers: {analysis.analyzedAnswers ?? answers.length}
+                  {analysis.totalAnswers != null ? ` / ${analysis.totalAnswers}` : ''}
+                </p>
+
+                <div className="grid gap-4 lg:grid-cols-2">
+                  <FeedbackList
+                    title="Detected concepts"
+                    items={analysis.detected}
+                    emptyText="No concepts were returned by the analyzer."
+                  />
+                  <FeedbackList
+                    title="Missing concepts"
+                    items={analysis.missing}
+                    emptyText="No missing concepts were returned by the analyzer."
+                  />
+                  <FeedbackList
+                    title="Strengths"
+                    items={analysis.strengths}
+                    emptyText="No strengths were returned."
+                  />
+                  <FeedbackList
+                    title="Areas to improve"
+                    items={analysis.weaknesses}
+                    emptyText="No weaknesses were returned."
+                  />
+                  <div className="lg:col-span-2">
+                    <FeedbackList
+                      title="Recommendations"
+                      items={analysis.recommendations}
+                      emptyText="No recommendations were returned."
+                    />
+                  </div>
+                </div>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Question-by-question feedback</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    {answers.length ? (
+                      answers.map((item, index) => (
+                        <div
+                          key={`${report.interviewId || reportIndex}-answer-${index}`}
+                          className="border border-border bg-muted/30 p-4"
+                        >
+                          <p className="text-sm font-medium text-foreground">
+                            {index + 1}. {item.question || 'Question unavailable'}
+                          </p>
+
+                          <p className="mt-3 whitespace-pre-line text-sm leading-6 text-muted-foreground">
+                            {item.answer || 'No answer text available'}
+                          </p>
+
+                          {item.analysis && (
+                            <div className="mt-4 flex flex-wrap gap-2">
+                              {metrics.map(([label, key]) => {
+                                const value = item.analysis[key]
+                                const valid = Number.isFinite(Number(value)) && value !== null && value !== undefined
+
+                                return (
+                                  <Badge key={key}>
+                                    {label}: {valid ? `${value}%` : 'N/A'}
+                                  </Badge>
+                                )
+                              })}
+                            </div>
+                          )}
+
+                          {item.analysis?.strengths?.length > 0 && (
+                            <div className="mt-4">
+                              <p className="eyebrow">Strengths</p>
+                              <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
+                                {item.analysis.strengths.map((value, i) => (
+                                  <li key={i}>{value}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+
+                          {item.analysis?.weaknesses?.length > 0 && (
+                            <div className="mt-4">
+                              <p className="eyebrow">Areas to improve</p>
+                              <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
+                                {item.analysis.weaknesses.map((value, i) => (
+                                  <li key={i}>{value}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+
+                          {item.analysis?.recommendations?.length > 0 && (
+                            <div className="mt-4">
+                              <p className="eyebrow">Recommendations</p>
+                              <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
+                                {item.analysis.recommendations.map((value, i) => (
+                                  <li key={i}>{value}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+                        </div>
+                      ))
+                    ) : (
+                      <p className="text-sm text-muted-foreground">
+                        This report does not contain saved question-level feedback.
+                      </p>
+                    )}
+                  </CardContent>
+                </Card>
+              </section>
+            )
+          })}
+        </div>
+      )}
+    </div>
+  )
+}

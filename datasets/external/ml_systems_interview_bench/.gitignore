@@ -1,0 +1,4 @@
+.venv-hf-bench/
+__pycache__/
+*.pyc
+.DS_Store

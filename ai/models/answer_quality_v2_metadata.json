@@ -1,0 +1,59 @@
+{
+  "artifact_version": "answer_quality_v2",
+  "dataset_source": {
+    "observations": "datasets\\nexora\\answer_intelligence\\nexora_answer_observations.csv",
+    "labels": "datasets\\nexora\\answer_intelligence\\nexora_answer_labels.csv",
+    "quality_report": "datasets\\analysis\\nexora_ml_data_quality_report.json"
+  },
+  "target_definition": "labels filtered to evaluator_type == human and label_level == overall; mean overall_score aggregated by response_id",
+  "join_key": "response_id",
+  "deduplication": "exact normalized answer per student_id + question_id + answer text",
+  "split_strategy": "GroupShuffleSplit by student_id: 60/20/20 train/validation/test",
+  "random_seed": 42,
+  "feature_configuration": {
+    "vectorizer": "TfidfVectorizer",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "max_features": 10000,
+    "ridge_alphas": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ]
+  },
+  "sample_counts": {
+    "train": {
+      "rows": 433,
+      "students": 43
+    },
+    "validation": {
+      "rows": 144,
+      "students": 15
+    },
+    "test": {
+      "rows": 152,
+      "students": 15
+    }
+  },
+  "cleaning": {
+    "observation_rows": 729,
+    "human_overall_rows": 3645,
+    "response_ids_with_aggregated_ratings": 729,
+    "joined_rows_before_duplicate_answer_removal": 729,
+    "duplicate_answer_rows_removed": 0,
+    "final_rows": 729,
+    "distinct_students": 73
+  },
+  "dependencies": {
+    "python": "25.1.1",
+    "pandas": "2.3.0",
+    "scikit-learn": "1.7.1",
+    "joblib": "1.5.1"
+  },
+  "test_reload_prediction": 12.169289776771663,
+  "ground_truth_policy": "human labels only; LLM labels excluded"
+}

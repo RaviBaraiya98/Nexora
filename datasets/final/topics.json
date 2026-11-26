@@ -1,0 +1,106 @@
+[
+  {
+    "name": "algorithms",
+    "source": {
+      "dataset": "remomo/software-interview-questions",
+      "source_type": "public_dataset",
+      "license": "unverified_in_repository",
+      "method": "keyword taxonomy"
+    },
+    "metadata": {
+      "inference": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "name": "data structures",
+    "source": {
+      "dataset": "remomo/software-interview-questions",
+      "source_type": "public_dataset",
+      "license": "unverified_in_repository",
+      "method": "keyword taxonomy"
+    },
+    "metadata": {
+      "inference": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "name": "databases",
+    "source": {
+      "dataset": "remomo/software-interview-questions",
+      "source_type": "public_dataset",
+      "license": "unverified_in_repository",
+      "method": "keyword taxonomy"
+    },
+    "metadata": {
+      "inference": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "name": "networking",
+    "source": {
+      "dataset": "remomo/software-interview-questions",
+      "source_type": "public_dataset",
+      "license": "unverified_in_repository",
+      "method": "keyword taxonomy"
+    },
+    "metadata": {
+      "inference": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "name": "object-oriented programming",
+    "source": {
+      "dataset": "remomo/software-interview-questions",
+      "source_type": "public_dataset",
+      "license": "unverified_in_repository",
+      "method": "keyword taxonomy"
+    },
+    "metadata": {
+      "inference": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "name": "operating systems",
+    "source": {
+      "dataset": "remomo/software-interview-questions",
+      "source_type": "public_dataset",
+      "license": "unverified_in_repository",
+      "method": "keyword taxonomy"
+    },
+    "metadata": {
+      "inference": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "name": "programming languages",
+    "source": {
+      "dataset": "remomo/software-interview-questions",
+      "source_type": "public_dataset",
+      "license": "unverified_in_repository",
+      "method": "keyword taxonomy"
+    },
+    "metadata": {
+      "inference": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "name": "software engineering",
+    "source": {
+      "dataset": "remomo/software-interview-questions",
+      "source_type": "public_dataset",
+      "license": "unverified_in_repository",
+      "method": "keyword taxonomy"
+    },
+    "metadata": {
+      "inference": true,
+      "confidence": "medium"
+    }
+  }
+]

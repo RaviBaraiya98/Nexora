@@ -1,0 +1,1482 @@
+[
+  {
+    "id": 38,
+    "student_id": 41,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:16:15",
+    "updated_at": null
+  },
+  {
+    "id": 39,
+    "student_id": 42,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:16:18",
+    "updated_at": null
+  },
+  {
+    "id": 40,
+    "student_id": 43,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:16:22",
+    "updated_at": null
+  },
+  {
+    "id": 41,
+    "student_id": 44,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:16:25",
+    "updated_at": null
+  },
+  {
+    "id": 42,
+    "student_id": 45,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:16:28",
+    "updated_at": null
+  },
+  {
+    "id": 43,
+    "student_id": 46,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:16:32",
+    "updated_at": null
+  },
+  {
+    "id": 44,
+    "student_id": 47,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:16:35",
+    "updated_at": null
+  },
+  {
+    "id": 45,
+    "student_id": 48,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:16:38",
+    "updated_at": null
+  },
+  {
+    "id": 46,
+    "student_id": 49,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:16:43",
+    "updated_at": null
+  },
+  {
+    "id": 47,
+    "student_id": 50,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:16:56",
+    "updated_at": null
+  },
+  {
+    "id": 48,
+    "student_id": 51,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:17:00",
+    "updated_at": null
+  },
+  {
+    "id": 49,
+    "student_id": 52,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:17:03",
+    "updated_at": null
+  },
+  {
+    "id": 50,
+    "student_id": 53,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:17:07",
+    "updated_at": null
+  },
+  {
+    "id": 51,
+    "student_id": 54,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:17:10",
+    "updated_at": null
+  },
+  {
+    "id": 52,
+    "student_id": 55,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:17:14",
+    "updated_at": null
+  },
+  {
+    "id": 53,
+    "student_id": 56,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:17:18",
+    "updated_at": null
+  },
+  {
+    "id": 54,
+    "student_id": 57,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:17:21",
+    "updated_at": null
+  },
+  {
+    "id": 55,
+    "student_id": 58,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:17:25",
+    "updated_at": null
+  },
+  {
+    "id": 56,
+    "student_id": 59,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:17:30",
+    "updated_at": null
+  },
+  {
+    "id": 57,
+    "student_id": 60,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 58,
+    "student_id": 61,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 59,
+    "student_id": 62,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 60,
+    "student_id": 63,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 61,
+    "student_id": 64,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 62,
+    "student_id": 65,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 63,
+    "student_id": 66,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 64,
+    "student_id": 67,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 65,
+    "student_id": 68,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 66,
+    "student_id": 69,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 67,
+    "student_id": 70,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 68,
+    "student_id": 71,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 69,
+    "student_id": 72,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 70,
+    "student_id": 73,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 71,
+    "student_id": 74,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 72,
+    "student_id": 75,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 73,
+    "student_id": 76,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 74,
+    "student_id": 77,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 75,
+    "student_id": 78,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 76,
+    "student_id": 79,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 77,
+    "student_id": 80,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 78,
+    "student_id": 81,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 79,
+    "student_id": 82,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 80,
+    "student_id": 83,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 81,
+    "student_id": 84,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 82,
+    "student_id": 85,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 83,
+    "student_id": 86,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:30",
+    "updated_at": null
+  },
+  {
+    "id": 84,
+    "student_id": 87,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 85,
+    "student_id": 88,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 86,
+    "student_id": 89,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 87,
+    "student_id": 90,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 88,
+    "student_id": 91,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 89,
+    "student_id": 92,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 90,
+    "student_id": 93,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 91,
+    "student_id": 94,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 92,
+    "student_id": 95,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 93,
+    "student_id": 96,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 94,
+    "student_id": 97,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 95,
+    "student_id": 98,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 96,
+    "student_id": 99,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 97,
+    "student_id": 100,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 98,
+    "student_id": 101,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 99,
+    "student_id": 102,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 100,
+    "student_id": 103,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 101,
+    "student_id": 104,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 102,
+    "student_id": 105,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 103,
+    "student_id": 106,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 104,
+    "student_id": 107,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 105,
+    "student_id": 108,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 106,
+    "student_id": 109,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 107,
+    "student_id": 110,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 108,
+    "student_id": 111,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 109,
+    "student_id": 112,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 110,
+    "student_id": 113,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 111,
+    "student_id": 114,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 112,
+    "student_id": 115,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 113,
+    "student_id": 116,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:31",
+    "updated_at": null
+  },
+  {
+    "id": 114,
+    "student_id": 117,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 115,
+    "student_id": 118,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 116,
+    "student_id": 119,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 117,
+    "student_id": 120,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 118,
+    "student_id": 121,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 119,
+    "student_id": 122,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 120,
+    "student_id": 123,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 121,
+    "student_id": 124,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 122,
+    "student_id": 125,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 123,
+    "student_id": 126,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 124,
+    "student_id": 127,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 125,
+    "student_id": 128,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 126,
+    "student_id": 129,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 127,
+    "student_id": 130,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 128,
+    "student_id": 131,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 129,
+    "student_id": 132,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 130,
+    "student_id": 133,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 131,
+    "student_id": 134,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 132,
+    "student_id": 135,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 133,
+    "student_id": 136,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 134,
+    "student_id": 137,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 135,
+    "student_id": 138,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 136,
+    "student_id": 139,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 137,
+    "student_id": 140,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 138,
+    "student_id": 141,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 139,
+    "student_id": 142,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 140,
+    "student_id": 143,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:32",
+    "updated_at": null
+  },
+  {
+    "id": 141,
+    "student_id": 144,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 142,
+    "student_id": 145,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 143,
+    "student_id": 146,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 144,
+    "student_id": 147,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 145,
+    "student_id": 148,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 146,
+    "student_id": 149,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 147,
+    "student_id": 150,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 148,
+    "student_id": 151,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 149,
+    "student_id": 152,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 150,
+    "student_id": 153,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 151,
+    "student_id": 154,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 152,
+    "student_id": 155,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 153,
+    "student_id": 156,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 154,
+    "student_id": 157,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 155,
+    "student_id": 158,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 156,
+    "student_id": 159,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 157,
+    "student_id": 160,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 158,
+    "student_id": 161,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 159,
+    "student_id": 162,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 160,
+    "student_id": 163,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 161,
+    "student_id": 164,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 162,
+    "student_id": 165,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 163,
+    "student_id": 166,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 164,
+    "student_id": 167,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 165,
+    "student_id": 168,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 166,
+    "student_id": 169,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 167,
+    "student_id": 170,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 168,
+    "student_id": 171,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:33",
+    "updated_at": null
+  },
+  {
+    "id": 169,
+    "student_id": 172,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 170,
+    "student_id": 173,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 171,
+    "student_id": 174,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 172,
+    "student_id": 175,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 173,
+    "student_id": 176,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 174,
+    "student_id": 177,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 175,
+    "student_id": 178,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 176,
+    "student_id": 179,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 177,
+    "student_id": 180,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 178,
+    "student_id": 181,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 179,
+    "student_id": 182,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 180,
+    "student_id": 183,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 181,
+    "student_id": 184,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 182,
+    "student_id": 185,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 183,
+    "student_id": 186,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 184,
+    "student_id": 187,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 185,
+    "student_id": 188,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 186,
+    "student_id": 189,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 187,
+    "student_id": 190,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 188,
+    "student_id": 191,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 189,
+    "student_id": 192,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 190,
+    "student_id": 193,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 191,
+    "student_id": 194,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 192,
+    "student_id": 195,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 193,
+    "student_id": 196,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 194,
+    "student_id": 197,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 195,
+    "student_id": 198,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 196,
+    "student_id": 199,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 197,
+    "student_id": 200,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 198,
+    "student_id": 201,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 199,
+    "student_id": 202,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 200,
+    "student_id": 203,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 201,
+    "student_id": 204,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 202,
+    "student_id": 205,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 203,
+    "student_id": 206,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 204,
+    "student_id": 207,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 205,
+    "student_id": 208,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 206,
+    "student_id": 209,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 207,
+    "student_id": 210,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 208,
+    "student_id": 211,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:34",
+    "updated_at": null
+  },
+  {
+    "id": 209,
+    "student_id": 212,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:35",
+    "updated_at": null
+  },
+  {
+    "id": 210,
+    "student_id": 213,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:35",
+    "updated_at": null
+  },
+  {
+    "id": 211,
+    "student_id": 214,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:35",
+    "updated_at": null
+  },
+  {
+    "id": 212,
+    "student_id": 215,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:35",
+    "updated_at": null
+  },
+  {
+    "id": 213,
+    "student_id": 216,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:35",
+    "updated_at": null
+  },
+  {
+    "id": 214,
+    "student_id": 217,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:35",
+    "updated_at": null
+  },
+  {
+    "id": 215,
+    "student_id": 218,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-14T11:20:35",
+    "updated_at": null
+  },
+  {
+    "id": 216,
+    "student_id": 5,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-01-15T15:10:47",
+    "updated_at": "2025-10-07T00:12:08"
+  },
+  {
+    "id": 219,
+    "student_id": 219,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-02-22T15:34:10",
+    "updated_at": null
+  },
+  {
+    "id": 220,
+    "student_id": 220,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-02-22T15:34:10",
+    "updated_at": null
+  },
+  {
+    "id": 221,
+    "student_id": 221,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-02-22T15:34:21",
+    "updated_at": null
+  },
+  {
+    "id": 222,
+    "student_id": 222,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-02-22T15:34:21",
+    "updated_at": null
+  },
+  {
+    "id": 223,
+    "student_id": 223,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-02-22T15:34:31",
+    "updated_at": null
+  },
+  {
+    "id": 224,
+    "student_id": 1,
+    "uc_school_year_id": 5,
+    "is_active": 1,
+    "created_at": "2025-03-22T09:50:50",
+    "updated_at": null
+  }
+]

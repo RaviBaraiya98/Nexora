@@ -1,0 +1,136 @@
+{
+  "project": "Nexora",
+  "builder": "build_nexora_training_data.py",
+  "purpose": "Construct clean source-separated datasets for future Nexora AI/ML development. This script does not train models.",
+  "project_root": "C:\\Users\\Ravi\\OneDrive\\Documents\\Sem 7\\SGP\\Nexora",
+  "sources": {
+    "harmogen_r": {
+      "path": "C:\\Users\\Ravi\\OneDrive\\Documents\\Sem 7\\SGP\\Nexora\\datasets\\external\\harmogen_r\\extracted\\harmogenr_dataset_v2",
+      "usage": [
+        "student response observations",
+        "rubric/criterion evaluations",
+        "final evaluations",
+        "auxiliary feedback reports"
+      ],
+      "ground_truth_rule": "Human/teacher evaluations remain separate from LLM evaluations. LLM evaluations are never silently treated as human ground truth."
+    },
+    "swe_qa": {
+      "path": "C:\\Users\\Ravi\\OneDrive\\Documents\\Sem 7\\SGP\\Nexora\\datasets\\external\\swe_qa",
+      "usage": [
+        "software-engineering question/reference-answer knowledge"
+      ],
+      "taxonomy_rule": "No topic/concept labels are invented by this script."
+    },
+    "campus_recruitment": {
+      "path": "C:\\Users\\Ravi\\OneDrive\\Documents\\Sem 7\\SGP\\Nexora\\datasets\\external\\campus_recruitment\\raw_datasets",
+      "usage": [
+        "placement-readiness/status tabular modeling"
+      ],
+      "split_rule": "Original train/validation/test membership is preserved."
+    }
+  },
+  "outputs": {
+    "answer_observations": {
+      "rows": 729,
+      "columns": [
+        "response_id",
+        "student_id",
+        "question_id",
+        "question",
+        "student_answer",
+        "source_dataset",
+        "source_type",
+        "answer_language",
+        "response_valid"
+      ],
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "missing_by_column": {}
+    },
+    "answer_labels": {
+      "rows": 61965,
+      "columns": [
+        "evaluation_id",
+        "response_id",
+        "evaluator_type",
+        "evaluator_id",
+        "label_level",
+        "criterion",
+        "criterion_description",
+        "criterion_score",
+        "overall_score",
+        "feedback",
+        "label_source",
+        "needs_teacher_review"
+      ],
+      "duplicate_rows": 0,
+      "missing_cells": 109350,
+      "missing_by_column": {
+        "criterion_score": 61965,
+        "needs_teacher_review": 47385
+      }
+    },
+    "question_knowledge": {
+      "rows": 720,
+      "columns": [
+        "knowledge_id",
+        "question",
+        "reference_answer",
+        "topic",
+        "concepts",
+        "source_dataset",
+        "source_repository",
+        "source_record_id",
+        "inference_method",
+        "inference_confidence",
+        "license_review_status"
+      ],
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "missing_by_column": {}
+    },
+    "readiness": {
+      "rows": 9494,
+      "columns": [
+        "cgpa",
+        "internships",
+        "projects",
+        "certifications",
+        "aptitude_score",
+        "soft_skills_rating",
+        "extracurricular_activities",
+        "placement_training",
+        "ssc_marks",
+        "hsc_marks",
+        "placement_status",
+        "source_split",
+        "source_dataset"
+      ],
+      "duplicate_rows": 0,
+      "missing_cells": 18988,
+      "missing_by_column": {
+        "aptitude_score": 9494,
+        "soft_skills_rating": 9494
+      }
+    }
+  },
+  "leakage_checks": {
+    "unique_students": 73,
+    "unique_questions": 15,
+    "unique_responses": 729,
+    "duplicate_answer_text_rows": 428,
+    "unique_labeled_responses": 729,
+    "label_evaluator_types": {
+      "llm": 43740,
+      "human": 18225
+    },
+    "responses_with_multiple_labels": 729
+  },
+  "warnings": [
+    "HARMOGEN-R is academically focused and should not be assumed to represent all software interviews.",
+    "SWE-QA is knowledge/reference data, not student-answer grading data.",
+    "Campus Recruitment is a separate placement-status dataset.",
+    "Source licenses/terms must be reviewed before redistribution or commercial use.",
+    "Train/validation/test splitting for future models must happen at the student/response level where applicable to prevent leakage."
+  ]
+}

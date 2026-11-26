@@ -1,0 +1,313 @@
+﻿"id","author_id","question_id","example_response","is_active","created_at","updated_at"
+"34","4","21","<p>Não, não é possível alterar o tamanho de um array depois de declarado. Em C++, quando um array é declarado, a memória para os seus elementos é alocada de forma fixa e contínua. Como resultado, o seu tamanho não pode ser aumentado nem diminuído durante a execução do programa. Se tentarmos guardar mais elementos fora dos limites do array, podemos sobrescrever dados na memória e causar erros no programa.</p>","1","2025-02-05T14:42:15",""
+"35","4","21","<p>Não, uma vez declarado, o tamanho de um array não pode ser alterado. Isto deve-se ao facto de, em linguagens como C++, a memória para o array ser alocada de forma estática e contínua no momento da declaração. Se se tentar aceder ou guardar valores fora dos limites do array, pode ocorrer a sobreposição de áreas de memória que pertencem a outras variáveis ou ao próprio sistema, o que poderá conduzir a comportamentos inesperados e a erros no programa.</p>","1","2025-02-05T14:42:46",""
+"36","4","22","<p>O aluno deve indicar a alínea <strong>c)</strong> ou o valor <strong>2</strong>.</p>","1","2025-02-05T14:59:21",""
+"37","4","24","<p>O aluno deve indicar a alínea <strong>d)</strong> ou o valor <strong>42</strong>.</p>","1","2025-02-05T15:04:12",""
+"38","4","23","<p>O aluno deve indicar a alínea <strong>b)</strong> ou o valor <strong>1016</strong>.</p>","1","2025-02-05T15:05:12",""
+"39","4","25","<pre class=""ql-syntax"" spellcheck=""false"">// Função para preencher os salários dos funcionários
+void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i &lt; numFuncionarios; i++) {
+        cout &lt;&lt; ""Insira o salario do funcionario "" &lt;&lt; (i + 1) &lt;&lt; "": "";
+        cin &gt;&gt; salarios[i];
+    }
+}
+
+// Função para imprimir os salários que estejam acima de um valor mínimo
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout &lt;&lt; ""\nListagem de funcionarios cujo salario seja maior que "" &lt;&lt; valorMinimo &lt;&lt; "":\n"";
+    bool encontrou = false;
+
+    for (int i = 0; i &lt; numFuncionarios; i++) {
+        if (salarios[i] &gt; valorMinimo) {
+            cout &lt;&lt; ""Funcionario "" &lt;&lt; (i + 1) &lt;&lt; "" com salario "" &lt;&lt; salarios[i] &lt;&lt; ""€\n"";
+            encontrou = true;
+        }
+    }
+
+    if (!encontrou)
+        cout &lt;&lt; ""Nenhum funcionario possui salario acima de "" &lt;&lt; valorMinimo &lt;&lt; "".\n"";
+}
+</pre><p><br></p>","1","2025-02-05T15:18:29",""
+"40","4","26","<p>O modo ""ios::in"" permite abrir um ficheiro apenas para leitura, preservando seu conteúdo original, enquanto o modo ""ios::out"" abre-o para escrita, apagando o conteúdo anterior caso o ficheiro já exista. A função close() serve para fechar o fluxo do ficheiro, libertando recursos do sistema operativo. É importante utilizá-la para garantir que todos os dados sejam efetivamente escritos, permitir que outros programas acedam ao ficheiro e evitar desperdício de recursos do sistema. </p><p>&nbsp;</p><p>fstream ficheiro; </p><p>ficheiro.open(""dados.txt"", ios::in); </p><p>if(ficheiro.is_open()) { </p><p>	string linha; </p><p>	while(getline(ficheiro, linha)) { </p><p>	cout &lt;&lt; linha &lt;&lt; endl; </p><p>	} </p><p>	ficheiro.close(); </p><p>}</p>","1","2025-03-18T09:28:17",""
+"41","4","26","<p>A diferença fundamental entre ""ios::in"" e ""ios::out"" está na operação permitida no ficheiro: ""ios::in"" configura o stream para leitura apenas, mantendo o conteúdo original intacto, enquanto ""ios::out"" configura o stream para escrita, criando um novo ficheiro ou apagando o conteúdo de um ficheiro existente. A função close() fecha a conexão com o ficheiro, assegurando que os dados no buffer sejam devidamente escritos e libertando os recursos do sistema. É essencial usá-la para evitar corrupção de dados, permitir acesso por outros programas e prevenir problemas de recursos, especialmente em programas que manipulam vários ficheiros.</p><p>&nbsp;</p><p>fstream arquivo(""dados.txt"", ios::in); </p><p>if(arquivo.is_open()) { </p><p>char c; </p><p>while(arquivo.get(c)) { </p><p>	cout &lt;&lt; c; </p><p>} </p><p>arquivo.close(); </p><p>}</p>","1","2025-03-18T09:28:30",""
+"42","4","26","<p>Em C++ o modo ios::in indica que o ficheiro será aberto para leitura, permitindo apenas extrair os dados sem os alterar, enquanto ios::out destina-se à escrita, permitindo criar ou substituir o conteúdo do ficheiro. A função close() fecha o ficheiro, libertando os recursos do sistema e garantindo que todos os dados foram corretamente gravados, prevenindo problemas como corrupção ou bloqueio do ficheiro.</p><p>&nbsp;</p><p>fstream fs;</p><p> fs.open(""texto.txt"", ios::in);</p><p> string linha;</p><p> getline(fs, linha);</p><p> fs.close();</p>","1","2025-03-18T09:28:43",""
+"43","4","26","<p>Em C++ ios::in é utilizado para abrir um ficheiro em modo de leitura, possibilitando a obtenção dos dados existentes sem modificá-los, ao passo que ios::out é usado para abrir um ficheiro para escrita, permitindo inserir ou atualizar o seu conteúdo. A função close() tem a finalidade de terminar a ligação com o ficheiro, assegurando a liberação dos recursos alocados e a conclusão correta de quaisquer operações de escrita pendentes, o que é fundamental para manter a integridade dos dados.</p><p>&nbsp;</p><p>fstream ficheiro;</p><p> ficheiro.open(""dados.txt"", ios::in);</p><p> string linha, conteudo;</p><p> while(getline(ficheiro, linha))</p><p>  conteudo += linha + ""\n"";</p><p> ficheiro.close();</p>","1","2025-03-18T09:28:56",""
+"44","4","27","<p>O aluno deve indicar a alínea c) ou “É possível comparar duas strings usando o operador de igualdade (==)”</p>","1","2025-03-18T09:37:06",""
+"45","4","28","<p>O aluno deve indicar a alínea b) ou int* arr = new int[10]</p>","1","2025-03-18T09:39:54",""
+"46","4","29","<p>O aluno deve indicar a alínea a) ou Aluno a = {123, ""Ana"", 16.5}</p>","1","2025-03-18T09:43:26",""
+"50","4","31","<p>#include &lt;iostream&gt;</p><p>#include &lt;string&gt;</p><p>&nbsp;</p><p>using namespace std;</p><p>&nbsp;</p><p>// Definição das estruturas</p><p>struct Morada {</p><p>&nbsp;&nbsp;&nbsp;string rua;</p><p>&nbsp;&nbsp;&nbsp;string codigoPostal;</p><p>&nbsp;&nbsp;&nbsp;string localidade;</p><p>};</p><p>&nbsp;</p><p>struct Pessoa {</p><p>&nbsp;&nbsp;&nbsp;int id;</p><p>&nbsp;&nbsp;&nbsp;string nome;</p><p>&nbsp;&nbsp;&nbsp;string dataNascimento;</p><p>&nbsp;&nbsp;&nbsp;Morada morada;</p><p>};</p><p>&nbsp;</p><p>// Função inserirPessoa que cria e retorna uma estrutura Pessoa totalmente preenchida</p><p>Pessoa inserirPessoa() {</p><p>&nbsp;&nbsp;&nbsp;Pessoa p;</p><p>&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;cout &lt;&lt; ""\nIntroduza os dados da pessoa:"" &lt;&lt; endl;</p><p>&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;cout &lt;&lt; ""ID: "";</p><p>&nbsp;&nbsp;&nbsp;cin &gt;&gt; p.id;</p><p>&nbsp;&nbsp;&nbsp;cin.ignore(); // Limpar buffer</p><p>&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;cout &lt;&lt; ""Nome: "";</p><p>&nbsp;&nbsp;&nbsp;getline(cin, p.nome);</p><p>&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;cout &lt;&lt; ""Data de Nascimento: "";</p><p>&nbsp;&nbsp;&nbsp;getline(cin, p.dataNascimento);</p><p>&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;cout &lt;&lt; ""Rua: "";</p><p>&nbsp;&nbsp;&nbsp;getline(cin, p.morada.rua);</p><p>&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;cout &lt;&lt; ""Código Postal: "";</p><p>&nbsp;&nbsp;&nbsp;getline(cin, p.morada.codigoPostal);</p><p>&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;cout &lt;&lt; ""Localidade: "";</p><p>&nbsp;&nbsp;&nbsp;getline(cin, p.morada.localidade);</p><p>&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;return p;</p><p>}</p><p>&nbsp;</p><p>int main() {</p><p>&nbsp;&nbsp;&nbsp;int totalPessoas;</p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;// Perguntar quantas pessoas deseja adicionar</p><p>&nbsp;&nbsp;&nbsp;cout &lt;&lt; ""Quantas pessoas deseja adicionar? "";</p><p>&nbsp;&nbsp;&nbsp;cin &gt;&gt; totalPessoas;</p><p>&nbsp;&nbsp;&nbsp;cin.ignore(); // Limpar buffer depois de ler um número</p><p>&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;// Inicializar vetor dinâmico</p><p>&nbsp;&nbsp;&nbsp;Pessoa* pessoas = new Pessoa[totalPessoas];</p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;// Preencher vetor com chamadas à função inserirPessoa</p><p>&nbsp;&nbsp;&nbsp;for (int i = 0; i &lt; totalPessoas; i++) {</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; ""\nPessoa "" &lt;&lt; (i + 1) &lt;&lt; "":"" &lt;&lt; endl;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pessoas[i] = inserirPessoa();</p><p>&nbsp;&nbsp;&nbsp;}</p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;// Imprimir o número de pessoas registadas</p><p>&nbsp;&nbsp;&nbsp;cout &lt;&lt; ""\nNúmero total de pessoas registadas: "" &lt;&lt; totalPessoas &lt;&lt; endl;</p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;// Libertar memória alocada dinamicamente</p><p>&nbsp;&nbsp;&nbsp;delete[] pessoas;</p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;return 0;</p><p>}</p>","1","2025-03-18T11:20:05",""
+"51","4","32","<p>A <strong>remoção por fusão</strong> consiste em eliminar o nó a remover e ligar as suas duas subárvores diretamente. A subárvore esquerda sobe para o lugar do nó removido. Depois, o maior valor da subárvore esquerda é ligado ao início da subárvore direita, garantindo que a estrutura continua ordenada.</p><p>A <strong>remoção por cópia</strong> faz-se copiando o maior valor da subárvore esquerda (ou o menor da direita) para o nó a remover. A seguir, o nó de onde se copiou o valor é eliminado. Este método é útil porque o nó copiado terá no máximo um filho, simplificando a remoção.</p><p><br></p><p>Estrutura final da árvore após remoção por fusão:</p><p><br></p><p>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;48</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;\</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;66</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;\</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13&nbsp;&nbsp;27 54&nbsp;72</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39</p><p><br></p><p>Estrutura final da árvore após remoção por cópia:</p><p><br></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;48</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;\</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;66</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;\</p><p>&nbsp;&nbsp;&nbsp;&nbsp;20&nbsp;&nbsp;39&nbsp;54&nbsp;&nbsp;&nbsp;72</p><p>&nbsp;&nbsp;&nbsp;/</p><p>&nbsp;13</p>","1","2025-04-23T08:44:51",""
+"52","4","32","<p>a)&nbsp;&nbsp;&nbsp;&nbsp;Na <strong>remoção por fusão</strong>, remove-se o nó e substitui-se pela subárvore esquerda. Depois, o maior valor dessa subárvore (máximo) liga-se como pai da subárvore direita. Este processo funde ambas as subárvores mantendo a ordem da BST. Na <strong>remoção por cópia</strong>, copia-se o maior valor da subárvore esquerda ou o menor da direita para o nó a remover. Em seguida, remove-se o nó original de onde foi copiado o valor, que é mais simples de remover por ter no máximo um filho.</p><p>b)&nbsp;&nbsp;&nbsp;&nbsp;Por fusão:</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O 20 substitui o 31;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O 27 liga-se ao 39.</p><p><br></p><p>Por cópia:</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O 31 é substituído por 27.</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O nó original 27 é eliminado.</p>","1","2025-04-23T08:45:19",""
+"53","4","38","<p><strong>Resposta correta: b)</strong></p>","1","2025-04-23T08:46:07",""
+"54","4","39","<p><strong>Resposta correta: c)</strong></p>","1","2025-04-23T08:46:26",""
+"55","4","40","<p><strong>Resposta correta: a)</strong></p>","1","2025-04-23T08:46:42",""
+"56","4","41","<pre class=""ql-syntax"" spellcheck=""false"">#include &lt;iostream&gt;
+using namespace std;
+
+struct nodo {
+&nbsp;&nbsp;&nbsp; int dados;
+&nbsp;&nbsp;&nbsp; nodo* esq;
+&nbsp;&nbsp;&nbsp; nodo* dir;
+};
+
+nodo* novoNodo(int num) {
+&nbsp;&nbsp;&nbsp; nodo* novo = new nodo;
+&nbsp;&nbsp;&nbsp; novo-&gt;dados = num;
+&nbsp;&nbsp;&nbsp; novo-&gt;esq = NULL;
+&nbsp;&nbsp;&nbsp; novo-&gt;dir = NULL;
+&nbsp;&nbsp;&nbsp; return novo;
+}
+
+nodo* inserirNodo(nodo* raiz, int num) {
+&nbsp;&nbsp;&nbsp; if (raiz == NULL) return novoNodo(num);
+&nbsp;&nbsp;&nbsp; if (num &lt;= raiz-&gt;dados)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raiz-&gt;esq = inserirNodo(raiz-&gt;esq, num);
+&nbsp;&nbsp;&nbsp; else
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raiz-&gt;dir = inserirNodo(raiz-&gt;dir, num);
+&nbsp;&nbsp;&nbsp; return raiz;
+}
+
+bool existe(nodo* raiz, int valor) {
+&nbsp;&nbsp;&nbsp; if (raiz == NULL) return false;
+&nbsp;&nbsp;&nbsp; if (raiz-&gt;dados == valor) return true;
+&nbsp;&nbsp;&nbsp; if (valor &lt; raiz-&gt;dados)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return existe(raiz-&gt;esq, valor);
+&nbsp;&nbsp;&nbsp; else
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return existe(raiz-&gt;dir, valor);
+}
+
+void imprimirFolhas(nodo* raiz) {
+&nbsp;&nbsp;&nbsp; if (raiz == NULL) return;
+&nbsp;&nbsp;&nbsp; if (raiz-&gt;esq == NULL &amp;&amp; raiz-&gt;dir == NULL)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; raiz-&gt;dados &lt;&lt; "" "";
+&nbsp;&nbsp;&nbsp; imprimirFolhas(raiz-&gt;esq);
+&nbsp;&nbsp;&nbsp; imprimirFolhas(raiz-&gt;dir);
+}
+
+int somaValores(nodo* raiz) {
+&nbsp;&nbsp;&nbsp; if (raiz == NULL) return 0;
+&nbsp;&nbsp;&nbsp; return raiz-&gt;dados + somaValores(raiz-&gt;esq) + somaValores(raiz-&gt;dir);
+}
+
+int main() {
+&nbsp;&nbsp;&nbsp; nodo* root = NULL;
+
+&nbsp;&nbsp;&nbsp; // Inserir os valores na árvore
+&nbsp;&nbsp;&nbsp; int valores[] = {28, 14, 37, 6, 19, 42, 3, 25, 31, 48};
+&nbsp;&nbsp;&nbsp; for (int i = 0; i &lt; 10; i++) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; root = inserirNodo(root, valores[i]);
+&nbsp;&nbsp;&nbsp; }
+
+&nbsp;&nbsp;&nbsp; // Testar se o valor 42 existe
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""\nO valor 42 existe? "";
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; (existe(root, 42) ? ""Sim"" : ""Nao"") &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; // Imprimir folhas
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""\nFolhas da arvore: "";
+&nbsp;&nbsp;&nbsp; imprimirFolhas(root);
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; // Soma de todos os valores
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""\nSoma total dos valores: "" &lt;&lt; somaValores(root) &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; return 0;
+}
+</pre>","1","2025-04-23T08:48:39",""
+"57","4","41","<pre class=""ql-syntax"" spellcheck=""false"">#include &lt;iostream&gt;
+using namespace std;
+
+struct nodo {
+&nbsp;&nbsp;&nbsp; int dados;
+&nbsp;&nbsp;&nbsp; nodo* esq;
+&nbsp;&nbsp;&nbsp; nodo* dir;
+};
+
+nodo* novoNodo(int num) {
+&nbsp;&nbsp;&nbsp; nodo* novo = new nodo;
+&nbsp;&nbsp;&nbsp; novo-&gt;dados = num;
+&nbsp;&nbsp;&nbsp; novo-&gt;esq = NULL;
+&nbsp;&nbsp;&nbsp; novo-&gt;dir = NULL;
+&nbsp;&nbsp;&nbsp; return novo;
+}
+
+nodo* inserirNodo(nodo* raiz, int num) {
+&nbsp;&nbsp;&nbsp; if (raiz == NULL) return novoNodo(num);
+&nbsp;&nbsp;&nbsp; if (num &lt;= raiz-&gt;dados)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raiz-&gt;esq = inserirNodo(raiz-&gt;esq, num);
+&nbsp;&nbsp;&nbsp; else
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raiz-&gt;dir = inserirNodo(raiz-&gt;dir, num);
+&nbsp;&nbsp;&nbsp; return raiz;
+}
+
+// Versão alternativa da função ""existe"" com uso de while (iterativa)
+bool existe(nodo* raiz, int valor) {
+&nbsp;&nbsp;&nbsp; while (raiz != NULL) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (raiz-&gt;dados == valor) return true;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (valor &lt; raiz-&gt;dados)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raiz = raiz-&gt;esq;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raiz = raiz-&gt;dir;
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; return false;
+}
+
+// Versão alternativa de ""imprimirFolhas"" com mais clareza na lógica
+void imprimirFolhas(nodo* raiz) {
+&nbsp;&nbsp;&nbsp; if (raiz != NULL) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (raiz-&gt;esq == NULL &amp;&amp; raiz-&gt;dir == NULL)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; raiz-&gt;dados &lt;&lt; "" "";
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; imprimirFolhas(raiz-&gt;esq);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; imprimirFolhas(raiz-&gt;dir);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; }
+}
+
+// Versão alternativa de ""somaValores"" separando variáveis
+int somaValores(nodo* raiz) {
+&nbsp;&nbsp;&nbsp; if (raiz == NULL) return 0;
+&nbsp;&nbsp;&nbsp; int somaEsq = somaValores(raiz-&gt;esq);
+&nbsp;&nbsp;&nbsp; int somaDir = somaValores(raiz-&gt;dir);
+&nbsp;&nbsp;&nbsp; return raiz-&gt;dados + somaEsq + somaDir;
+}
+
+int main() {
+&nbsp;&nbsp;&nbsp; nodo* root = NULL;
+
+&nbsp;&nbsp;&nbsp; // Inserir os valores na árvore individualmente
+&nbsp;&nbsp;&nbsp; root = inserirNodo(root, 28);
+&nbsp;&nbsp;&nbsp; root = inserirNodo(root, 14);
+&nbsp;&nbsp;&nbsp; root = inserirNodo(root, 37);
+&nbsp;&nbsp;&nbsp; root = inserirNodo(root, 6);
+&nbsp;&nbsp;&nbsp; root = inserirNodo(root, 19);
+&nbsp;&nbsp;&nbsp; root = inserirNodo(root, 42);
+&nbsp;&nbsp;&nbsp; root = inserirNodo(root, 3);
+&nbsp;&nbsp;&nbsp; root = inserirNodo(root, 25);
+&nbsp;&nbsp;&nbsp; root = inserirNodo(root, 31);
+&nbsp;&nbsp;&nbsp; root = inserirNodo(root, 48);
+
+&nbsp;&nbsp;&nbsp; // Testar se o valor 42 existe
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""O valor 42 existe? "";
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; (existe(root, 42) ? ""Sim"" : ""Nao"") &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; // Imprimir folhas
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""\nFolhas da arvore: "";
+&nbsp;&nbsp;&nbsp; imprimirFolhas(root);
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; // Soma de todos os valores
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""\nSoma total dos valores: "" &lt;&lt; somaValores(root) &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; return 0;
+}
+</pre>","1","2025-04-23T08:51:13",""
+"58","4","41","<pre class=""ql-syntax"" spellcheck=""false"">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+struct nodo {
+&nbsp;&nbsp;&nbsp; int dados;
+&nbsp;&nbsp;&nbsp; nodo* esq;
+&nbsp;&nbsp;&nbsp; nodo* dir;
+};
+
+nodo* novoNodo(int num) {
+&nbsp;&nbsp;&nbsp; nodo* novo = new nodo;
+&nbsp;&nbsp;&nbsp; novo-&gt;dados = num;
+&nbsp;&nbsp;&nbsp; novo-&gt;esq = NULL;
+&nbsp;&nbsp;&nbsp; novo-&gt;dir = NULL;
+&nbsp;&nbsp;&nbsp; return novo;
+}
+
+nodo* inserirNodo(nodo* no_atual, int num) {
+&nbsp;&nbsp;&nbsp; if (no_atual == NULL) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return novoNodo(num);
+&nbsp;&nbsp;&nbsp; } else {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (num &lt;= no_atual-&gt;dados) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no_atual-&gt;esq = inserirNodo(no_atual-&gt;esq, num);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no_atual-&gt;dir = inserirNodo(no_atual-&gt;dir, num);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return no_atual;
+&nbsp;&nbsp;&nbsp; }
+}
+
+bool existe(nodo* raiz, int valor) {
+&nbsp;&nbsp;&nbsp; if (raiz == NULL) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return false;
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; if (valor == raiz-&gt;dados) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true;
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; else if (valor &lt; raiz-&gt;dados) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return existe(raiz-&gt;esq, valor);
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; else {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return existe(raiz-&gt;dir, valor);
+&nbsp;&nbsp;&nbsp; }
+}
+
+void imprimirFolhas(nodo* raiz) {
+&nbsp;&nbsp;&nbsp; if (raiz == NULL) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; if (raiz-&gt;esq == NULL &amp;&amp; raiz-&gt;dir == NULL) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; raiz-&gt;dados &lt;&lt; "" "";
+&nbsp;&nbsp;&nbsp; } else {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; imprimirFolhas(raiz-&gt;esq);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; imprimirFolhas(raiz-&gt;dir);
+&nbsp;&nbsp;&nbsp; }
+}
+
+int somaValores(nodo* raiz) {
+&nbsp;&nbsp;&nbsp; if (raiz == NULL) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; else {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return raiz-&gt;dados + somaValores(raiz-&gt;esq) + somaValores(raiz-&gt;dir);
+&nbsp;&nbsp;&nbsp; }
+}
+
+int main() {
+&nbsp;&nbsp;&nbsp; nodo* raiz = NULL;
+
+&nbsp;&nbsp;&nbsp; int valores[] = {28, 14, 37, 6, 19, 42, 3, 25, 31, 48};
+&nbsp;&nbsp;&nbsp; int n = sizeof(valores) / sizeof(valores[0]);
+
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""a) Inserindo os valores na BST:"" &lt;&lt; endl;
+&nbsp;&nbsp;&nbsp; for (int i = 0; i &lt; n; ++i) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""&nbsp;&nbsp; Inserindo: "" &lt;&lt; valores[i] &lt;&lt; endl;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raiz = inserirNodo(raiz, valores[i]);
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""&nbsp;&nbsp; Insercao concluida."" &lt;&lt; endl &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""b) Testando as funcoes:"" &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""&nbsp;&nbsp; Teste da funcao existe():"" &lt;&lt; endl;
+&nbsp;&nbsp;&nbsp; int valor_teste1 = 19;
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""&nbsp;&nbsp; Existe o valor "" &lt;&lt; valor_teste1 &lt;&lt; ""? ""
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;&lt; (existe(raiz, valor_teste1) ? ""Sim"" : ""Nao"") &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; int valor_teste2 = 100;
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""&nbsp;&nbsp; Existe o valor "" &lt;&lt; valor_teste2 &lt;&lt; ""? ""
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;&lt; (existe(raiz, valor_teste2) ? ""Sim"" : ""Nao"") &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; int valor_teste3 = 3;
+&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""&nbsp;&nbsp; Existe o valor "" &lt;&lt; valor_teste3 &lt;&lt; ""? ""
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;&lt; (existe(raiz, valor_teste3) ? ""Sim"" : ""Nao"") &lt;&lt; endl;
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""&nbsp;&nbsp; Teste da funcao imprimirFolhas():"" &lt;&lt; endl;
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""&nbsp;&nbsp; Nos folha da arvore: "";
+&nbsp;&nbsp;&nbsp; imprimirFolhas(raiz);
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; endl &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""&nbsp;&nbsp; Teste da funcao somaValores():"" &lt;&lt; endl;
+&nbsp;&nbsp;&nbsp; int soma_total = somaValores(raiz);
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; ""&nbsp;&nbsp; Soma de todos os valores na arvore: "" &lt;&lt; soma_total &lt;&lt; endl;
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; endl;
+
+&nbsp;&nbsp;&nbsp; return 0;
+}
+</pre>","1","2025-04-23T08:51:55",""

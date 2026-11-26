@@ -1,0 +1,97 @@
+import json
+import logging
+import os
+
+import httpx
+from dotenv import load_dotenv
+
+from .model_predictor import predict_answer_quality
+from .schemas import AnalyzeRequest, AnalysisResponse
+
+load_dotenv()
+logger = logging.getLogger(__name__)
+
+KEYWORDS = {
+    "hashmap": "HashMap",
+    "concurrenthashmap": "ConcurrentHashMap",
+    "thread": "Thread safety",
+    "concurrency": "Concurrency",
+    "collection": "Collections",
+    "join": "SQL joins",
+    "normalization": "Normalization",
+}
+
+
+def deterministic_analysis(request: AnalyzeRequest) -> AnalysisResponse:
+    answer = request.answer.lower()
+    detected = list(dict.fromkeys(label for keyword, label in KEYWORDS.items() if keyword in answer))
+    missing = []
+    if "concurrent modification" not in answer:
+        missing.append("Concurrent modification behavior")
+    if "thread" not in answer and "concurrency" not in answer:
+        missing.append("Thread safety and concurrency")
+
+    relevance = min(96, 62 + len(detected) * 7)
+    coverage = min(92, 54 + len(detected) * 8)
+    structure = 76 if len(request.answer.split()) >= 18 else 61
+    communication = 82 if len(request.answer.split()) >= 24 else 72
+
+    return AnalysisResponse(
+        technical_relevance=relevance,
+        concept_coverage=coverage,
+        answer_structure=structure,
+        communication=communication,
+        detected=detected or ["Core concept"],
+        missing=missing or ["Edge-case reasoning"],
+        strengths=["Direct response", "Relevant terminology", "Clear technical direction"],
+        weaknesses=["Needs deeper edge-case reasoning", "Final tradeoff could be more explicit"],
+        recommendations=["ConcurrentHashMap", "Java concurrency", "Timed Java set"],
+        source="deterministic-development-analyzer",
+    )
+
+
+async def hosted_analysis(request: AnalyzeRequest) -> AnalysisResponse | None:
+    api_key = os.getenv("OPENAI_API_KEY", "")
+    if not api_key:
+        return None
+
+    base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
+    model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+    system_prompt = (
+        "You analyze technical interview answers. Return only valid JSON with integer fields "
+        "technical_relevance, concept_coverage, answer_structure, communication (0-100), and "
+        "arrays detected, missing, strengths, weaknesses, recommendations. Be evidence-based."
+    )
+    payload = {
+        "model": model,
+        "temperature": 0.1,
+        "response_format": {"type": "json_object"},
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": json.dumps(request.model_dump())},
+        ],
+    }
+
+    async with httpx.AsyncClient(timeout=25) as client:
+        response = await client.post(
+            f"{base_url}/chat/completions",
+            headers={"Authorization": f"Bearer {api_key}"},
+            json=payload,
+        )
+        response.raise_for_status()
+        content = response.json()["choices"][0]["message"]["content"]
+        result = json.loads(content)
+        return AnalysisResponse(**result, source=f"{model}-hosted-analysis")
+
+
+async def analyze_answer(request: AnalyzeRequest) -> AnalysisResponse:
+    try:
+        hosted = await hosted_analysis(request)
+        result = hosted if hosted is not None else deterministic_analysis(request)
+    except Exception as error:
+        logger.warning("Hosted AI unavailable; using deterministic fallback: %s", error)
+        result = deterministic_analysis(request)
+
+    # Add the experimental score without replacing the existing analysis.
+    score = predict_answer_quality(request.answer)
+    return result.model_copy(update={"predicted_answer_quality_score": score})

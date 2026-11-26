@@ -1,0 +1,4 @@
+﻿"id","teacher_id","assignment_id","collection","name","subject","start_date","end_date","is_active","created_at","updated_at"
+"3","4","7","QO6SaO4MbnITXdWn","EDA 1 - Arrays Estaticos","C++ Ficha Formativa 1","2025-02-03T14:00:00","2025-07-31T20:00:00","1","2025-02-05T14:31:36","2025-07-01T07:32:33"
+"4","4","8","uIEg6TSqWeG19Zvb","EDA 2 - Apontadores","C++ Ficha Formativa 2","2025-02-03T14:00:00","2025-07-31T20:00:00","1","2025-06-12T16:53:23",""
+"5","4","9","lo3ahUJpohayesZP","EDA 3 - Algoritmos e Arvores","C++ Ficha Formativa 3","2025-02-03T14:00:00","2025-07-31T20:00:00","1","2025-06-12T16:57:11",""

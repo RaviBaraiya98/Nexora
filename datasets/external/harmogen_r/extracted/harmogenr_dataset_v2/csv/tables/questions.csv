@@ -1,0 +1,91 @@
+﻿"id","author_id","question","score","type","assignment_id","is_active","created_at","updated_at"
+"21","4","<p><span style=""color: black;"">Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.</span></p>","50.0","text","7","1","2025-02-05T14:40:14","2025-02-11T20:52:55"
+"22","4","<p>Analise o programa e indique quantos erros de sintaxe ele contém.</p><pre class=""ql-syntax"" spellcheck=""false"">#include &lt;iostream&gt;
+
+int main() {
+    int numeros[] = (2,4,6,8,10);
+    int soma = 0;
+    for (int i=0; i&lt;5; i+=2) {
+        soma += numeros[i];
+    }
+    std::cout &lt;&lt; soma &lt;&lt; std::endl;
+    return 0;
+}
+</pre><p class=""ql-align-justify"">Opções:</p><p class=""ql-align-justify"">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</p><p class=""ql-align-justify"">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</p><p class=""ql-align-justify"">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</p><p class=""ql-align-justify"">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</p><p><br></p>","20.0","text","7","1","2025-02-05T14:47:20","2025-02-11T20:53:08"
+"23","4","<p>Suponha que declaramos o seguinte array: </p><p>double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; </p><p>Se o primeiro elemento&nbsp;está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)</p><p><br></p><p class=""ql-align-justify"">Opções:</p><p class=""ql-align-justify"">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1008</p><p class=""ql-align-justify"">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1016</p><p class=""ql-align-justify"">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1024</p><p class=""ql-align-justify"">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1032</p><p><br></p>","20.0","text","7","1","2025-02-05T15:01:56","2025-02-11T20:53:21"
+"24","4","<p>Dada a declaração da matriz em C++: </p><p>int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}</p><p>indique o valor armazenado na posição matriz[1][2]?</p><p><br></p><p class=""ql-align-justify"">Opções:</p><p class=""ql-align-justify"">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15</p><p class=""ql-align-justify"">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-3</p><p class=""ql-align-justify"">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23</p><p class=""ql-align-justify"">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;42</p><p><br></p>","20.0","text","7","1","2025-02-05T15:03:06","2025-02-11T20:53:30"
+"25","4","<p>Considere o seguinte programa em C++:</p><pre class=""ql-syntax"" spellcheck=""false"">#include &lt;iostream&gt;
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20;  // Limite máximo de funcionários
+
+int main() {
+    int numFuncionarios;
+    float salarios[MAX_FUNCIONARIOS];
+    float valorMinimo;
+
+    cout &lt;&lt; ""Quantos funcionarios sao? "";
+    cin &gt;&gt; numFuncionarios;
+
+    if (numFuncionarios &lt; 1 || numFuncionarios &gt; MAX_FUNCIONARIOS) {
+        cout &lt;&lt; ""Numero invalido de funcionarios! Informe um valor entre 1 e "" &lt;&lt; MAX_FUNCIONARIOS &lt;&lt; "".\n"";
+        return 1;
+    }
+
+    // Preencher o array com os salários dos funcionários
+    preencherSalarios(salarios, numFuncionarios);
+
+    // Solicitar um valor mínimo e imprimir os salários acima desse valor
+    cout &lt;&lt; ""\nInforme o valor minimo do salario: "";
+    cin &gt;&gt; valorMinimo;
+
+    imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+    return 0;
+}
+</pre><p>Implemente as funções invocadas no main de acordo com as seguintes especificações:</p><p>	1) Função preencherSalarios:</p><ol><li class=""ql-indent-1"">A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios;</li><li class=""ql-indent-1"">Deverá ser apresentada uma mensagem por cada funcionário com o formato: <strong>Insira o salario do funcionário X:</strong>  onde X representa o índice +1 do array.</li></ol><p>	2) Função imprimirSalariosAcima:</p><ol><li class=""ql-indent-1"">A função deverá apresentar, inicialmente, um título com o formato: <strong>Listagem de funcionarios cujo salario seja maior que X:</strong> onde X representa o valor mínimo indicado pelo utilizador.</li><li class=""ql-indent-1"">Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: <strong>Nenhum funcionario possui salario acima de X</strong> onde X representa o valor mínimo indicado pelo utilizador.</li><li class=""ql-indent-1"">Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: <strong>Funcionario i com salario Y Euros</strong> em que o número do funcionário inicia em 1 e Y representa o valor do seu salário.</li></ol><p>						</p><p>Utilize arrays e garanta que seu programa siga exatamente as especificações acima.</p><p><br></p>","90.0","code","7","1","2025-02-05T15:16:57","2025-02-11T15:38:44"
+"26","4","<p>Explique a diferença entre os modos de acesso ""ios::in"" e ""ios::out"" na biblioteca fstream. Ilustre a sua resposta com um pequeno exemplo de código que demonstre o uso adequado na leitura de um ficheiro de texto. Adicionalmente, explique qual a finalidade da função close() e por que é importante utilizá-la. (Não é necessário incluir bibliotecas nem declarações de funções no seu exemplo de código).</p>","50.0","text","8","1","2025-03-18T09:26:29","2025-03-18T10:48:06"
+"27","4","<p>Qual das seguintes afirmações sobre strings em C++ é FALSA?</p><p class=""ql-indent-1"">a)&nbsp;&nbsp;A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;</p><p class=""ql-indent-1"">b)&nbsp;&nbsp;A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;</p><p class=""ql-indent-1"">c)&nbsp;&nbsp;É possível comparar duas strings usando o operador de igualdade (==);</p><p class=""ql-indent-1"">d)  A função strcat() concatena duas strings.</p>","20.0","text","8","1","2025-03-18T09:31:30","2025-03-18T09:48:46"
+"28","4","<p>Qual das seguintes opções representa a forma correta de alocar dinamicamente um array de 10 inteiros em C++?</p><p><br></p><p>a)&nbsp;&nbsp;&nbsp;&nbsp;int* arr = new int(10);</p><p>b)&nbsp;&nbsp;&nbsp;&nbsp;int* arr = new int[10];</p><p>c)&nbsp;&nbsp;&nbsp;&nbsp;int* arr = malloc(10 * sizeof(int));</p><p>d)&nbsp;&nbsp;&nbsp;&nbsp;int* arr = int[10];</p>","20.0","text","8","1","2025-03-18T09:39:33","2025-03-18T09:48:37"
+"29","4","<p>Considere a seguinte definição de estrutura:</p><p><br></p><code><p class=""ql-indent-1"">struct Aluno { </p><p class=""ql-indent-1"">	int numero; </p><p class=""ql-indent-1"">	char nome[50]; </p><p class=""ql-indent-1"">	float media; </p><p class=""ql-indent-1"">};</code></p><p><br></p><p>Qual é a forma correta de inicializar uma variável do tipo Aluno?</p><p><br></p><p>a)&nbsp;&nbsp;&nbsp;Aluno a = {123, ""Ana"", 16.5};</p><p>b)&nbsp;&nbsp;&nbsp;Aluno a = Aluno(123, ""Ana"", 16.5);</p><p>c)&nbsp;&nbsp;&nbsp;Aluno a = new Aluno{123, ""Ana"", 16.5};</p><p>d)&nbsp;&nbsp;&nbsp;Aluno a(123, ""Ana"", 16.5).</p>","20.0","text","8","1","2025-03-18T09:41:16","2025-03-18T09:48:26"
+"31","4","<p>Implemente um programa em C++ que:</p><p><br></p><p>a)&nbsp;&nbsp;&nbsp;Defina duas estruturas: </p><ul><li>Morada, contendo os seguintes atributos: <strong>rua</strong>, <strong>código postal</strong> e <strong>localidade</strong>;</li><li>Pessoa, contendo os seguintes atributos: <strong>id</strong>, <strong>nome</strong>, <strong>data de nascimento</strong> e uma <strong>morada</strong> (do tipo Morada).</li></ul><p><br></p><p>b)&nbsp;&nbsp;&nbsp;Implemente a função inserirPessoa, que deve criar e devolver uma estrutura do tipo Pessoa, preenchendo todos os seus atributos dentro da própria função com valores introduzidos pelo utilizador. Garanta que a função retorna corretamente a estrutura preenchida.</p><p><br></p><p>c)&nbsp;&nbsp;&nbsp;No main:</p><ul><li>Pergunte ao utilizador quantas pessoas deseja adicionar;</li><li>Inicializa um vetor dinâmico de pessoas;</li><li>Preencha o vetor chamando a função inserirPessoa para cada pessoa;</li><li>Após o preenchimento, imprima o número total de pessoas registadas;</li><li>Certifique-se de libertar a memória alocada dinamicamente para evitar fugas de memória.</li></ul><p><br></p><p>d)   Inclua as bibliotecas necessárias para o programa funcionar corretamente.</p>","90.0","code","8","1","2025-03-18T11:16:12","2025-03-18T11:48:27"
+"32","4","<p>Considere a seguinte árvore binária de pesquisa (BST):</p><p><br></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;48</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;\</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;66</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;\</p><p>&nbsp;&nbsp;&nbsp;&nbsp;20&nbsp;&nbsp;39&nbsp;54&nbsp;&nbsp;&nbsp;72</p><p>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;\</p><p>&nbsp;13&nbsp;&nbsp;27</p><p><br></p><p>a) Explique, de forma teórica e geral, como funcionam os dois métodos de remoção de nós numa árvore binária de pesquisa: fusão e cópia;</p><p>b) Apresente a estrutura final da árvore após a remoção do valor 31 utilizando:</p><ul><li>o método de remoção por fusão;</li><li>o método de remoção por cópia.</li></ul>","50.0","text","9","1","2025-04-23T08:13:21","2025-04-23T08:53:36"
+"38","4","<p>Considere o seguinte programa C++:</p><p><br></p><pre class=""ql-syntax"" spellcheck=""false"">#include &lt;iostream&gt;
+using namespace std;
+
+void mostrar(int* v, int n) {
+&nbsp;&nbsp;&nbsp; if (n == 0)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;
+&nbsp;&nbsp;&nbsp; cout &lt;&lt; v[0] * v[0] &lt;&lt; "" "";
+&nbsp;&nbsp;&nbsp; mostrar(v + 1, n - 1);
+}
+
+int main() {
+&nbsp;&nbsp;&nbsp; int* v = new int[3];
+&nbsp;&nbsp;&nbsp; v[0] = 4;
+&nbsp;&nbsp;&nbsp; v[1] = 7;
+&nbsp;&nbsp;&nbsp; v[2] = 2;
+&nbsp;&nbsp;&nbsp; mostrar(v, 3);
+&nbsp;&nbsp;&nbsp; delete[] v;
+&nbsp;&nbsp;&nbsp; return 0;
+}
+</pre><p><br></p><p>Qual será a saída do programa?</p><p>a)&nbsp;&nbsp;&nbsp;&nbsp;4 7 2</p><p>b)&nbsp;&nbsp;&nbsp;&nbsp;16 49 4</p><p>c)&nbsp;&nbsp;&nbsp;&nbsp;2 7 4</p><p>d)&nbsp;&nbsp;&nbsp;&nbsp;Erro</p><p><br></p>","20.0","text","9","1","2025-04-23T08:33:15",""
+"39","4","<p>Considere o seguinte vetor: int v[6] = {9, 1, 6, 3, 8, 2};</p><p><br></p><p>E a seguinte implementação do algoritmo <strong>Selection Sort</strong>:</p><pre class=""ql-syntax"" spellcheck=""false"">void SelectionSort(int a[], int n)
+{
+&nbsp;&nbsp;&nbsp; for (int i = 0; i &lt; n - 1; i++) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int min = i;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int j = i + 1; j &lt; n; j++) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (a[j] &lt; a[min])
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; min = j;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (min != i)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; swap(a[i], a[min]);
+&nbsp;&nbsp;&nbsp; }
+}
+</pre><p><br></p><p>Descrição: O algoritmo percorre o vetor à procura do menor elemento e troca-o com o que está na posição atual. Repete este processo para todas as posições até o vetor ficar ordenado.</p><p>Qual será o estado do vetor após a segunda iteração (i = 1) do algoritmo? </p><p>a)&nbsp;&nbsp;&nbsp;&nbsp;9 8 3 6 2 1</p><p>b)&nbsp;&nbsp;&nbsp;&nbsp;1 3 6 9 8 2</p><p>c)&nbsp;&nbsp;&nbsp;&nbsp;1 2 6 3 8 9</p><p>d)&nbsp;&nbsp;&nbsp;&nbsp;1 2 6 8 9 3</p>","20.0","text","9","1","2025-04-23T08:35:31","2025-04-24T16:14:59"
+"40","4","<p>Considere a seguinte árvore binária de pesquisa:</p><p><br></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;\</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;\</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20&nbsp;33&nbsp;55&nbsp;70</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75</p><p>Qual das seguintes opções descreve corretamente a estrutura da árvore?</p><p>a)&nbsp;&nbsp;&nbsp;&nbsp;O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa. </p><p>b)&nbsp;&nbsp;&nbsp;&nbsp;O nó 33 é uma folha. O nó 70 tem grau 2. A altura da árvore é 4. O nó 55 encontra-se no nível 2.</p><p>c)&nbsp;&nbsp;&nbsp;&nbsp;O nó 25 tem grau 2. O nó 36 é uma folha. A árvore é completa. A altura da árvore é 3.</p><p>d)&nbsp;&nbsp;&nbsp;&nbsp;O nó 33 tem como filho o 36. O nó 25 tem grau 2. O nó 36 é interno. A altura da árvore é 4.</p>","20.0","text","9","1","2025-04-23T08:38:12","2025-04-23T08:54:40"
+"41","4","<p>Pretende-se implementar um programa em C++ que permita:</p><p><br></p><p>a)&nbsp;&nbsp;&nbsp;&nbsp;Criar uma árvore binária de pesquisa (BST) com os seguintes valores: {28, 14, 37, 6, 19, 42, 3, 25, 31, 48}. Deverá ser usada uma função inserirNodo, e a raiz deve ser corretamente inicializado com NULL.</p><p>b)&nbsp;&nbsp;&nbsp;&nbsp;Implementar as seguintes funções:</p><ul><li>bool existe(nodo* raiz, int valor) - devolve verdadeiro se o valor existir na árvore, e falso caso contrário (pesquisa recursiva).</li><li>void imprimirFolhas(nodo* raiz) - imprime no ecrã os valores de todos os nós folha da árvore (nós sem filhos).</li><li>int somaValores(nodo* raiz) - calcula recursivamente e retorna a soma total dos valores de todos os nós da árvore.</li></ul><p><strong>Nota: </strong>A estrutura da árvore deve usar a seguinte definição:</p><pre class=""ql-syntax"" spellcheck=""false"">struct nodo {
+&nbsp;&nbsp;&nbsp; int dados;
+&nbsp;&nbsp;&nbsp; nodo* esq;
+&nbsp;&nbsp;&nbsp; nodo* dir;
+};
+</pre>","90.0","code","9","1","2025-04-23T08:41:17","2025-04-23T08:48:03"

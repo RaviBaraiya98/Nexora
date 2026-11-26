@@ -1,0 +1,5383 @@
+﻿"id","student_id","question_id","response","is_active","created_at","updated_at"
+"1","137","21","Sim, é possível alterar o tamanho de um array e caso tentarmos guardar valores fora dos seus limites, o array irá  adiciona-lo.","1","2025-02-25T10:17:50",""
+"2","137","22","B)","1","2025-02-25T10:17:50",""
+"3","137","23","B)","1","2025-02-25T10:17:50",""
+"4","137","24","D)","1","2025-02-25T10:17:50",""
+"5","137","25","1) preencherSalarios(salarios, numFuncionarios){
+        for (int i = 0; i < numFuncionarios; i++) {
+            cout << ""o salario e"" << salarios[i] << endl;
+        }
+2)","1","2025-02-25T10:17:50",""
+"6","136","21","sim é possível","1","2025-02-25T10:21:10",""
+"7","136","22","a","1","2025-02-25T10:21:10",""
+"8","136","23","c","1","2025-02-25T10:21:10",""
+"9","136","24","a","1","2025-02-25T10:21:10",""
+"10","136","25","cout << ""Insira o salario do funcionário X:""
+cin >> salários;
+
+cout << ""Funcionario i com salario Y Euros""
+cin >>
+
+cout << ""Nenhum funcionario possui salario acima de X"" ","1","2025-02-25T10:21:10",""
+"11","125","21","Não, é impossível alterar o tamanho do array depois de ser declarado , ou seja, se tentarmos guardar valores fora dos seus limites irá ocorrer um erro.","1","2025-02-25T10:21:40",""
+"12","125","22","(c)","1","2025-02-25T10:21:40",""
+"13","125","23","(b)","1","2025-02-25T10:21:40",""
+"14","125","24","(d)","1","2025-02-25T10:21:40",""
+"15","125","25","#include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20;
+
+void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Insira o salario do funcionario "" << (i + 1) << "": "";
+        cin >> salarios[i];
+    }
+}
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""\nSalarios acima de "" << valorMinimo << "":\n"";
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout << ""Funcionario "" << (i + 1) << "": "" << salarios[i] << endl;
+        }
+    }
+}
+
+int main() {
+    int numFuncionarios;
+    float salarios[MAX_FUNCIONARIOS];
+    float valorMinimo;
+
+    cout << ""Quantos funcionarios sao? "";
+    cin >> numFuncionarios;
+
+    if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+        cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+        return 1;
+    }
+
+    preencherSalarios(salarios, numFuncionarios);
+    cout << ""\nInforme o valor minimo do salario: "";
+    cin >> valorMinimo;
+
+    imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+    return 0;
+}
+int main() {
+    int numFuncionarios;
+    float salarios[MAX_FUNCIONARIOS];
+    float valorMinimo;
+
+    cout << ""Quantos funcionarios sao? "";
+    cin >> numFuncionarios;
+
+    if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+        cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+        return 1;
+    }
+
+    
+    preencherSalarios(salarios, numFuncionarios);
+    
+    cout << ""\nInforme o valor minimo do salario: "";
+    cin >> valorMinimo;
+
+    imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+    return 0;
+}
+
+","1","2025-02-25T10:21:40",""
+"16","138","21","Mudar um array depois de declarado é impossível, porque a memória e alocada estaticamente.
+","1","2025-02-25T10:27:21",""
+"17","138","22","c)","1","2025-02-25T10:27:21",""
+"18","138","23","c)","1","2025-02-25T10:27:21",""
+"19","138","24","d)","1","2025-02-25T10:27:21",""
+"20","138","25","1)
+void preencherSalarios(){
+    float salarios;
+    int numFuncionarios;
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Insira o salario do funcionario: "";
+        cin >> salarios;
+    }
+}
+
+2)
+void imprimirSalariosAcima(){
+    float salarios;
+    int numFuncionarios;
+    float limite;
+    cout << ""Listagem de funcionarios cujo salario seja maior que "" << limite << "":"" << endl;
+    bool encontrado = false;
+    for (int i = 0, count = 1; i < numFuncionarios; ++i) {
+        if (salarios[i] > limite) {
+            cout << ""Funcionario "" << count++ << "" com salario "" << salarios[i] << "" Euros"" << endl;
+            encontrado = true;
+        }
+    }
+
+    if (!encontrado) {
+        cout << ""Nenhum funcionario possui salario acima de "" << limite << endl;
+    }
+}
+","1","2025-02-25T10:27:21",""
+"21","131","21","Não é possível alterar o tamanho do array, da erro, endereços automáticos.
+","1","2025-02-25T10:27:22",""
+"22","131","22","b","1","2025-02-25T10:27:22",""
+"23","131","23","b","1","2025-02-25T10:27:22",""
+"24","131","24","d","1","2025-02-25T10:27:22",""
+"25","131","25","","1","2025-02-25T10:27:22",""
+"26","134","21","","1","2025-02-25T10:28:03",""
+"27","134","22","b","1","2025-02-25T10:28:03",""
+"28","134","23","a","1","2025-02-25T10:28:03",""
+"29","134","24","d","1","2025-02-25T10:28:03",""
+"30","134","25","void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Insira o salario "" << i+1 << "": "";
+        cin >> salarios[i];
+    }
+}
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""\nListagem de funcionarios: "" << valorMinimo << endl;
+    bool encontro = false;
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] >= valorMinimo) {
+            cout << ""Funcionario"" << (i+1) << "" com salario "" << salarios[i] << ""Euros\n"";
+            encontro = true;
+        }
+    }
+    if (!encontro) {
+        cout << ""Nenhum funcionario "" << valorMinimo << ""\n"";
+        
+    }
+}
+
+int main () {
+    int numFuncionarios;
+    float salarios[MAX_FUNCIONARIOS];
+    float valorMinimo;
+    cout <<""Quantos funcionarios sao? "";
+    cin >> numFuncionarios;
+    if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+        cout << ""Numero invalido de funcionarios\n""
+        return 1;
+    }
+    preencherSalarios(salarios, numFuncionarios);
+    cout << ""\nInforme o valor minimo do salario: "";
+    cin >> valorMinimo;
+    imprimirSalariosAcima( salarios,numFuncionarios,valorMinimo);
+    return 0;
+}","1","2025-02-25T10:28:03",""
+"31","61","21","Não é possível alterar o tamanho do array depois de declarado já que é uma estrutura de dados com tamanho fixo e caso tentarmos guardar um valor fora dos seus limites, o resultado vai ser inesperado (como falhas no programa ou corrupção de dados).","1","2025-02-25T10:29:04",""
+"32","61","22","c)","1","2025-02-25T10:29:04",""
+"33","61","23","b)","1","2025-02-25T10:29:04",""
+"34","61","24","d)","1","2025-02-25T10:29:04",""
+"35","61","25","1) void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+         int x = (i + 1)
+        cout << ""Insira o salario do funcionario "" << x << "": "";
+        cin >> salarios[i];
+    }
+}
+
+
+2) void imprimirSalariosAcima(float salarios[ ], int numFuncionarios, float valorMinimo) {
+    cout << ""\nListagem de funcionários cujo salario seja maior que "" << valorMinimo << "":\n"";
+    bool encontrou = false;
+
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout << ""Funcionario "" << (i + 1) << "" com salario "" << salarios[i] << "" euros\n"";
+            encontrou = true;
+        }
+    }
+
+    if (!encontrou) {
+        cout << ""Nenhum funcionário possui salario acima de "" << valorMinimo << ""\n"";
+    }
+}
+
+","1","2025-02-25T10:29:04",""
+"36","45","21","Não, valores não ficam salvos
+","1","2025-02-25T10:30:10",""
+"37","45","22","a","1","2025-02-25T10:30:10",""
+"38","45","23","c","1","2025-02-25T10:30:10",""
+"39","45","24","d","1","2025-02-25T10:30:10",""
+"40","45","25","
+cout << ""Insira o salario do funcionário X: onde X representa o índice +1 do array."";
+cin >> numFuncionarios + 1;
+
+preencherSalarios(salarios, numFuncionarios){
+   for (i=0; i<=numFuncionarios; i++){
+       salários = v[i];
+   }
+   return salários
+}
+
+
+
+
+cout << ""\nInforme o valor minimo do salario: "";
+cin >> valorMinimo;
+
+imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo){
+   for (int i = 0; i < numFuncionarios; i++) {
+       if (valorMinimo > salarios){
+           cout << ""Nenhum funcionario possui salario acima de valorMinimo"";
+       }
+       else{
+           cout << ""Funcionário i com o salario v[i] Euros"";
+       }
+   }
+}
+","1","2025-02-25T10:30:10",""
+"41","199","21","  Depois de declarar um array não é possível alterar o seu tamanho, para a maquina definir o array só toma o endereço do primeiro elemento, e se é tentado aceder a um elemento do array fora dos sues limites ele igualmente consegue, porque a maquina só toma o primeiro endereço do array.","1","2025-02-25T10:31:32",""
+"42","199","22","a","1","2025-02-25T10:31:32",""
+"43","199","23","b","1","2025-02-25T10:31:32",""
+"44","199","24","d","1","2025-02-25T10:31:32",""
+"45","199","25","1)
+void preencherSalarios(float salarios[],int numFuncionarios){
+    for(int i = 0; i < numFuncionarios; i++){
+        cout << ""Insira o salario do funcionario "" << i+1 << "":"" << endl;
+        cin >> salarios[i];
+    }
+}
+
+2)
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, int valorMinimo){
+    int x = 0;
+    for(i = 0;i < numFuncionarios; i++){
+        if (valorminimo <= salarios[i]){
+            x++
+            cout << ""Funcionario "" << x << "" com salario "" << salarios[i] << ""Euros"" << endl;
+        }
+    }
+    if (x == 0)
+    cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << endl;
+}","1","2025-02-25T10:31:32",""
+"46","110","21","Não, uma vez que a sua dimensão é definida como uma constante. O programa ao permite gravar valores fora do limite uma vez que quando chega à posição igual ao tamanho encerra o ciclo.","1","2025-02-25T10:32:37",""
+"47","110","22","b) 1","1","2025-02-25T10:32:37",""
+"48","110","23","b) 1016","1","2025-02-25T10:32:37",""
+"49","110","24","d) 42","1","2025-02-25T10:32:37",""
+"50","110","25"," void preencherSalarios(float salarios, int numFuncionarios){
+            float salarios = 0;
+            int numFuncionarios;
+            for (int i = 0; i < numFuncionarios; i++){
+                cout << ""Indique o valor do funcionario "" << i << endl;
+                cin >> salarios;
+            }
+        }
+        // Solicitar um valor mínimo e imprimir os salários acima desse valor
+        cout << ""\nInforme o valor minimo do salario: "";
+        cin >> valorMinimo;
+
+        float imprimirSalariosAcima(float salarios, int numFuncionarios, float valorMinimo){
+            int valorMinimo = 0;
+            float aux = 0;
+            cout << ""Insira um valor minimo para comparar: "";
+            cin >> valorMinimo;
+            for (int i = 0; i < numFuncionarios; i++){
+                if (v[i] > v[valorMinimo])
+                    v[i] = aux;
+                else
+                    cout << ""Nenhum valor acima do valor inserido"" << endl;
+            }
+        return aux;
+        }","1","2025-02-25T10:32:37",""
+"51","215","21","Por norma não é possível alterar o tamanho do array porque o mesmo tem um tamanho já definido. Mas será possível trocar o seu tamanho quando o mesmo for criado, mas por exemplo a meio do código não será possível. Relativamente a tentarmos guardar valores fora dos limites do array, irá aparecer um erro na consola a informar que o limite do array já foi atingido.","1","2025-02-25T10:34:39",""
+"52","215","22","b)","1","2025-02-25T10:34:39",""
+"53","215","23","b)","1","2025-02-25T10:34:39",""
+"54","215","24","d)","1","2025-02-25T10:34:39",""
+"55","215","25","void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i=0; i<numFuncionarios; i++) {
+        cout << ""O salario do funcionário é: "" << i + 1;
+        cin >> salarios[i];
+    }
+}
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""\nSalarios acima de "" << valorMinimo << "":\n"";
+    bool encontrou = false;
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout << ""Funcionario "" << i + 1 << "": "" << salarios[i] << endl;
+            encontrou = true;
+        }
+    }
+    if (!encontrou) {
+        cout << ""Nenhum salario acima de "" << valorMinimo << "".\n"";
+    }
+}","1","2025-02-25T10:34:39",""
+"56","213","21","","1","2025-02-25T12:29:35",""
+"57","213","22","opção c)","1","2025-02-25T12:29:35",""
+"58","213","23","b)","1","2025-02-25T12:29:35",""
+"59","213","24","c)","1","2025-02-25T12:29:35",""
+"60","213","25","void preencherSalarios(int salarios[] , int numFuncionarios){
+         for (i=0,i<numFuncionarios,i++);
+         cout<<""Insira o salario do funcionário""<< i+1 <<"":""<< endl;
+         cin<< salarios[i]
+         }
+}
+
+
+","1","2025-02-25T12:29:35",""
+"61","78","21","Não, o tamanho do array é definido no momento da alocação, sendo apenas possível usando uma técnica de casting, e quando tentamos guardar valores fora dos seus limites leva a comportamentos indefinidos.","1","2025-02-25T12:37:55",""
+"62","78","22","c","1","2025-02-25T12:37:55",""
+"63","78","23","b","1","2025-02-25T12:37:55",""
+"64","78","24","d","1","2025-02-25T12:37:55",""
+"65","78","25","void preencherSalarios(float salarios[], int numFuncionarios) {  
+    for (int i = 0; i < numFuncionarios; i++) {  
+        cout << ""Insira o salário do funcionário "" << (i + 1) << "": "";  
+        cin >> salarios[i];  
+    }  
+}  
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {  
+    cout << ""\nLista de funcionários cujo salario seja maior que "" << valorMinimo << "":\n"";  
+    bool encontrou = false;  
+
+    for (int i = 0; i < numFuncionarios; i++) {  
+        if (salarios[i] > valorMinimo) {  
+            cout << ""Funcionário "" << (i + 1) << "" com salário "" << salarios[i] << "" Euros\n"";  
+            encontrou = true;  
+        }  
+    }  
+
+    if (!encontrou) {  
+        cout << ""Nenhum funcionário possui um salário acima de "" << valorMinimo << "".\n"";  
+    }  
+}
+","1","2025-02-25T12:37:55",""
+"66","106","21"," Após a criação de um array, não é possível alterar o seu tamanho. Se tentarmos guardar o valor fora do alcance do array, aparecerá uma mensagem de erro ""IndexOutOfRange"".
+","1","2025-02-25T12:43:38",""
+"67","106","22","c)","1","2025-02-25T12:43:39",""
+"68","106","23","b)","1","2025-02-25T12:43:39",""
+"69","106","24","d)","1","2025-02-25T12:43:39",""
+"70","106","25","void preencherSalarios(float salarios,int numFuncionarios){
+	int i=0;
+	for(i=0, i< numFuncionarios, i++){
+		cout << ""Insira o salário do funcionário"" << i+1 << "":"" << endl;
+		cin >> salarios[i];
+	}
+}
+
+void imprimirSalariosAcima(float salaries, int numFuncionarios, float valorMinimo){
+	cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMinimo << "":\n"";
+	bool encontrado = false;
+	for (int i=0, i< numFunicionarios, i++){
+		if (salarios[i] > valorMinimo):
+			cout << ""Funcionario"" << i+1 << ""com o salario superior a"" << valorMinimo << endl;
+			encontrado = True;
+	}
+
+
+	if (!encontrado){
+		cout << ""Nao existem funcionarios com salario superior a"" << valorMinimo << endl;
+	}
+}","1","2025-02-25T12:43:39",""
+"71","206","21","Uma vez que um array já foi definido, não é possível mudar o seu tamanho, se formos tentar guardar valores fora dos seus limites, ele não impede, ele deixa, mas seram perdidos.","1","2025-02-25T12:46:43",""
+"72","206","22","c)","1","2025-02-25T12:46:43",""
+"73","206","23","b)","1","2025-02-25T12:46:43",""
+"74","206","24","d)","1","2025-02-25T12:46:43",""
+"75","206","25","void preencherSalarios(float salários[], int numFuncionarios){
+for(int i=0; i<tamanho; i++){
+cout<<”Insira o salário mínimo:  ”<<(i+1)<< “ : “ ;
+cin>>salários[i];
+	}
+}
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo){
+for(int i= 0; i<numFuncioanrios, i++){
+	if(salários[i]>valorMinimo){
+		cout<<”Funcionaro”<< (i+1)<< “ : “<<endl;
+	else:
+		cout<<”Funcionario”<< (i+1)<< “ Não inseriu um valor mínimo”<< endl;
+}
+}
+}
+","1","2025-02-25T12:46:43",""
+"76","174","21","Não, pois o tamanho de um array é imutável. Se tentarmos guardar valores fora does seus limites este não é guardado. ","1","2025-02-25T12:46:50",""
+"77","174","22","b)","1","2025-02-25T12:46:50",""
+"78","174","23","b)","1","2025-02-25T12:46:50",""
+"79","174","24","d)","1","2025-02-25T12:46:50",""
+"80","174","25","1) void preencherSalarios(int s[], int Num) {
+    for (int i = 0; i < Num; i++) {
+    cout << ""Insira o salario: "" << endl;
+    cin >> s[i];
+    }
+}
+
+
+2) void imprimirSalariosAcima (float y,int i, int x);
+cout << ""Listagem de funcionarios cujo salario seja maior que "" << x << endl;
+for (int c = 0; c < i; c++) {
+if y[c] > x {
+cout << ""Funcionario "" << i << "" com salario "" << Y  << "" Euros"" << endl;
+}
+
+       
+       ","1","2025-02-25T12:46:50",""
+"81","84","21","não é possivel com um array normal.  da erro e nao é possivel","1","2025-02-25T12:47:05",""
+"82","84","22","1","1","2025-02-25T12:47:05",""
+"83","84","23","b","1","2025-02-25T12:47:05",""
+"84","84","24","42","1","2025-02-25T12:47:05",""
+"85","84","25"," preenchersalarios(salarios, int numFuncionarios){
+           float salarioin;
+    for (int i = 0; i <numFuncionarios ; ++i) {
+        cout << ""Insira o salario do funcionário ""<<i+1<<""  :/n"";
+        cin >> salarioin    ;
+
+        salarios[i] = salarioin
+    }
+    
+    }
+imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo){
+int j = 0
+float salarios2[numFuncionarios];
+  cout << ""listagem de funcionarios cujo salario seja maior que  ""<<valorMimimo<<""  :/n"";
+for (int i = 0; i < ; ++i) {
+if (salarios[i]>=valorMinimo){
+salarios2[j] = salarios[i]
+j++
+}
+if (j ==0 ){
+  cout << ""Nenhum funcionario possui salario acima de  ""<<valorMimimo<<""  :/n"";
+}else{
+for (int i = 0; i < j; ++i) {
+ cout << ""funcionario  ""<<i+1<<""com salario ""<<salario2[i]<<"" euros  :/n"";
+}
+}
+
+}
+}","1","2025-02-25T12:47:05",""
+"86","91","21","Não, uma vez que quando declarado já é decidido o seu tamanho e a memória alocada para esse número e tipo de dados. Se tentarmos gravar fora dos limites é enviada uma mensagem de erro porque  o mesmo não é possivel","1","2025-02-25T12:48:20",""
+"87","91","22","b) 1","1","2025-02-25T12:48:20",""
+"88","91","23","b)","1","2025-02-25T12:48:20",""
+"89","91","24","d)","1","2025-02-25T12:48:20",""
+"90","91","25","void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Insira o salario do funcionario "" << i + 1 << "": "";
+        cin >> salarios[i];
+    }
+}
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMinimo << "":\n"";
+    int aux = 0;
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout << ""Funcionario ""<< i+1 <<"" com salario "" << salarios[i] << endl;
+        }else {
+            aux = aux+1;
+        }
+    }
+    if (aux == numFuncionarios) {
+        cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << ""\n"";
+    }
+}","1","2025-02-25T12:48:20",""
+"91","149","21","Não, so seria possivel usando o casting se tentarmos guardar valores fora dos seus limites não iam ser guardados e seriam perdidos.","1","2025-02-25T12:51:19",""
+"92","149","22","b","1","2025-02-25T12:51:19",""
+"93","149","23","b","1","2025-02-25T12:51:20",""
+"94","149","24","c","1","2025-02-25T12:51:20",""
+"95","149","25","void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Insira o salario do funcionario "" << i+1<< "": "";
+        cin >> salarios[i];
+    }
+}
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""Funcionarios com salario acima de "" << valorMinimo << "":"" << endl;
+    bool encontrado = false;
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout << ""Funcionario "" << i + 1 << "" com salario: "" << salarios[i] << endl;
+            encontrado = true;
+        }
+    }
+    if (!encontrado) {
+        cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << endl;
+    }
+}","1","2025-02-25T12:51:20",""
+"96","99","21","Não, só seria possivel se aplica-se mos a técnica chamada casting e quando guardam valores a mais do que a capacidade da array os dados em excesso serão perdidos.","1","2025-02-25T12:51:22",""
+"97","99","22","b)","1","2025-02-25T12:51:22",""
+"98","99","23","c)","1","2025-02-25T12:51:22",""
+"99","99","24","c)","1","2025-02-25T12:51:22",""
+"100","99","25","float preencherSalarios(float salarios [],int numFuncionarios){
+	for (int i = 0 , i < numFuncionarios,i++){
+	cout<<""Insira o salario do funcionario numero ""<< i+1 <<"":""<<endl;
+	cin>>salario[i]>>endl;
+	} 
+}
+float imprimirSalariosAcima(float salarios[],int numFuncionarios,float valorMinimo){
+	cout<<""Indique o valor minimo para o salario : ""<<endl;
+	cin>>valorMinimo;
+	int temp=0;
+	for (int i = 0 , i < numFuncionarios,i++){
+	      	if (salarios[i]>valorMinimo){
+		temp+=i
+		cout<<i+1<<endl;
+		}
+		else{if(temp==0){
+		cout<<""Nenhum funcionario possui salario acima de ""<< valorMinimo<<endl;
+		}
+		else{
+		cout<<"" Funcionario ""<< i << ""com salario"" << salarios[i] << ""Euros .""<<endl; 
+		}
+		}
+	}
+}","1","2025-02-25T12:51:22",""
+"101","158","21","Não, pois só seria possível usando uma técnica casting e se tentarmos guardar valores fora dos seus limites não iam ser guardados e seriam perdidos.","1","2025-02-25T12:53:15",""
+"102","158","22","b","1","2025-02-25T12:53:15",""
+"103","158","23","c","1","2025-02-25T12:53:15",""
+"104","158","24","c","1","2025-02-25T12:53:15",""
+"105","158","25","void preencherSalarios(int salarios, int numFuncionarios) {
+
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout<<""Insira o salario: ""<<salarios<<endl;
+        cin>>salarios;
+        cout<<""Insira o numero de funcionarios: ""<<numFuncionarios<<endl;
+        cin>>numFuncionarios;
+    }
+}
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""\nInforme o valor minimo do salario: "";
+    cin >> valorMinimo;
+    for (int i=0; i<numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout<<salarios[i]<<endl;
+        }else{
+            cout<<""""<<endl;
+
+
+        }
+    }
+}","1","2025-02-25T12:53:15",""
+"106","76","21","Não, pois o tamanho de um array deve ser uma constante.","1","2025-02-25T12:55:03",""
+"107","76","22","b) 1","1","2025-02-25T12:55:03",""
+"108","76","23","b) 1016","1","2025-02-25T12:55:03",""
+"109","76","24","d)","1","2025-02-25T12:55:03",""
+"110","76","25","void preencherSalarios (float salarios[], int numFuncionarios){
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Digite o salario do funcionario "" << i+1 << "": "";
+        cin >> salarios[i];
+    }
+}
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""Listagem de funcionarios cujo salario seja maior que"" << valorMinimo << "": "" <<endl;
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout << ""Funcionário "" << i+1 << "" com salario ""<< salarios[i] << "" Euros""<< endl;
+        }
+    }
+}","1","2025-02-25T12:55:03",""
+"111","119","21","Não, o array terá sempre o mesmo tamanho, podemos é visualizar apenas alguns elementos. Se tentarmos guardar valores fora dos seus limites recebemos um erro.","1","2025-02-26T12:18:19",""
+"112","119","22","b)","1","2025-02-26T12:18:19",""
+"113","119","23","a)","1","2025-02-26T12:18:19",""
+"114","119","24","d)","1","2025-02-26T12:18:19",""
+"115","119","25","void preencherSalarios(float salarios, int numFuncionarios){
+for (int i=0,i<numFuncionarios,i++){
+cout<<""Insira o salario do funcionário: ""<<salarios[i][0]<<endl;
+cin<<salarios[i][1];
+}
+}
+
+void imprimirSalariosAcima(float salarios, int numFuncionarios, float valorMinimo){
+cout<<""Listagem de funcionarios cujo salario seja maior que ""<<valorMinimo<<endl;
+for(i=0,i<numFuncionarios,i++){
+if (salarios[i]<valorMinimo){
+cout<<""Nenhum funcionário possui salario acima de""<<valorMinimo<<endl;
+}
+}
+for(i=0,i<numFuncionarios,i++){
+if (salarios[i]>valorMinimo){
+cout<<""Funcionario ""<<i+1<<"" com salario ""<<salarios[i]<<"" Euros.""<<endl;
+}
+}
+
+}","1","2025-02-26T12:18:19","2025-02-26T12:30:23"
+"116","189","21","nao, nao é possivel alterar o tamanho de array, e em caso de tentar guardar valores fora dos limites acontece overflow e os valores nao serao armazenados","1","2025-02-26T12:21:43",""
+"117","189","22","B","1","2025-02-26T12:21:43",""
+"118","189","23","C","1","2025-02-26T12:21:43",""
+"119","189","24","D","1","2025-02-26T12:21:43",""
+"120","189","25","for(i=1;i<=numFuncionarios,i++){
+   salarios+=salario[i];
+   
+ 
+
+","1","2025-02-26T12:21:43","2025-02-26T12:28:44"
+"121","205","21","Não, pois uma array é imutável ","1","2025-02-26T12:25:26",""
+"122","205","22","c","1","2025-02-26T12:25:26",""
+"123","205","23","c","1","2025-02-26T12:25:26",""
+"124","205","24","b","1","2025-02-26T12:25:26",""
+"125","205","25","","1","2025-02-26T12:25:26",""
+"126","191","21","Sim um array pode ser alterado ","1","2025-02-26T12:26:20",""
+"127","191","22","b)1","1","2025-02-26T12:26:20",""
+"128","191","23","b)1016","1","2025-02-26T12:26:20",""
+"129","191","24","d)42","1","2025-02-26T12:26:20",""
+"130","191","25","","1","2025-02-26T12:26:20",""
+"131","126","21","não, o programa dá erro se tentarem fazer isso","1","2025-02-26T12:28:18",""
+"132","126","22","b)","1","2025-02-26T12:28:18",""
+"133","126","23","b)","1","2025-02-26T12:28:18",""
+"134","126","24","d)","1","2025-02-26T12:28:18",""
+"135","126","25","#include <iostream>
+using namespace std;
+
+void preencherSalarios(){
+	for (int=0, i<numFuncionarios, i++);
+		cout << “Insira o Salario do funcionário” << endl;
+		cin >> salários[i];
+}
+
+void imprimirSalariosAcima(){
+	
+}
+
+","1","2025-02-26T12:28:18",""
+"136","81","21","Não, um array não pode ser alterado porque o tamanho é sempre fixo.","1","2025-02-26T12:28:29",""
+"137","81","22","b)1","1","2025-02-26T12:28:29",""
+"138","81","23","b) 1016","1","2025-02-26T12:28:29",""
+"139","81","24","d)42","1","2025-02-26T12:28:29",""
+"140","81","25","1)
+void preencherSalarios(float salarios[], int tamanho) {
+    for (int i = 0; i < tamanho; i++) {
+        cout << ""Insira o salário do funcionário "" << (i + 1) << "": "";
+        cin >> salarios[i];
+    }
+}
+","1","2025-02-26T12:28:29",""
+"141","89","21","Depois de declarado podemos alterar o tamanho de um array. Se tentarmos guardar valores para o array irá acontecer um erro.","1","2025-02-26T12:30:11",""
+"142","89","22","a","1","2025-02-26T12:30:12",""
+"143","89","23","c","1","2025-02-26T12:30:12",""
+"144","89","24","c","1","2025-02-26T12:30:12",""
+"145","89","25","void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Insira o salario do funcionario "" << i + 1 << "": "";
+        cin >> salarios[i];
+    }
+}
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""Salarios acima de  "" << valorMinimo << "":\n"";
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout << ""Funcionario "" << i + 1 << "":  "" << salarios[i] << endl;
+            else {
+                cout << ""Nenhum recebe acima de "" << valorMinimo << endl;
+            }
+        }
+    }
+}","1","2025-02-26T12:30:12",""
+"146","188","21","Sim, é possível. Se por exemplo guardar um array como int soma = 0 e no mais à frente alterar esse array para soma = soma + 1 ou soma = 22 estarei a alterar o tamanho desse array. Se tentarmos guardar valores num array que seja int com valores float iremos obter um erro.","1","2025-02-26T12:31:45",""
+"147","188","22","b","1","2025-02-26T12:31:46",""
+"148","188","23","c","1","2025-02-26T12:31:46",""
+"149","188","24","d","1","2025-02-26T12:31:46",""
+"150","188","25","1)
+void preencherSalarios (float salarios[ ], int numFuncionarios) {
+   for (int i = 0; i < numFuncionarios, i++) {
+        cout << ""Insira o salario do funcionario"" << (i + 1) << "" : "" ;
+        cin >> salarios[i]
+   }
+}
+
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""\nListagem de funcionarios cujo salario seja maior que "" << valorMinimo << "":\n"";
+    
+    bool encontrou = false;
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout << ""Funcionario "" << (i + 1) << "" com salario "" << salarios[i] << "" Euros\n"";
+            encontrou = true;
+        }
+    }
+
+    if (!encontrou) {
+        cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << ""\n"";
+    }
+}
+
+   
+
+","1","2025-02-26T12:31:46",""
+"151","101","21","sim    utilizado  arrays   dinamicos. 
+ dá  erro ","1","2025-02-26T12:32:13",""
+"152","101","22","b","1","2025-02-26T12:32:13",""
+"153","101","23"," b","1","2025-02-26T12:32:13",""
+"154","101","24","d ","1","2025-02-26T12:32:13",""
+"155","101","25","","1","2025-02-26T12:32:13",""
+"156","216","21","não pode alterar , após a alteração do array , elas têm um tamanho fixo até o fim do programa, não é definido o comportamento dele se tentar guardar fora dos limites.","1","2025-02-26T12:34:43",""
+"157","216","22","2","1","2025-02-26T12:34:43",""
+"158","216","23","b)","1","2025-02-26T12:34:43",""
+"159","216","24","d)","1","2025-02-26T12:34:43",""
+"160","216","25","void preencherSalarios(float* salarios, int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Informe o salario do funcionario "" << i << "": "";
+        cin >> salarios[i+1];
+    }
+}
+void imprimirSalariosAcima(float* salarios, int numFuncionarios, float valorMinimo) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout << salarios[i] << endl;
+        }
+    }
+}","1","2025-02-26T12:34:43",""
+"161","59","21","Regra geral não porque o tamanho do array é constante. Se tentarmos guardar valores fora dos seus limites da erro pois tamos a ocupar mais espaço do que deviamos.","1","2025-02-26T12:36:27",""
+"162","59","22","1","1","2025-02-26T12:36:27",""
+"163","59","23","1032","1","2025-02-26T12:36:27",""
+"164","59","24","42","1","2025-02-26T12:36:27",""
+"165","59","25","#include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20;  // Limite máximo de funcionários
+int numFuncionarios;
+float valorMinimo;
+float salarios[MAX_FUNCIONARIOS];
+void preencherSalarios(float salarios, int numFuncionarios) {
+    for (int i=0; i<numFuncionarios; i++) {
+        cout << ""Insira o salario do funcionario ""<< i+1 << "":""<<endl;
+        cin >> salarios [i];
+    }
+}
+
+void imprimirSalariosAcima(float salarios, int numFuncionarios, float valorMinimo) {
+    cout << ""Listagem dos funcionários com saalrio maior que: ""<< valorMinimo<<endl;
+    for (int i=0; i<numFuncionarios; i++) {
+        if (salarios [i]>=valorMinimo) {
+            cout << ""O funcionario ""<< i+1<<"" tem um salario de ""<< salarios[i]<< ""euros""<<endl;
+        }
+    }
+}
+
+int main() {
+
+    cout << ""Quantos funcionarios sao? "";
+    cin >> numFuncionarios;
+
+    if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+        cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+        return 1;
+    }
+
+    // Preencher o array com os salários dos funcionários
+    preencherSalarios(salarios, numFuncionarios);
+
+    // Solicitar um valor mínimo e imprimir os salários acima desse valor
+    cout << ""\nInforme o valor minimo do salario: "";
+    cin >> valorMinimo;
+
+    imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+    return 0;
+}","1","2025-02-26T12:36:27",""
+"166","102","21","Depois de declarado, não é possível alterar o tamanho de um array, apenas o que está dentro de cada posição do array. Ao tentar guardar valores fora dos seus limites, vai ocorrer um erro.","1","2025-02-26T12:46:15",""
+"167","102","22","a) 0","1","2025-02-26T12:46:15",""
+"168","102","23","a) 1008","1","2025-02-26T12:46:15",""
+"169","102","24","d) 42","1","2025-02-26T12:46:15",""
+"170","102","25","void preencherSalarios(salarios, numFuncionarios){
+    float salarioAInserir;
+    float salarios[numFuncionarios];
+    for(i=0; i<=numFuncionarios; i++){
+	cout << ""Insira o salário do funcionário ""<< i+1 << endl;
+	cin >> salarioAInserir;
+        salarios[i] = salarioAInserir;
+    }
+}
+
+void imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo){
+    cout << ""Listagem de funcionários cujo salário seja maior que "" << valorMinimo << endl;
+    bool existeValMin; //guarda true se houver pelo menos um funcionário que ganhe mais que o valorMinimo
+
+    bool acabouLista;
+    int salariosMaisQueMin[];
+    int numFuncionariosMaisQueMin;
+    do{
+        while(!acabouLista){
+            for(i=0; i<numFuncionarios; i++){
+                if(salario[i] > valorMinimo){
+                    salariosMaisQueMin[i] = salario[i];
+		    numFuncionariosMaisQueMin++;
+                }
+            }
+        }
+	
+    }while(!existeValMin);
+    
+    if(!existeValMin)
+	cout << ""Nenhum funcionário possui salário acima de ""<< valorMinimo << endl;
+    else{
+        for(i=0; i<numFuncionariosMaisQueMin; i++){
+	    cout << ""Funcionário "" << i+1 << "" com salário "" << salariosMaisQueMin[i] << endl;
+ 	}
+    }
+}
+","1","2025-02-26T12:46:15",""
+"171","68","21","Sim, pois um array é algo flexível. se tentarmos guardar valores fora dos seus limites o array não funcionará até que o utilizador escolha um valor dentro do definido. ","1","2025-02-26T12:47:07",""
+"172","68","22","c)","1","2025-02-26T12:47:07",""
+"173","68","23","b)","1","2025-02-26T12:47:07",""
+"174","68","24","d)","1","2025-02-26T12:47:07",""
+"175","68","25","void preencherSalarios( float salarios[], numFuncionarios ){
+	for (int i = 0; i>salarios; i++) {
+		cout << salarios[] << endl;
+		cout << “Insira o salario do funcionario X: ” << salario << endl;
+		cin >> 	salario;
+}
+}
+
+
+
+void listaFuncionariosMaior(float valorMinimo, numFuncionarios){
+	if (valorMinimo<=salario){
+cout << “Lista de funcionarios cujo salario seja maior que X: ” << endl;
+cin >> salario;
+}else{
+cout<< “Nenhum funcionário possui salario acima de X” << endl;
+}
+for(int i = 0; i>Y; i++)){
+Y= salario funcionário i;
+	i==i + 1;
+}
+cout << “O salario do funcionário i e: ” << Y << endl;
+
+","1","2025-02-26T12:47:07",""
+"176","200","21","Não é possível alterar o tamanho do array. Quando um array está completo é possível passar para outro array maior conseguindo aumentar assim o array, caso seja necessário devido ao uso da memoria ou outros fatores. ","1","2025-02-27T12:40:56",""
+"177","200","22","b)","1","2025-02-27T12:40:56",""
+"178","200","23","a)","1","2025-02-27T12:40:56",""
+"179","200","24","d)","1","2025-02-27T12:40:56",""
+"180","200","25","#include <iostream>
+using namespace std;
+int  preencherSalarios(salarios, numFuncionarios){
+        int salarios, numFuncionarios;
+        cout<<""Insira o salario do funcionário""<<endl; 
+        cin>>salarios;
+}
+void preencherSalarios(salarios, numFuncionarios){
+        for (int i=; i<funcionários; i++ ){
+               x = i+1;
+               somar += x;
+              }
+        return somar;
+}
+
+void imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo){
+          int salarios; numFuncionarios, valorMinimo;
+          cout<< ""Nenhum funcionario possui salario acima de:""<< i <<endl;
+          Cout<<""Funcionario""<< numFuncionario <<""com o salario""<< salarios <<""€""<<endl;
+  }          
+  void  ImprimirSalariosAcima(salarios, numFuncionarios, valorMinimo){  
+            ","1","2025-02-27T12:40:56","2025-02-27T12:58:51"
+"181","114","21","Não. Após declarado o tamanho de um array é fixo, sendo que seria necessário criar um novo array para ter um tamanho diferente. Ao tentar guardar valores fora dos seus limites, obtemos um erro. Uma estrutura de dados que permitira alterar o tamanho seria uma lista ligada, no entanto, o array não o permite.","1","2025-02-27T12:43:30",""
+"182","114","22","b)","1","2025-02-27T12:43:30",""
+"183","114","23","d)","1","2025-02-27T12:43:30",""
+"184","114","24","d)","1","2025-02-27T12:43:30",""
+"185","114","25","void preencherSalarios(float salarios[], int nFuncionarios){
+	for (int i = 0; i < nFuncionarios; i++){
+		cout << ""Insira o salario do funcionario "" << i + 1 << "": "";
+		cin >> salarios[i];
+	}
+}
+
+void imprimirSalariosAcima(float salarios[], int nFuncionarios, float valorMin)
+{
+	cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMin << endl;
+	bool existe = false;
+	for (int i = 0; i < nFuncionarios; i++){
+		if (salarios[i] >= valorMin){
+			cout << ""Funcionario "" << i + 1 << "" com salario "" << salarios[i] << "" euros."" << endl;
+			existe = true;
+		}
+	}
+	if (!existe) cout << ""Nenhum funcionario possui salario acima de "" << valorMin << endl;
+}","1","2025-02-27T12:43:30",""
+"186","112","21","Não é possível alterar o tamanho do array depois de declarado, o programa reserva o número de elementos de memória necessários para atender à nossa necessidade, após isso, não é possível alocar mais memória, caso ainda assim se tentarmos aceder ou guardar valores em memória fora dos limites do array, o programa não irá deixar compilar e vai exibir o erro ""Memory out of bounds"".","1","2025-02-27T12:51:36",""
+"187","112","22","b)","1","2025-02-27T12:51:36",""
+"188","112","23","b)","1","2025-02-27T12:51:36",""
+"189","112","24","d)","1","2025-02-27T12:51:36",""
+"190","112","25","void preencherSalarios(float *salarios, int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Informe o salario do funcionario "" << i+1 << "": "";
+        cin >> salarios[i];
+    }
+}
+
+
+
+
+
+
+void imprimirSalariosAcima(float *salarios, int numFuncionarios, float valorMin) {
+    cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMin << "":"" << endl;
+    int flag = 1;
+    for (int i = 1; i <= numFuncionarios; i++) {
+        if (salarios[i-1] > valorMin) {
+            flag = 0;
+            cout << ""Funcionario "" << i << "" com salario "" << salarios[i-1] << "" Euros""<< endl;
+        }
+    }
+    if (flag) {
+        cout << ""Nenhum funcionario possui salario acima de "" << valorMin << endl;
+    }
+}","1","2025-02-27T12:51:36",""
+"191","144","21","Não é possível e dará erro dizendo que excedeu o limite, deu overflow.","1","2025-02-27T12:54:57",""
+"192","144","22","b)","1","2025-02-27T12:54:57",""
+"193","144","23","b)","1","2025-02-27T12:54:57",""
+"194","144","24","a)","1","2025-02-27T12:54:57",""
+"195","144","25","void preencherSalarios(float sal[], int tam) {
+    int p=1;
+    for (int i = 0; i < tam; i++) {
+        cout << ""Insira o salario do funcionário "" << p << "":"";
+        cin >> sal[i];
+        ++p;
+    }
+}
+void imprimirSalariosAcima(float sal[], int tam, float x) {
+    int pes=0;
+    int p=1;
+    cout << ""Listagem de funcionarios cujo salario seja maior que "" << x << "":"" << endl;
+    for (int i = 0; i < tam; i++) {
+        if (sal[i] < x) {
+            pes++;
+        }
+    }
+    if (pes == tam) {
+        cout << ""Nenhum funcionario possui salario acima de "" << x << endl;
+    }
+    else {
+        for (int i = 0; i < tam; i++) {
+            if (sal[i] > x) {
+                cout << ""Funcionario "" << p << "" com salario "" << sal[i] << "" Euros."" << endl;
+                ++p;
+
+            }
+        }
+    }
+}","1","2025-02-27T12:54:57",""
+"196","120","21","Não, ao tentar guardar causa comportamento indefinido","1","2025-02-27T12:55:08",""
+"197","120","22","b","1","2025-02-27T12:55:08",""
+"198","120","23","b","1","2025-02-27T12:55:08",""
+"199","120","24","d","1","2025-02-27T12:55:08",""
+"200","120","25","void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Insira o salario do funcionário "" << i+1 << "": "";
+        cin >> salarios[i];
+    }
+}
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""Listagem de funcionarios cujo salario seja maior que ""<< valorMinimo << "":""<< endl;
+    bool exists = false;
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] >= valorMinimo) {
+            cout << ""Funcionario "" << (i+1) << "" com salario "" << salarios[i] <<"" Euros"" <<endl;
+            exists = true;
+        } else {
+            if (!exists) {
+                cout << ""Nenhum funcionario possui salario acima de""<< valorMinimo << endl;
+            }
+        }
+    }
+}","1","2025-02-27T12:55:08",""
+"201","82","21","Não. o tamanho do array é inalterável após declaração. se tentarmos guardar valores fora dos seus limites poderão ser corrompidos outros dados ou sobrepostos.","1","2025-02-27T12:55:22",""
+"202","82","22","b. 1 erro. o array está a ser definido com parentesis () em vez de chavetas {}.","1","2025-02-27T12:55:22",""
+"203","82","23","b. o double trabalha com 8 bytes. como o array começa no endereço 1000, [0] será 1000, [1] será 1008 e [2], que corresponde ao terceiro endereço será 1016.","1","2025-02-27T12:55:22",""
+"204","82","24","opção d).
+o primeiro valor [1] indica a linha, como o índice começa em zero, corresponde à segunda linha.
+o segundo valor [2] indica a coluna, que pelo mesmo princípio, corresponde à terceira coluna.
+logo o valor armazenado na posição [1][2] é 42.","1","2025-02-27T12:55:22",""
+"205","82","25","#include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20;  // Limite máximo de funcionários
+
+void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; ++i) {
+        cout << ""Insira o salario"" << (i + 1) << "": "";
+        cin >> salarios[i];
+    }
+}
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""\nListagem de funcionarios cujo salario seja maior que "" << valorMinimo << "": "" << endl;
+    bool algumFuncionarioAcima = false;
+
+    for (int i = 0; i < numFuncionarios; ++i) {
+        if (salarios[i] > valorMinimo) {
+            cout << ""Funcionario "" << (i + 1) << "" com salario "" << salarios[i] << "" Euros""<< endl;
+            algumFuncionarioAcima = true;
+        }
+    }
+
+    if (!algumFuncionarioAcima) {
+        cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << ""\n"";
+    }
+}
+
+int main() {
+    int numFuncionarios;
+    float salarios[MAX_FUNCIONARIOS];
+    float valorMinimo;
+
+    cout << ""Quantos funcionarios sao? "";
+    cin >> numFuncionarios;
+
+    if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+        cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+        return 1;
+    }
+
+
+
+    // Preencher o array com os salários dos funcionários
+    preencherSalarios(salarios, numFuncionarios);
+
+
+
+    // Solicitar um valor mínimo e imprimir os salários acima desse valor
+    cout << ""\nInforme o valor minimo do salario: "";
+    cin >> valorMinimo;
+
+
+
+
+    imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+    return 0;
+}
+
+
+
+
+
+
+","1","2025-02-27T12:55:22",""
+"206","177","21","Não","1","2025-02-27T12:55:50",""
+"207","177","22","opção c)","1","2025-02-27T12:55:50",""
+"208","177","23","opção b)","1","2025-02-27T12:55:50",""
+"209","177","24","opção d)","1","2025-02-27T12:55:50",""
+"210","177","25","1)int preencherSalarios(salarios, numFuncionarios){ 
+             float salarios=0;
+             for(int i=0, i<numFuncionarios,i++){
+             salarios
+             
+             
+","1","2025-02-27T12:55:50",""
+"211","71","21","É impossível alterar o tamanho de um array depois de ser declarado visto que este simplemente ocupa o espaço da memória que se declarou, caso tentassemos guardar os valores fora dos seus limites, o sistema simplesmente não os guarda.","1","2025-02-27T12:56:43",""
+"212","71","22","c","1","2025-02-27T12:56:43",""
+"213","71","23","b","1","2025-02-27T12:56:43",""
+"214","71","24","d","1","2025-02-27T12:56:43",""
+"215","71","25","1)
+preencherSalarios(salario, numFuncionarios) {
+    int numFuncionarios;
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Digite o salario do funcionario "" << i+1 << "": "";
+        cin >> numFuncionarios;
+    }
+}
+
+2)
+imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo) {
+    int valorMinimo;
+    int salarios;
+    int numFuncionarios;
+    cout << ""Digite o valor minimo: "" << valorMinimo << endl;
+    cin >> valorMinimo;
+    cout << ""Listagem de funcionarios cujo salario seja maior que"" << valorMinimo << "": ""
+    if (valorMinimo > salarios) {
+        cout << ""Nenhum funcionario possui salario acima de"" << valorMinimo << ""onde"" << valorMinimo << ""represnta o valor minimo indicado pelo utilizador."" << endl;
+    }
+    else {
+        for (int i = 0; i < numFuncionarios; i++) {
+            cout << ""Funcionario "" << numFuncionarios << ""com salario "" << salarios << ""Euros em que o número do funcionário inicia em 1 e "" << salarios << ""representa o valor do seu salário."";
+        }
+    }
+}","1","2025-02-27T12:56:43",""
+"216","55","21","O tamanho de um array depois de declarado não é possível alterar ao longo desse mesmo programa, uma vez que ele fica guardado na memoria e se nós formos tentar guardar fora dos seus limites irá dar erro.","1","2025-02-27T12:56:52",""
+"217","55","22","b","1","2025-02-27T12:56:52",""
+"218","55","23","b","1","2025-02-27T12:56:52",""
+"219","55","24","d","1","2025-02-27T12:56:52",""
+"220","55","25","#include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20;  // Limite máximo de funcionários
+
+int main() {
+    int numFuncionarios;
+    float salarios[MAX_FUNCIONARIOS];
+    float valorMinimo;
+
+    cout << ""Quantos funcionarios sao? "";
+    cin >> numFuncionarios;
+
+    if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+        cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+        return 1;
+    }
+
+    // Preencher o array com os salários dos funcionários
+    void preencherSalarios(salarios, numFuncionarios){
+        for (int i = 0; i < numFuncionarios; i++) {
+            cout << ""Insira o salario "" << i << "": "";
+            cin >> salarios[i];
+        };
+    }
+
+    // Solicitar um valor mínimo e imprimir os salários acima desse valor
+    cout << ""\nInforme o valor minimo do salario: "";
+    cin >> valorMinimo;
+
+    void imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo) {
+       if (valorMinimo < salarios[0]) {
+           cout << ""Lista de funcionarios cujo salario é maior que"" << valorMinimo <<"".\n"";
+       else
+           cout << ""Nenhum funcionario possui salario acima de valor minimo"" << valorMinimo <<"".\n"";
+       }
+    }
+    return 0;
+}","1","2025-02-27T12:56:52",""
+"221","133","21","Sim, é possivel remover itens do array, como por exemplo com a funcao del, mas nao é possivel introduzir mais valores alem do seu limite, caso tentarmos iria dar erro.","1","2025-02-27T12:57:35",""
+"222","133","22","2","1","2025-02-27T12:57:35",""
+"223","133","23","1016","1","2025-02-27T12:57:35",""
+"224","133","24","23","1","2025-02-27T12:57:35",""
+"225","133","25","void preencherSalarios(salarios, numFuncionarios) {
+for (int i = 0; i < numFuncionarios; i++) {
+cout << ""insira o salario do funcionario numero "" << i+1 <<endl; 
+int x;
+cin >> x;
+salarios = salarios + x
+}
+}
+
+imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo) {
+cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMinimo<< endl;
+for (int i = 0; i < numFuncionarios; i++) {
+      if (salarios[i] >= valorMinimo ) {
+      cout << ""funcionario"" << i+1 << ""com salario"" << salarios[i]<< endl; 
+      }
+     else if(salarios[i] > valorMinimo) {
+     int r;
+     r= r+1
+     if (r == numFuncionarios) {
+    cout<<"" Nenhum funcionario possui salario acima de "" << valorMinimo <<endl;
+    }
+ }
+}","1","2025-02-27T12:57:35",""
+"226","196","21","O tamanho de um array é constante, o que significa que não é possível o mudar diretamente. Se quisermos acrescentar memória ao array, devemos fazer um a cópia com tamanho maior e eliminar o original. Se tentarmos guardar valores fora dos seus limites, dará erro.","1","2025-02-27T12:57:52",""
+"227","196","22","b","1","2025-02-27T12:57:52",""
+"228","196","23","b","1","2025-02-27T12:57:52",""
+"229","196","24","d","1","2025-02-27T12:57:52",""
+"230","196","25","float preencherSalarios(float salarios[], int numFuncionarios) {
+   for (int i=0; i<numFuncionarios; i++) {
+      cout << ""Insira o salario do funcionário "" << i+1 << "":\n"";
+      cin >> salarios[i];
+      cout << ""\n"";
+   }
+   return salarios[];
+}
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+   cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMinimo << ""\n"";
+   int q = 0;
+   for (int i=0; i<numFuncionarios; i++) {
+      if (salario>valorMinimo) {
+         cout << ""Funcionario "" << i+1 << "" com salario "" << salario[i] << "" \n"";
+         q += 1;
+      }
+   }
+   if (q==0) {
+      cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << ""\n"";
+   }
+}","1","2025-02-27T12:57:52",""
+"231","157","21","Nao, apos criarmos um array com um tamanho especifico nao é possivel altera-lo e se o fizermos aparecera um erro de memoria ou que nao é possivel guardar, uma vez que, os valores ultrapassam o tamanho definido da memoria. Se quisermos alterar o tamanho do array é necessario criar um novo com o tamanho pretendido onde serao guardados os valores do array anterior. ","1","2025-02-27T12:58:27",""
+"232","157","22","2","1","2025-02-27T12:58:27",""
+"233","157","23","b","1","2025-02-27T12:58:27",""
+"234","157","24","c","1","2025-02-27T12:58:27",""
+"235","157","25","1.
+void preecherSalarios(float salarios, int numFuncionarios){
+   for (int i = 0; i < numFuncionarios; i++){
+   }
+}
+
+2.
+void imprimirSalairosAcima(float salarios, int numFuncionarios){
+   int valorMinimo = 0;
+   cout << ""Insira o valor minimo para o salario: "";
+   cin >> valorMinimo;
+   if (salarios[numfuncionarios] < valorMinimo){
+      cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << ""."" << endl;
+    } else {
+   }
+}
+        ","1","2025-02-27T12:58:27",""
+"236","190","21","Não, devido à alocação de memória estática.","1","2025-02-27T13:00:35",""
+"237","190","22","d) 3","1","2025-02-27T13:00:35",""
+"238","190","23","c) 1024","1","2025-02-27T13:00:35",""
+"239","190","24","d) 42","1","2025-02-27T13:00:35",""
+"240","190","25","	1) Função preencherSalarios:
+
+   1. A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios;
+   2. Deverá ser apresentada uma mensagem por cada funcionário com o formato: Insira o salario do funcionário X: onde X representa o índice +1 do array.
+_ 
+preencherSalarios(salarios, numFuncionarios){
+    float n = 0;
+    for (int x=1; x < numFuncionarios; i++){
+        std::cout<<""Insira o Salario do funcionario nrº ""<<(x-1)<<"":"";
+        std::cin>>n;
+        salarios[x-1]=n;
+        std::cout<<""Funcionario nrº:""<<(x-1)<<""Salario:""<<salarios[x-1]<<std::endl;
+    }
+}
+_
+
+2) Função imprimirSalariosAcima:
+
+   1.  A função deverá apresentar, inicialmente, um título com o formato: Listagem de funcionarios cujo salario seja maior que X: onde X representa o valor mínimo indicado pelo utilizador.
+_
+imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo){
+    std::cout<<""Listagem de funcionars cujo salario seja maior que ""<<valorMinimo<<"":""
+    for(int x=1; x < numFuncionarios; i++){
+        if (salarios[x-1] > valorMinimo){
+            std::cout<<""Funcionario nrº:""<<(x-1)<<""Salario:""<<salarios[x-1]<<std::endl;
+        }
+    }
+}
+
+_
+    2. Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador.
+_
+
+_
+    3. Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: Funcionario i com salario Y Euros em que o número do funcionário inicia em 1 e Y representa o valor do seu salário.
+_
+
+_","1","2025-02-27T13:00:35",""
+"241","94","21","Depois de declarado é impossível alterar o tamanho do array, visto que o mesmo é de tamanho estático, ao tentar guardar valores fora do seu limite pode corromper o espaço de memória ou retornar null ou undefined","1","2025-02-27T15:40:32",""
+"242","94","22","b","1","2025-02-27T15:40:32",""
+"243","94","23","b","1","2025-02-27T15:40:32",""
+"244","94","24","d","1","2025-02-27T15:40:32",""
+"245","94","25","#include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20;  // Limite máximo de funcionários
+
+// Protótipos das funções
+void preencherSalarios(float salarios[], int numFuncionarios);
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo);
+
+int main() {
+    int numFuncionarios;
+    float salarios[MAX_FUNCIONARIOS];
+    float valorMinimo;
+
+    cout << ""Quantos funcionarios sao? "";
+    cin >> numFuncionarios;
+
+    if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+        cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+        return 1;
+    }
+
+    // Preencher o array com os salários dos funcionários
+    preencherSalarios(salarios, numFuncionarios);
+
+    // Solicitar um valor mínimo e imprimir os salários acima desse valor
+    cout << ""\nInforme o valor minimo do salario: "";
+    cin >> valorMinimo;
+
+    imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+    return 0;
+}
+
+// Função para preencher o array de salários
+void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Insira o salario do funcionario "" << (i + 1) << "": "";
+        cin >> salarios[i];
+    }
+}
+
+// Função para imprimir os salários acima de um valor mínimo
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""\nListagem de funcionarios cujo salario seja maior que "" << valorMinimo << "":\n"";
+
+    bool encontrou = false; // Flag para verificar se há salários acima do valor mínimo
+
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout << ""Funcionario "" << (i + 1) << "" com salario "" << salarios[i] << "" Euros\n"";
+            encontrou = true;
+        }
+    }
+
+    if (!encontrou) {
+        // Caso não encontre nada válido flag = false 
+        cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << "".\n"";
+    }
+}","1","2025-02-27T15:40:32",""
+"246","111","21","Não porque depois de declarado nao podemos mais alterar pois os arrays em C++ têm um tamanho fixo que é determinado na sua criação e se tentarmos guardar valores fora dos seus limites de um array isso resultará de um comportamento indefinido.","1","2025-02-27T15:43:23",""
+"247","111","22","(C) 2","1","2025-02-27T15:43:23",""
+"248","111","23","(B) 1016","1","2025-02-27T15:43:23",""
+"249","111","24","(D) 42","1","2025-02-27T15:43:23",""
+"250","111","25","void preencherSalarios(float* salarios, int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Informe o salario do funcionario "" << i << "": "";
+        cin >> salarios[i];
+    }
+}
+void imprimirSalarios(float* salarios, int numFuncionarios) {
+    float valorMinimo;
+    cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMinimo << "":\n"";
+    bool encontrou = false;
+
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] > valorMinimo) {
+            cout << ""Funcionario "" << i + 1 << "" com salario "" << salarios[i] << "" Euros\n"";
+            encontrou = true;
+        }
+    }
+
+    if (!encontrou) {
+        cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << "" Euros.\n"";
+    }
+}
+","1","2025-02-27T15:43:23",""
+"251","211","21","Depois de declarado não é possível alterar um tamanho de um array. 
+Se tentarmos guardar valores fora de seus limites, dará um erro no programa.","1","2025-02-27T15:45:16",""
+"252","211","22","1","1","2025-02-27T15:45:16",""
+"253","211","23","1016","1","2025-02-27T15:45:16",""
+"254","211","24","42","1","2025-02-27T15:45:16",""
+"255","211","25","void preencherSalarios(float salários, int numFuncionarios) { 
+	for (int i = 0; i < numFuncionarios; i++) { 
+		cout << ""Insira o salario do funcionario "" << (i + 1) << "": ""; 	
+		cin >> salarios[i]; 
+	}
+ }
+
+
+void imprimirSalariosAcima(float salarios, int numFuncionarios, float valorMinimo) { 
+	bool encontrou = false; 
+		cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMinimo << "": ""; 
+	for (int i = 0; i < numFuncionarios; i++) { 
+		if (salarios[i] > valorMinimo) { 
+			cout << ""Funcionario "" << i + 1 << "" com salario "" << salarios[i] << "" Euros\n""; 
+	encontrou = true; 
+		} 
+	} 
+	if (!encontrou) { 
+		cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << "" Euros.\n""; 
+	} 
+}
+
+","1","2025-02-27T15:45:16",""
+"256","139","21","Depois de declarar um array não é possível alterar o seu tamanho. Caso tentemos guardar valores fora do seus limites, esta operação não será possível ","1","2025-02-27T15:45:22",""
+"257","139","22","Linha b","1","2025-02-27T15:45:22",""
+"258","139","23","Linha b","1","2025-02-27T15:45:22",""
+"259","139","24","linha d","1","2025-02-27T15:45:22",""
+"260","139","25","#include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20;  // Limite máximo de funcionários
+
+int main() {
+    int numFuncionarios;
+    float salarios[MAX_FUNCIONARIOS];
+    float valorMinimo;
+
+    cout << ""Quantos funcionarios sao? "";
+    cin >> numFuncionarios;
+
+    if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+        cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+        return 1;
+    }
+
+    // Preencher o array com os salários dos funcionários
+    float preencherSalarios(salarios, numFuncionarios){
+        for (int i = 0; i < numFuncionarios; i++) {
+            cout << ""Digite o salario do funcionario "" << i << "": "";
+            cin >> salarios[i];
+            cout << ""\nInforme o valor minimo do salario: "";
+            cin >> valorMinimo;
+        }
+    }
+    float imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo) {
+        for (int i = 0; i < numFuncionarios; i++) {
+            cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMinimo << endl;
+    }
+    return 0;
+}","1","2025-02-27T15:45:22",""
+"261","70","21","Nao é possivel alterar o tamanho. Fora dos limites pode retornar undefined ou corromper o espaço de memoria","1","2025-02-27T15:48:09",""
+"262","70","22","c)","1","2025-02-27T15:48:09",""
+"263","70","23","b)","1","2025-02-27T15:48:09",""
+"264","70","24","b)","1","2025-02-27T15:48:09",""
+"265","70","25","void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Insira o salario do funcionario "" << (i + 1) << "": "";
+        cin >> salarios[i];
+    }
+}
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    cout << ""Lista de funcionarios cujo salario seja maior que "" << valorMinimo << endl;
+    bool found = false;
+    for (int i = 0; i < numFuncionarios; i++) {
+        if (salarios[i] >= valorMinimo) {
+            cout << ""Funcionario "" << i + 1 << "": "" << salarios[i] << "" Euros"" << endl;
+            found = true;
+        }
+    }
+
+    if (!found) {
+        cout << ""Nenhum funcionario possui um salario acima de "" << valorMinimo;
+    }
+}","1","2025-02-27T15:48:09",""
+"266","67","21","Depende de como é declarado o array. Se for declarado de forma dinâmica é possível alterar o tamanho. Guardar valores fora do limite gera erro.","1","2025-02-27T15:50:00",""
+"267","67","22","b)","1","2025-02-27T15:50:00",""
+"268","67","23","d)","1","2025-02-27T15:50:01",""
+"269","67","24","d)","1","2025-02-27T15:50:01",""
+"270","67","25","#include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20;  // Limite máximo de funcionários
+
+void preencherSalarios(float salarios[],int numFuncionarios){
+    int s[];
+    for (int i=0; i<=numFuncionarios; i++) {
+        cout << ""Insira o salario do funcionario "" << s[i]<<endl;
+        cin >> s[i];
+        }
+}
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios,float valorMinimo) {
+    int vmin[];
+    cout << ""Listagem de funcionarios cujo salario seja maior que "" << endl;
+    for (int i=0; i<numFuncionarios; i++) {
+        cin >> vmin[i];
+    }
+
+}
+
+int main() {
+    int numFuncionarios;
+    float salarios[MAX_FUNCIONARIOS];
+    float valorMinimo;
+
+    cout << ""Quantos funcionarios sao? "";
+    cin >> numFuncionarios;
+
+    if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+        cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+        return 1;
+    }
+
+
+    // Preencher o array com os salários dos funcionários
+    preencherSalarios(salarios, numFuncionarios);
+
+    // Solicitar um valor mínimo e imprimir os salários acima desse valor
+    cout << ""\nInforme o valor minimo do salario: "";
+    cin >> valorMinimo;
+
+    imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+    return 0;
+}
+","1","2025-02-27T15:50:01",""
+"271","75","21","sim, mas se tentarmos guardas valores fora dos seus limites nao dara certo, pois o array definido entrara num estado de overflow devido ao excesso de bytes que ultrapassam os definidos no array.","1","2025-02-27T15:51:17",""
+"272","75","22","b","1","2025-02-27T15:51:17",""
+"273","75","23","a","1","2025-02-27T15:51:17",""
+"274","75","24","d","1","2025-02-27T15:51:17",""
+"275","75","25","#include <iostream>
+int imprimirsalarios(float salarios[]),int numfuncionarios){
+    int salario;
+    for (int i = 0< numfuncionarios, i++ ) {
+        std::cout<<""insira o salario do funcionario ""<<(i++) <<std::endl;"": "";
+    }
+    return 0;
+}
+int  imprimirsalariosacima() {
+    int salario;
+}","1","2025-02-27T15:51:17",""
+"276","63","21","Depende da forma como for declarado array, sim.","1","2025-02-27T15:52:10",""
+"277","63","22","0","1","2025-02-27T15:52:10",""
+"278","63","23","c","1","2025-02-27T15:52:10",""
+"279","63","24","a","1","2025-02-27T15:52:10",""
+"280","63","25","#include <iostream>
+using namespace std;
+
+
+void preencherSalarios(float salarios[], int numFuncionarios);
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo);
+
+const int MAX_FUNCIONARIOS = 20;  // Limite máximo de funcionários
+
+int main() {
+    int numFuncionarios;
+    float salarios[MAX_FUNCIONARIOS];
+    float valorMinimo;
+
+    cout << ""Quantos funcionarios sao? "";
+    cin >> numFuncionarios;
+
+    if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+        cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+        return 1;
+    }
+
+    // Preencher o array com os salários dos funcionários
+    preencherSalarios(salarios, numFuncionarios);
+
+    // Solicitar um valor mínimo e imprimir os salários acima desse valor
+    cout << ""\nInforme o valor minimo do salario: "";
+    cin >> valorMinimo;
+
+    imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+    return 0;
+}
+
+void preencherSalarios(float salarios[], int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i,50) {
+        salarios[i] = 
+    }
+}
+
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+    for (int i = 0; i < numFuncionarios; i,50) {
+        cout << salarios[i] << ""€ ""<< endl;
+    }
+}","1","2025-02-27T15:52:10",""
+"281","117","21","sim.","1","2025-02-27T17:23:41",""
+"282","117","22","b","1","2025-02-27T17:23:41",""
+"283","117","23","c","1","2025-02-27T17:23:41",""
+"284","117","24","d","1","2025-02-27T17:23:41",""
+"285","117","25","","1","2025-02-27T17:23:41",""
+"286","95","21","Não. Um array tem um tamanho fixo devido à alocação de memória inerente ao conceito. Se tentarmos guardar valores fora dos limites dará erro.","1","2025-02-27T17:33:15",""
+"287","95","22","2","1","2025-02-27T17:33:15",""
+"288","95","23","b","1","2025-02-27T17:33:15",""
+"289","95","24","d","1","2025-02-27T17:33:15",""
+"290","95","25","void preencherSalarios(salarios, numFuncionarios){
+    for (int i = 0; i < numFuncionarios; i++){
+        cout << ""Insira o salario do funcionário "" << i+1 << endl;
+        cin >> salarios[i];
+    }
+}
+
+int imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo){
+    cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMinimo << endl;
+    for (int i = 0; i < numFuncionarios; i++){
+        if (salarios[i] >= valorMinimo){
+            cout << ""Funcionario "" << i+1 << "" com salario ""<< salarios[i]<< ""Euros"" << endl;
+        }else{
+            cout << ""Nenhum funcionario possui salario acima de"" << valorMinimo << endl;
+        }
+    }
+    return 0;
+}","1","2025-02-27T17:33:15",""
+"291","74","21","Não, pois temos que inicialmente indicar o tamanho.
+Se tentarmos guardar valores fora do valor não executa esses valores.","1","2025-02-27T17:38:48",""
+"292","74","22","1","1","2025-02-27T17:38:48",""
+"293","74","23","1024","1","2025-02-27T17:38:48",""
+"294","74","24","42","1","2025-02-27T17:38:48",""
+"295","74","25","","1","2025-02-27T17:38:48",""
+"296","195","21","Não porque  o tamanho de um array não se consegue alterar e é imutavel.","1","2025-02-27T17:38:56",""
+"297","195","22","c)","1","2025-02-27T17:38:56",""
+"298","195","23","a)","1","2025-02-27T17:38:56",""
+"299","195","24","d)","1","2025-02-27T17:38:56",""
+"300","195","25","1) def preencherSalarios(funcionários)
+  for (int funcionários=0, funcionários < tamanho)
+ cout<<'Insira o salario do funcionário X'<<endl
+return 0
+2) def imrimirSalariosAcima:
+cout<<'Listagem de funcionarios cujo salario seja maior que X'<<endl
+if funcionario< X
+print('nenhum funcionario possui salario acima de X onde X representa o valor minimo indicado pelo utilizador')
+else
+return('Funcionario i com salario Y Euros em que o número do funcionario inicia em 1 e Y representa o valor do seu salário.')
+                                                        ","1","2025-02-27T17:38:56",""
+"301","142","21","Depois de declarado, não é possivel alterar o tamanho de um array.
+Se tentarmos guardar valores fora dos seus limites, vai dar o error out of boundess ou alguma coisa parecida.","1","2025-02-27T17:39:17",""
+"302","142","22","1","1","2025-02-27T17:39:17",""
+"303","142","23","1016","1","2025-02-27T17:39:17",""
+"304","142","24","42","1","2025-02-27T17:39:17",""
+"305","142","25","
+    void peencherSalarios(int salarios, int numFuncionarios) {
+        int valor;
+        int array[] = {};
+        for (int i = 0; i < numFuncionarios; i++) {
+            cout << ""insira os dados do funcionario "" << i << endl;
+            cin >> valor;
+            array[i] = valor;
+        }
+    }
+
+    void imprimirSalariosAcima(int salarios, int numFuncionarios, int valorMinimo) {
+        cout << ""Listagem de funcionarios cujo salario seja maior que: "" << valorMinimo << endl;
+        for (int i = 0; i < numFuncionarios, i++) {
+            if (array[i]) > valorMinimo) {
+                cout << array[i] << endl;
+            } else {cout << ""Não tem funcionarios com esse ordenado"" << endl;}
+
+        }
+    }","1","2025-02-27T17:39:17",""
+"306","60","21","Não, em C++ não é possível alterar o tamanho de um array estatico após a declaração, pois poderiamos ter erros de memoria, caso queramos alterar teriamos de utilizar arrays dinamicos e a biblioteca vector.","1","2025-02-28T12:30:43",""
+"307","60","22","b) 1","1","2025-02-28T12:30:43",""
+"308","60","23","b) 1016","1","2025-02-28T12:30:43",""
+"309","60","24","d) 42","1","2025-02-28T12:30:43",""
+"310","60","25","1) void preencherSalarios(float salarios[], int num) { 
+for (int i = 0; i < num; i++) {
+ cout << ""Salario do funcionario "" << (i + 1) << "": "";
+ cin >> salarios[i];
+ 	}
+ }
+","1","2025-02-28T12:30:43",""
+"311","187","21","","1","2025-02-28T12:41:56",""
+"312","187","22","d)","1","2025-02-28T12:41:56",""
+"313","187","23","b)","1","2025-02-28T12:41:56",""
+"314","187","24","d)","1","2025-02-28T12:41:56",""
+"315","187","25","preencherSalarios(salarios, numFuncionarios) {
+       for (i=0, numFuncionarios, i++) {
+             cout << ""Insira o salario do funcionario "" << i+1 <<  "": "" << endl;
+             cin >> salarios[i];
+             }
+}
+
+imprimirSalariosAcima (salarios, numFuncionarios, valorMinimo) {
+         cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMinimo << endl;
+         for (i=0; numFuncionarios; i++) {
+                if (salarios[i] > valorMinimo) {
+                    cout << ""Funcionario "" <<  i+1 << "" com salario "" << salarios[i] << "" Euros"" << endl;
+                }
+                else {
+                    cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << endl;
+                }
+         }
+}","1","2025-02-28T12:41:56",""
+"316","193","21","Não, o tamanho tem de ser declarado quando o array é declarado e se tentarmos guardar valores fora dos seus limites, vai dar erro.","1","2025-02-28T12:42:33",""
+"317","193","22","b","1","2025-02-28T12:42:33",""
+"318","193","23","b","1","2025-02-28T12:42:33",""
+"319","193","24","d","1","2025-02-28T12:42:33",""
+"320","193","25","int preencherSalarios(float salarios[], int numFuncionarios){
+      int i;
+      for(i=1,i<numFuncionarios,i++){
+            float salario;
+            cout << ""Insira o salario do funcionário"" << i << "":"" << endl;
+            cin >> salario >> endl;
+            salarios[i]==salario
+            }
+    return 0;
+}
+
+int ImprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo){
+      int i;
+      cout << ""Listagem de funcionarios cujo salario seja maior que"" << valorMinimo <<  "":"" << endl;
+      for(i=1, i<numFuncionarios,i++){
+          if (salarios[i]<valorMinimo){
+              menor[i]
+ 
+      
+","1","2025-02-28T12:42:33",""
+"321","140","21","Não","1","2025-02-28T12:44:10",""
+"322","140","22","a","1","2025-02-28T12:44:10",""
+"323","140","23","c","1","2025-02-28T12:44:10",""
+"324","140","24","d","1","2025-02-28T12:44:10",""
+"325","140","25","Void preencherSalarios(float salarios[], int numFuncionarios){
+	For(int i = 0; i < numFuncionarios; i++){
+		Float valor = 0;
+		cout << “Insira o salario do funcionário “ << i+1 << “: “;
+		cin >> valor;
+		salários[i] = valor; 
+	}
+}
+
+Void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo){
+	For(int i = 0; i < numFuncionarios; i++){
+		If(salarios[i] > valorMinimo){
+			Cout << “Listagem de funcionários cujo salrio seja maior que “ << valorMinimo;
+			Cout<< “Funcionario “ << i << “ com salario “ << salario[i] << “ Euros”;
+		}  else {
+			Cout << “Nenhum funcionário possui salario acima de “ << valorMinimo; 
+		}
+}
+}","1","2025-02-28T12:44:10",""
+"326","122","21","Não porque ao declararmos um array o seu tamanho é estático e reservado um certo espaço de memória para o tipo e tamanho específico do array, se tentarmos guardar valores fora do array irá ocorrer erro ou também poderá haver um overflow, ou até mesmo guardar parte do valor a guardar.","1","2025-02-28T15:41:51",""
+"327","122","22","3","1","2025-02-28T15:41:51",""
+"328","122","23","1024","1","2025-02-28T15:41:51",""
+"329","122","24","42","1","2025-02-28T15:41:51",""
+"330","122","25","int valorMinimo;
+
+void preencherSalarios(float salarios, int numFuncionarios){
+    for(float i=0; i <= numFuncionarios; i++){
+        cout << ""Insira o salario do funcionario "" << numFuncionarios[i] << endl;
+        cin >> salarios[i];
+    }
+}
+
+void imprimirSalariosAcima(float salarios,int numFuncionarios,int valorMinimo){
+    cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMinimo << endl;
+    if (salarios[] <=
+}","1","2025-02-28T15:41:51",""
+"331","46","21","Não é possível alterar um tamanho de um array depois de ele ser declarado, e o programa não pode guardar valores fora do seus limites.","1","2025-02-28T15:41:53",""
+"332","46","22","d","1","2025-02-28T15:41:53",""
+"333","46","23","d","1","2025-02-28T15:41:53",""
+"334","46","24","c","1","2025-02-28T15:41:53",""
+"335","46","25","void preencherSalarios(int salarios, int numFuncionarios) {
+    for (int i = 0; i < numFuncionarios; i++) {
+        cout << ""Insira o salario do funcionário "" << i << "": "" << endl;
+        cin >> salarios;
+    }
+}
+
+","1","2025-02-28T15:41:53",""
+"336","127","21","Não é possível. Caso tentemos guardar valores fora dos seus limites, aparece um erro do tipo "" out of bonds"".","1","2025-02-28T15:42:15",""
+"337","127","22","c)    ","1","2025-02-28T15:42:15",""
+"338","127","23","b)","1","2025-02-28T15:42:15",""
+"339","127","24","d)","1","2025-02-28T15:42:15",""
+"340","127","25","    void preencherSalarios(float salarios, int numFuncionarios);
+    {
+        for (int i = 0; i < numFuncionarios; i++)
+        {
+            cout << ""Diz o salario do funcionario, por favor "" << i << "": "";
+            cin >> salarios[i];
+        }
+    };
+
+    // Solicitar um valor mínimo e imprimir os salários acima desse valor
+    cout << ""\nInforme o valor minimo do salario: "";
+    cin >> valorMinimo;
+
+    void imprimirSalariosAcima( salarios, numFuncionarios, valorMinimo);
+    {
+        for (int i = 0; i < numFuncionarios; i++)
+        {if (salarios [i] < valorMinimo)
+            { cout << ""Nenhum funcionário possui: "" << salarios[i] << endl;
+
+            cout << ""Ao funcionario "" << i << "" corresponde o"" << salarios[i] << "" ."";
+        }
+    }","1","2025-02-28T15:42:15",""
+"341","88","21","não, somente se criarmos outro array e importar os dados, caso inserimos dados fora dos seus limites, este será descartado impossibilitando o acesso ao valor já que não tem bytes reservados para alocar esse valor","1","2025-02-28T15:43:05",""
+"342","88","22","0
+","1","2025-02-28T15:43:05",""
+"343","88","23","b","1","2025-02-28T15:43:05",""
+"344","88","24","d","1","2025-02-28T15:43:05",""
+"345","88","25","
+void preencherSalarios(float &salarios, int num) {
+    for (int i = 0; i < sizeof(&salarios)/8; i++) {
+        cout << ""Insira o salario do funcionário:"" << i+1 << endl;
+        cin >> &salarios[i];
+    }
+}
+
+
+void imprimirSalariosAcima(float &salarios, int numFuncionarios, float valorMinimo) {
+    cout << ""Listagem de funcionarios cujo salario seja maior que "" << valorMinimo << ""."" << endl;
+    for (int i = 0; i < sizeof(&salarios)/8; i++) {
+        if (&salarios[i]>valorMinimo)
+            cout << ""Funcionario "" << i+1 << "" com salario ""<< &salarios[i] <<"" Euros"";
+        else
+            cout << ""Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador"";
+    }
+}","1","2025-02-28T15:43:05",""
+"351","110","26","ios :: in  serve para ler abrir ficheiros de leitura; ios :: out  serve para ler abrir ficheiros de escrita; 
+
+int main() {
+
+    ifstream ficheiro_leitura(""dados.txt"");
+
+    if (ficheiro_leitura.is_open()) {
+        string linha;
+        while (getline(ficheiro_leitura, linha)) {
+            cout << linha << endl;
+        }
+        ficheiro_leitura.close();
+    } else {
+        cout << ""Não foi possível abrir o ficheiro."" << endl;
+    }
+
+    ofstream ficheiro_escrita(""saida.txt"");
+
+    if (ficheiro_escrita.is_open()) {
+        ficheiro_escrita << ""Esta é uma linha escrita no ficheiro."" << endl;
+        ficheiro_escrita.close();
+    } else {
+        cout << ""Não foi possível abrir o ficheiro para escrita."" << endl;
+    }
+
+    return 0;","1","2025-03-25T10:39:09",""
+"352","110","27","c)","1","2025-03-25T10:39:09",""
+"353","110","28","b)","1","2025-03-25T10:39:09",""
+"354","110","29","a)","1","2025-03-25T10:39:09",""
+"355","110","31","","1","2025-03-25T10:39:10",""
+"356","131","26","","1","2025-03-25T10:40:43",""
+"357","131","27","b","1","2025-03-25T10:40:43",""
+"358","131","28","b","1","2025-03-25T10:40:43",""
+"359","131","29","a","1","2025-03-25T10:40:43",""
+"360","131","31","","1","2025-03-25T10:40:43",""
+"361","45","26","""ios::in"" corresponde a algo que queiramos introduzir ao programa enquanto o ""ios::out"" é alguma informação dada pelo programa ao usuário ","1","2025-03-25T10:45:05",""
+"362","45","27","b)","1","2025-03-25T10:45:05",""
+"363","45","28","d)","1","2025-03-25T10:45:05",""
+"364","45","29","a)","1","2025-03-25T10:45:05",""
+"365","45","31","struct Morada{
+char rua[50];
+int codigo_postal;
+char localidade[50];
+};
+
+struct Pessoa{
+int id;
+char nome[50];
+int data nascimento;
+morada = Morada;
+};
+
+Pessoa inserirPessoa() {
+    Pessoa = p;
+    
+    cout << ""Inisira o seu nome"";
+    cin >> (nome);
+    
+    cout << ""Qual a sua data de nascimento"";
+    cin >> (data_nascimento);
+    
+    cout << ""Digite a rua onde mora"";
+    cin >> (morada);
+    
+    cout << ""Digite o seu código postal"";
+    cin >> (codigo_postal);
+    
+    cout << ""Qual a sua localidade"";
+    cin >> (localidade);
+    
+    return p;
+}
+
+int main() {
+    int pessoas;
+    cout << ""Quantas pessoas deseja adicionar? "";
+    cin >> pessoas;
+
+    vetor<Pessoa> pessoas;
+    
+    for (int i = 0; i < pessoas; i++) {
+        cout << ""Inserindo dados para a pessoa \n"" << i + 1 << endl;
+        pessoas(inserirPessoa(i + 1));
+    }
+    
+    cout << ""Número total de pessoas registadas: \n"" << endl;
+    
+    return 0;
+}","1","2025-03-25T10:45:05",""
+"366","134","26","o ""ios::in"", abre um ficheiro para ler os dados, já o ""ios::out"", abre um ficheiro para escrever","1","2025-03-25T10:48:29",""
+"367","134","27","c)","1","2025-03-25T10:48:29",""
+"368","134","28","b)","1","2025-03-25T10:48:29",""
+"369","134","29","a)","1","2025-03-25T10:48:29",""
+"370","134","31","#include <iostream>
+#include <string>
+using namespace std;
+
+
+struct Morada {
+    string rua;
+    string codigoPostal;
+    string localidade;
+};
+
+struct Pessoa {
+    int id;
+    string nome;
+    string dataNascimento;
+    Morada morada;
+};
+
+Pessoa inserirPessoa() {
+    Pessoa p;
+
+    cout << ""\n--- Inserir Pessoa ---"" << endl;
+
+    cout << ""ID: "";
+    cin >> p.id;
+    cin.ignore(); 
+
+    cout << ""Nome: "";
+    getline(cin, p.nome);
+
+    cout << ""Data de Nascimento: "";
+    getline(cin, p.dataNascimento);
+
+    cout << ""Rua: "";
+    getline(cin, p.morada.rua);
+
+    cout << ""Código Postal: "";
+    getline(cin, p.morada.codigoPostal);
+
+    cout << ""Localidade: "";
+    getline(cin, p.morada.localidade);
+
+    return p;
+}
+
+int main() {
+    int n;
+    cout << ""Quantas pessoas deseja adicionar? "";
+    cin >> n;
+    cin.ignore(); 
+
+    Pessoa* pessoas = new Pessoa[n];
+
+    for (int i = 0; i < n; i++) {
+        pessoas[i] = inserirPessoa();
+    }
+
+    cout << ""\n--- Pessoas Registadas ---"" << endl;
+    for (int i = 0; i < n; i++) {
+        cout << ""\nPessoa "" << (i + 1) << "":"" << endl;
+        cout << ""ID: "" << pessoas[i].id << endl;
+        cout << ""Nome: "" << pessoas[i].nome << endl;
+        cout << ""Data de Nascimento: "" << pessoas[i].dataNascimento << endl;
+        cout << ""Rua: "" << pessoas[i].morada.rua << endl;
+        cout << ""Código Postal: "" << pessoas[i].morada.codigoPostal << endl;
+        cout << ""Localidade: "" << pessoas[i].morada.localidade << endl;
+    }
+
+    cout << ""\nTotal de pessoas registadas: "" << n << endl;
+
+    delete[] pessoas;
+
+    return 0;
+}","1","2025-03-25T10:48:29",""
+"371","199","26","os modos de acesso ios::in e ios::out são utilizados para indicar no momento de abrir um ficheiro com a biblioteca fstream se são abertos para exclusivamente leitura ou escritura, por exemplo se usamos ios::in serve para abrir um ficheiro com números que vamos a ler ou passar para um array ou variável e usamos ios::out para escrever no ficheiro, pode server para guardar informação fora do código. 
+
+Logo é comum utilizar a função close para fechar o ficheiro despois deste ter sido utilizado, para evitar a fuga de memoria, e para não utilizar recursos em ter o ficheiro aberto.","1","2025-03-25T10:49:53",""
+"372","199","27","a)","1","2025-03-25T10:49:53",""
+"373","199","28","b)","1","2025-03-25T10:49:54",""
+"374","199","29","b)","1","2025-03-25T10:49:54",""
+"375","199","31","a)
+struct Morada{
+    string rua;
+    string codigoPostal;
+    string localidade;
+}
+struct Pessoa{
+    int id;
+    string nome;
+    string dataNascimento;
+    Morada morada;
+}
+b)
+Pessoa inserirPessoa(){
+    Pessoa novo;
+    std::cout << ""Insira o ID da pessoa:"" << std::endl;
+    std::cin >> novo.id;
+    std::cout << ""Insira o nome da pessoa:"" << std::endl;
+    std::cin >> novo.nome;
+    std::cout << ""Insira data de nascimento:"" << std::endl;
+    std::cin >> novo.dataNascimento;
+    std::cout << ""Insira a morada
+    std::cin >> moradad; // sea nao, inserir todas as variaveis de morada: std::cin morada.rua; ...
+   return novo;
+
+}","1","2025-03-25T10:49:54",""
+"376","61","26","o modo de acesso in serve para abrir o ficheiro e o out para o fechar.
+","1","2025-03-25T10:50:12",""
+"377","61","27","c)","1","2025-03-25T10:50:12",""
+"378","61","28","b)","1","2025-03-25T10:50:12",""
+"379","61","29","c)","1","2025-03-25T10:50:12",""
+"380","61","31","
+","1","2025-03-25T10:50:12",""
+"381","213","26","ios::in: é utilizado quando queremos abrir um arquivo para leitura. Se o arquivo não existir, uma falha ocorre.
+e
+ios::out: é utilizado quando queremos abrir um arquivo para escrita. Se o arquivo não existir, ele será criado. Se o arquivo já existir, o conteúdo será sobrescrito.
+
+
+#include <fstream>
+#include <iostream>
+#include <string>
+using namespace std
+
+int main() {
+    ifstream arquivo(""exemplo.txt"", ios::in); 
+
+    if (!arquivo) {  
+        cerr << ""Erro ao abrir o arquivo."" << endl;
+        return 1;
+    }
+
+    string linha;
+    while (getline(arquivo, linha)) {  
+         cout << linha << endl;  
+    }
+
+    arquivo.close(); 
+
+    return 0;
+}","1","2025-03-25T12:27:35",""
+"382","213","27","b)","1","2025-03-25T12:27:35",""
+"383","213","28","b)","1","2025-03-25T12:27:35",""
+"384","213","29","c)","1","2025-03-25T12:27:35",""
+"385","213","31","","1","2025-03-25T12:27:35",""
+"386","84","26","","1","2025-03-25T12:33:46",""
+"387","84","27","B","1","2025-03-25T12:33:46",""
+"388","84","28","B","1","2025-03-25T12:33:46",""
+"389","84","29","c","1","2025-03-25T12:33:47",""
+"390","84","31","struct Morada {
+
+string localidade;
+
+string rua;
+
+string  codigopostal;
+
+};
+
+struct Pessoa {
+
+int id;
+
+string nome ;
+
+string datadenascimento ;
+
+Morada morada;
+
+};
+
+Pessoa inserirpessoa(int id, string nome, string datadenascimento,Morada morada){
+pessoa = New pessoa{id,nome,datadenascimento,morada}
+
+
+
+return pessoa;
+}","1","2025-03-25T12:33:47",""
+"391","174","26","""ios::in"" abre o ficheiro para leitura e ""ios::out"" abre para escrita. A função close() fecha o ficheiro.","1","2025-03-25T12:37:17",""
+"392","174","27","c)","1","2025-03-25T12:37:17",""
+"393","174","28","b)","1","2025-03-25T12:37:17",""
+"394","174","29","a)","1","2025-03-25T12:37:17",""
+"395","174","31","#include <iostream>
+#include <string>
+using namespace std;
+
+struct Morada {
+    string rua;
+    string codigoPostal;
+    string localidade;
+};
+
+struct Pessoa {
+    int id;
+    string nome;
+    string dataNascimento;
+    Morada morada;
+};
+
+Pessoa inserirPessoa() {
+    Pessoa p;
+    cout << ""Insira o ID: "";
+    cin >> p.id;
+    cout << ""Insira o nome: "";
+    getline(cin, p.nome);    
+    cout << ""Insira a data de nascimento"";
+    getline(cin, p.dataNascimento);
+    cout << ""Insira a rua: "";
+    getline(cin, p.morada.rua);
+    cout << ""Insira o código postal: "";
+    getline(cin, p.morada.codigoPostal);   
+    cout << ""Insira a localidade: "";
+    getline(cin, p.morada.localidade);
+    
+    return p;
+}
+
+int main() {
+    int numPessoas;
+    cout << ""Quantas pessoas deseja Inserir? "";
+    cin >> numPessoas;   
+    Pessoa* pessoas = new Pessoa[numPessoas];
+    for (int i = 0; i < numPessoas; ++i) {
+        cout << ""\nInserindo dados para a pessoa "" << (i + 1) << "":\n"";
+        pessoas[i] = inserirPessoa();
+    }
+   cout << ""\nTotal de pessoas registradas: "" << numPessoas << ""\n"";    
+    delete[] pessoas;   
+    return 0;
+}","1","2025-03-25T12:37:17",""
+"396","206","26","A diferença entre ""ios::in"" e "" ios::out"" na biblioteca de fstream, é que ios::on, abre o ficheiro para a leitura do mesmo, enquanto que poe outro lado o ios::out, ele abre o ficheiro e apaga automaticamente se tiver alguma coisa escrita, para proceder a escrita nele,  e por fim a função do close() é essencial, pois este feicha o ficheiro. 
+
+e um exemplo
+
+if (ficheiro.is_open()) {
+    string linha;
+    while (getline(ficheiro, linha)) {
+        cout << linha << endl ;
+    }
+    ficheiro.close();  // Fecha o ficheiro 
+} else {
+    cout << ""Não foi possível abrir o ficheiro.\n"";
+}","1","2025-03-25T12:43:33",""
+"397","206","27","b","1","2025-03-25T12:43:33",""
+"398","206","28","b","1","2025-03-25T12:43:33",""
+"399","206","29","d","1","2025-03-25T12:43:33",""
+"400","206","31","","1","2025-03-25T12:43:33",""
+"401","158","26","ios::in abre o ficheiro para ler;
+ios::out abre o ficheiro para escrever
+
+arquivo.open(""dados.txt"", ios::in); 
+if (!arquivo.is_open()) {  
+    cerr << ""Erro ao abrir o arquivo!"" << endl;  
+    return 1;  
+}  
+string linha;  
+while (getline(arquivo, linha)) {  
+    cout << linha << endl; 
+}  
+
+arquivo.close(); 
+
+A função close() serve para fechar um arquivo depois de usá-lo, garante que tudo seja salvo no arquivo antes de fechá-lo.","1","2025-03-25T12:45:32",""
+"402","158","27","c)","1","2025-03-25T12:45:32",""
+"403","158","28","b)","1","2025-03-25T12:45:32",""
+"404","158","29","c)","1","2025-03-25T12:45:32",""
+"405","158","31","struct morada{
+         string rua;
+        string codigo_postal;
+       string localidade;
+}
+
+struct Pessoa{
+         int id;
+         string nome;
+         int data_nascimento;
+         Morada morada;
+}
+Pessoa inserirPessoa(int id) {
+    Pessoa p;
+    p.id = id;
+    
+    cout << ""\nInserir dados da pessoa "" << id << "":"" << endl;
+    cout << ""Nome: "";
+    cin >> ws, p.nome; 
+    
+    cout << ""Data de nascimento (DD/MM/AAAA): "";
+    cin>>p.data_nascimento);
+    
+    cout << ""\nMorada:"" << endl;
+    cout<<""Rua:""<<endl;
+    cin>>p.morada.rua;
+    
+    cout<<""Codigo postal:""<<endl;
+    cin>>p.codigo_postal);
+
+    cout<<""Localidade:""<< endl;
+    cin>>p.localidade;","1","2025-03-25T12:45:33",""
+"406","76","26","","1","2025-03-25T12:51:49",""
+"407","76","27","b)","1","2025-03-25T12:51:49",""
+"408","76","28","a)","1","2025-03-25T12:51:49",""
+"409","76","29","a)","1","2025-03-25T12:51:49",""
+"410","76","31","#include <iostream>
+#include <string>
+using namespace std;
+
+struct Morada {
+    string rua;
+    int codPostal;
+    string localidade;
+};
+
+struct Pessoa {
+    int id;
+    string nome;
+    string dataNasc;
+    Morada morada;
+};
+
+Pessoa inserirPessoa() {
+    Pessoa p;
+    cout<< ""Digite o id: "";
+    cin >> p.id;
+
+    cout<< ""Digite o nome: "";
+    getline(cin,p.nome);
+
+    cout<< ""digite a data de nascimento (dd/mm/aaaa): "";
+    getline(cin,p.dataNasc);
+
+    cout<< ""Digite a rua onde mora: "";
+    getline(cin,  p.morada.rua);
+
+    cout<< ""Digite o codigo postal: "";
+    cin>> p.morada.codPostal;
+
+    cout<< ""Digite o codigo localidade: "";
+    cin >> p.morada.localidade;
+
+    return p;
+}
+
+int main() {
+    int num_pessoas;
+    cout << ""Digite a quantidade de pessoas: "";
+    cin >> num_pessoas;
+    Pessoa* pessoas[num_pessoas] = new Pessoa[num_pessoas];
+
+    for (int i = 0; i < num_pessoas; i++) {
+        cout << ""Digite os dados da pessoa "" << i+1 << "":\n "";
+        pessoas[i] = inserirPessoa();
+    }
+
+    cout << ""numero de pessoas registadas: "" << num_pessoas << endl;
+
+    delete[] pessoas;
+}
+","1","2025-03-25T12:51:49",""
+"411","99","26","int main() {
+    ifstream arquivo(""texto.txt"", std::ios::in);
+    if (!arquivo) { 
+        cout<<""Erro""<<endl;
+        break;
+    }
+    string linha;
+    while (getline(arquivo, linha)) { 
+        cout << linha << endl;
+    }
+    arquivo.close(); }
+}
+}
+O ios::in é utilizado para ler ficheros e o out e para escrever o ficheiro que recebe.","1","2025-03-25T12:52:38",""
+"412","99","27","c)","1","2025-03-25T12:52:38",""
+"413","99","28","b)","1","2025-03-25T12:52:38",""
+"414","99","29","a)","1","2025-03-25T12:52:38",""
+"415","99","31","struct Morada {
+    string rua;
+    int codigopostal;
+    string localidade;
+};
+struct Pessoa {
+    int id;
+    string nome;
+    Morada morada;
+    int datadenascimento[3]; // dia, mês, ano
+};
+void inserirPessoa(Pessoa &p) {
+    cout << ""Introduza o seu id: "";
+    cin >> p.id;
+    cout << ""Introduza o seu nome (sem espaços): "";
+    cin >> p.nome;
+    cout << ""Introduza o nome da sua rua (sem espaços): "";
+    cin >> p.morada.rua;
+    cout << ""Introduza o seu codigo postal (apenas números): "";
+    cin >> p.morada.codigopostal;
+    cout << ""Introduza a sua localidade (sem espaços): "";
+    cin >> p.morada.localidade;
+    cout << ""Introduza o dia que nasceu: "";
+    cin >> p.datadenascimento[0];
+    cout << ""Introduza o mes que nasceu: "";
+    cin >> p.datadenascimento[1];
+    cout << ""Introduza o ano que nasceu: "";
+    cin >> p.datadenascimento[2];
+}","1","2025-03-25T12:52:38",""
+"416","106","26","O modo de acesso ""ios::in"" tem como função abrir um ficheiro, indicado previamente ,para leitura, enquanto que, o modo de acesso ""ios::out"", tem como função abrir um ficheiro, indicado previamente, para escrita. A função ""close()"" é utilizada para fechar algum arquivo que esteja aberto. Esta função é importante pois deixar um ficheiro aberto pode comprometer os dados guardados e causar erros desnecessários.
+Código:
+
+int main() {
+    ifstream inputFile(""example.txt"", ios::in);
+    if (!inputFile) {
+        cerr << ""Erro ao abrir o arquivo para leitura."" << endl;
+        return 1;
+    }
+
+    string line;
+    while (getline(inputFile, line)) {
+        cout << line << std::endl;
+    }
+
+    inputFile.close();
+    return 0;
+}","1","2025-03-25T19:15:56",""
+"417","106","27","c)","1","2025-03-25T19:15:56",""
+"418","106","28","b)","1","2025-03-25T19:15:56",""
+"419","106","29","b)","1","2025-03-25T19:15:56",""
+"420","106","31","#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+struct morada{
+   string rua;
+   string códigoPostal;
+   string localidade;
+}
+
+srtuct pessoa{
+   int id;
+   string nome;
+   string dataNascimento;
+   Morada morada;
+}
+
+// Função para inserir uma pessoa
+Pessoa inserirPessoa() {
+    Pessoa p;
+    cout << ""Insira o ID: "";
+    cin >> p.id;
+   
+    cout << ""Insira o nome: "";
+    getline(cin, p.nome);
+
+    cout << ""Insira a data de nascimento (DD/MM/AAAA): "";
+    getline(cin, p.dataNascimento);
+
+    cout << ""Insira a rua: "";
+    getline(cin, p.morada.rua);
+
+    cout << ""Insira o código postal: "";
+    getline(cin, p.morada.codigoPostal);
+
+    cout << ""Insira a localidade: "";
+    getline(cin, p.morada.localidade);
+
+    return p;
+}
+
+int main() {
+    int numPessoas;
+    cout << ""Quantas pessoas deseja adicionar? "";
+    cin >> numPessoas;
+   
+  
+    vector<Pessoa> pessoas;
+
+    for (int i = 0; i < numPessoas; ++i) {
+        cout << ""Inserindo pessoa "" << i + 1 << "":\n"";
+        pessoas.push_back(inserirPessoa());
+    }
+
+   
+    cout << ""Número total de pessoas registadas: "" << pessoas.size() << endl;
+
+    return 0;
+
+","1","2025-03-25T19:15:56",""
+"421","59","26","ios::in serve para escrever num ficheiro
+ios::out serve para ler de um ficheiro
+e a função  close() serve para fecharmos o nosso ficheiro
+","1","2025-03-26T12:46:59",""
+"422","59","27","b é falsa","1","2025-03-26T12:46:59",""
+"423","59","28","b","1","2025-03-26T12:46:59",""
+"424","59","29","c","1","2025-03-26T12:46:59",""
+"425","59","31","#include <iostream>
+using namespace std;
+
+struct Morada{
+char rua;
+int codigo_postal;
+char localidade;
+}
+
+struct Pessoa{
+int id;
+char nome;
+date data_de_nascimento;
+Morada* morada;
+}
+
+void inserirPessoa(){
+cout << ""Introduza o id da pessoa""<<endl;
+cin >> id;
+cout << ""Introduza o nome da pessoa""<<endl;
+cin >> nome;
+cout << ""Introduza a data de nascimento da pessoa""<<endl;
+cin >> data_de_nascimento;
+cout << ""Introduza a morada da pessoa""<<endl;
+cin >> morada;
+Pessoa p = new Pessoa{id,nome,data_de_nascimento, morada}
+}
+
+int n;
+cout << ""quantas pessoas deseja adicionar""<<endl;
+cin >> n;
+Pessoa * pessoa = new Pessoa[n];
+int i =0;
+while (i<=n){
+inserirPessoa()
+}
+cout ""Pessoas registas : ""<<i<<endl;
+
+delete() Pessoa*;","1","2025-03-26T12:46:59",""
+"426","89","26","ios:in serve para abrir o ficheiro para leitura enquanto o ios:out serve para abrir para escrita","1","2025-03-26T12:47:34",""
+"427","89","27","c","1","2025-03-26T12:47:34",""
+"428","89","28","b","1","2025-03-26T12:47:34",""
+"429","89","29","a","1","2025-03-26T12:47:34",""
+"430","89","31","#include ""iotream""
+#inlcude struct
+
+using namespace std
+
+struct Morada{
+ int codPostal
+ int rua
+char mor[20]
+} 
+
+struct Pessoa {
+int id
+char nome 
+char dataNascimento
+char Mor[20]
+}
+
+
+vo1id inserirPessoa(int d char nome dataNascimento char Mro){
+
+cin id
+cin nome
+cin mor
+cin dataNascimento
+}
+
+
+
+
+int main {
+cout <<""quantas pessoas pretende adicionar?""<< endl
+cin nPessoass
+
+
+cout <<""numero total de pessoas: ""<< nPessoas <<endl
+}","1","2025-03-26T12:47:35",""
+"431","58","26","","1","2025-03-26T12:49:50",""
+"432","58","27","b)","1","2025-03-26T12:49:50",""
+"433","58","28","a)","1","2025-03-26T12:49:50",""
+"434","58","29","a)","1","2025-03-26T12:49:50",""
+"435","58","31","","1","2025-03-26T12:49:50",""
+"436","216","26","Ao usar a biblioteca fstream , “ios:in “ é feito para estritamente para o modo de leitura. E o “ios:out” é estritamente feito para o modo de escrita, ou seja mudar o que está no ficheiro  
+ifstream arquivoLeitura(""ficheiro.txt"", ios::in);
+if (arquivoLeitura.is_open()) {
+    string linha;
+    while (getline(arquivoLeitura, linha)) {
+        cout << << linha << endl;
+    }
+    arquivoLeitura.close();
+}
+A finalidade da função close é para no final da função fazer fechar o ficheiro","1","2025-03-26T12:54:08",""
+"437","216","27","b","1","2025-03-26T12:54:08",""
+"438","216","28","b","1","2025-03-26T12:54:08",""
+"439","216","29","c","1","2025-03-26T12:54:08",""
+"440","216","31","struct morada{
+string rua;
+int codpostal;
+string localidade;
+}
+struct pessoas{
+int id;
+string nome;
+string datanascimento;
+Morada morada;
+Pessoa * p = Pessoa[50];
+Pessoas= 0
+void inserirpessoa(int num ){~
+for (i = pessoas, i<=pessoas + num, i++){
+p[pessoas+1];
+Cout<<”id:”;
+Cin<< p[pessoas+1].id;
+Cout<<”Nome”;
+Cin<< p[pessoas+1].nome;
+Cout<<”Data de Nascimento”;
+Cin<< p[pessoas+1].datanascimento;	
+}
+Int main(){
+Cout<<”quantas pessoas deseja adicionar?”<<endl;
+Cint << n;
+Pessoas * pessoas = new pessoas[n]
+inserirpessoas(n);
+","1","2025-03-26T12:54:08",""
+"441","68","26","o ""ios::in"" abre o ficheiro para leitura e o ""ios::out"" abre o ficheiro para escrita.
+
+#include <fstream>  
+#include <iostream>  
+#include <string>    
+
+int main() {
+    std::ifstream ficheiro(""dados.txt"", std::ios::in);
+
+    if (!ficheiro) {
+        std::cerr << ""Erro ao abrir o ficheiro!\n"";
+        return 1;
+    }
+
+    std::string linha;
+    while (std::getline(ficheiro, linha)) { 
+        std::cout << linha << std::endl;
+    }
+
+    ficheiro.close(); 
+    return 0;
+}
+
+","1","2025-03-26T12:57:42",""
+"442","68","27","b)","1","2025-03-26T12:57:42",""
+"443","68","28","b)","1","2025-03-26T12:57:42",""
+"444","68","29","a)","1","2025-03-26T12:57:42",""
+"445","68","31","Morada.cpp
+#include <iostream>
+#include ""Morada.h""
+using namespace std;
+void ruaMorada(int rua, Morada morada) {
+    cout << ""Insira o numero da rua: "";
+    cin >> morada.rua;
+}
+void codigoPostal(string codigoPostal, Morada morada) {
+    cout << ""Insira o numero da codigo: "";
+}
+
+Morada.h
+
+#ifndef MORADA_H
+#define MORADA_H
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Morada {
+    int rua;
+    int codigoPostal;
+    string localidade;
+};
+void ruaMorada(string rua, Morada morada);
+void codigoPostal(string codigoPostal, Morada morada);
+void localidadeMorada(string localidade, Morada morada);
+#endif //MORADA_H
+
+Pessoa.cpp
+#include ""Pessoa.h""
+#include <iostream>
+using namespace std;
+
+int idPessoa(Pessoa & pessoa) {
+    cout << ""Pessoa: "" << pessoa.id() << endl;
+}
+int dataNascimento(Pessoa pessoa) {
+    cout << ""Quando e que nasceu? "" << pessoa.id() << endl;
+}
+void nomePessoa(Pessoa &pessoa) {
+    cout << ""Qual o seu nome?"";
+    cin >> pessoa.id();
+}
+void moradaPessoa(Pessoa &pessoa) {}
+
+Pessoa.h
+
+#ifndef PESSOA_H
+#define PESSOA_H
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Pessoa {
+    int id;
+    string nome;
+    char dataNascimento;
+};
+int printPessoa(Pessoa pessoa);
+int dataNascimento(Pessoa pessoa);
+int idPessoa(Pessoa &pessoa);
+void nomePessoa(Pessoa &pessoa);
+#endif //PESSOA_H
+
+(não tive tempo de pensar no main nem de acabar as outras funções)
+","1","2025-03-26T12:57:42",""
+"446","189","26","ios::in serve para escrever no ficheiro e ios::out é para ler o ficheiro.
+deve se sempre usar o close apos ler ou escrever no ficheiro, para que nao fique a alocar memoria desnecessariamente","1","2025-03-27T12:47:07",""
+"447","189","27","d","1","2025-03-27T12:47:07",""
+"448","189","28","b","1","2025-03-27T12:47:07",""
+"449","189","29","c","1","2025-03-27T12:47:07",""
+"450","189","31","struct Morada{
+string rua;
+int  cp;
+string loc;
+}
+struct Pessoa{
+int id;
+string nome;
+int data_n;
+morada morada;
+}
+string inserirPessoa(int id, string nome, int data,morada morada){
+Pessoa p;
+p.id=id;
+p.nome=nome;
+p.data=data;
+p.morada=morada
+}
+
+","1","2025-03-27T12:47:07",""
+"451","119","26","O ios::in é para a leitura de ficheiros e o ios::out é para a escrita de ficheiros. Precisamos de dar close(); para que o ficheiro nao continue aberto a gastar recursos po pc, por isso damos close(); e também para poder abrir outro ficheiro.
+
+fstream file;
+file.open(""nome_do_ficheiro"";ios::in);
+file>>x;
+file.close();","1","2025-03-27T12:47:31",""
+"452","119","27","B)","1","2025-03-27T12:47:31",""
+"453","119","28","B)","1","2025-03-27T12:47:31",""
+"454","119","29","C)","1","2025-03-27T12:47:31",""
+"455","119","31","#include <iostream>
+using namespace std;
+
+struct morada{
+string rua;
+int cp;
+string loc;
+}
+
+struct pessoa{
+int id;
+string nome;
+int dnasc;
+morada * morada;
+}
+
+pessoa inserePessoa(){
+pessoa nova = new pessoa;
+cout<<""Insira o id da pessoa.""<<endl;
+cin>>pessoa.id;
+cout<<""Insira o nome da pessoa.""<<endl;
+cin>>pessoa.nome;
+cout<<""Insira a data de nascimento da pessoa.""<<endl;
+cin>>pessoa.dnasc;
+cout<<""Insira os dados da morada da pessoa, começando pela rua""<<endl;
+nova.morada = new morada;
+cin>>nova.morada->rua;
+cout<<""Insira o codigo postal da morada da pessoa.""<<endl;
+cin>>nova.morada->cp;
+cout<<""Insira a localidade da morada da pessoa""<<endl;
+cin>>nova.morada->loc;
+return nova;
+}
+
+
+int main(){
+int x;
+cout<<""Quantas pessoas deseja adicionar?""<<;
+pessoa * m=new pessoa[x];
+cin>>x;
+for(i=0;i<x;i++){
+m[i]=inserePessoa();
+}
+cout<<""Foram registadas ""<<x<<"" Pessoas!""<<endl;
+return 0;
+}","1","2025-03-27T12:47:31",""
+"456","126","26","","1","2025-03-27T12:48:14",""
+"457","126","27","b)","1","2025-03-27T12:48:14",""
+"458","126","28","b)","1","2025-03-27T12:48:14",""
+"459","126","29","c)","1","2025-03-27T12:48:14",""
+"460","126","31","#include <iostream>
+using namespace std","1","2025-03-27T12:48:14",""
+"461","190","26","ios::in => Leitura do ficheiro
+ios::out => Escrita do ficheiro
+close() => Libertar o ficheiro caso seja necessário para outras aplicações o ler","1","2025-03-27T12:55:41",""
+"462","190","27","a)","1","2025-03-27T12:55:41",""
+"463","190","28","b)","1","2025-03-27T12:55:41",""
+"464","190","29","a)","1","2025-03-27T12:55:41",""
+"465","190","31","#include <iostream>
+using namespace std;
+
+Struct Morada{
+    string rua;
+    int cod_postal;
+    string locadidade;
+}
+
+Struct Pessoa{
+    int id;
+    string nome;
+    int data_de_nascimento;
+    Morada* morada;
+}
+void inserirPessoa(){
+    int x;
+    string m;
+    Pessoa a;
+    cout<<""Introduza o seu ID:\n"";
+    cin>>x;
+    a.id=x;
+    cout<<""Introduza o seu Nome:\n"";
+    cin>>m;
+    a.nome=m;
+    cout<<""Introduza a sua Data de nascimento:\n"";
+    cin>>x;
+    a.data_de_nascimento=x; //02102002 => Dia: 02 Mes: 10 Ano: 2002
+    a::Morada b;
+    cout<<""Introduza a sua Rua:\n"";
+    cin>>m;
+    b.rua=m;
+    cout<<""Introduza o seu Codigo Postal:\n"";
+    cin>>x;
+    b.cod_postal=x; // 2094195 => 2094-195
+    cout<<""Introduza a sua Localidade:\n"";
+    cin>>m;
+    b.localidade=m;
+}
+main(){
+    int x;
+    cout<<""Quantas pessoas dejesa adicionar?:\n"";
+    cin>>x;
+    int* k[x];
+    int i =0;
+    int b=len(k);
+    while(i<b){
+        k[i]=inserirPessoa();
+        i++;
+}
+}","1","2025-03-27T12:55:41",""
+"466","196","26","Na biblioetca  fstream, o ios::in permite a leitura dos dados num ficheiro pedido. Por exemplo, para escrever na consola as coordenadas de pontos localizados num ficheiro .txt, utilizamos o ios::in para ler esse ficheiro. Por outro lado, o ios::out permite a escrita de dados para o ficheiro escolhido. Se quisessemos escrever coordenadas de pontos decididas no programa num ficheiro .txt, utilizariamos o ios::out.","1","2025-03-27T12:56:33",""
+"467","196","27","c","1","2025-03-27T12:56:34",""
+"468","196","28","b","1","2025-03-27T12:56:34",""
+"469","196","29"," c","1","2025-03-27T12:56:34",""
+"470","196","31","Morada.h
+
+struct Morada {
+   string rua;
+   string postal;
+   string local;
+}
+
+
+Pessoa.h
+
+struct Pessoa {
+   int id;
+   string nome;
+   string dob;
+   Morada morada;
+}
+
+Pessoa InserirPessoa(Pessoa& p);
+
+
+Pessoa.cpp
+using namespace std
+
+Pessoa InserirPessoa(Pessoa& p);
+   cout << ""Digite o id da pessoa: "";
+   cin >> p->id;
+   cout << ""Digite o nome da pessoa: "";
+   cin >> p->nome;
+   cout << ""Digite a data de aniversario da pessoa: "";
+   cin >> p->dob;
+   cout << ""Digite a morada da pessoa:\n Rua:"";
+   cin >> p->morada->rua;
+   cout << ""Codigo Postal: "";
+   cin >> p->morada->postal:
+   cout << ""Localidade: "";
+   cin >> p->morada->local;
+   return novo;
+}
+
+
+
+
+main.cpp
+#include ""Morada.h""
+#include ""Pessoa.h""
+
+int main() {
+   cout << ""Quantas pessoas deseja adicionar?"";
+   int n;
+   cin >> n;
+   Pessoa* g = new Pessoa[];          // g de grupo!
+   for (int i = 0; i<n; i++) {
+      cout << ""Pessoa "" i+1;
+      inserirPessoa(g[i]);
+   }
+   cout << n << pessoas foram registadas.
+   return 0
+}","1","2025-03-27T12:56:34",""
+"471","112","26","A diferença entre um e outro é bastante clara, o ios::in dá a possibilidade de ler o ficheiro enquanto que o ios::out dá a possibilidade de escrever no ficheiro, não sendo possível as duas ao mesmo tempo, por exemplo o ios::in dá a possibilidade de:
+void leF(string filename){
+ fstream(f, filename, ios::in)
+char c;
+f.open();
+while(getline(f))
+   f.cin >>c>>;
+}
+f.close;
+}
+
+Enquanto que no ios::out
+
+void escreveF(string filename){
+ fstream(f, filename, ios::out)
+f.open();
+for (int i = 0; i<100; i++)
+   f.cout<<""Exemplo EDA""<<endl;
+}
+f.close;
+
+
+Aqui podemos ver a diferença clara entre os dois modos de ficheiros, para o f.close(), é muito importante para quando acabar as operações do programa em relação ao ficheiro, o programa fecha-o para que assim, caso outras aplicações queiram usar o ficheiro podem abri-lo sem problemas.","1","2025-03-27T13:03:46",""
+"472","112","27","b)","1","2025-03-27T13:03:46",""
+"473","112","28","b)","1","2025-03-27T13:03:46",""
+"474","112","29","c)","1","2025-03-27T13:03:46",""
+"475","112","31","#include <iostream.h>
+using namespace std;
+
+struct Morada{
+  string rua;
+  int codPost;
+  string localidade;
+}
+
+struct Pessoa{
+   int id;
+   string nome;
+   string dataNasc;
+   Morada morada;
+}
+
+Pessoa inserirPessoa(int id, string nome, string dataNasc, string rua, int codPost, string localidade){
+Pessoa *p = new Pessoa();
+p.id = id;
+p.nome = nome;
+p.dataNasc = dataNasc;
+p.morada.rua = rua;
+p.morada.codPost = codPost;
+p.morada.localidade = localidade;
+
+return p;
+}
+
+int main(){
+int nPessoas, nPessoasReg = 0;
+cout <<""Quantas pessoas quer inserir?<<endl;
+cin >>nPessoas;
+Pessoas *pessoas = new Pessoas[nPessoas];
+for (int i = 0; i < nPessoas; i++){
+int id, codPost;
+string nome, dataNasc, rua, localidade;
+
+cout <<""Qual e o id da Pessoa?""<<endl;
+cin>>id;
+cout <<""Qual e o nome da Pessoa?""<<endl;
+cin >> nome;
+cout <<""Qual e a data de nascimento da Pessoa?""<<endl;
+cin>>dataNasc;
+cout <<""Qual e a rua da Pessoa?""<<endl;
+cin>>rua;
+cout <<""Qual e o codigo postal da Pessoa?""<<endl;
+cin>>codPost;
+cout <<""Qual e a localidade da Pessoa?""<<endl;
+cin>>localidade;
+
+pessoas[i] = inserirPessoa(id, nome, dataNasc, rua, codPost, localidade);
+nPessoasReg++;
+}
+cout << ""Foram registadas <<nPessoasReg<< "" Pessoas!""<<endl;
+delete pessoas;
+}","1","2025-03-27T13:03:46",""
+"476","55","26","O modo de acesso ""ios:: in "" significa que o programa irá ler, enquanto que ""ios::out "" irá realizar a escrita. A função close() significa o arquivo é fechado e as operaçoes a realizar ficam gravadas.","1","2025-03-27T13:04:19",""
+"477","55","27","b","1","2025-03-27T13:04:19",""
+"478","55","28","b","1","2025-03-27T13:04:19",""
+"479","55","29","a","1","2025-03-27T13:04:19",""
+"480","55","31","#include <iostream>
+using namespace std;
+
+struct morada{
+      string rua;
+     int codigo_postal;
+     string localidade;
+};
+struct pessoa{
+     int id;
+    string nome;
+    int data_nascimento;
+    string morada;
+};
+
+void inserirPessoa(int id, string nome, int data_nascimento, string morada){
+      p.id1 = id;
+      p.nome1 = nome;
+      p.data_de_nascimento = data_nascimento;
+      p.morada1 = morada;
+      id++;
+      cout << ""Pessoa: ""<< id1 << "","" << nome <<"","" << data_de_nascimento << "","" << morada1 << endl;
+
+
+int main(){
+     cout << ""Quantas pessoas quer adicionar?""<< endl;
+     int * pessoas = new n_pessoas [tam];
+     cout << ""Qual o nome da pessoa que deseja inserir? ""<< endl;
+     cin>> nome;
+     cout << ""Qual a sua data de nascimento?"" << endl;
+    cin >> data_nascimento;
+    cout << ""Qual a sua  morada?"" << endl;
+    cin >> morada;
+    cout << ""O numero de total de pessoas registadas é :"" << n_pessoas << endl
+    delete n_pessoas[]:
+}
+    
+ 
+
+
+
+","1","2025-03-27T13:04:19","2025-03-27T13:04:49"
+"481","144","26","","1","2025-03-27T13:04:54",""
+"482","144","27","b)","1","2025-03-27T13:04:54",""
+"483","144","28","b)","1","2025-03-27T13:04:54",""
+"484","144","29","a)","1","2025-03-27T13:04:54",""
+"485","144","31","#include<iostream>
+
+using namespace std;
+struct Morada {
+    string rua;
+    string codigoPostal;
+    string localidade;
+};
+
+struct Pessoa {
+    int id;
+    string nome;
+    Morada morada;
+};
+
+Pessoa inserirPessoa(int &id,string nome, string rua, string codigoPostal, string localidade) {
+    ++id;
+    Pessoa pessoa {
+        .id = id,
+        .nome = nome,
+        .morada.rua = rua,
+        .morada.codigoPostal = codigoPostal,
+        .morada.localidade = localidade
+  };
+    return pessoa;
+}
+
+int main() {
+    int id=0;
+    int tamanho;
+    string nome,rua,codigoPostal,localidade;
+    cout << ""Insira quantas pessoas deseja adicionar: "" << endl;
+    cin >> tamanho;
+    Pessoa* pessoas = new Pessoa[tamanho];
+    for (int i = 0; i < tamanho; i++) {
+        cout << ""Insira o nome: "" << endl;
+        cin >> nome;
+        cout << ""Insira o rua: "" << endl;
+        cin >> rua;
+        cout << ""Insira o codigo postal: "" << endl;
+        cin >> codigoPostal;
+        cout << ""Insira o localidade: "" << endl;
+        cin >> localidade;
+        pessoas[i] = inserirPessoa(id,nome, rua, codigoPostal, localidade);
+    }
+    cout << tamanho;
+    return 0;
+}
+","1","2025-03-27T13:04:54",""
+"486","71","26","A função ios::in recebe o input do ficheiro que o utilizador escolhe e em seguida lê-o, já a função ios::out recebe o mesmo ficheiro, porém esta função faz o output de seja o que o utilizador deseja fazer, como o output que quaisquer caracteres no ficheiro, ou por exemplo uma soma. Utiliza-se a função ios::in como uma substitua à função cin, e a função ios::out como substituta à função cout.
+Para realizar as funções acima, é necessário abrir o ficheiro com uma função ""open()"", logo, para não prejudicar a eficiência do programa, devemos fechar o fichero com a função close().","1","2025-03-27T13:05:07",""
+"487","71","27","c.","1","2025-03-27T13:05:07",""
+"488","71","28","b.","1","2025-03-27T13:05:07",""
+"489","71","29","c.","1","2025-03-27T13:05:07",""
+"490","71","31","struct Morada{
+string rua;
+int código;
+char local[100];
+};
+struct Pessoa{
+int id;
+char nome[50];
+int data;
+Morada morada;
+};
+
+void inserirPessoas(Pessoa p) {
+    cout<<""Qual é o id:""<<endl;
+    cin>>p.id;
+    cout<<""Qual é o seu nome: "";
+    cin>>p.nome;
+    cout<<""Qual é a sua data de nascimento: "";
+    cin>>p.data;
+    cout<<""Qual é a sua rua: "";
+    cin>>p.morada.rua;
+    cout<<""Qual é o código: "";
+    cin >>p.morada.codigo;
+    cout<<""E finalmente, qual a localidade: "";
+    cin>>p.morada.local;
+}
+}
+
+int main(){
+int n;
+cout<<""Quantas pessoas queres adicionar: "";
+cin>>n;
+inserirPessoas(Pessoas(n));
+}","1","2025-03-27T13:05:07",""
+"491","157","26","o modo de acesso ""ios::in"" é responsavel pela leitura de ficheiros txt colocados no programa (onde a informacao pode ser armazenada num array):
+fstream file;
+file.open(""ficheiro.txt"", ios::in);
+...
+file.close();
+""ios::out"" é usado para imprir a informacao que pode ser inserida no terminal pelo utilizador ou para impressao de dados de uma funcao e neste caso é necessario criar um ficheiro onde esses dados seram armazenados:
+file.open(""ficheiro.txt"", ios::out);
+...
+file.close();
+","1","2025-03-27T13:05:14",""
+"492","157","27","c","1","2025-03-27T13:05:14",""
+"493","157","28","b","1","2025-03-27T13:05:14",""
+"494","157","29","a","1","2025-03-27T13:05:14",""
+"495","157","31","a)
+struct Morada{
+string rua;
+int codigoPostal;
+string localidade;
+}
+
+struct Pessoa{
+char id;
+string nome;
+int dia;
+string mes;
+int ano;
+Morada* morada;
+}
+
+b)
+pessoa insiraPessoa(Pessoa *pessoa, string nome, char id, int dia, string mes, int ano, Morada* morada){
+cout << ""Insira um nome: "";
+cin >> nome;
+cout << ""Insira um id: "";
+cin >> id;
+cout << ""Insira um dia: "";
+cin >> dia;
+cout << ""Insira um mes: "";
+cin >> mes;
+cout << ""Insira um ano: "";
+cin >> ano;
+cout << ""nome : "" << nome << "" | "" << ""data de nascimento: "" << dia << ""-"" << mes <<  ""-""  << ano << endl;
+}
+
+","1","2025-03-27T13:05:14",""
+"496","82","26","ios::in permite a leitura enquanto ios::out permite a escrita nos ficheiros a funcao close é importante de modo a não corromper o ficheiro acidentalmente por este estar aberto quando não é necessario.
+
+","1","2025-03-27T13:05:37",""
+"497","82","27","b)","1","2025-03-27T13:05:37",""
+"498","82","28","b)","1","2025-03-27T13:05:37",""
+"499","82","29","a)","1","2025-03-27T13:05:37",""
+"500","82","31","#include <iostream>
+
+struct Morada {
+string rua;
+string codigopostal;
+string localidade;
+};
+
+struct Pessoa {
+int id;
+char nome [50];
+string datadenascimento;
+Morada morada;
+};
+
+void inserirPessoa(){
+Pessoa p;
+
+cin >> p.id;
+cout << ""Nome: "" << endl;
+cin >> p.nome;
+cout << ""data de nascimento: "";
+cin >> p.datadenascimento;
+cout << ""Rua: "" << endl;
+cin >> p.rua;
+
+return p
+}
+
+int main (){
+int pessoas;
+cout << ""quantas pessoas quer adicionar?""
+cin >> pessoas;
+return 0
+}
+","1","2025-03-27T13:05:37",""
+"501","120","26","o ios::in serve para abrir um ficheiro para leitura enquanto o ios::out para escrita. a finalidade da funcao close() é importante devido a esta fechar o ficheiro sem erros de modo a poder reabri-lo sem problemas bem como libertar a memoria associada a esse ficheiro
+exemplo:
+ficheiro.open(""ficheiro.txt"", ios::in);
+
+if (ficheiro.is_open()) {
+    string linha;
+    while (getline(ficheiro, linha)) {
+        cout << linha << endl;
+    }
+    arquivo.close(); ","1","2025-03-27T13:06:09",""
+"502","120","27","b","1","2025-03-27T13:06:09",""
+"503","120","28","b","1","2025-03-27T13:06:09",""
+"504","120","29","a","1","2025-03-27T13:06:09",""
+"505","120","31","#include <iostream>
+
+using namespace std;
+
+struct Morada {
+    string rua;
+    string codigoPostal;
+    string Localidada;
+};
+
+struct Pessoa {
+    int id;
+    string nome;
+    string dataDeNascimento;
+    Morada morada;
+};
+
+
+Pessoa inserirPessoa() {
+    Pessoa pessoa;
+    cout << ""Insira o id da pessoa: "";
+    cin >> pessoa.id;
+    cout << ""Insira o nome da pessoa:"" << endl;
+    cin >> pessoa.nome;
+    cout << ""Insira a dataDeNascimento:"" << endl;
+    cin >> pessoa.dataDeNascimento;
+    cout << ""A rua onde vive a pessoa:"" << endl;
+    cin >>pessoa.morada.rua;
+    cout << ""Insira o codigo Postal da pessoa:"" << endl;
+    cin >>pessoa.morada.codigoPostal;
+    cout << ""Insira a Localidade da pessoa:"" << endl;
+    cin >> pessoa.morada.Localidada;
+    return pessoa;
+}
+
+int main() {
+    int numero;
+    cout<<""Quantos pessoas quer adicionar?""<<endl;
+    cin >> numero;
+    Pessoa* pessoa = new Pessoa[numero];
+    for (int i = 0; i < numero; i++) {
+        pessoa[i] = inserirPessoa();
+    }
+    cout<<""foram registadas ""<< numero <<"" Pessoas""<<endl;
+
+    delete[] pessoa;
+}
+","1","2025-03-27T13:06:09",""
+"506","75","26","o ios::in serve para abrir um ficheiro de leitura e ios::out serve para abrir um ficheiro para escrita. 
+
+","1","2025-03-27T15:47:40",""
+"507","75","27","c","1","2025-03-27T15:47:40",""
+"508","75","28","b","1","2025-03-27T15:47:40",""
+"509","75","29","b","1","2025-03-27T15:47:40",""
+"510","75","31","5.a)
+Struct Morada{
+String rua;
+String código_postal:
+String localidade;
+};
+
+Struct Pessoa{
+String id;
+String nome; 
+String data_nascimento;
+String morada; 
+};
+b)
+Pessoa inserirPessoa(int id) {
+Pessoa p;
+p.id = id;
+
+
+
+c) int main(){
+}
+","1","2025-03-27T15:47:40",""
+"511","70","26","ios::in - Abre um ficheiro para leitura
+ios::out - Abre um ficheiro para escrita
+
+fstream ficheiro;
+ficheiro.open(""texto.txt"", ios::in);
+
+if (ficheiro.is_open()) {
+    string linha;
+    while (getline(ficheiro, linha)) {
+        cout << linha << endl;
+    }
+    ficheiro.close();
+} else {
+    cout << ""Erro ao abrir o ficheiro"" << endl;
+}","1","2025-03-27T15:47:50",""
+"512","70","27","b)","1","2025-03-27T15:47:50",""
+"513","70","28","b)","1","2025-03-27T15:47:50",""
+"514","70","29","a)","1","2025-03-27T15:47:50",""
+"515","70","31","#include <iostream>
+using namespace std;
+
+struct Morada {
+    string rua;
+    string codigoPostal;
+    string localidade;
+};
+
+struct Pessoa {
+    int id;
+    string nome;
+    string dataNascimento;
+    Morada morada;
+};
+
+Pessoa inserirPessoa() {
+    Pessoa p;
+    cout << ""\nID da pessoa: "";
+    cin >> p.id;
+    
+    cout << ""Nome: "";
+    cin >> p.nome;
+    
+    cout << ""Data de nascimento (dd/mm/aaaa): "";
+    cin >> p.dataNascimento;
+    
+    cout << ""Rua: "";
+    cin >> p.morada.rua;
+    
+    cout << ""Codigo postal: "";
+    cin >> p.morada.codigoPostal;
+    
+    cout << ""Localidade: "";
+    cin >> p.morada.localidade;
+    
+    return p;
+}
+
+int main() {
+    int numPessoas;
+    cout << ""Quantas pessoas deseja adicionar? "";
+    cin >> numPessoas;
+    
+    Pessoa* pessoas = new Pessoa[numPessoas];
+    
+    for (int i = 0; i < numPessoas; i++) {
+        cout << ""\nCriacao da pessoa "" << i + 1 << "":"";
+        pessoas[i] = inserirPessoa();
+    }
+    
+    cout << ""\nTotal de pessoas criadas: "" << numPessoas << endl;
+    
+    delete[] pessoas;
+    
+    return 0;
+}","1","2025-03-27T15:47:50",""
+"516","67","26","ios::out - escreve dados no ficheiro
+ios::in - lê dados do ficheiro
+O close é importante para garantir que o ficheiro fica fechado. 
+Caso contrário podemos acidentalente chamar uma outra função que necessita de abrir o ficheiro e não será possível executá-la porque o mesma já está aberto.
+
+
+int linhasFicheiro() {
+    std::string fileName = ""exemplo.txt"";
+    int linhas = 0;
+    fstream fs;
+    fs.open(fileName, ios::in);
+    if(fs.is_open()) {
+        string linha;
+        while(getline(fs, linha)) ++linhas;
+        fs.close();
+    }
+    return linhas;
+}
+","1","2025-03-27T15:53:00",""
+"517","67","27","b)","1","2025-03-27T15:53:00",""
+"518","67","28","b)","1","2025-03-27T15:53:00",""
+"519","67","29","a)","1","2025-03-27T15:53:00",""
+"520","67","31","#include <iostream>
+#include <fstream>
+#include <string.h>
+
+struct Morada {
+    std::string rua;
+    std::string cod_postal;
+    std::string localidade;
+};
+struct Pessoa{
+    int id_pessoa;
+    std::string nome;
+    std::string data_nascimento;
+    Morada* morada;
+};
+
+void criaPessoa(int num_pessoas) {
+    int id_pessoa;
+    std::string nome_p;
+    std::string data_nascimento;
+    Pessoa * pessoa = new Pessoa[num_pessoas];
+    std::cout << ""Insira os dados da pessoa: \n"";
+    std::cout << ""(id, nome, data_nascimentos, morada)\n"";
+    for(int i = 0; i < num_pessoas; i++) {
+        cin >> id_pessoa, nome_p, data_nascimento
+        pessoa[i].id_pessoa = id_pessoa;
+        pessoa[i].nome = nome_p;
+        pessoa[i].nome = data_nascimento;   
+    }
+}","1","2025-03-27T15:53:00",""
+"521","63","26","ios::in abre um fiheiro para input/leitura
+ios::out abre um fiheiro para output/esrita
+
+//abre um file e obtém texto do mesmo
+fstream file;
+string texto;
+file= file.open(ficheiro.txt, ios::in);
+getline(file, texto);
+file.close //fim","1","2025-03-27T15:54:35",""
+"522","63","27","c)","1","2025-03-27T15:54:35",""
+"523","63","28","b)","1","2025-03-27T15:54:35",""
+"524","63","29","a)","1","2025-03-27T15:54:35",""
+"525","63","31","struct morada{
+char rua[60];
+char [18];
+char[40];
+};
+
+struct Pessoa {
+int id;
+char nome[60]
+char[data_nascimento]
+","1","2025-03-27T15:54:35",""
+"526","195","26","ios:in significa que a função vai pogredir e ios:out significa que a função vai parar.","1","2025-03-27T17:36:52",""
+"527","195","27","d)","1","2025-03-27T17:36:52",""
+"528","195","28","b)","1","2025-03-27T17:36:52",""
+"529","195","29","a)","1","2025-03-27T17:36:52",""
+"530","195","31","int main:
+inserirPessoa(morada, pessoa)
+morada e nome= string
+","1","2025-03-27T17:36:52",""
+"531","142","26","Não sei que diferença tem o ""ios::in"" e ""ios::out"", mas o primeiro deve ser para ler, e o segundo para retirar o o valor ficheiro.
+A função close() fecha o ficheiro que abrimos. A sua funcionalidade resulta em que libertamos o espacio (do ficheiro) da memoria.
+","1","2025-03-27T17:40:38",""
+"532","142","27","d","1","2025-03-27T17:40:38",""
+"533","142","28","b","1","2025-03-27T17:40:38",""
+"534","142","29","c","1","2025-03-27T17:40:38",""
+"535","142","31","
+using namespace std;
+
+struct Morada {
+    char rua;
+    int codigo;
+    std::string localidade;
+};
+
+struct Pessoa {
+    int id;
+    std::string nome;
+    int nascimento;
+};
+
+void inserirPessoa(int quantidade) {
+    string x;
+    int y;
+    int o;
+    for (int i = 0, i < quantidade, ++i) {
+        cout << ""Introduza nome: "" <<endl;
+        cin >> x;
+        cout << ""Introduza ano nascimento: "" <<endl;
+        cin >> o;
+        Pessoa a = new Pessoa();
+        a.id = i;
+        a.nascimento = o;
+        a.nome = x;
+        Pessoa a = new Pessoa(x, i, o);
+    }    
+}
+
+int main() {
+    int k;
+    cout << ""Quantas pessoas quer inserir? "" << endl;
+    cin >> k;
+    inserirPessoa(k);
+}","1","2025-03-27T17:40:38",""
+"536","202","26","1)	Ios::in abre para leitura
+Ios::out abre para escrita
+Close() fecha para leitura e escrita
+
+Ex 
+
+Ficha.open(ficha2.txt, ios::in);
+faz o que for pedido
+Ficha.close();
+
+Ficha.open(ficha2.txt, ios::out);
+Faz o que for pedido
+Ficha.close();
+","1","2025-03-27T17:50:53",""
+"537","202","27","C","1","2025-03-27T17:50:53",""
+"538","202","28","B","1","2025-03-27T17:50:53",""
+"539","202","29","A","1","2025-03-27T17:50:53",""
+"540","202","31","#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    return 0;
+}
+
+struct morada {
+    string tua;
+    string codigopostal;
+    string localidade;
+};
+
+struct pessoa {
+    int id;
+    string nome;
+    string datanascimiento;
+    string morada;
+};
+
+pessoa inserirPessoa(){
+    pessoa p;
+    getline(cin, p.id);
+    getline(cin, p.nome);
+    getline(cin, p.datanascimiento);
+    getline(cin, p.morada);
+}","1","2025-03-27T17:50:53",""
+"541","117","26","ios::in - modo como acedemos a um ficheiro de leitura.
+ios::out - modo de leitura de um ficheiro.","1","2025-03-27T17:51:04",""
+"542","117","27","Resposta:C","1","2025-03-27T17:51:04",""
+"543","117","28","Resposta: (a)","1","2025-03-27T17:51:04",""
+"544","117","29","Resposta:(a)","1","2025-03-27T17:51:04",""
+"545","117","31","struct Morada
+{
+    int codigoPostal;
+    char rua[50];
+    std::pmr::string localidade;
+};
+struct Pessoa
+{
+    int Id;
+    char Nome[50];
+    std::pmr::string dataDeNascimento;
+    std::pmr::string *Morada;
+};
+void insiraPessoa()
+{
+    Pessoa* novaP = new Pessoa();
+    novaP->Id = 1;
+    novaP->Nome;
+    novaP->dataDeNascimento;
+    novaP->Morada;
+}","1","2025-03-27T17:51:04",""
+"546","95","26","ios::in permite a importação de dados de um tipo de ficheiro.
+
+fstream ficheiro(""ficheiro.txt"", ios::in);
+
+ios::out permite a exportação de dados para um formato de ficheiro
+fstream ficheiro(""ficheiro.txt"", ios::out);
+","1","2025-03-27T17:54:33",""
+"547","95","27","B","1","2025-03-27T17:54:33",""
+"548","95","28","B","1","2025-03-27T17:54:33",""
+"549","95","29","C","1","2025-03-27T17:54:33",""
+"550","95","31","Main.cpp
+#include <iostream>
+#include “Pessoa.h”
+
+using namespace std;
+Int main(){
+	int np;
+	cout << “Quantas pessoas deseja adicionar?” <<endl;
+	cin >> np >> endl;
+	Pessoas p[np];
+	for (i = 1, i < np, i++){
+		inserirPessoas[i] (id,nome,datanascimento,rua,codigopostal,localidade);
+}
+	for (i=1,i<np,i++){
+		cout << p[i] << endl;
+}
+	delete p[];
+}
+
+Pessoa.h
+#include <iostream>
+
+using namespace std;
+
+struct Morada{
+	string rua;
+	int codigopostal;
+	string localidade;
+}
+Struct Pessoa{
+	int id;
+	string nome;
+	int datanascimento;
+	Morada morada;
+}
+Void inserirPessoa(int id, string nome, int datanascimento, string rua, int codigopostal, string localidade);
+
+
+Pessoa.cpp
+#include <iostream>
+
+using namespace std;
+
+#include “Pessoa.h”
+Void inserirPessoa(int id, string nome, int datanascimento, string rua, int codigopostal, string localidade){
+	Pessoa * apPessoa = new Pessoa;
+	apPessoa->id = id;
+	apPessoa->nome = nome;
+	apPessoa->datanascimento = datanascimento;
+	apPessoa->Morada->rua = rua;
+	apPessoa->Morada->codigopostal = codigopostal;
+	apPessoa->Morada->localidade = localidade;
+}
+","1","2025-03-27T17:54:33",""
+"551","74","26","""ios::in"" cria ficheiros e ""ios::out"" apresenta um ficheiro gravado.
+A finalidade da função close é concluir a criação de ficheiros.","1","2025-03-27T17:54:43",""
+"552","74","27","a)","1","2025-03-27T17:54:43",""
+"553","74","28","b)","1","2025-03-27T17:54:43",""
+"554","74","29","c)","1","2025-03-27T17:54:43",""
+"555","74","31","a)
+struct Morada && Pessoa {
+	struct Morada {
+		string rua;
+		string localidade;
+		float codigo postal;
+	};
+	struct Pessoa {
+		int id;
+		string nome;
+		float data nascimento;
+		Morada* Morada;
+	};
+
+b)
+void InserirPessoa (id, nome, data nascimento, Morada* Morada);
+
+d)
+#include <iostream>
+#include “morada.h”
+","1","2025-03-27T17:54:43",""
+"556","187","26","Não me lembro.","1","2025-03-28T12:47:29",""
+"557","187","27","d)","1","2025-03-28T12:47:29",""
+"558","187","28","b)","1","2025-03-28T12:47:29",""
+"559","187","29","a)","1","2025-03-28T12:47:29",""
+"560","187","31","Eu só descobrir como fazer as structs à pouco tempo e não estou a me lembrar como fazer isso agora, por isso sou incapaz de responder a essa pergunta","1","2025-03-28T12:47:29",""
+"561","107","26","fstream fs; declarando a variável do tipo fstream para ficheiros
+fs.open(“ficheiro.txt”,iostream::out)
+string line;
+if(fs.is_open()){
+getline(fs, line);
+cout << line;
+fs.close();
+}
+Caso o ficheiro esteja aberto ele irá ler as linhas e dar output nelas
+","1","2025-03-28T13:00:29",""
+"562","107","27","C","1","2025-03-28T13:00:29",""
+"563","107","28","B","1","2025-03-28T13:00:29",""
+"564","107","29","C","1","2025-03-28T13:00:29",""
+"565","107","31","Struct morada{
+	string rua;
+	long codigoPostal;
+	string localidade;
+};
+Struct pessoa{
+	Int id;
+	String nome;
+	Long dataNascimento;
+	morada moradaPessoa;
+};
+Void inserirPessoa(){
+
+	For(int i=0; i<nPessoas; i++){
+		Cout<< “insira o Id”<< i+1<<”:  “;
+		Cout<<”insira o nome “<<i+1<<”:  “;
+		Cout<<”data de nascimento “<<i+1<<”:  “;
+		Cout<<”morada “<<i+1<<”:  “;
+","1","2025-03-28T13:00:29",""
+"566","46","26","","1","2025-03-28T15:52:48",""
+"567","46","27","B","1","2025-03-28T15:52:48",""
+"568","46","28","B","1","2025-03-28T15:52:48",""
+"569","46","29","C","1","2025-03-28T15:52:48",""
+"570","46","31","a)
+struct morada {
+    char rua[50];
+    int codigo_postal;
+    char localidade[50];
+};
+
+struct pessoa {
+    int id;
+    char nome[50];
+    float data_de_nascimento;
+    char morada[50];
+};
+
+b)
+void InserirPessoa(char rua, int codigo_postal, char localidade) {
+    cout << ""Insira a Rua: "" << endl;
+    cin >> rua;
+    cout << ""Insira o Codigo Postal: "" << endl;
+    cin >> codigo_postal;
+    cout << ""Insira a localidade: "" << endl;
+    cin >> localidade;
+}
+
+c)
+int main() {
+    cout << ""Quantas Pessoas deseja adicionar: "" << endl;
+    int quantidade;
+    cin >> quantidade;
+    
+    return 0;
+}
+
+d)
+#include <iostream>
+#include ""ficha2.h""
+using namespace std;
+","1","2025-03-28T15:52:48",""
+"571","127","26","“ios::in” serve para ler ficheiros, por exemplo txt. Podemos pegar numa determinada lista de nomes e ler os nomes para o nosso programa.
+
+string primeiro_nome(int id) {
+    ifstream arquivo(""primeiro.txt"");
+    string primeiro_nome;
+    int linha = 1; 
+    if (arquivo.is_open()) {
+        while (getline(arquivo, primeiro_nome)) {
+            if (linha == id) {
+                arquivo.close();
+                return primeiro_nome; 
+            }
+            linha++;
+        }
+        arquivo.close();
+    return primeiro_nome;  
+    }
+}
+“ios::out” serve para escrever ficheiros, por exemplo txt. Podemos passar para elementos de uma lista do nosso programa e guardá-la num ficheiro a parte, para nossa consulta ou outra utilização.
+
+A finalidade da função close é fechar o ficheiro e é importante para não continuar a usar o ficheiro, manter menos um ficheiro aberto e libertar o processador.
+","1","2025-03-28T15:53:55",""
+"572","127","27","É a a) que é falsa.","1","2025-03-28T15:53:55",""
+"573","127","28","b)","1","2025-03-28T15:53:55",""
+"574","127","29","É a d)","1","2025-03-28T15:53:55",""
+"575","127","31","#ifndef FICHA_H
+#define FICHA_H
+
+
+#include <iostream>
+#include<string>
+
+
+
+using namespace std;
+
+struct Morada {
+string rua;
+string cp;
+string localidade;
+};
+
+
+struct Pessoa {
+int id;
+string nome;
+int datanascimento;
+Morada* morada;
+};
+
+
+void inserirPessoa();
+
+
+#endif //FICHA_H
+
+
+
+#include ""Ficha.h""
+#include <iostream>
+
+using namespace std;
+
+
+void inserirPessoa(Pessoa* pessoa, int num_pessoas) {
+    for (int i = 0; i < num_pessoas; i++) {
+        pessoa[i].id = i+1;   // o id do cliente
+        pessoa[i].nome = cout << ""Insere o nome"" << endl;
+                                                        
+        pessoa[i].datanascimento;
+        pessoa[i].morada = 0;    
+    } num_pessoas += 1; 
+}
+
+
+
+
+
+
+};
+
+
+","1","2025-03-28T15:53:55",""
+"576","110","32","a) Remoção por fusão:
+	1º - Navegar até ao nó mais à direita da sub-árvore esquerda
+	2º - Atribuir a subárvore direita para o lado direito da variável temporária
+	3º - A variável temporária passa a fazer referência ao nó a ser removido
+	4º - O nó passa a ser a subárvore esquerda
+	5º - O nó é removido
+	6º - Apagar a variável temporária
+
+   Remoção por cópia:
+	1º - Navegar até ao nó mais à direita da sub-árvore esquerda mantendo a referência ao nó anterior
+	2º - Trocar os conteúdos dos nós
+	3º - Apagar a variável temporária
+
+b) Remoção por fusão 
+       48
+      / | \
+     /  |  \
+ 20  39  66
+              / \
+             /   \
+          54    72
+          / \
+         /   \
+     13    27
+
+Remoção por cópia:
+     48
+     / \
+    /   \
+ 20    66
+ /        / \
+39   54 72
+/ \
+13  27","1","2025-05-06T09:32:35",""
+"577","110","38","b)","1","2025-05-06T09:32:35",""
+"578","110","39","d)","1","2025-05-06T09:32:35",""
+"579","110","40","a)","1","2025-05-06T09:32:35",""
+"580","110","41","","1","2025-05-06T09:32:35",""
+"581","215","32","a)  Na remoção por fusão primeiro temos que navegar até ao nó mais à direita da sub-árvore esquerda , de seguida atribuir a subárvore direita para o lado direito da variável temporária. Depois a variável temporária passa a fazer referência ao nó a ser removido, após isso o nó passa a ser a subárvore esquerda e o nó é removido por fim apagamos a variável temporária.
+
+Na remoção por cópia primeiro é navegar até ao nó mais à direita da sub-árvore esquerda mantendo a referência ao nó anterior depois trocar os conteúdos dos nós, por fim apagamos a variável temporária.
+
+b)
+Remoção por fusão:
+        48
+        /  \
+    20    66
+    /  \       \
+13   27     72
+                /
+             39
+               \
+               54
+
+Remoção por cópia:
+
+        48
+        /  \
+    27    66
+    /  \       \
+ 20   39    72
+  /        \
+13       54
+","1","2025-05-06T09:40:37",""
+"582","215","38","b)","1","2025-05-06T09:40:37",""
+"583","215","39","c)","1","2025-05-06T09:40:37",""
+"584","215","40","a)","1","2025-05-06T09:40:37",""
+"585","215","41","a) 
+nodo* inserirNodo(nodo* raiz, int valor) {
+    if (raiz == NULL) {
+        nodo* novo = new nodo;
+        novo->dados = valor;
+        novo->esq = NULL;
+        novo->dir = NULL;
+        return novo;
+    }
+
+    if (valor < raiz->dados)
+        raiz->esq = inserirNodo(raiz->esq, valor);
+    else
+        raiz->dir = inserirNodo(raiz->dir, valor);
+
+    return raiz;
+}
+
+b)
+bool existe(nodo* raiz, int valor) {
+    if (raiz == NULL)
+        return false;
+    if (raiz->dados == valor)
+        return true;
+    if (valor < raiz->dados)
+        return existe(raiz->esq, valor);
+    else
+        return existe(raiz->dir, valor);
+}
+
+void imprimirFolhas(nodo* raiz) {
+    if (raiz == NULL)
+        return;
+    if (raiz->esq == NULL && raiz->dir == NULL)
+        cout << raiz->dados << "" "";
+    imprimirFolhas(raiz->esq);
+    imprimirFolhas(raiz->dir);
+}
+
+int somaValores(nodo* raiz) {
+    if (raiz == NULL)
+        return 0;
+    return raiz->dados + somaValores(raiz->esq) + somaValores(raiz->dir);
+}","1","2025-05-06T09:40:37",""
+"586","199","32","a) O metodo de remoção por fusão conciste em remover o elemento selecionado da arvore e fazer uma fusão entre as duas partes da arvore de maneira a voltar a a seguir as regras de uma arvore binaria, primeiro percorre-se a arvore, encontra-se o elemento, coloca-se um apontador auxiliar a esse elemento, e faz-se a fusão, logo disso é eliminado o apontador auxliar. Para a remoção por copia, retira-se um elemento e é substituido por outro, percorre-se a arvore em busca do elemento a remover, apontador auxiliar, logo busca-se o elemento mas a direita da sua subarvore esquerda e é substituido por ese elemento.
+
+b)por fusão o 20 fica onde esta o 31 e a subarvore direita do 31 fica como subarvore direita do 27, no caso da remoção por copia, o 27 substitui a posição do 31","1","2025-05-06T09:41:05",""
+"587","199","38","b)","1","2025-05-06T09:41:05",""
+"588","199","39","","1","2025-05-06T09:41:05",""
+"589","199","40","a)","1","2025-05-06T09:41:05",""
+"590","199","41","a) 
+void inserirNodo(Nodo*& head, int valor){
+    Nodo*novo;
+    novo->valor = valor;
+    novo->esq = nullptr, novo->dir = nullptr;
+    Nodo* aux = new Nodo;
+    aux = head;
+    if(aux->esq=nullptr)
+        aux->esq = novo;
+    if(aux->dir=nulptr)
+        aux->dir = novo;
+    if(aux < novo)
+        inserirNodo(aux->dir, novo->valor);
+    if(aux > novo)
+        inserirNodo(aux->dir, novo->valor);
+    }
+}
+void criaArvore(Nodo* head, int* vetor, int num){
+        for(int i = 0; i < num; i++)
+            inserirNodo(head , vetor[i]);
+
+
+b)","1","2025-05-06T09:41:05",""
+"591","136","32","A- Substituir o valor do nó a ser removido pelo menor da subárvore direita ou maior da esquerda e depois remover esse nó que foi copiado
+
+B- da muito trabalho","1","2025-05-06T09:41:42",""
+"592","136","38","b","1","2025-05-06T09:41:42",""
+"593","136","39","c","1","2025-05-06T09:41:42",""
+"594","136","40","c","1","2025-05-06T09:41:42",""
+"595","136","41","#include <iostream>
+using namespace std;
+
+struct nodo {
+    int dados;
+    nodo* esq;
+    nodo* dir;
+};
+
+void inserirNodo(nodo*& raiz, int valor) {
+    if (raiz == NULL) {
+        raiz = new nodo;
+        raiz->dados = valor;
+        raiz->esq = NULL;
+        raiz->dir = NULL;
+    }
+    else if (valor > raiz->dados) {
+        inserirNodo(raiz->esq, valor);  
+    }
+    else {
+        inserirNodo(raiz->dir, valor);  
+    }
+}
+
+bool existe(nodo* raiz, int valor) {
+    if (raiz == NULL)
+        return false;
+    if (raiz->dados == valor)
+        return true;
+    else if (valor > raiz->dados) {
+        return existe(raiz->esq, valor);  
+    }
+    else {
+        return existe(raiz->dir, valor);  
+    }
+}
+
+void imprimirFolhas(nodo* raiz) {
+    if (raiz == NULL)
+        return;
+    if (raiz->esq == NULL && raiz->dir == NULL)
+        cout << raiz->dados << "" "";
+    imprimirFolhas(raiz->esq);
+    imprimirFolhas(raiz->dir);
+}
+
+int somaValores(nodo* raiz) {
+    if (raiz == NULL)
+        return 0;
+    return raiz->dados + somaValores(raiz->esq) + somaValores(raiz->dir);
+}
+
+int main() {
+    nodo* raiz = NULL;
+    
+    int valores[] = {28, 14, 37, 6, 19, 42, 3, 25, 31, 48};
+    for (int i = 0; i < 10; i++) {
+        inserirNodo(raiz, valores[i]);
+    }
+    
+    int valorProcurado = 19;
+    if (existe(raiz, valorProcurado)) {
+        cout << ""O valor "" << valorProcurado << "" existe na arvore."" << endl;
+    } else {
+        cout << ""O valor "" << valorProcurado << "" nao existe na arvore."" << endl;
+    }
+    
+    cout << ""Nos folha da arvore: "";
+    imprimirFolhas(raiz);
+    cout << endl;
+    
+    cout << ""A soma dos valores na arvore e: "" << somaValores(raiz) << endl;
+
+    return 0;
+}
+","1","2025-05-06T09:41:42",""
+"596","78","32","","1","2025-05-06T11:33:10",""
+"597","78","38","b","1","2025-05-06T11:33:10",""
+"598","78","39","c","1","2025-05-06T11:33:10",""
+"599","78","40","d","1","2025-05-06T11:33:10",""
+"600","78","41","","1","2025-05-06T11:33:10",""
+"601","206","32","a)  Para manter a ordem, utilizamos o maior elemento da subarvore esquerda, ou seja quando se remove um nó com dois elementos numa arvore juntamos a subarvore direita e a esquerda, isto no caso de remoção por fusão
+e na remoção por copia em vez de juntar as duas subarvores, copiamos o maior elemento da subarvore esquerda para o no que queremos mover.
+
+","1","2025-05-06T11:33:19",""
+"602","206","38","b)","1","2025-05-06T11:33:19",""
+"603","206","39","c)","1","2025-05-06T11:33:19",""
+"604","206","40","d)","1","2025-05-06T11:33:19",""
+"605","206","41","","1","2025-05-06T11:33:19",""
+"606","109","32","a)Remoção por fusão: Quando um nó a ser removido tem dois elementos, o nó sucessor ou predecessor substitui o nó removido. Depois, o sucessor ou predecessor é removido de sua posição original, e os elementos do nó removido são ajustados para manter a propriedade da BST.
+b)Remoção por cópia é o valor do sucessor ou predecessor é copiado para o nó a ser removido, e então o sucessor ou predecessor é removido. A estrutura da árvore é ajustada subsequentemente.","1","2025-05-06T11:35:51",""
+"607","109","38"," b)","1","2025-05-06T11:35:51",""
+"608","109","39","c)","1","2025-05-06T11:35:51",""
+"609","109","40","d)","1","2025-05-06T11:35:51",""
+"610","109","41","","1","2025-05-06T11:35:51",""
+"611","91","32","a)
+A remoção por fusão percorre a arvore da esquerda do nó que se pretende remover e procura a estremidade mais à direita, após encontrada coloca a árvore da direita do nó que se pretende remover à direita da extremidade encontrada.
+A remoção por cópia percorre a arvore da esquerda do nó que se quer remover e estremidade mais à direita e copia-o para o nó removido
+
+b)
+por fusão:
+             48
+
+            /    \
+
+         20     66
+
+       /  \       /  \
+
+    13  27 54   72
+            \
+              39
+por cópia
+             48
+
+            /    \
+
+         27     66
+
+       /  \       /  \
+
+    20  39 54   72
+
+    / 
+
+ 13 ","1","2025-05-06T11:45:45",""
+"612","91","38","b)","1","2025-05-06T11:45:45",""
+"613","91","39","c)","1","2025-05-06T11:45:45",""
+"614","91","40","d)","1","2025-05-06T11:45:45",""
+"615","91","41","#include <iostream>
+using namespace std;
+
+struct nodo {
+    int dados;
+    nodo* esq;
+    nodo* dir;
+};
+
+nodo* inserirNodo(nodo* raiz, int valor) {
+    if (raiz == NULL) {
+        nodo* novo = new nodo;
+        novo->dados = valor;
+        novo->esq = novo->dir = NULL;
+        return novo;
+    }
+
+    if (valor < raiz->dados)
+        raiz->esq = inserirNodo(raiz->esq, valor);
+    else
+        raiz->dir = inserirNodo(raiz->dir, valor);
+
+    return raiz;
+}
+
+bool existe(nodo* raiz, int valor) {
+    if (raiz == NULL)
+        return false;
+    if (raiz->dados == valor)
+        return true;
+    if (valor < raiz->dados)
+        return existe(raiz->esq, valor);
+    else
+        return existe(raiz->dir, valor);
+}
+
+void imprimirFolhas(nodo* raiz) {
+    if (raiz == NULL)
+        return;
+
+    if (raiz->esq == NULL && raiz->dir == NULL)
+        cout << raiz->dados << "" "";
+
+    imprimirFolhas(raiz->esq);
+    imprimirFolhas(raiz->dir);
+}
+
+int somaValores(nodo* raiz) {
+    if (raiz == NULL)
+        return 0;
+
+    return raiz->dados + somaValores(raiz->esq) + somaValores(raiz->dir);
+}
+
+int main() {
+    nodo* raiz = NULL;
+    int valores[] = {28, 14, 37, 6, 19, 42, 3, 25, 31, 48};
+
+    for (int i = 0; i < 10; ++i)
+        raiz = inserirNodo(raiz, valores[i]);
+
+    cout << ""Existe 19? "" << (existe(raiz, 19) ? ""Sim"" : ""Não"") << endl;
+    cout << ""Folhas da árvore: "";
+    imprimirFolhas(raiz);
+    cout << endl;
+    cout << ""Soma total dos valores: "" << somaValores(raiz) << endl;
+
+    return 0;
+}
+","1","2025-05-06T11:45:46",""
+"616","76","32","","1","2025-05-06T11:47:39",""
+"617","76","38","b)","1","2025-05-06T11:47:39",""
+"618","76","39","c)","1","2025-05-06T11:47:39",""
+"619","76","40","d)","1","2025-05-06T11:47:39",""
+"620","76","41","#include <iostream>
+using namespace std;
+
+struct nodo {
+    int dados;
+    nodo* esq;
+    nodo* dir;
+};
+
+nodo* inserirNodo(nodo* raiz, int valor) {
+    if (raiz == nullptr) {
+        nodo* novo = new nodo{valor, nullptr, nullptr};
+        return novo;
+    }
+    if (valor < raiz->dados)
+        raiz->esq = inserirNodo(raiz->esq, valor);
+    else if (valor > raiz->dados)
+        raiz->dir = inserirNodo(raiz->dir, valor);
+    return raiz;
+}
+
+bool existe(nodo* raiz, int valor) {
+    if (raiz == nullptr)
+        return false;
+    if (raiz->dados == valor)
+        return true;
+    if (valor < raiz->dados)
+        return existe(raiz->esq, valor);
+    else
+        return existe(raiz->dir, valor);
+}
+
+void imprimirFolhas(nodo* raiz) {
+    if (raiz == nullptr)
+        return;
+    if (raiz->esq == nullptr && raiz->dir == nullptr)
+        cout << raiz->dados << "" "";
+    else {
+        imprimirFolhas(raiz->esq);
+        imprimirFolhas(raiz->dir);
+    }
+}
+
+int somaValores(nodo* raiz) {
+    if (raiz == nullptr)
+        return 0;
+    return raiz->dados + somaValores(raiz->esq) + somaValores(raiz->dir);
+}
+
+int main() {
+    int valores[] = {28, 14, 37, 6, 19, 42, 3, 25, 31, 48};
+    nodo* raiz = nullptr;
+    return 0;
+}","1","2025-05-06T11:47:39",""
+"621","149","32","a) Remocao por copia- fazemos uma travessia da arvore pela esquerda ate o menor da esquerda, depoois pegamos no valor mais a direita dessa arvore esquerda e trocamos com o valor a ser removido, depois de fazer a trocar o valor a ser removido é eliminado da arvore.
+Remocao por fiusao faz um merge da sub arvore direita da arvore, eliminando o valor a ser eliminado e depois a subarvore dirieta é merged com a restante arvore
+b) por copia
+        48
+       /   \
+     27
+   /    \
+ 20    39
+ /
+13
+
+---------------------------
+por fusao
+                                                         48
+                                                       /     \
+                                                     20     66
+                                                   /  \        / \
+                                                  13 27        54 72
+                                                           \
+                                                             39","1","2025-05-06T11:47:39",""
+"622","149","38","b)","1","2025-05-06T11:47:39",""
+"623","149","39","c)","1","2025-05-06T11:47:39",""
+"624","149","40","a)","1","2025-05-06T11:47:40",""
+"625","149","41","nodo* inserirNodo(nodo* raiz, int valor) {
+    if (raiz == NULL) {
+        nodo* novo = new nodo;
+        novo->dados = valor;
+        novo->esq = NULL;
+        novo->dir = NULL;
+        return novo;
+    }
+    if (valor <= raiz->dados)
+        raiz->esq = inserirNodo(raiz->esq, valor);
+    else
+        raiz->dir = inserirNodo(raiz->dir, valor);
+    return raiz;
+}
+
+bool existe(nodo* raiz, int valor) {
+    if (raiz == NULL)
+        return false;
+    if (raiz->dados == valor)
+        return true;
+    if (valor < =raiz->dados)
+        return existe(raiz->esq, valor);
+    else
+        return existe(raiz->dir, valor);
+}
+
+void imprimirFolhas(nodo* raiz) {
+    if (raiz == NULL)
+        return;
+    if (raiz->esq == NULL && raiz->dir == NULL)
+        cout << raiz->dados << "" "";
+    imprimirFolhas(raiz->esq);
+    imprimirFolhas(raiz->dir);
+}
+
+int somaValores(nodo* raiz) {
+    if (raiz == NULL)
+        return 0;
+    return raiz->dados + somaValores(raiz->esq) + somaValores(raiz->dir);
+}","1","2025-05-06T11:47:40",""
+"626","46","32","por fusão:
+         48
+        /  \
+      27    66
+     /  \   /  \
+   20   39 54  72
+  / 
+13
+
+por cópia:
+         48
+        /  \
+      27    66
+     /  \   /  \
+   20   39 54  72
+  / 
+13
+","1","2025-05-06T11:47:51",""
+"627","46","38","B","1","2025-05-06T11:47:51",""
+"628","46","39","C","1","2025-05-06T11:47:51",""
+"629","46","40","A","1","2025-05-06T11:47:51",""
+"630","46","41","a)
+Struct no {
+    int valor;
+    struct no* esquerda;
+    struct no* direita;
+}
+
+no* InserirNodo(no* raiz, int valor){
+    if (raiz == NULL) {
+        return CriarNodo(valor);
+    }
+    if (valor < raiz->valor) {
+        raiz->esquerda = inserirNodo(raiz->esquerda, valor);  // Insere na esquerda
+    } else if (valor > raiz->valor) {
+        raiz->direita = inserirNodo(raiz->direita, valor);    // Insere na direita
+    }
+
+    return raiz;  // Retorna a raiz atualizada
+}
+    
+
+
+","1","2025-05-06T11:47:51",""
+"631","106","32","a) No método de remoção por fusão, após removermos o nó pretendido, juntamos as subárvores esquerda e direita. No método de remoção por cópia, removemos o nó pretendido e substituimos por um nó conveniente para aquele nodo.
+","1","2025-05-06T11:50:59",""
+"632","106","38","b)","1","2025-05-06T11:50:59",""
+"633","106","39","d)","1","2025-05-06T11:50:59",""
+"634","106","40","d)","1","2025-05-06T11:50:59",""
+"635","106","41","a) 
+void inicializaArvore(int valor){
+   nodo*raiz= new nodo();
+   raiz-> dados = valor;
+   raiz-> esq = raiz->dir = NULL;}
+
+void insereNodo(nodo*raiz, int valor){
+    if (raiz== NULL)
+        novo=inicializaArvore(valor);
+    else if (raiz-> dados<= valor)
+        novo->esq = inserirNodo(raiz->esq, valor);
+    else
+        novo->dir = inserirNodo(raiz->dir, id);
+    return raiz;
+}
+
+b)
+bool existe(Nodo* raiz, int valor) {
+    if (raiz == nullptr) {
+        return false;
+    }
+    if (raiz->valor == valor) {
+        return true;
+    }
+    if (valor < raiz->valor) {
+        return existe(raiz->esquerda, valor);
+    } else {
+        return existe(raiz->direita, valor);
+    }
+}
+
+void imprimirFolhas(Nodo* raiz) {
+    if (raiz == nullptr) {
+        return;
+    }
+    if (raiz->esquerda == nullptr && raiz->direita == nullptr) {
+        cout << raiz->valor << "" "";
+    }
+    imprimirFolhas(raiz->esquerda);
+    imprimirFolhas(raiz->direita);
+}
+
+int somaValores(Nodo* raiz) {
+    if (raiz == nullptr) {
+        return 0;
+    }
+    return raiz->valor + somaValores(raiz->esquerda) + somaValores(raiz->direita);
+}
+
+int main() {
+    Nodo* raiz = nullptr;
+    int valores[] = {28, 14, 37, 6, 19, 42, 3, 25, 31, 48};
+    int n = sizeof(valores) / sizeof(valores[0]);
+
+    for (int i = 0; i < n; i++) {
+        raiz = inserirNodo(raiz, valores[i]);
+    }
+
+    // Testando as funções
+    cout << ""Existe 19? "" << (existe(raiz, 19) ? ""Sim"" : ""Não"") << endl;
+    cout << ""Folhas: "";
+    imprimirFolhas(raiz);
+    cout << endl;
+    cout << ""Soma dos valores: "" << somaValores(raiz) << endl;
+
+    return 0;
+}
+","1","2025-05-06T11:50:59",""
+"636","99","32","Precisamos de encontrar o nó que queremos remover e substituir pela fusão das suas duas subárvores a subárvore esquerda e a subárvore direita.
+          48
+       /        \
+     20       66
+    /   \       / \
+  13  39 54  72
+      \
+       27
+Precisamos de encontrar o maior nó da subárvore esquerda e fazes a copia e trocar pelo valor.
+ 
+         48
+         /  \
+     27    66
+     / \       / \
+  20  39 54  72
+ / 
+13","1","2025-05-06T11:53:07",""
+"637","99","38","b)","1","2025-05-06T11:53:07",""
+"638","99","39","c)","1","2025-05-06T11:53:07",""
+"639","99","40","a)","1","2025-05-06T11:53:07",""
+"640","99","41","bool existe(nodo*raiz,valor){
+if(raiz->dados==valor){
+return True;
+}
+if(raiz==NULL){
+ return False:
+} 
+if(raiz->dados > valor){
+raiz=raiz->esquerda;
+existe(raiz,valor);
+} 
+else{
+ raiz=raiz->direita;
+existe(raiz,valor);
+}
+}
+void imprimirFolhas(nodo*raiz){
+nodo*aux=raiz;
+while(raiz!=NULL){
+raiz=raiz->esquerda
+aux=aux->direita
+cout<<raiz->dados<<endl;
+cout<<aux-->dados<<endl;
+}
+}
+int somaValores(nodo*raiz){
+if(raiz==Null){return 0}
+else{
+int resultado=raiz-dados+somaValores(raiz->direita)+somaValores(raiz->esquerda);
+retrun resultado;
+}
+}","1","2025-05-06T11:53:07",""
+"641","126","32","a) Fusão remove o nó pretendido e depois re-ordena a arvore. Cópia isola o nó pretendido, fazendo as trocas necessarias, e depois remove-o de uma vez sem ser necessario fazer mais mudanças na arvore
+
+b) fusao:
+         48
+   39.        66
+ 20 27.   54. 72
+13
+
+copia:
+           48
+
+","1","2025-05-07T11:26:04",""
+"642","126","38","b)","1","2025-05-07T11:26:04",""
+"643","126","39","c)","1","2025-05-07T11:26:04",""
+"644","126","40","a)","1","2025-05-07T11:26:05",""
+"645","126","41","","1","2025-05-07T11:26:05",""
+"646","89","32","                fusão
+
+                   48
+               /           \
+             39           66
+          /      \         /     \
+       20              54      72
+     /    \            
+  13     27
+
+  ","1","2025-05-07T11:27:30",""
+"647","89","38","d","1","2025-05-07T11:27:30",""
+"648","89","39","c","1","2025-05-07T11:27:30",""
+"649","89","40","b","1","2025-05-07T11:27:30",""
+"650","89","41","","1","2025-05-07T11:27:30",""
+"651","59","32","a)na fusão mandamos o numero a querer ser removido para fora mas continuando conectado a arvore e depois fazemos as mudanças necessarias para arvore continuar uma arvore binaria apartir dai removemos o numero, na copia simplesmente removemos o valor e subimos os outros
+
+b)   raiz 48 nivel 1-20 , 66 nivel 2-13, 27, 54 , 72 nivel 3- 39
+","1","2025-05-07T11:29:02",""
+"652","59","38","B","1","2025-05-07T11:29:02",""
+"653","59","39","C","1","2025-05-07T11:29:02",""
+"654","59","40","A","1","2025-05-07T11:29:02",""
+"655","59","41","","1","2025-05-07T11:29:02",""
+"656","101","32","Na remoção de um nó com dois filhos em uma árvore binária de pesquisa, o método da fusão une as subárvores do nó removido para manter a estrutura, enquanto o método da cópia substitui o valor do nó pelo do seu sucessor ou antecessor, removendo depois esse nó substituto.
+","1","2025-05-07T11:30:04",""
+"657","101","38","d","1","2025-05-07T11:30:04",""
+"658","101","39","b","1","2025-05-07T11:30:04",""
+"659","101","40","a","1","2025-05-07T11:30:04",""
+"660","101","41","a) inserenodo*nodo (int num, sctruct nodo) {
+","1","2025-05-07T11:30:04",""
+"661","189","32","por fusao, vamos uma vez a esquerda e depois o maximo a direita possivel e atribuimos o filho direito do no a remover a esse elemneto
+por copia, é substituir o maior dos menores pelo elemento e remover 
+por fusao:
+                                 48
+                         20          66
+                     13  27      54   72
+                              79","1","2025-05-07T11:30:22",""
+"662","189","38","b","1","2025-05-07T11:30:22",""
+"663","189","39","b","1","2025-05-07T11:30:22",""
+"664","189","40","d","1","2025-05-07T11:30:22",""
+"665","189","41","","1","2025-05-07T11:30:22",""
+"666","119","32","O método de remoção por fusão funciona, movendo as subárvores do nó a remover para o filho do nó pai do nó a remover, sendo que o nó a remover continua a apontar para o ultimo nó em mais baixo nível, e mais á direita, para depois ser eliminado. O método de remoção por cópia, basicamente troca o nó a remover com o ultimo nó em mais baixo nível, e mais á direita, e depois é eliminado, pois não tem mais filhos.
+
+Remoção do 31 por fusão
+             48
+
+            /    \
+
+         20     66
+
+       /  \       /  \
+
+    13  27 54   72
+
+                \
+
+                  39
+
+Remoção do 31 por cópia
+
+             48
+
+            /    \
+
+         27     66
+
+       /  \       /  \
+
+    20  39 54   72
+
+    / 
+
+ 13  ","1","2025-05-07T11:32:37",""
+"667","119","38","B)","1","2025-05-07T11:32:37",""
+"668","119","39","C)","1","2025-05-07T11:32:37",""
+"669","119","40","D)","1","2025-05-07T11:32:37",""
+"670","119","41","nodo*raiz=NULL;
+
+
+bool existe(nodo* raiz, int valor){
+   if(raiz==NULL)
+      return false;
+   if (raiz->dados==valor)
+      return true;
+   if(raiz->dados<valor)
+      return existe(raiz->esq,valor);
+   if(raiz->dados>valor)
+      return existe(raiz->dir,valor);
+}
+
+void imprimirFolhas(nodo* raiz){
+   if(raiz->esq==NULL)
+      cout<<raiz->dados<<""  "";
+   if(raiz->dir==NULL)
+      cout<<raiz->dados<<""  "";
+   if(raiz->esq!=NULL)
+      return imprimirFolhas(raiz->esq);
+   if(raiz->dir!=NULL)
+      return imprimirFolhas(raiz->dir);
+}
+
+int somaValores(nodo* raiz) {
+   int soma=raiz->dados;
+   if(raiz->esq!=NULL)
+      soma=soma+raiz->esq->dados;
+      return somaValores(raiz->esq);
+   if(raiz->dir!=NULL)
+      soma=soma+raiz->dir->dados;
+      return somaValores(raiz->dir);
+   return soma;
+}","1","2025-05-07T11:32:37",""
+"671","102","32","a) O método de remoção por fusão procura o maior valor menor que o numero que se quer retirar e o seu filho esquerdo. O filho esquerdo sobre de nível e o número que queremos retirar fica com duas ligações, uma com o seu antigo filho esquerdo e uma com o maior valor menor que o número. Depois apaga-se o número que queremos e a árvore mantém todas as outras ligações.
+O método de cópia também procura o maior valor menor que o que queremos remover e troca-os de lugar. Como o valor que queremos remover, está agora no fundo da árvore, removemos o número da árvore.
+
+b) Fusão:    48
+                  /    \
+               20     66
+              /  \       /  \
+           13  39 54   72
+              \
+              27
+
+Cópia: 
+             48
+            /    \
+         27     66
+       /  \       /  \
+    20  39 54   72
+    / 
+ 13  ","1","2025-05-07T11:33:45",""
+"672","102","38","b)","1","2025-05-07T11:33:45",""
+"673","102","39","c)","1","2025-05-07T11:33:45",""
+"674","102","40","d)","1","2025-05-07T11:33:45",""
+"675","102","41","a) nodo* inserirNodo(nodo* raiz, int valor) {
+    if (raiz == nullptr) {
+        raiz = new nodo();
+        raiz->dados = valor;
+        raiz->esq = nullptr;
+        raiz->dir = nullptr;
+    } else if (valor < raiz->dados) {
+        raiz->esq = inserirNodo(raiz->esq, valor);
+    } else {
+        raiz->dir = inserirNodo(raiz->dir, valor);
+    }
+    return raiz;
+}
+
+b) bool existe(nodo* raiz, int valor) {
+    if (raiz == nullptr) {
+        return false;
+    }
+    if (raiz->dados == valor) {
+        return true;
+    } else if (valor < raiz->dados) {
+        return existe(raiz->esq, valor);
+    } else {
+        return existe(raiz->dir, valor);
+    }
+}
+
+void imprimirFolhas(nodo* raiz) {
+    if (raiz == nullptr) {
+        return;
+    }
+    if (raiz->esq == nullptr && raiz->dir == nullptr) {
+        std::cout << raiz->dados << "" "";
+    }
+    imprimirFolhas(raiz->esq);
+    imprimirFolhas(raiz->dir);
+}
+
+int somaValores(nodo* raiz) {
+    if (raiz == nullptr) {
+        return 0;
+    }
+    int somaEsq = somaValores(raiz->esq);
+    int somaDir = somaValores(raiz->dir);
+    return raiz->dados + somaEsq + somaDir;
+}","1","2025-05-07T11:33:45",""
+"676","216","32","","1","2025-05-07T11:34:31",""
+"677","216","38","b)","1","2025-05-07T11:34:31",""
+"678","216","39","b)","1","2025-05-07T11:34:31",""
+"679","216","40","a","1","2025-05-07T11:34:31",""
+"680","216","41","bool existe(nodo* raiz, int valor){
+  if (raiz == NULL){
+    return false;
+  }
+if (raiz->dados == valor){
+    return true;
+}
+  if (valor > raiz->dados){
+    raiz->direita = existe(raiz->dir, num);
+  }
+  else if (valor < raiz->dados){
+    raiz->esquerda = existe(raiz->esq, num);
+  }
+  }
+void imprimirFolhas(nodo* raiz) {
+	if (raiz == NULL){
+		cout << endl;
+		return;
+	}
+	imprimir(raiz->direita);
+	
+	cout << raiz->dados;
+	imprimeArvore(raiz->esquerda);
+}
+int somaValores(nodo* raiz) {
+	int soma = 0;
+	if (raiz == NULL) {
+		return soma;
+	}if (raiz->esquerda ==NULL) {
+		soma = soma + somaValores(raiz->direita);
+	}else {
+		soma = soma + somaValores(raiz->esquerda);
+	}return soma;
+}
+","1","2025-05-07T11:34:31",""
+"681","68","32","O método de remoção por fusão é preciso encontrar o maior dos menores nós da árvore e substituí-lo pela junção das suas subárvores. 
+O método de remoção por cópia é feito através da cópia do maior valor da subárvore esquerda ou pelo menor valor da subárvore direita, que se copia o valor e em seguida eliminamo-lo.
+
+por fusão:
+          48
+        /      \
+     20       66
+    /   \      /   \
+13   27  54  72
+           \
+            39
+
+por cópia:
+           48
+          /     \
+       27      66
+      /  \      /   \
+   20  39 54   72
+   /
+13","1","2025-05-07T11:36:26",""
+"682","68","38","b)","1","2025-05-07T11:36:26",""
+"683","68","39","c)","1","2025-05-07T11:36:26",""
+"684","68","40","b)","1","2025-05-07T11:36:26",""
+"685","68","41","","1","2025-05-07T11:36:26",""
+"686","133","32","48,39,66,20,54,72,13,27 e 48,27,66,20,39,54,72,13","1","2025-05-08T11:26:21",""
+"687","133","38","c","1","2025-05-08T11:26:21",""
+"688","133","39","b","1","2025-05-08T11:26:21",""
+"689","133","40","d","1","2025-05-08T11:26:21",""
+"690","133","41","","1","2025-05-08T11:26:21",""
+"691","144","32","","1","2025-05-08T11:55:33",""
+"692","144","38","b","1","2025-05-08T11:55:33",""
+"693","144","39","c","1","2025-05-08T11:55:33",""
+"694","144","40","a","1","2025-05-08T11:55:33",""
+"695","144","41","","1","2025-05-08T11:55:33",""
+"696","157","32","o metodo de remocao por fusao consiste em identificar o node a ser removido, de seguida encontrar o ultimo no mais a esquerda  e fazer a ligacao com o no anterior ao no a ser removido e desta forma é possivel remover o no escolhido.
+o metodo de remocao por copia consiste em identificar o no a ser removido, de seguida encontrar o ultimo no mais a direita e copia-lo para o lugar do no a ser removido, e assim ser possivel remove-lo.","1","2025-05-08T11:56:56",""
+"697","157","38","d","1","2025-05-08T11:56:56",""
+"698","157","39","c","1","2025-05-08T11:56:56",""
+"699","157","40","d","1","2025-05-08T11:56:56",""
+"700","157","41","a) nodo* insereNodo(nodo*no, int dados){
+if (no == NULL){
+return no;
+}
+if( no->dir != nullptr){
+no->dir = dados;
+insereNodo(no->dir, dados);
+} 
+if (no->esq != nullptr){
+no->esq = dados;
+insereNodo(no->esq, dados);
+}
+return no;
+}","1","2025-05-08T11:56:56",""
+"701","190","32","a)
+Fusão:
+             48
+
+            /    \
+
+         31     66
+
+       /  \       /  \
+
+    20  39 54   72
+
+    / \
+
+ 13  27
+
+
+
+Copia:
+             48
+
+            /    \
+
+         31     66
+
+       /  \       /  \
+
+    20  39 54   72
+
+    / \
+
+ 13  27
+","1","2025-05-08T11:58:26",""
+"702","190","38","d)","1","2025-05-08T11:58:26",""
+"703","190","39","n=6
+9 1 6 3 8 2
+i = 0
+min = 0
+j = 1
+j<n | 1<6
+a[1]<a[0] | 1 < 9
+min = 1
+j=7
+1!=0
+swap
+1 9 6 3 8 2
+
+1 9 6 3 8 2
+i =1
+j=2
+6<9
+min=6
+j=3
+3<6
+min=3
+j=4
+8<3
+j=5
+2<3
+min=2
+swap
+a[1]<->a[5]
+
+1 2 6 3 8 9
+
+c)","1","2025-05-08T11:58:26",""
+"704","190","40","d)","1","2025-05-08T11:58:26",""
+"705","190","41","void inserirNodo(nodo* raiz, int valor){
+    if(raiz==nullptr){
+        nodo* no=nullptr;
+        no->dados = valor;
+        no->esq=nullptr;
+        no->dir=nullptr;
+    }
+     if(valor>raiz->dados){
+        inserirNodo(raiz->dir,valor);
+    } else {
+        inserirNodo(raiz->esq,valor);
+    }
+}
+
+main(){
+    nodo* raiz = nullptr;
+    inserirNodo(raiz,28);
+    inserirNodo(raiz,14);
+    inserirNodo(raiz,37);
+    inserirNodo(raiz,6);
+    inserirNodo(raiz,19);
+    inserirNodo(raiz,42);
+    inserirNodo(raiz,3);
+    inserirNodo(raiz,25);
+    inserirNodo(raiz,31);
+    inserirNodo(raiz,48);
+    return 0;
+}
+
+bool existe(nodo* raiz, int valor){
+    bool state = false;
+    if(raiz==nullptr){
+        return false
+    }
+    if(raiz->dados==valor){
+        return true
+    }
+    if(valor>raiz->dados){
+        state = existe(raiz->dir,valor);
+    } else{
+        state = existe(raiz->esq,valor);
+    }
+    return state;
+}
+
+void imprimirFolhas(nodo* raiz){
+    if(raiz==nullptr){
+        cout<<""  "";
+    }else{
+        cout<<raiz->dados<<"" |"";
+        imprimirFolhas(raiz->esq);
+        imprimirFolhas(raiz->dir);
+    }
+}
+
+int somaValores(nodo* raiz){
+    if(raiz==nullptr){
+        return 0;
+    }
+    total = raiz->dados
+    total += somaValores(raiz->dir);
+    total += somaValores(raiz->esq);
+    cout<<total;
+}","1","2025-05-08T11:58:26",""
+"706","112","32","a) Os dois métodos de remoção têm passos iniciais iguais, sendo percorrer a árvore até encontrar o nó a apagar e percorrer até o nó mais à direita da sub-árvore esquerda, no método de fusão, o nó auxiliar aponta para as árvores esquerda e direita do nó a apagar, após isso o nó a apagar é apagado e fazemos as devidas alterações para que continue com o formato de árvore binária, já no de cópia, trocamos os valores de aux e do nó a percorrer, e apagamos o nó auxiliar com o valor do nó a apagar e fazemos as devidas alterações.
+
+b) fusão (alteração de apontadores)
+             48
+
+            /    \
+
+         27     66
+
+       /  \       /  \
+
+    20  39 54   72
+
+    / 
+
+ 13 
+
+cópia (alteração de valores)
+             48
+
+            /    \
+
+         27     66
+
+       /  \       /  \
+
+    20  39 54   72
+
+    / 
+
+ 13  ","1","2025-05-08T11:58:54",""
+"707","112","38","b)","1","2025-05-08T11:58:54",""
+"708","112","39","c)","1","2025-05-08T11:58:54",""
+"709","112","40","d)","1","2025-05-08T11:58:54",""
+"710","112","41","a)
+int main(){
+
+nodo *raiz = incializaRaiz();
+
+}
+
+
+
+
+nodo *inicializaRaiz(){
+return nullptr;
+}
+
+inserirNodo(nodo* raiz, int elem){
+nodo* novo = new nodo();
+novo->esq = nullptr;
+novo->dir = nullptr;
+novo.dados = elem;
+
+if(raiz == nullptr){
+ raiz = novo;
+ return;
+}
+else{
+ if(dados < raiz.dados && raiz->esq == nullptr){
+ raiz->esq = novo
+reuturn
+}
+if(dados > raiz.dados && raiz->dir == nullptr){
+ raiz->dir = novo;
+return;
+}
+nodo* aux = new nodo();
+aux = raiz;
+bool done = false;
+while(!done){
+
+if(aux.dados < elem){
+aux = aux.esq;
+}
+else(){
+aux=aux.dir;
+}
+
+if(aux.dados < elem && aux.esq == nullptr){
+aux.esq = novo;
+done = true;
+}
+if(aux.dados > elem && aux.dir== nullptr){
+aux.dir= novo;
+done = true;
+}
+}
+}
+
+
+
+bool existe(nodo* raiz, int valor){
+int dir, esq =0;
+if(raiz.elem == valor){
+return 1;
+}
+if(raiz. esq == nullptr && raiz.dir == nullptr){
+return 0;
+}
+if(aux.dados < elem && aux.esq == nullptr){
+esq += existe(raiz->esq, valor);
+}
+if(aux.dados > elem && aux.dir == nullptr){
+dir += existe(raiz->dir, valor);
+}
+
+if(esq != 0 || dir != 0){
+return true;
+}
+}
+
+
+void imprimirFolhas(nodo* raiz){
+
+if(raiz.dir == nullptr && raiz.esq == nullptr){
+cout <<raiz.elem <<"" "";
+}
+imprimirFolhas(raiz.esq);
+imprimirFolhas(raiz.dir);
+
+}
+
+
+
+}
+
+
+int somaValores(nodo* raiz){
+int soma = 0;
+if(raiz->esq == nullptr && raiz->dir == nullptr){
+return soma + raiz.elem
+}
+
+somaValores(raiz->esq);
+somaValores(raiz->dir);
+
+return soma;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}","1","2025-05-08T11:58:54",""
+"711","71","32","O método de remoção por fusão consiste em ao encontrar o valor que queremos retirar, atribuímos a sub-arvore esquerda para o valor que queremos remover, neste exemplo, a sub-arvore 20 vai ficar no lugar do 31, e caso o valor removido tiver uma sub-arvore direita, colocamos essa o mais à direita na nova sub-arvore, no exemplo, o 39 ficaria à direita do 27. 
+
+             48
+          /       \
+       20       66
+      /   \      /   \
+    13  27  54  72
+             \
+              39
+
+
+O método de remoção por cópia consiste em ao encontrar o valor que queremos retirar, encontrar o maior valor da última linha, no caso da pergunta, o valor 27, trocar os valores, e depois apagar o valor que queremos remover, a árvore fica como:
+
+                  48
+                /     \
+              27    66
+             /  \     /  \
+         20  39  54  72
+         /
+      13","1","2025-05-08T12:00:37",""
+"712","71","38","Opção b.","1","2025-05-08T12:00:37",""
+"713","71","39","Opção c.","1","2025-05-08T12:00:37",""
+"714","71","40","Opção d.","1","2025-05-08T12:00:37",""
+"715","71","41","nodo* novaArvore(){
+    nodo* novo = new nodo;
+    nodo->raiz = NULL;
+}
+
+nodo* inserirNodo(nodo* no, int valor){
+    if (no == NULL){
+    nodo->dados = valor;
+    } else {
+        if (valor <= nodo->dados){
+            no->esq = inserirNodo(nodo->esq, valor);
+       } else{
+            no->dir = inserirNodo(nodo->dir, valor);
+       }
+    }
+    return no;
+}
+
+bool existe(nodo*raiz, int valor){
+    if(raiz==NULL){
+        cout << ""Arvore vazia."";
+    } else {
+        if (valor =  nodo->dados){
+            return true;
+        } else {
+             if (valor <= no->dados){
+                 no->esq = existe(no->esq, valor);
+             } else {
+                  no->dir = existe(no->dir, valor);
+             }
+             return False;
+        }
+    }
+}
+
+void imprimirFolhas(nodo* raiz){
+    if (raiz == null){
+        cout << endl;
+    imprimeFolhas(no->dir);
+    cout << no->dados << endl;
+    imprimeArvore(no->esquerda);
+}
+
+int somaValores()","1","2025-05-08T12:00:37",""
+"716","67","32","a) remoção por cópia - por exemplo remover o 20. Remove o 20 e coloca o 27 na posição do 20 por estar mais à direita.
+
+b) Remover o 31 por cópia:
+48 - 39 - 66 - 20 - 27 - 54 - 72 - 13","1","2025-05-08T14:29:18",""
+"717","67","38","b)","1","2025-05-08T14:29:18",""
+"718","67","39","c)","1","2025-05-08T14:29:18",""
+"719","67","40","d)","1","2025-05-08T14:29:18",""
+"720","67","41","bool existe(nodo* raiz, int valor) {
+    if(raiz->dados == valor) return true;
+    else return false;
+}
+
+void imprimirFolhas(nodo* raiz) {
+    if(raiz->esq == nullptr && raiz->dir == nullptr) {
+        std::cout << raiz->dados;
+    }
+}
+
+int somaValores(nodo* raiz) {
+    int num;
+    if (raiz == nullptr) {
+        return somaValores(raiz);
+    }else {
+        while (raiz->esq != nullptr) {
+            num = somaValores(raiz->esq);
+        }
+    
+        while (raiz->dir != nullptr) {
+            num = somaValores(raiz->dir);
+        }
+    }
+    return num;
+}","1","2025-05-08T14:29:18",""
+"721","111","32","A)
+Fusão remove o nó unindo suas sub-árvores, assim pode desbalancear a árvore equanto que a cópia substitui o valor pelo antecessor ou sucessor, mantendo melhor o balanceamento.
+
+B)
+método de remoção por fusão: 48, 20, 66, 13, 27, 54, 72, 39
+método de remoção por cópia: 48, 27, 66, 20, 39, 54, 72, 13","1","2025-05-08T14:29:53",""
+"722","111","38","B)","1","2025-05-08T14:29:53",""
+"723","111","39","C)","1","2025-05-08T14:29:53",""
+"724","111","40","A)","1","2025-05-08T14:29:53",""
+"725","111","41","bool existe(nodo* raiz, int valor) {
+    if (raiz == NULL)
+        return false;
+    if (raiz->dados == valor)
+        return true;
+    if (valor < raiz->dados)
+        return existe(raiz->esq, valor);
+    else
+        return existe(raiz->dir, valor);
+}
+
+void imprimirFolhas(nodo* raiz) {
+    if (raiz == NULL)
+        return;
+
+    if (raiz->esq == NULL && raiz->dir == NULL)
+        cout << raiz->dados << "" "";
+
+    imprimirFolhas(raiz->esq);
+    imprimirFolhas(raiz->dir);
+}
+
+int somaValores(nodo* raiz) {
+    if (raiz == NULL)
+        return 0;
+    return raiz->dados + somaValores(raiz->esq) + somaValores(raiz->dir);
+}","1","2025-05-08T14:29:53",""
+"726","70","32","a) por fusão unimos as duas subarvores do no a ser removido. por copia copiamos o valor de um nó substituto para o lugar do nó a ser removido
+
+b)  Fusao:
+         48
+        /  \
+      20    66
+     /  \      / \  
+   13 27 54 72
+            \
+            39
+
+
+Copia:
+
+          48
+        /      \
+      27      66
+     /  \        / \
+   20   39 54 72
+  /
+13
+
+","1","2025-05-08T14:30:32",""
+"727","70","38","b)","1","2025-05-08T14:30:32",""
+"728","70","39","c)","1","2025-05-08T14:30:32",""
+"729","70","40","a)","1","2025-05-08T14:30:32",""
+"730","70","41","void inserirNodo(nodo*& raiz, int valor) {
+    if (raiz == nullptr) {
+        raiz = new nodo{valor, nullptr, nullptr};
+    } else if (valor < raiz->dados) {
+        inserirNodo(raiz->esq, valor);
+    } else {
+        inserirNodo(raiz->dir, valor);
+    }
+}
+
+bool existe(nodo* raiz, int valor) {
+    if (raiz == nullptr)
+        return false;
+    if (raiz->dados == valor)
+        return true;
+    if (valor < raiz->dados)
+        return existe(raiz->esq, valor);
+    else
+        return existe(raiz->dir, valor);
+}
+
+void imprimirFolhas(nodo* raiz) {
+    if (raiz == nullptr)
+        return;
+
+    if (raiz->esq == nullptr && raiz->dir == nullptr) {
+        cout << raiz->dados << "" "";
+    }
+    imprimirFolhas(raiz->esq);
+    imprimirFolhas(raiz->dir);
+}
+
+int somaValores(nodo* raiz) {
+    if (raiz == nullptr)
+        return 0;
+    return raiz->dados + somaValores(raiz->esq) + somaValores(raiz->dir);
+}","1","2025-05-08T14:30:32",""
+"731","75","32","a) copia- remover uma ligacao e substituir por outra, anulando-a no fim. fusao- 
+b) ","1","2025-05-08T14:31:25",""
+"732","75","38","b","1","2025-05-08T14:31:25",""
+"733","75","39","c","1","2025-05-08T14:31:25",""
+"734","75","40","a","1","2025-05-08T14:31:25",""
+"735","75","41","","1","2025-05-08T14:31:25",""
+"736","142","32","a) Não faço ideia.
+b) 48,20,66,27,39,,54,72,13","1","2025-05-08T16:01:00",""
+"737","142","38","a","1","2025-05-08T16:01:00",""
+"738","142","39","c","1","2025-05-08T16:01:00",""
+"739","142","40","dN","1","2025-05-08T16:01:00",""
+"740","142","41","A dia de hoje-08/05/2025, não tenho praticado nada sobre arvores de pesquisa binaria.","1","2025-05-08T16:01:00",""
+"741","140","32","A)
+
+B)
+48, 27, 66, 20, 39, 54, 72, 13 ?","1","2025-05-08T16:12:16",""
+"742","140","38","d","1","2025-05-08T16:12:16",""
+"743","140","39","c","1","2025-05-08T16:12:16",""
+"744","140","40","d","1","2025-05-08T16:12:16",""
+"745","140","41","Não Sei
+","1","2025-05-08T16:12:16",""
+"746","202","32","No metodo de fusao, se fundem o subarvore da esquerda e a direita, e remove-se o valor encontrado 
+
+No metodo de copia, copiamos o valor do anterior ou o seguinte, e remove-se o no copiado 
+
+ 
+
+        b) O resultado vai dar o mesmo nas duas
+
+                                       48 
+
+                                  27      66 
+
+                         20   39       54   72 
+
+                       13 ","1","2025-05-08T16:18:36",""
+"747","202","38","b","1","2025-05-08T16:18:36",""
+"748","202","39","d","1","2025-05-08T16:18:36",""
+"749","202","40","a","1","2025-05-08T16:18:36",""
+"750","202","41","struct nodo {
+    int dados;
+    nodo* esq;
+    nodo* dir;
+};
+
+nodo* novoNodo(int valor) {
+    nodo* novo = new nodo;
+    novo->dados = valor;
+    novo->esq = NULL;
+    novo->dir = NULL;
+    return novo;
+}
+","1","2025-05-08T16:18:36",""
+"751","63","32","","1","2025-05-08T16:19:29",""
+"752","63","38","c)","1","2025-05-08T16:19:29",""
+"753","63","39","a)","1","2025-05-08T16:19:29",""
+"754","63","40","a)","1","2025-05-08T16:19:29",""
+"755","63","41","","1","2025-05-08T16:19:29",""
+"756","195","32","a) e b) metodo de remoção por fusão faz com que o nó filho faz uma rotação para cima e o metodo da copia faz com que substitua os valores.","1","2025-05-08T16:22:57",""
+"757","195","38","b)","1","2025-05-08T16:22:57",""
+"758","195","39","d)","1","2025-05-08T16:22:57",""
+"759","195","40","a)","1","2025-05-08T16:22:57",""
+"760","195","41","inserirNodo(28,14,37,6,19,42,3,25,31,48):
+","1","2025-05-08T16:22:57",""
+"761","95","32","o método de fusão é através da redefinição dos apontadores que mantêm a estrutura da árvore no nó que queremos apagar e no nó movido. o método de cópia, copia o valor do nó a colocar no nó que queremos e remove o nó copiado.
+A estrutura final é igual para ambos métodos.
+48-39-66-20-54-72-13-27","1","2025-05-08T16:29:21",""
+"762","95","38","d","1","2025-05-08T16:29:21",""
+"763","95","39","c","1","2025-05-08T16:29:21",""
+"764","95","40","d","1","2025-05-08T16:29:21",""
+"765","95","41","struct nodo{
+nodo * raiz;
+};
+
+nodo a;
+
+inicializaBST();
+
+
+void inicializaBST(){
+	nodo*raiz = nullptr;
+}
+
+nodo * inserirNodo(nodo*raiz, int valor){
+	if (raiz == nullptr){
+		raiz=valor;
+		nodo*esq=nullptr;
+		nodo*dir=nullptr;
+	}
+	if (raiz < valor)
+		raiz=inserirNodo(raiz->dir,valor)
+	if (raiz > valor)
+		raiz=inserirNodod(raiz->esq,valor)
+
+	return;
+}
+
+
+bool existe(nodo* raiz, int valor){
+	if (raiz == valor)
+		return true;
+	if (raiz < valor)
+		existe(raiz->dir,valor)
+	if (raiz > valor)
+		existe(raiz->esq,valor)
+	else
+		return false;
+
+}
+
+void imprimirFolhas(nodo* raiz){
+	
+
+
+int somaValores(nodo* raiz)","1","2025-05-08T16:29:21",""
+"766","127","32","Temos de verificar sempre se :O nó é uma folha, se um único filho ou se tem dois filhos.
+a)
+O método por fusão, um elemento é retirado, e os apontadores para esse elemento são colocados noutros elementos adjacentes
+Ou seja,
+Identificar os filhos de um elemento
+Encontrar maior valor da subárvore esquerda
+Ligar o filho direito do elemento a trocar com o maior valor da subárvore esquerda, colocando à sua direita.
+Substituir o maior valor da subarvore esquerda com o valor a remover
+
+b) O método por cópia, é escolhido um elemento para assumir a sua posição, que é copiado para lá 
+
+Ou seja,
+Substituímos o valor a remover pelo maior valor da subárvore esquerda ou o menor valor da subárvore da direita.
+
+Identificamos o valor.
+Copiamos o elemento que escolhemos para o lugar do elemento a remover (trocamos na realidade)
+Removemos o “elemento a remover”.
+
+B)
+Por fusão: 31
+Filhos  esq 20, dir 39
+20 tem filhos – 13 e 27
+39 não tem filhos
+27 maior valor da subárvore esquerda
+
+(arvore parcial)	
+27
+20		39
+13	     31		
+
+			48
+27		66
+20	        39       54	72
+13	     31	
+
+Depois é so apagar o 31, (arvore parcial)	
+20
+13
+
+Por cópia
+Escolho o maior valor da subárvore esquerda, que é o 39
+
+(arvore parcial)	
+39	
+	20		31
+13           27
+
+Depois é só apagar o valor 27
+	(arvore parcial)	
+		39
+	20		31
+13           27
+","1","2025-05-09T14:45:37",""
+"767","127","38","b)
+16, 49, 4
+
+Mas fico tentado a dizer que vai dar erro, porque v+1 não está a incrementar a posição, parece-me.
+","1","2025-05-09T14:45:37",""
+"768","127","39","3.c)","1","2025-05-09T14:45:37",""
+"769","127","40","4. d)","1","2025-05-09T14:45:37",""
+"770","127","41","a)
+nodo* novoNodo(int num) {
+    nodo* novo = new nodo;
+    novo->item = num;
+    novo->esquerda = NULL;
+    novo->direita = NULL;
+    return novo;
+}
+nodo* inserirNodo(struct nodo* nodo, int num){
+    if (nodo == NULL) {
+        return novoNodo(num);
+    }else{
+        if (num <= nodo->item)
+            nodo->esquerda = inserirNodo(nodo->esquerda, num);
+        else
+            nodo->direita = inserirNodo(nodo->direita, num);
+    }
+    return nodo;
+}
+
+
+b)
+
+
+bool PesquisaBST(nodo* raiz, int valor ){
+    if ( raiz == NULL )
+        return false;
+    if ( valor == raiz-> valor )
+        return true;
+    else if ( valor < raiz-> valor )
+        return PesquisaBST( raiz->esquerda, valor );
+    else
+        return PesquisaBST( raiz->direita, valor );
+}
+","1","2025-05-09T14:45:37",""
+"771","88","32","a) por fusao,  o nó a subarvore esquerda sobe para o local removido e a subarvore que estava  á direita, fica conectada ao nó com o maior elemento (que está mais a direita), objetivo é preservar a ordem ordenada da arvore de pesquisa sem copiar somentr reorganizando.
+por copia, escolhemos o maior valor da subarvore da esquerda ou o menor da subarvore da direita para ser removido efetuamos a troca do valor escolhido pelo valor que será removido e apagamos o valor que fica no valor escolhido, objetivo é remover o nó com o minimo de intervenção
+
+b)
+por fusao:
+             48 
+         /           \ 
+       20           66 
+      /  \         /       \ 
+    13   27   54   72 
+              \ 
+              39 
+por copia:
+
+                48 
+              /      \ 
+            27       66 
+         /    \      /    \ 
+       20   39  54   72 
+    / 
+  13 
+","1","2025-05-09T14:45:55",""
+"772","88","38","b)","1","2025-05-09T14:45:55",""
+"773","88","39","c)","1","2025-05-09T14:45:55",""
+"774","88","40","a)","1","2025-05-09T14:45:55",""
+"775","88","41","a)
+struct nodo {
+    int dados;
+    nodo* esq;
+    nodo* dir;
+};
+
+nodo* inserirNodo(struct nodo* nodo, int num){
+    if (nodo == NULL) {
+        return novoNodo(num);
+    }else{
+        if (num <= nodo->item)
+            nodo->esquerda = inserirNodo(nodo->esquerda, num);
+        else
+            nodo->direita = inserirNodo(nodo->direita, num);
+    }
+    return nodo;
+}
+
+
+int main() {
+    nodo* raiz = NULL;
+    int valores[] = {28, 14, 37, 6, 19, 42, 3, 25, 31, 48};
+
+    for (int i = 0; i < 10; i++) {
+        raiz = inserirNodo(raiz, valores[i]);
+    }
+
+    return 0;
+}","1","2025-05-09T14:45:55",""

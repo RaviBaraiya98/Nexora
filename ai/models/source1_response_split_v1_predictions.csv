@@ -1,0 +1,2450 @@
+response_id,question_id,question,student_answer,target_score,predicted_score,absolute_error
+3,23,"Suponha que declaramos o seguinte array: 
+ double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; 
+ Se o primeiro elemento está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)
+ 
+
+ Opções:
+ a) 1008
+ b) 1016
+ c) 1024
+ d) 1032",B),20.0,11.771206564833763,8.228793435166237
+11,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.","Não, é impossível alterar o tamanho do array depois de ser declarado , ou seja, se tentarmos guardar valores fora dos seus limites irá ocorrer um erro.",22.5,22.619904952489797,0.11990495248979727
+24,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",d,20.0,16.31233847987808,3.687661520121921
+33,23,"Suponha que declaramos o seguinte array: 
+ double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; 
+ Se o primeiro elemento está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)
+ 
+
+ Opções:
+ a) 1008
+ b) 1016
+ c) 1024
+ d) 1032",b),20.0,11.771206564833763,8.228793435166237
+34,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",d),20.0,16.31233847987808,3.687661520121921
+36,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.","Não, valores não ficam salvos",15.0,16.438384766779606,1.4383847667796061
+42,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",a,0.0,5.59988654578277,5.59988654578277
+47,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",b) 1,0.0,5.59988654578277,5.59988654578277
+52,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",b),0.0,5.59988654578277,5.59988654578277
+58,23,"Suponha que declaramos o seguinte array: 
+ double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; 
+ Se o primeiro elemento está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)
+ 
+
+ Opções:
+ a) 1008
+ b) 1016
+ c) 1024
+ d) 1032",b),20.0,11.771206564833763,8.228793435166237
+59,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",c),0.0,16.31233847987808,16.31233847987808
+64,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",d,20.0,16.31233847987808,3.687661520121921
+67,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",c),20.0,5.59988654578277,14.40011345421723
+69,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",d),20.0,16.31233847987808,3.687661520121921
+73,23,"Suponha que declaramos o seguinte array: 
+ double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; 
+ Se o primeiro elemento está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)
+ 
+
+ Opções:
+ a) 1008
+ b) 1016
+ c) 1024
+ d) 1032",b),20.0,11.771206564833763,8.228793435166237
+74,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",d),20.0,16.31233847987808,3.687661520121921
+76,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.","Não, pois o tamanho de um array é imutável. Se tentarmos guardar valores fora does seus limites este não é guardado.",19.5,17.84782417250058,1.6521758274994198
+80,25,"Considere o seguinte programa em C++:
+ #include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+
+int main() {
+ int numFuncionarios;
+ float salarios[MAX_FUNCIONARIOS];
+ float valorMinimo;
+
+ cout << ""Quantos funcionarios sao? "";
+ cin >> numFuncionarios;
+
+ if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+ cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+ return 1;
+ }
+
+ // Preencher o array com os salários dos funcionários
+ preencherSalarios(salarios, numFuncionarios);
+
+ // Solicitar um valor mínimo e imprimir os salários acima desse valor
+ cout << ""\nInforme o valor minimo do salario: "";
+ cin >> valorMinimo;
+
+ imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+ return 0;
+}
+ Implemente as funções invocadas no main de acordo com as seguintes especificações:
+ 1) Função preencherSalarios:
+ A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios; Deverá ser apresentada uma mensagem por cada funcionário com o formato: Insira o salario do funcionário X: onde X representa o índice +1 do array. 2) Função imprimirSalariosAcima:
+ A função deverá apresentar, inicialmente, um título com o formato: Listagem de funcionarios cujo salario seja maior que X: onde X representa o valor mínimo indicado pelo utilizador. Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador. Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: Funcionario i com salario Y Euros em que o número do funcionário inicia em 1 e Y representa o valor do seu salário. 
+ Utilize arrays e garanta que seu programa siga exatamente as especificações acima.","1) void preencherSalarios(int s[], int Num) {
+ for (int i = 0; i > s[i];
+ }
+}
+
+2) void imprimirSalariosAcima (float y,int i, int x);
+cout x {
+cout << ""Funcionario "" << i << "" com salario "" << Y << "" Euros"" << endl;
+}",49.5,35.26958998524344,14.230410014756558
+81,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.",não é possivel com um array normal. da erro e nao é possivel,18.0,16.62375238877484,1.3762476112251605
+82,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",1,0.0,5.59988654578277,5.59988654578277
+83,23,"Suponha que declaramos o seguinte array: 
+ double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; 
+ Se o primeiro elemento está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)
+ 
+
+ Opções:
+ a) 1008
+ b) 1016
+ c) 1024
+ d) 1032",b,20.0,11.771206564833763,8.228793435166237
+85,25,"Considere o seguinte programa em C++:
+ #include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+
+int main() {
+ int numFuncionarios;
+ float salarios[MAX_FUNCIONARIOS];
+ float valorMinimo;
+
+ cout << ""Quantos funcionarios sao? "";
+ cin >> numFuncionarios;
+
+ if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+ cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+ return 1;
+ }
+
+ // Preencher o array com os salários dos funcionários
+ preencherSalarios(salarios, numFuncionarios);
+
+ // Solicitar um valor mínimo e imprimir os salários acima desse valor
+ cout << ""\nInforme o valor minimo do salario: "";
+ cin >> valorMinimo;
+
+ imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+ return 0;
+}
+ Implemente as funções invocadas no main de acordo com as seguintes especificações:
+ 1) Função preencherSalarios:
+ A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios; Deverá ser apresentada uma mensagem por cada funcionário com o formato: Insira o salario do funcionário X: onde X representa o índice +1 do array. 2) Função imprimirSalariosAcima:
+ A função deverá apresentar, inicialmente, um título com o formato: Listagem de funcionarios cujo salario seja maior que X: onde X representa o valor mínimo indicado pelo utilizador. Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador. Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: Funcionario i com salario Y Euros em que o número do funcionário inicia em 1 e Y representa o valor do seu salário. 
+ Utilize arrays e garanta que seu programa siga exatamente as especificações acima.","preenchersalarios(salarios, int numFuncionarios){
+ float salarioin;
+ for (int i = 0; i > salarioin ;
+
+ salarios[i] = salarioin
+ }
+ 
+ }
+imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo){
+int j = 0
+float salarios2[numFuncionarios];
+ cout =valorMinimo){
+salarios2[j] = salarios[i]
+j++
+}
+if (j ==0 ){
+ cout << ""Nenhum funcionario possui salario acima de ""<<valorMimimo<<"" :/n"";
+}else{
+for (int i = 0; i < j; ++i) {
+ cout << ""funcionario ""<<i+1<<""com salario ""<<salario2[i]<<"" euros :/n"";
+}
+}
+
+}
+}",59.25,33.939260093297456,25.310739906702544
+88,23,"Suponha que declaramos o seguinte array: 
+ double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; 
+ Se o primeiro elemento está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)
+ 
+
+ Opções:
+ a) 1008
+ b) 1016
+ c) 1024
+ d) 1032",b),20.0,11.771206564833763,8.228793435166237
+90,25,"Considere o seguinte programa em C++:
+ #include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+
+int main() {
+ int numFuncionarios;
+ float salarios[MAX_FUNCIONARIOS];
+ float valorMinimo;
+
+ cout << ""Quantos funcionarios sao? "";
+ cin >> numFuncionarios;
+
+ if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+ cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+ return 1;
+ }
+
+ // Preencher o array com os salários dos funcionários
+ preencherSalarios(salarios, numFuncionarios);
+
+ // Solicitar um valor mínimo e imprimir os salários acima desse valor
+ cout << ""\nInforme o valor minimo do salario: "";
+ cin >> valorMinimo;
+
+ imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+ return 0;
+}
+ Implemente as funções invocadas no main de acordo com as seguintes especificações:
+ 1) Função preencherSalarios:
+ A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios; Deverá ser apresentada uma mensagem por cada funcionário com o formato: Insira o salario do funcionário X: onde X representa o índice +1 do array. 2) Função imprimirSalariosAcima:
+ A função deverá apresentar, inicialmente, um título com o formato: Listagem de funcionarios cujo salario seja maior que X: onde X representa o valor mínimo indicado pelo utilizador. Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador. Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: Funcionario i com salario Y Euros em que o número do funcionário inicia em 1 e Y representa o valor do seu salário. 
+ Utilize arrays e garanta que seu programa siga exatamente as especificações acima.","void preencherSalarios(float salarios[], int numFuncionarios) {
+ for (int i = 0; i > salarios[i];
+ }
+}
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+ cout valorMinimo) {
+ cout << ""Funcionario ""<< i+1 <<"" com salario "" << salarios[i] << endl;
+ }else {
+ aux = aux+1;
+ }
+ }
+ if (aux == numFuncionarios) {
+ cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << ""\n"";
+ }
+}",88.5,57.44589082258827,31.054109177411732
+94,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",c,0.0,16.31233847987808,16.31233847987808
+101,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.","Não, pois só seria possível usando uma técnica casting e se tentarmos guardar valores fora dos seus limites não iam ser guardados e seriam perdidos.",12.0,18.34838176736931,6.348381767369311
+105,25,"Considere o seguinte programa em C++:
+ #include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+
+int main() {
+ int numFuncionarios;
+ float salarios[MAX_FUNCIONARIOS];
+ float valorMinimo;
+
+ cout << ""Quantos funcionarios sao? "";
+ cin >> numFuncionarios;
+
+ if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+ cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+ return 1;
+ }
+
+ // Preencher o array com os salários dos funcionários
+ preencherSalarios(salarios, numFuncionarios);
+
+ // Solicitar um valor mínimo e imprimir os salários acima desse valor
+ cout << ""\nInforme o valor minimo do salario: "";
+ cin >> valorMinimo;
+
+ imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+ return 0;
+}
+ Implemente as funções invocadas no main de acordo com as seguintes especificações:
+ 1) Função preencherSalarios:
+ A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios; Deverá ser apresentada uma mensagem por cada funcionário com o formato: Insira o salario do funcionário X: onde X representa o índice +1 do array. 2) Função imprimirSalariosAcima:
+ A função deverá apresentar, inicialmente, um título com o formato: Listagem de funcionarios cujo salario seja maior que X: onde X representa o valor mínimo indicado pelo utilizador. Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador. Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: Funcionario i com salario Y Euros em que o número do funcionário inicia em 1 e Y representa o valor do seu salário. 
+ Utilize arrays e garanta que seu programa siga exatamente as especificações acima.","void preencherSalarios(int salarios, int numFuncionarios) {
+
+ for (int i = 0; i >salarios;
+ cout >numFuncionarios;
+ }
+}
+void imprimirSalariosAcima(float salarios[], int numFuncionarios, float valorMinimo) {
+ cout > valorMinimo;
+ for (int i=0; i valorMinimo) {
+ cout<<salarios[i]<<endl;
+ }else{
+ cout<<""""<<endl;
+
+ }
+ }
+}",38.5,43.95918927868375,5.459189278683752
+113,23,"Suponha que declaramos o seguinte array: 
+ double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; 
+ Se o primeiro elemento está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)
+ 
+
+ Opções:
+ a) 1008
+ b) 1016
+ c) 1024
+ d) 1032",a),0.0,11.771206564833763,11.771206564833763
+122,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",c,20.0,5.59988654578277,14.40011345421723
+124,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",b,0.0,16.31233847987808,16.31233847987808
+137,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",b)1,0.0,5.59988654578277,5.59988654578277
+139,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",d)42,20.0,19.423959573091157,0.5760404269088433
+141,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.",Depois de declarado podemos alterar o tamanho de um array. Se tentarmos guardar valores para o array irá acontecer um erro.,3.5,15.752017690239594,12.252017690239594
+154,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",d,20.0,16.31233847987808,3.687661520121921
+162,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",1,0.0,5.59988654578277,5.59988654578277
+165,25,"Considere o seguinte programa em C++:
+ #include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+
+int main() {
+ int numFuncionarios;
+ float salarios[MAX_FUNCIONARIOS];
+ float valorMinimo;
+
+ cout << ""Quantos funcionarios sao? "";
+ cin >> numFuncionarios;
+
+ if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+ cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+ return 1;
+ }
+
+ // Preencher o array com os salários dos funcionários
+ preencherSalarios(salarios, numFuncionarios);
+
+ // Solicitar um valor mínimo e imprimir os salários acima desse valor
+ cout << ""\nInforme o valor minimo do salario: "";
+ cin >> valorMinimo;
+
+ imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+ return 0;
+}
+ Implemente as funções invocadas no main de acordo com as seguintes especificações:
+ 1) Função preencherSalarios:
+ A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios; Deverá ser apresentada uma mensagem por cada funcionário com o formato: Insira o salario do funcionário X: onde X representa o índice +1 do array. 2) Função imprimirSalariosAcima:
+ A função deverá apresentar, inicialmente, um título com o formato: Listagem de funcionarios cujo salario seja maior que X: onde X representa o valor mínimo indicado pelo utilizador. Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador. Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: Funcionario i com salario Y Euros em que o número do funcionário inicia em 1 e Y representa o valor do seu salário. 
+ Utilize arrays e garanta que seu programa siga exatamente as especificações acima.","#include 
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+int numFuncionarios;
+float valorMinimo;
+float salarios[MAX_FUNCIONARIOS];
+void preencherSalarios(float salarios, int numFuncionarios) {
+ for (int i=0; i > salarios [i];
+ }
+}
+
+void imprimirSalariosAcima(float salarios, int numFuncionarios, float valorMinimo) {
+ cout =valorMinimo) {
+ cout > numFuncionarios;
+
+ if (numFuncionarios MAX_FUNCIONARIOS) {
+ cout > valorMinimo;
+
+ imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+ return 0;
+}",63.5,59.78016028866256,3.7198397113374426
+171,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.","Sim, pois um array é algo flexível. se tentarmos guardar valores fora dos seus limites o array não funcionará até que o utilizador escolha um valor dentro do definido.",3.25,8.536473441379515,5.286473441379515
+172,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",c),20.0,5.59988654578277,14.40011345421723
+181,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.","Não. Após declarado o tamanho de um array é fixo, sendo que seria necessário criar um novo array para ter um tamanho diferente. Ao tentar guardar valores fora dos seus limites, obtemos um erro. Uma estrutura de dados que permitira alterar o tamanho seria uma lista ligada, no entanto, o array não o permite.",25.5,23.191661763808156,2.308338236191844
+199,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",d,20.0,16.31233847987808,3.687661520121921
+203,23,"Suponha que declaramos o seguinte array: 
+ double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; 
+ Se o primeiro elemento está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)
+ 
+
+ Opções:
+ a) 1008
+ b) 1016
+ c) 1024
+ d) 1032","b. o double trabalha com 8 bytes. como o array começa no endereço 1000, [0] será 1000, [1] será 1008 e [2], que corresponde ao terceiro endereço será 1016.",20.0,11.232022395865867,8.767977604134133
+206,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.",Não,15.0,13.883005546311926,1.1169944536880738
+211,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.","É impossível alterar o tamanho de um array depois de ser declarado visto que este simplemente ocupa o espaço da memória que se declarou, caso tentassemos guardar os valores fora dos seus limites, o sistema simplesmente não os guarda.",25.25,18.718136061652974,6.531863938347026
+215,25,"Considere o seguinte programa em C++:
+ #include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+
+int main() {
+ int numFuncionarios;
+ float salarios[MAX_FUNCIONARIOS];
+ float valorMinimo;
+
+ cout << ""Quantos funcionarios sao? "";
+ cin >> numFuncionarios;
+
+ if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+ cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+ return 1;
+ }
+
+ // Preencher o array com os salários dos funcionários
+ preencherSalarios(salarios, numFuncionarios);
+
+ // Solicitar um valor mínimo e imprimir os salários acima desse valor
+ cout << ""\nInforme o valor minimo do salario: "";
+ cin >> valorMinimo;
+
+ imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+ return 0;
+}
+ Implemente as funções invocadas no main de acordo com as seguintes especificações:
+ 1) Função preencherSalarios:
+ A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios; Deverá ser apresentada uma mensagem por cada funcionário com o formato: Insira o salario do funcionário X: onde X representa o índice +1 do array. 2) Função imprimirSalariosAcima:
+ A função deverá apresentar, inicialmente, um título com o formato: Listagem de funcionarios cujo salario seja maior que X: onde X representa o valor mínimo indicado pelo utilizador. Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador. Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: Funcionario i com salario Y Euros em que o número do funcionário inicia em 1 e Y representa o valor do seu salário. 
+ Utilize arrays e garanta que seu programa siga exatamente as especificações acima.","1)
+preencherSalarios(salario, numFuncionarios) {
+ int numFuncionarios;
+ for (int i = 0; i > numFuncionarios;
+ }
+}
+
+2)
+imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo) {
+ int valorMinimo;
+ int salarios;
+ int numFuncionarios;
+ cout > valorMinimo;
+ cout salarios) {
+ cout << ""Nenhum funcionario possui salario acima de"" << valorMinimo << ""onde"" << valorMinimo << ""represnta o valor minimo indicado pelo utilizador."" << endl;
+ }
+ else {
+ for (int i = 0; i < numFuncionarios; i++) {
+ cout << ""Funcionario "" << numFuncionarios << ""com salario "" << salarios << ""Euros em que o número do funcionário inicia em 1 e "" << salarios << ""representa o valor do seu salário."";
+ }
+ }
+}",28.5,33.71839592487248,5.218395924872482
+217,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",b,0.0,5.59988654578277,5.59988654578277
+220,25,"Considere o seguinte programa em C++:
+ #include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+
+int main() {
+ int numFuncionarios;
+ float salarios[MAX_FUNCIONARIOS];
+ float valorMinimo;
+
+ cout << ""Quantos funcionarios sao? "";
+ cin >> numFuncionarios;
+
+ if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+ cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+ return 1;
+ }
+
+ // Preencher o array com os salários dos funcionários
+ preencherSalarios(salarios, numFuncionarios);
+
+ // Solicitar um valor mínimo e imprimir os salários acima desse valor
+ cout << ""\nInforme o valor minimo do salario: "";
+ cin >> valorMinimo;
+
+ imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+ return 0;
+}
+ Implemente as funções invocadas no main de acordo com as seguintes especificações:
+ 1) Função preencherSalarios:
+ A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios; Deverá ser apresentada uma mensagem por cada funcionário com o formato: Insira o salario do funcionário X: onde X representa o índice +1 do array. 2) Função imprimirSalariosAcima:
+ A função deverá apresentar, inicialmente, um título com o formato: Listagem de funcionarios cujo salario seja maior que X: onde X representa o valor mínimo indicado pelo utilizador. Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador. Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: Funcionario i com salario Y Euros em que o número do funcionário inicia em 1 e Y representa o valor do seu salário. 
+ Utilize arrays e garanta que seu programa siga exatamente as especificações acima.","#include 
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+
+int main() {
+ int numFuncionarios;
+ float salarios[MAX_FUNCIONARIOS];
+ float valorMinimo;
+
+ cout > numFuncionarios;
+
+ if (numFuncionarios MAX_FUNCIONARIOS) {
+ cout > salarios[i];
+ };
+ }
+
+ // Solicitar um valor mínimo e imprimir os salários acima desse valor
+ cout > valorMinimo;
+
+ void imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo) {
+ if (valorMinimo < salarios[0]) {
+ cout << ""Lista de funcionarios cujo salario é maior que"" << valorMinimo <<"".\n"";
+ else
+ cout << ""Nenhum funcionario possui salario acima de valor minimo"" << valorMinimo <<"".\n"";
+ }
+ }
+ return 0;
+}",23.5,29.01784226081727,5.517842260817272
+222,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",2,20.0,5.59988654578277,14.40011345421723
+225,25,"Considere o seguinte programa em C++:
+ #include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+
+int main() {
+ int numFuncionarios;
+ float salarios[MAX_FUNCIONARIOS];
+ float valorMinimo;
+
+ cout << ""Quantos funcionarios sao? "";
+ cin >> numFuncionarios;
+
+ if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+ cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+ return 1;
+ }
+
+ // Preencher o array com os salários dos funcionários
+ preencherSalarios(salarios, numFuncionarios);
+
+ // Solicitar um valor mínimo e imprimir os salários acima desse valor
+ cout << ""\nInforme o valor minimo do salario: "";
+ cin >> valorMinimo;
+
+ imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+ return 0;
+}
+ Implemente as funções invocadas no main de acordo com as seguintes especificações:
+ 1) Função preencherSalarios:
+ A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios; Deverá ser apresentada uma mensagem por cada funcionário com o formato: Insira o salario do funcionário X: onde X representa o índice +1 do array. 2) Função imprimirSalariosAcima:
+ A função deverá apresentar, inicialmente, um título com o formato: Listagem de funcionarios cujo salario seja maior que X: onde X representa o valor mínimo indicado pelo utilizador. Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador. Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: Funcionario i com salario Y Euros em que o número do funcionário inicia em 1 e Y representa o valor do seu salário. 
+ Utilize arrays e garanta que seu programa siga exatamente as especificações acima.","void preencherSalarios(salarios, numFuncionarios) {
+for (int i = 0; i > x;
+salarios = salarios + x
+}
+}
+
+imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo) {
+cout = valorMinimo ) {
+ cout valorMinimo) {
+ int r;
+ r= r+1
+ if (r == numFuncionarios) {
+ cout<<"" Nenhum funcionario possui salario acima de "" << valorMinimo <<endl;
+ }
+ }
+}",42.5,40.46248762072703,2.037512379272968
+227,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",b,0.0,5.59988654578277,5.59988654578277
+230,25,"Considere o seguinte programa em C++:
+ #include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+
+int main() {
+ int numFuncionarios;
+ float salarios[MAX_FUNCIONARIOS];
+ float valorMinimo;
+
+ cout << ""Quantos funcionarios sao? "";
+ cin >> numFuncionarios;
+
+ if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+ cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+ return 1;
+ }
+
+ // Preencher o array com os salários dos funcionários
+ preencherSalarios(salarios, numFuncionarios);
+
+ // Solicitar um valor mínimo e imprimir os salários acima desse valor
+ cout << ""\nInforme o valor minimo do salario: "";
+ cin >> valorMinimo;
+
+ imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+ return 0;
+}
+ Implemente as funções invocadas no main de acordo com as seguintes especificações:
+ 1) Função preencherSalarios:
+ A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios; Deverá ser apresentada uma mensagem por cada funcionário com o formato: Insira o salario do funcionário X: onde X representa o índice +1 do array. 2) Função imprimirSalariosAcima:
+ A função deverá apresentar, inicialmente, um título com o formato: Listagem de funcionarios cujo salario seja maior que X: onde X representa o valor mínimo indicado pelo utilizador. Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador. Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: Funcionario i com salario Y Euros em que o número do funcionário inicia em 1 e Y representa o valor do seu salário. 
+ Utilize arrays e garanta que seu programa siga exatamente as especificações acima.","float preencherSalarios(float salarios[], int numFuncionarios) {
+ for (int i=0; i > salarios[i];
+ cout valorMinimo) {
+ cout << ""Funcionario "" << i+1 << "" com salario "" << salario[i] << "" \n"";
+ q += 1;
+ }
+ }
+ if (q==0) {
+ cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << ""\n"";
+ }
+}",87.25,43.43912443618888,43.81087556381112
+234,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",c,0.0,16.31233847987808,16.31233847987808
+238,23,"Suponha que declaramos o seguinte array: 
+ double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; 
+ Se o primeiro elemento está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)
+ 
+
+ Opções:
+ a) 1008
+ b) 1016
+ c) 1024
+ d) 1032",c) 1024,0.0,5.13208778623445,5.13208778623445
+241,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.","Depois de declarado é impossível alterar o tamanho do array, visto que o mesmo é de tamanho estático, ao tentar guardar valores fora do seu limite pode corromper o espaço de memória ou retornar null ou undefined",25.5,23.168801992031057,2.3311980079689434
+242,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",b,0.0,5.59988654578277,5.59988654578277
+251,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.","Depois de declarado não é possível alterar um tamanho de um array. 
+Se tentarmos guardar valores fora de seus limites, dará um erro no programa.",22.5,19.199591139676535,3.300408860323465
+255,25,"Considere o seguinte programa em C++:
+ #include <iostream>
+using namespace std;
+
+const int MAX_FUNCIONARIOS = 20; // Limite máximo de funcionários
+
+int main() {
+ int numFuncionarios;
+ float salarios[MAX_FUNCIONARIOS];
+ float valorMinimo;
+
+ cout << ""Quantos funcionarios sao? "";
+ cin >> numFuncionarios;
+
+ if (numFuncionarios < 1 || numFuncionarios > MAX_FUNCIONARIOS) {
+ cout << ""Numero invalido de funcionarios! Informe um valor entre 1 e "" << MAX_FUNCIONARIOS << "".\n"";
+ return 1;
+ }
+
+ // Preencher o array com os salários dos funcionários
+ preencherSalarios(salarios, numFuncionarios);
+
+ // Solicitar um valor mínimo e imprimir os salários acima desse valor
+ cout << ""\nInforme o valor minimo do salario: "";
+ cin >> valorMinimo;
+
+ imprimirSalariosAcima(salarios, numFuncionarios, valorMinimo);
+ return 0;
+}
+ Implemente as funções invocadas no main de acordo com as seguintes especificações:
+ 1) Função preencherSalarios:
+ A função deverá ler os salários de cada funcionário (use o ciclo for) e armazená-los no array salarios; Deverá ser apresentada uma mensagem por cada funcionário com o formato: Insira o salario do funcionário X: onde X representa o índice +1 do array. 2) Função imprimirSalariosAcima:
+ A função deverá apresentar, inicialmente, um título com o formato: Listagem de funcionarios cujo salario seja maior que X: onde X representa o valor mínimo indicado pelo utilizador. Se nenhum funcionário possuir um salário superior a X, deverá ser apresentada a mensagem: Nenhum funcionario possui salario acima de X onde X representa o valor mínimo indicado pelo utilizador. Caso existam funcionários com salário superior a X, para cada um deverá ser apresentada uma linha com o formato: Funcionario i com salario Y Euros em que o número do funcionário inicia em 1 e Y representa o valor do seu salário. 
+ Utilize arrays e garanta que seu programa siga exatamente as especificações acima.","void preencherSalarios(float salários, int numFuncionarios) { 
+ for (int i = 0; i > salarios[i]; 
+ }
+ }
+
+void imprimirSalariosAcima(float salarios, int numFuncionarios, float valorMinimo) { 
+ bool encontrou = false; 
+ cout valorMinimo) { 
+ cout << ""Funcionario "" << i + 1 << "" com salario "" << salarios[i] << "" Euros\n""; 
+ encontrou = true; 
+ } 
+ } 
+ if (!encontrou) { 
+ cout << ""Nenhum funcionario possui salario acima de "" << valorMinimo << "" Euros.\n""; 
+ } 
+}",79.0,80.5045646776318,1.5045646776318051
+261,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.",Nao é possivel alterar o tamanho. Fora dos limites pode retornar undefined ou corromper o espaço de memoria,24.0,21.21751170210208,2.7824882978979204
+266,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.",Depende de como é declarado o array. Se for declarado de forma dinâmica é possível alterar o tamanho. Guardar valores fora do limite gera erro.,5.5,10.211936810299738,4.711936810299738
+267,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",b),0.0,5.59988654578277,5.59988654578277
+272,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",b,0.0,5.59988654578277,5.59988654578277
+273,23,"Suponha que declaramos o seguinte array: 
+ double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; 
+ Se o primeiro elemento está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)
+ 
+
+ Opções:
+ a) 1008
+ b) 1016
+ c) 1024
+ d) 1032",a,0.0,11.771206564833763,11.771206564833763
+282,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",b,0.0,5.59988654578277,5.59988654578277
+294,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",42,20.0,19.423959573091157,0.5760404269088433
+308,23,"Suponha que declaramos o seguinte array: 
+ double valores[5] = {3.5, 7.2, 1.8, 9.4, 2.1}; 
+ Se o primeiro elemento está armazenado no endereço de memória 1000, qual será o endereço do terceiro elemento? (indique a alínea correspondente)
+ 
+
+ Opções:
+ a) 1008
+ b) 1016
+ c) 1024
+ d) 1032",b) 1016,20.0,18.42165569732528,1.5783443026747186
+309,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",d) 42,20.0,19.423959573091157,0.5760404269088433
+312,22,"Analise o programa e indique quantos erros de sintaxe ele contém.
+ #include <iostream>
+
+int main() {
+ int numeros[] = (2,4,6,8,10);
+ int soma = 0;
+ for (int i=0; i<5; i+=2) {
+ soma += numeros[i];
+ }
+ std::cout << soma << std::endl;
+ return 0;
+}
+ Opções:
+ a) 0
+ b) 1
+ c) 2
+ d) 3",d),0.0,5.59988654578277,5.59988654578277
+334,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",c,0.0,16.31233847987808,16.31233847987808
+336,21,"Depois de declarado, é possível alterar o tamanho de um array? Justifique a sua resposta e explique o que acontece se tentarmos guardar valores fora dos seus limites.","Não é possível. Caso tentemos guardar valores fora dos seus limites, aparece um erro do tipo "" out of bonds"".",19.75,17.856640322526673,1.8933596774733275
+344,24,"Dada a declaração da matriz em C++: 
+ int matriz[3][3] = {{4,8,15},{16,23,42},{108,0,-3}}
+ indique o valor armazenado na posição matriz[1][2]?
+ 
+
+ Opções:
+ a) 15
+ b) -3
+ c) 23
+ d) 42",d,20.0,16.31233847987808,3.687661520121921
+351,26,"Explique a diferença entre os modos de acesso ""ios::in"" e ""ios::out"" na biblioteca fstream. Ilustre a sua resposta com um pequeno exemplo de código que demonstre o uso adequado na leitura de um ficheiro de texto. Adicionalmente, explique qual a finalidade da função close() e por que é importante utilizá-la. (Não é necessário incluir bibliotecas nem declarações de funções no seu exemplo de código).","ios :: in serve para ler abrir ficheiros de leitura; ios :: out serve para ler abrir ficheiros de escrita; 
+
+int main() {
+
+ ifstream ficheiro_leitura(""dados.txt"");
+
+ if (ficheiro_leitura.is_open()) {
+ string linha;
+ while (getline(ficheiro_leitura, linha)) {
+ cout << linha << endl;
+ }
+ ficheiro_leitura.close();
+ } else {
+ cout << ""Não foi possível abrir o ficheiro."" << endl;
+ }
+
+ ofstream ficheiro_escrita(""saida.txt"");
+
+ if (ficheiro_escrita.is_open()) {
+ ficheiro_escrita << ""Esta é uma linha escrita no ficheiro."" << endl;
+ ficheiro_escrita.close();
+ } else {
+ cout << ""Não foi possível abrir o ficheiro para escrita."" << endl;
+ }
+
+ return 0;",19.0,24.98838317165628,5.988383171656281
+359,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",a,20.0,10.408126249535858,9.591873750464142
+362,27,"Qual das seguintes afirmações sobre strings em C++ é FALSA?
+ a) A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;
+ b) A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;
+ c) É possível comparar duas strings usando o operador de igualdade (==);
+ d) A função strcat() concatena duas strings.",b),0.0,7.270519370977755,7.270519370977755
+364,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",a),20.0,10.408126249535858,9.591873750464142
+367,27,"Qual das seguintes afirmações sobre strings em C++ é FALSA?
+ a) A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;
+ b) A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;
+ c) É possível comparar duas strings usando o operador de igualdade (==);
+ d) A função strcat() concatena duas strings.",c),20.0,7.270519370977755,12.729480629022245
+368,28,"Qual das seguintes opções representa a forma correta de alocar dinamicamente um array de 10 inteiros em C++?
+ 
+
+ a) int* arr = new int(10);
+ b) int* arr = new int[10];
+ c) int* arr = malloc(10 * sizeof(int));
+ d) int* arr = int[10];",b),20.0,18.50038361977285,1.499616380227149
+369,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",a),20.0,10.408126249535858,9.591873750464142
+373,28,"Qual das seguintes opções representa a forma correta de alocar dinamicamente um array de 10 inteiros em C++?
+ 
+
+ a) int* arr = new int(10);
+ b) int* arr = new int[10];
+ c) int* arr = malloc(10 * sizeof(int));
+ d) int* arr = int[10];",b),20.0,18.50038361977285,1.499616380227149
+374,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",b),0.0,10.408126249535858,10.408126249535858
+379,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",c),0.0,10.408126249535858,10.408126249535858
+382,27,"Qual das seguintes afirmações sobre strings em C++ é FALSA?
+ a) A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;
+ b) A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;
+ c) É possível comparar duas strings usando o operador de igualdade (==);
+ d) A função strcat() concatena duas strings.",b),0.0,7.270519370977755,7.270519370977755
+388,28,"Qual das seguintes opções representa a forma correta de alocar dinamicamente um array de 10 inteiros em C++?
+ 
+
+ a) int* arr = new int(10);
+ b) int* arr = new int[10];
+ c) int* arr = malloc(10 * sizeof(int));
+ d) int* arr = int[10];",B,20.0,18.50038361977285,1.499616380227149
+389,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",c,0.0,10.408126249535858,10.408126249535858
+396,26,"Explique a diferença entre os modos de acesso ""ios::in"" e ""ios::out"" na biblioteca fstream. Ilustre a sua resposta com um pequeno exemplo de código que demonstre o uso adequado na leitura de um ficheiro de texto. Adicionalmente, explique qual a finalidade da função close() e por que é importante utilizá-la. (Não é necessário incluir bibliotecas nem declarações de funções no seu exemplo de código).","A diferença entre ""ios::in"" e "" ios::out"" na biblioteca de fstream, é que ios::on, abre o ficheiro para a leitura do mesmo, enquanto que poe outro lado o ios::out, ele abre o ficheiro e apaga automaticamente se tiver alguma coisa escrita, para proceder a escrita nele, e por fim a função do close() é essencial, pois este feicha o ficheiro. 
+
+e um exemplo
+
+if (ficheiro.is_open()) {
+ string linha;
+ while (getline(ficheiro, linha)) {
+ cout << linha << endl ;
+ }
+ ficheiro.close(); // Fecha o ficheiro 
+} else {
+ cout << ""Não foi possível abrir o ficheiro.\n"";
+}",22.75,22.649752321089686,0.10024767891031416
+404,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",c),0.0,10.408126249535858,10.408126249535858
+413,28,"Qual das seguintes opções representa a forma correta de alocar dinamicamente um array de 10 inteiros em C++?
+ 
+
+ a) int* arr = new int(10);
+ b) int* arr = new int[10];
+ c) int* arr = malloc(10 * sizeof(int));
+ d) int* arr = int[10];",b),20.0,18.50038361977285,1.499616380227149
+421,26,"Explique a diferença entre os modos de acesso ""ios::in"" e ""ios::out"" na biblioteca fstream. Ilustre a sua resposta com um pequeno exemplo de código que demonstre o uso adequado na leitura de um ficheiro de texto. Adicionalmente, explique qual a finalidade da função close() e por que é importante utilizá-la. (Não é necessário incluir bibliotecas nem declarações de funções no seu exemplo de código).","ios::in serve para escrever num ficheiro
+ios::out serve para ler de um ficheiro
+e a função close() serve para fecharmos o nosso ficheiro",7.25,6.165303233222229,1.0846967667777712
+427,27,"Qual das seguintes afirmações sobre strings em C++ é FALSA?
+ a) A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;
+ b) A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;
+ c) É possível comparar duas strings usando o operador de igualdade (==);
+ d) A função strcat() concatena duas strings.",c,20.0,7.270519370977755,12.729480629022245
+428,28,"Qual das seguintes opções representa a forma correta de alocar dinamicamente um array de 10 inteiros em C++?
+ 
+
+ a) int* arr = new int(10);
+ b) int* arr = new int[10];
+ c) int* arr = malloc(10 * sizeof(int));
+ d) int* arr = int[10];",b,20.0,18.50038361977285,1.499616380227149
+433,28,"Qual das seguintes opções representa a forma correta de alocar dinamicamente um array de 10 inteiros em C++?
+ 
+
+ a) int* arr = new int(10);
+ b) int* arr = new int[10];
+ c) int* arr = malloc(10 * sizeof(int));
+ d) int* arr = int[10];",a),0.0,18.50038361977285,18.50038361977285
+442,27,"Qual das seguintes afirmações sobre strings em C++ é FALSA?
+ a) A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;
+ b) A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;
+ c) É possível comparar duas strings usando o operador de igualdade (==);
+ d) A função strcat() concatena duas strings.",b),0.0,7.270519370977755,7.270519370977755
+447,27,"Qual das seguintes afirmações sobre strings em C++ é FALSA?
+ a) A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;
+ b) A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;
+ c) É possível comparar duas strings usando o operador de igualdade (==);
+ d) A função strcat() concatena duas strings.",d,0.0,7.270519370977755,7.270519370977755
+449,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",c,0.0,10.408126249535858,10.408126249535858
+454,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",C),0.0,10.408126249535858,10.408126249535858
+455,31,"Implemente um programa em C++ que:
+ 
+
+ a) Defina duas estruturas: 
+ Morada, contendo os seguintes atributos: rua , código postal e localidade ; Pessoa, contendo os seguintes atributos: id , nome , data de nascimento e uma morada (do tipo Morada). 
+
+ b) Implemente a função inserirPessoa, que deve criar e devolver uma estrutura do tipo Pessoa, preenchendo todos os seus atributos dentro da própria função com valores introduzidos pelo utilizador. Garanta que a função retorna corretamente a estrutura preenchida.
+ 
+
+ c) No main:
+ Pergunte ao utilizador quantas pessoas deseja adicionar; Inicializa um vetor dinâmico de pessoas; Preencha o vetor chamando a função inserirPessoa para cada pessoa; Após o preenchimento, imprima o número total de pessoas registadas; Certifique-se de libertar a memória alocada dinamicamente para evitar fugas de memória. 
+
+ d) Inclua as bibliotecas necessárias para o programa funcionar corretamente.","#include 
+using namespace std;
+
+struct morada{
+string rua;
+int cp;
+string loc;
+}
+
+struct pessoa{
+int id;
+string nome;
+int dnasc;
+morada * morada;
+}
+
+pessoa inserePessoa(){
+pessoa nova = new pessoa;
+cout >pessoa.id;
+cout >pessoa.nome;
+cout >pessoa.dnasc;
+cout >nova.morada->rua;
+cout >nova.morada->cp;
+cout >nova.morada->loc;
+return nova;
+}
+
+int main(){
+int x;
+cout >x;
+for(i=0;i<x;i++){
+m[i]=inserePessoa();
+}
+cout<<""Foram registadas ""<<x<<"" Pessoas!""<<endl;
+return 0;
+}",64.35,47.26037904675743,17.089620953242566
+457,27,"Qual das seguintes afirmações sobre strings em C++ é FALSA?
+ a) A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;
+ b) A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;
+ c) É possível comparar duas strings usando o operador de igualdade (==);
+ d) A função strcat() concatena duas strings.",b),0.0,7.270519370977755,7.270519370977755
+458,28,"Qual das seguintes opções representa a forma correta de alocar dinamicamente um array de 10 inteiros em C++?
+ 
+
+ a) int* arr = new int(10);
+ b) int* arr = new int[10];
+ c) int* arr = malloc(10 * sizeof(int));
+ d) int* arr = int[10];",b),20.0,18.50038361977285,1.499616380227149
+459,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",c),0.0,10.408126249535858,10.408126249535858
+460,31,"Implemente um programa em C++ que:
+ 
+
+ a) Defina duas estruturas: 
+ Morada, contendo os seguintes atributos: rua , código postal e localidade ; Pessoa, contendo os seguintes atributos: id , nome , data de nascimento e uma morada (do tipo Morada). 
+
+ b) Implemente a função inserirPessoa, que deve criar e devolver uma estrutura do tipo Pessoa, preenchendo todos os seus atributos dentro da própria função com valores introduzidos pelo utilizador. Garanta que a função retorna corretamente a estrutura preenchida.
+ 
+
+ c) No main:
+ Pergunte ao utilizador quantas pessoas deseja adicionar; Inicializa um vetor dinâmico de pessoas; Preencha o vetor chamando a função inserirPessoa para cada pessoa; Após o preenchimento, imprima o número total de pessoas registadas; Certifique-se de libertar a memória alocada dinamicamente para evitar fugas de memória. 
+
+ d) Inclua as bibliotecas necessárias para o programa funcionar corretamente.","#include 
+using namespace std",0.0,16.45580962581097,16.45580962581097
+462,27,"Qual das seguintes afirmações sobre strings em C++ é FALSA?
+ a) A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;
+ b) A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;
+ c) É possível comparar duas strings usando o operador de igualdade (==);
+ d) A função strcat() concatena duas strings.",a),0.0,7.270519370977755,7.270519370977755
+473,28,"Qual das seguintes opções representa a forma correta de alocar dinamicamente um array de 10 inteiros em C++?
+ 
+
+ a) int* arr = new int(10);
+ b) int* arr = new int[10];
+ c) int* arr = malloc(10 * sizeof(int));
+ d) int* arr = int[10];",b),20.0,18.50038361977285,1.499616380227149
+474,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",c),0.0,10.408126249535858,10.408126249535858
+475,31,"Implemente um programa em C++ que:
+ 
+
+ a) Defina duas estruturas: 
+ Morada, contendo os seguintes atributos: rua , código postal e localidade ; Pessoa, contendo os seguintes atributos: id , nome , data de nascimento e uma morada (do tipo Morada). 
+
+ b) Implemente a função inserirPessoa, que deve criar e devolver uma estrutura do tipo Pessoa, preenchendo todos os seus atributos dentro da própria função com valores introduzidos pelo utilizador. Garanta que a função retorna corretamente a estrutura preenchida.
+ 
+
+ c) No main:
+ Pergunte ao utilizador quantas pessoas deseja adicionar; Inicializa um vetor dinâmico de pessoas; Preencha o vetor chamando a função inserirPessoa para cada pessoa; Após o preenchimento, imprima o número total de pessoas registadas; Certifique-se de libertar a memória alocada dinamicamente para evitar fugas de memória. 
+
+ d) Inclua as bibliotecas necessárias para o programa funcionar corretamente.","#include 
+using namespace std;
+
+struct Morada{
+ string rua;
+ int codPost;
+ string localidade;
+}
+
+struct Pessoa{
+ int id;
+ string nome;
+ string dataNasc;
+ Morada morada;
+}
+
+Pessoa inserirPessoa(int id, string nome, string dataNasc, string rua, int codPost, string localidade){
+Pessoa *p = new Pessoa();
+p.id = id;
+p.nome = nome;
+p.dataNasc = dataNasc;
+p.morada.rua = rua;
+p.morada.codPost = codPost;
+p.morada.localidade = localidade;
+
+return p;
+}
+
+int main(){
+int nPessoas, nPessoasReg = 0;
+cout >nPessoas;
+Pessoas *pessoas = new Pessoas[nPessoas];
+for (int i = 0; i >id;
+cout > nome;
+cout >dataNasc;
+cout >rua;
+cout >codPost;
+cout >localidade;
+
+pessoas[i] = inserirPessoa(id, nome, dataNasc, rua, codPost, localidade);
+nPessoasReg++;
+}
+cout << ""Foram registadas <<nPessoasReg<< "" Pessoas!""<<endl;
+delete pessoas;
+}",54.75,55.166904091027334,0.41690409102733383
+484,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",a),20.0,10.408126249535858,9.591873750464142
+491,26,"Explique a diferença entre os modos de acesso ""ios::in"" e ""ios::out"" na biblioteca fstream. Ilustre a sua resposta com um pequeno exemplo de código que demonstre o uso adequado na leitura de um ficheiro de texto. Adicionalmente, explique qual a finalidade da função close() e por que é importante utilizá-la. (Não é necessário incluir bibliotecas nem declarações de funções no seu exemplo de código).","o modo de acesso ""ios::in"" é responsavel pela leitura de ficheiros txt colocados no programa (onde a informacao pode ser armazenada num array):
+fstream file;
+file.open(""ficheiro.txt"", ios::in);
+...
+file.close();
+""ios::out"" é usado para imprir a informacao que pode ser inserida no terminal pelo utilizador ou para impressao de dados de uma funcao e neste caso é necessario criar um ficheiro onde esses dados seram armazenados:
+file.open(""ficheiro.txt"", ios::out);
+...
+file.close();",19.25,14.23324361133729,5.01675638866271
+494,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",a,20.0,10.408126249535858,9.591873750464142
+495,31,"Implemente um programa em C++ que:
+ 
+
+ a) Defina duas estruturas: 
+ Morada, contendo os seguintes atributos: rua , código postal e localidade ; Pessoa, contendo os seguintes atributos: id , nome , data de nascimento e uma morada (do tipo Morada). 
+
+ b) Implemente a função inserirPessoa, que deve criar e devolver uma estrutura do tipo Pessoa, preenchendo todos os seus atributos dentro da própria função com valores introduzidos pelo utilizador. Garanta que a função retorna corretamente a estrutura preenchida.
+ 
+
+ c) No main:
+ Pergunte ao utilizador quantas pessoas deseja adicionar; Inicializa um vetor dinâmico de pessoas; Preencha o vetor chamando a função inserirPessoa para cada pessoa; Após o preenchimento, imprima o número total de pessoas registadas; Certifique-se de libertar a memória alocada dinamicamente para evitar fugas de memória. 
+
+ d) Inclua as bibliotecas necessárias para o programa funcionar corretamente.","a)
+struct Morada{
+string rua;
+int codigoPostal;
+string localidade;
+}
+
+struct Pessoa{
+char id;
+string nome;
+int dia;
+string mes;
+int ano;
+Morada* morada;
+}
+
+b)
+pessoa insiraPessoa(Pessoa *pessoa, string nome, char id, int dia, string mes, int ano, Morada* morada){
+cout > nome;
+cout > id;
+cout > dia;
+cout > mes;
+cout > ano;
+cout << ""nome : "" << nome << "" | "" << ""data de nascimento: "" << dia << ""-"" << mes << ""-"" << ano << endl;
+}",25.2,31.08951190724241,5.889511907242412
+497,27,"Qual das seguintes afirmações sobre strings em C++ é FALSA?
+ a) A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;
+ b) A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;
+ c) É possível comparar duas strings usando o operador de igualdade (==);
+ d) A função strcat() concatena duas strings.",b),0.0,7.270519370977755,7.270519370977755
+506,26,"Explique a diferença entre os modos de acesso ""ios::in"" e ""ios::out"" na biblioteca fstream. Ilustre a sua resposta com um pequeno exemplo de código que demonstre o uso adequado na leitura de um ficheiro de texto. Adicionalmente, explique qual a finalidade da função close() e por que é importante utilizá-la. (Não é necessário incluir bibliotecas nem declarações de funções no seu exemplo de código).",o ios::in serve para abrir um ficheiro de leitura e ios::out serve para abrir um ficheiro para escrita.,9.75,9.563947015056899,0.1860529849431014
+508,28,"Qual das seguintes opções representa a forma correta de alocar dinamicamente um array de 10 inteiros em C++?
+ 
+
+ a) int* arr = new int(10);
+ b) int* arr = new int[10];
+ c) int* arr = malloc(10 * sizeof(int));
+ d) int* arr = int[10];",b,20.0,18.50038361977285,1.499616380227149
+510,31,"Implemente um programa em C++ que:
+ 
+
+ a) Defina duas estruturas: 
+ Morada, contendo os seguintes atributos: rua , código postal e localidade ; Pessoa, contendo os seguintes atributos: id , nome , data de nascimento e uma morada (do tipo Morada). 
+
+ b) Implemente a função inserirPessoa, que deve criar e devolver uma estrutura do tipo Pessoa, preenchendo todos os seus atributos dentro da própria função com valores introduzidos pelo utilizador. Garanta que a função retorna corretamente a estrutura preenchida.
+ 
+
+ c) No main:
+ Pergunte ao utilizador quantas pessoas deseja adicionar; Inicializa um vetor dinâmico de pessoas; Preencha o vetor chamando a função inserirPessoa para cada pessoa; Após o preenchimento, imprima o número total de pessoas registadas; Certifique-se de libertar a memória alocada dinamicamente para evitar fugas de memória. 
+
+ d) Inclua as bibliotecas necessárias para o programa funcionar corretamente.","5.a)
+Struct Morada{
+String rua;
+String código_postal:
+String localidade;
+};
+
+Struct Pessoa{
+String id;
+String nome; 
+String data_nascimento;
+String morada; 
+};
+b)
+Pessoa inserirPessoa(int id) {
+Pessoa p;
+p.id = id;
+
+c) int main(){
+}",20.0,26.054811307033688,6.054811307033688
+514,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",a),20.0,10.408126249535858,9.591873750464142
+524,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",a),20.0,10.408126249535858,9.591873750464142
+538,28,"Qual das seguintes opções representa a forma correta de alocar dinamicamente um array de 10 inteiros em C++?
+ 
+
+ a) int* arr = new int(10);
+ b) int* arr = new int[10];
+ c) int* arr = malloc(10 * sizeof(int));
+ d) int* arr = int[10];",B,20.0,18.50038361977285,1.499616380227149
+539,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",A,20.0,10.408126249535858,9.591873750464142
+542,27,"Qual das seguintes afirmações sobre strings em C++ é FALSA?
+ a) A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;
+ b) A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;
+ c) É possível comparar duas strings usando o operador de igualdade (==);
+ d) A função strcat() concatena duas strings.",Resposta:C,20.0,1.4454598132071972,18.554540186792803
+544,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",Resposta:(a),20.0,4.916035877306754,15.083964122693246
+549,29,"Considere a seguinte definição de estrutura:
+ 
+
+ struct Aluno { 
+ int numero; 
+ char nome[50]; 
+ float media; 
+ }; 
+ 
+
+ Qual é a forma correta de inicializar uma variável do tipo Aluno?
+ 
+
+ a) Aluno a = {123, ""Ana"", 16.5};
+ b) Aluno a = Aluno(123, ""Ana"", 16.5);
+ c) Aluno a = new Aluno{123, ""Ana"", 16.5};
+ d) Aluno a(123, ""Ana"", 16.5).",C,0.0,10.408126249535858,10.408126249535858
+555,31,"Implemente um programa em C++ que:
+ 
+
+ a) Defina duas estruturas: 
+ Morada, contendo os seguintes atributos: rua , código postal e localidade ; Pessoa, contendo os seguintes atributos: id , nome , data de nascimento e uma morada (do tipo Morada). 
+
+ b) Implemente a função inserirPessoa, que deve criar e devolver uma estrutura do tipo Pessoa, preenchendo todos os seus atributos dentro da própria função com valores introduzidos pelo utilizador. Garanta que a função retorna corretamente a estrutura preenchida.
+ 
+
+ c) No main:
+ Pergunte ao utilizador quantas pessoas deseja adicionar; Inicializa um vetor dinâmico de pessoas; Preencha o vetor chamando a função inserirPessoa para cada pessoa; Após o preenchimento, imprima o número total de pessoas registadas; Certifique-se de libertar a memória alocada dinamicamente para evitar fugas de memória. 
+
+ d) Inclua as bibliotecas necessárias para o programa funcionar corretamente.","a)
+struct Morada && Pessoa {
+ struct Morada {
+ string rua;
+ string localidade;
+ float codigo postal;
+ };
+ struct Pessoa {
+ int id;
+ string nome;
+ float data nascimento;
+ Morada* Morada;
+ };
+
+b)
+void InserirPessoa (id, nome, data nascimento, Morada* Morada);
+
+d)
+#include 
+#include “morada.h”",17.05,29.19770450575552,12.14770450575552
+562,27,"Qual das seguintes afirmações sobre strings em C++ é FALSA?
+ a) A função strlen() retorna o número de caracteres na string, excluindo o caractere nulo de terminação;
+ b) A função strcpy_s() é utilizada para copiar o conteúdo de uma string para outra;
+ c) É possível comparar duas strings usando o operador de igualdade (==);
+ d) A função strcat() concatena duas strings.",C,20.0,7.270519370977755,12.729480629022245
+570,31,"Implemente um programa em C++ que:
+ 
+
+ a) Defina duas estruturas: 
+ Morada, contendo os seguintes atributos: rua , código postal e localidade ; Pessoa, contendo os seguintes atributos: id , nome , data de nascimento e uma morada (do tipo Morada). 
+
+ b) Implemente a função inserirPessoa, que deve criar e devolver uma estrutura do tipo Pessoa, preenchendo todos os seus atributos dentro da própria função com valores introduzidos pelo utilizador. Garanta que a função retorna corretamente a estrutura preenchida.
+ 
+
+ c) No main:
+ Pergunte ao utilizador quantas pessoas deseja adicionar; Inicializa um vetor dinâmico de pessoas; Preencha o vetor chamando a função inserirPessoa para cada pessoa; Após o preenchimento, imprima o número total de pessoas registadas; Certifique-se de libertar a memória alocada dinamicamente para evitar fugas de memória. 
+
+ d) Inclua as bibliotecas necessárias para o programa funcionar corretamente.","a)
+struct morada {
+ char rua[50];
+ int codigo_postal;
+ char localidade[50];
+};
+
+struct pessoa {
+ int id;
+ char nome[50];
+ float data_de_nascimento;
+ char morada[50];
+};
+
+b)
+void InserirPessoa(char rua, int codigo_postal, char localidade) {
+ cout > rua;
+ cout > codigo_postal;
+ cout > localidade;
+}
+
+c)
+int main() {
+ cout > quantidade;
+ 
+ return 0;
+}
+
+d)
+#include 
+#include ""ficha2.h""
+using namespace std;",16.0,16.201835456500895,0.20183545650089485
+599,40,"Considere a seguinte árvore binária de pesquisa:
+ 
+
+ 40
+ / \
+ 25 60
+ / \ / \
+ 20 33 55 70
+ \ \
+ 36 75
+ Qual das seguintes opções descreve corretamente a estrutura da árvore?
+ a) O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa. 
+ b) O nó 33 é uma folha. O nó 70 tem grau 2. A altura da árvore é 4. O nó 55 encontra-se no nível 2.
+ c) O nó 25 tem grau 2. O nó 36 é uma folha. A árvore é completa. A altura da árvore é 3.
+ d) O nó 33 tem como filho o 36. O nó 25 tem grau 2. O nó 36 é interno. A altura da árvore é 4.",d,0.0,9.098390978806387,9.098390978806387
+603,39,"Considere o seguinte vetor: int v[6] = {9, 1, 6, 3, 8, 2};
+ 
+
+ E a seguinte implementação do algoritmo Selection Sort :
+ void SelectionSort(int a[], int n)
+{
+ for (int i = 0; i < n - 1; i++) {
+ int min = i;
+ for (int j = i + 1; j < n; j++) {
+ if (a[j] < a[min])
+ min = j;
+ }
+ if (min != i)
+ swap(a[i], a[min]);
+ }
+}
+ 
+
+ Descrição: O algoritmo percorre o vetor à procura do menor elemento e troca-o com o que está na posição atual. Repete este processo para todas as posições até o vetor ficar ordenado.
+ Qual será o estado do vetor após a segunda iteração (i = 1) do algoritmo? 
+ a) 9 8 3 6 2 1
+ b) 1 3 6 9 8 2
+ c) 1 2 6 3 8 9
+ d) 1 2 6 8 9 3",c),20.0,14.594177780006978,5.405822219993022
+613,39,"Considere o seguinte vetor: int v[6] = {9, 1, 6, 3, 8, 2};
+ 
+
+ E a seguinte implementação do algoritmo Selection Sort :
+ void SelectionSort(int a[], int n)
+{
+ for (int i = 0; i < n - 1; i++) {
+ int min = i;
+ for (int j = i + 1; j < n; j++) {
+ if (a[j] < a[min])
+ min = j;
+ }
+ if (min != i)
+ swap(a[i], a[min]);
+ }
+}
+ 
+
+ Descrição: O algoritmo percorre o vetor à procura do menor elemento e troca-o com o que está na posição atual. Repete este processo para todas as posições até o vetor ficar ordenado.
+ Qual será o estado do vetor após a segunda iteração (i = 1) do algoritmo? 
+ a) 9 8 3 6 2 1
+ b) 1 3 6 9 8 2
+ c) 1 2 6 3 8 9
+ d) 1 2 6 8 9 3",c),20.0,14.594177780006978,5.405822219993022
+622,38,"Considere o seguinte programa C++:
+ 
+
+ #include <iostream>
+using namespace std;
+
+void mostrar(int* v, int n) {
+ if (n == 0)
+ return;
+ cout << v[0] * v[0] << "" "";
+ mostrar(v + 1, n - 1);
+}
+
+int main() {
+ int* v = new int[3];
+ v[0] = 4;
+ v[1] = 7;
+ v[2] = 2;
+ mostrar(v, 3);
+ delete[] v;
+ return 0;
+}
+ 
+
+ Qual será a saída do programa?
+ a) 4 7 2
+ b) 16 49 4
+ c) 2 7 4
+ d) Erro",b),20.0,15.168566401230859,4.8314335987691415
+624,40,"Considere a seguinte árvore binária de pesquisa:
+ 
+
+ 40
+ / \
+ 25 60
+ / \ / \
+ 20 33 55 70
+ \ \
+ 36 75
+ Qual das seguintes opções descreve corretamente a estrutura da árvore?
+ a) O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa. 
+ b) O nó 33 é uma folha. O nó 70 tem grau 2. A altura da árvore é 4. O nó 55 encontra-se no nível 2.
+ c) O nó 25 tem grau 2. O nó 36 é uma folha. A árvore é completa. A altura da árvore é 3.
+ d) O nó 33 tem como filho o 36. O nó 25 tem grau 2. O nó 36 é interno. A altura da árvore é 4.",a),20.0,9.098390978806387,10.901609021193613
+628,39,"Considere o seguinte vetor: int v[6] = {9, 1, 6, 3, 8, 2};
+ 
+
+ E a seguinte implementação do algoritmo Selection Sort :
+ void SelectionSort(int a[], int n)
+{
+ for (int i = 0; i < n - 1; i++) {
+ int min = i;
+ for (int j = i + 1; j < n; j++) {
+ if (a[j] < a[min])
+ min = j;
+ }
+ if (min != i)
+ swap(a[i], a[min]);
+ }
+}
+ 
+
+ Descrição: O algoritmo percorre o vetor à procura do menor elemento e troca-o com o que está na posição atual. Repete este processo para todas as posições até o vetor ficar ordenado.
+ Qual será o estado do vetor após a segunda iteração (i = 1) do algoritmo? 
+ a) 9 8 3 6 2 1
+ b) 1 3 6 9 8 2
+ c) 1 2 6 3 8 9
+ d) 1 2 6 8 9 3",C,20.0,14.594177780006978,5.405822219993022
+629,40,"Considere a seguinte árvore binária de pesquisa:
+ 
+
+ 40
+ / \
+ 25 60
+ / \ / \
+ 20 33 55 70
+ \ \
+ 36 75
+ Qual das seguintes opções descreve corretamente a estrutura da árvore?
+ a) O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa. 
+ b) O nó 33 é uma folha. O nó 70 tem grau 2. A altura da árvore é 4. O nó 55 encontra-se no nível 2.
+ c) O nó 25 tem grau 2. O nó 36 é uma folha. A árvore é completa. A altura da árvore é 3.
+ d) O nó 33 tem como filho o 36. O nó 25 tem grau 2. O nó 36 é interno. A altura da árvore é 4.",A,20.0,9.098390978806387,10.901609021193613
+631,32,"Considere a seguinte árvore binária de pesquisa (BST):
+ 
+
+ 48
+ / \
+ 31 66
+ / \ / \
+ 20 39 54 72
+ / \
+ 13 27
+ 
+
+ a) Explique, de forma teórica e geral, como funcionam os dois métodos de remoção de nós numa árvore binária de pesquisa: fusão e cópia;
+ b) Apresente a estrutura final da árvore após a remoção do valor 31 utilizando:
+ o método de remoção por fusão; o método de remoção por cópia.","a) No método de remoção por fusão, após removermos o nó pretendido, juntamos as subárvores esquerda e direita. No método de remoção por cópia, removemos o nó pretendido e substituimos por um nó conveniente para aquele nodo.",5.25,10.152776540512187,4.902776540512187
+634,40,"Considere a seguinte árvore binária de pesquisa:
+ 
+
+ 40
+ / \
+ 25 60
+ / \ / \
+ 20 33 55 70
+ \ \
+ 36 75
+ Qual das seguintes opções descreve corretamente a estrutura da árvore?
+ a) O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa. 
+ b) O nó 33 é uma folha. O nó 70 tem grau 2. A altura da árvore é 4. O nó 55 encontra-se no nível 2.
+ c) O nó 25 tem grau 2. O nó 36 é uma folha. A árvore é completa. A altura da árvore é 3.
+ d) O nó 33 tem como filho o 36. O nó 25 tem grau 2. O nó 36 é interno. A altura da árvore é 4.",d),0.0,9.098390978806387,9.098390978806387
+639,40,"Considere a seguinte árvore binária de pesquisa:
+ 
+
+ 40
+ / \
+ 25 60
+ / \ / \
+ 20 33 55 70
+ \ \
+ 36 75
+ Qual das seguintes opções descreve corretamente a estrutura da árvore?
+ a) O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa. 
+ b) O nó 33 é uma folha. O nó 70 tem grau 2. A altura da árvore é 4. O nó 55 encontra-se no nível 2.
+ c) O nó 25 tem grau 2. O nó 36 é uma folha. A árvore é completa. A altura da árvore é 3.
+ d) O nó 33 tem como filho o 36. O nó 25 tem grau 2. O nó 36 é interno. A altura da árvore é 4.",a),20.0,9.098390978806387,10.901609021193613
+660,41,"Pretende-se implementar um programa em C++ que permita:
+ 
+
+ a) Criar uma árvore binária de pesquisa (BST) com os seguintes valores: {28, 14, 37, 6, 19, 42, 3, 25, 31, 48}. Deverá ser usada uma função inserirNodo, e a raiz deve ser corretamente inicializado com NULL.
+ b) Implementar as seguintes funções:
+ bool existe(nodo* raiz, int valor) - devolve verdadeiro se o valor existir na árvore, e falso caso contrário (pesquisa recursiva). void imprimirFolhas(nodo* raiz) - imprime no ecrã os valores de todos os nós folha da árvore (nós sem filhos). int somaValores(nodo* raiz) - calcula recursivamente e retorna a soma total dos valores de todos os nós da árvore. Nota: A estrutura da árvore deve usar a seguinte definição:
+ struct nodo {
+ int dados;
+ nodo* esq;
+ nodo* dir;
+};","a) inserenodo*nodo (int num, sctruct nodo) {",1.25,-0.3828683574269043,1.6328683574269043
+670,41,"Pretende-se implementar um programa em C++ que permita:
+ 
+
+ a) Criar uma árvore binária de pesquisa (BST) com os seguintes valores: {28, 14, 37, 6, 19, 42, 3, 25, 31, 48}. Deverá ser usada uma função inserirNodo, e a raiz deve ser corretamente inicializado com NULL.
+ b) Implementar as seguintes funções:
+ bool existe(nodo* raiz, int valor) - devolve verdadeiro se o valor existir na árvore, e falso caso contrário (pesquisa recursiva). void imprimirFolhas(nodo* raiz) - imprime no ecrã os valores de todos os nós folha da árvore (nós sem filhos). int somaValores(nodo* raiz) - calcula recursivamente e retorna a soma total dos valores de todos os nós da árvore. Nota: A estrutura da árvore deve usar a seguinte definição:
+ struct nodo {
+ int dados;
+ nodo* esq;
+ nodo* dir;
+};","nodo*raiz=NULL;
+
+bool existe(nodo* raiz, int valor){
+ if(raiz==NULL)
+ return false;
+ if (raiz->dados==valor)
+ return true;
+ if(raiz->dados esq,valor);
+ if(raiz->dados>valor)
+ return existe(raiz->dir,valor);
+}
+
+void imprimirFolhas(nodo* raiz){
+ if(raiz->esq==NULL)
+ cout dados dir==NULL)
+ cout dados esq!=NULL)
+ return imprimirFolhas(raiz->esq);
+ if(raiz->dir!=NULL)
+ return imprimirFolhas(raiz->dir);
+}
+
+int somaValores(nodo* raiz) {
+ int soma=raiz->dados;
+ if(raiz->esq!=NULL)
+ soma=soma+raiz->esq->dados;
+ return somaValores(raiz->esq);
+ if(raiz->dir!=NULL)
+ soma=soma+raiz->dir->dados;
+ return somaValores(raiz->dir);
+ return soma;
+}",27.45,51.78582428695205,24.33582428695205
+674,40,"Considere a seguinte árvore binária de pesquisa:
+ 
+
+ 40
+ / \
+ 25 60
+ / \ / \
+ 20 33 55 70
+ \ \
+ 36 75
+ Qual das seguintes opções descreve corretamente a estrutura da árvore?
+ a) O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa. 
+ b) O nó 33 é uma folha. O nó 70 tem grau 2. A altura da árvore é 4. O nó 55 encontra-se no nível 2.
+ c) O nó 25 tem grau 2. O nó 36 é uma folha. A árvore é completa. A altura da árvore é 3.
+ d) O nó 33 tem como filho o 36. O nó 25 tem grau 2. O nó 36 é interno. A altura da árvore é 4.",d),0.0,9.098390978806387,9.098390978806387
+689,40,"Considere a seguinte árvore binária de pesquisa:
+ 
+
+ 40
+ / \
+ 25 60
+ / \ / \
+ 20 33 55 70
+ \ \
+ 36 75
+ Qual das seguintes opções descreve corretamente a estrutura da árvore?
+ a) O nó 33 é pai do 36. O grau da árvore é 2. O nó 75 encontra-se no nível 4. A árvore não é completa. 
+ b) O nó 33 é uma folha. O nó 70 tem grau 2. A altura da árvore é 4. O nó 55 encontra-se no nível 2.
+ c) O nó 25 tem grau 2. O nó 36 é uma folha. A árvore é completa. A altura da árvore é 3.
+ d) O nó 33 tem como filho o 36. O nó 25 tem grau 2. O nó 36 é interno. A altura da árvore é 4.",d,0.0,9.098390978806387,9.098390978806387
+717,38,"Considere o seguinte programa C++:
+ 
+
+ #include <iostream>
+using namespace std;
+
+void mostrar(int* v, int n) {
+ if (n == 0)
+ return;
+ cout << v[0] * v[0] << "" "";
+ mostrar(v + 1, n - 1);
+}
+
+int main() {
+ int* v = new int[3];
+ v[0] = 4;
+ v[1] = 7;
+ v[2] = 2;
+ mostrar(v, 3);
+ delete[] v;
+ return 0;
+}
+ 
+
+ Qual será a saída do programa?
+ a) 4 7 2
+ b) 16 49 4
+ c) 2 7 4
+ d) Erro",b),20.0,15.168566401230859,4.8314335987691415
+720,41,"Pretende-se implementar um programa em C++ que permita:
+ 
+
+ a) Criar uma árvore binária de pesquisa (BST) com os seguintes valores: {28, 14, 37, 6, 19, 42, 3, 25, 31, 48}. Deverá ser usada uma função inserirNodo, e a raiz deve ser corretamente inicializado com NULL.
+ b) Implementar as seguintes funções:
+ bool existe(nodo* raiz, int valor) - devolve verdadeiro se o valor existir na árvore, e falso caso contrário (pesquisa recursiva). void imprimirFolhas(nodo* raiz) - imprime no ecrã os valores de todos os nós folha da árvore (nós sem filhos). int somaValores(nodo* raiz) - calcula recursivamente e retorna a soma total dos valores de todos os nós da árvore. Nota: A estrutura da árvore deve usar a seguinte definição:
+ struct nodo {
+ int dados;
+ nodo* esq;
+ nodo* dir;
+};","bool existe(nodo* raiz, int valor) {
+ if(raiz->dados == valor) return true;
+ else return false;
+}
+
+void imprimirFolhas(nodo* raiz) {
+ if(raiz->esq == nullptr && raiz->dir == nullptr) {
+ std::cout dados;
+ }
+}
+
+int somaValores(nodo* raiz) {
+ int num;
+ if (raiz == nullptr) {
+ return somaValores(raiz);
+ }else {
+ while (raiz->esq != nullptr) {
+ num = somaValores(raiz->esq);
+ }
+ 
+ while (raiz->dir != nullptr) {
+ num = somaValores(raiz->dir);
+ }
+ }
+ return num;
+}",18.0,31.135059898266572,13.135059898266572
+722,38,"Considere o seguinte programa C++:
+ 
+
+ #include <iostream>
+using namespace std;
+
+void mostrar(int* v, int n) {
+ if (n == 0)
+ return;
+ cout << v[0] * v[0] << "" "";
+ mostrar(v + 1, n - 1);
+}
+
+int main() {
+ int* v = new int[3];
+ v[0] = 4;
+ v[1] = 7;
+ v[2] = 2;
+ mostrar(v, 3);
+ delete[] v;
+ return 0;
+}
+ 
+
+ Qual será a saída do programa?
+ a) 4 7 2
+ b) 16 49 4
+ c) 2 7 4
+ d) Erro",B),20.0,15.168566401230859,4.8314335987691415
+731,32,"Considere a seguinte árvore binária de pesquisa (BST):
+ 
+
+ 48
+ / \
+ 31 66
+ / \ / \
+ 20 39 54 72
+ / \
+ 13 27
+ 
+
+ a) Explique, de forma teórica e geral, como funcionam os dois métodos de remoção de nós numa árvore binária de pesquisa: fusão e cópia;
+ b) Apresente a estrutura final da árvore após a remoção do valor 31 utilizando:
+ o método de remoção por fusão; o método de remoção por cópia.","a) copia- remover uma ligacao e substituir por outra, anulando-a no fim. fusao- 
+b)",0.0,5.218026818864544,5.218026818864544
+738,39,"Considere o seguinte vetor: int v[6] = {9, 1, 6, 3, 8, 2};
+ 
+
+ E a seguinte implementação do algoritmo Selection Sort :
+ void SelectionSort(int a[], int n)
+{
+ for (int i = 0; i < n - 1; i++) {
+ int min = i;
+ for (int j = i + 1; j < n; j++) {
+ if (a[j] < a[min])
+ min = j;
+ }
+ if (min != i)
+ swap(a[i], a[min]);
+ }
+}
+ 
+
+ Descrição: O algoritmo percorre o vetor à procura do menor elemento e troca-o com o que está na posição atual. Repete este processo para todas as posições até o vetor ficar ordenado.
+ Qual será o estado do vetor após a segunda iteração (i = 1) do algoritmo? 
+ a) 9 8 3 6 2 1
+ b) 1 3 6 9 8 2
+ c) 1 2 6 3 8 9
+ d) 1 2 6 8 9 3",c,20.0,14.594177780006978,5.405822219993022
+740,41,"Pretende-se implementar um programa em C++ que permita:
+ 
+
+ a) Criar uma árvore binária de pesquisa (BST) com os seguintes valores: {28, 14, 37, 6, 19, 42, 3, 25, 31, 48}. Deverá ser usada uma função inserirNodo, e a raiz deve ser corretamente inicializado com NULL.
+ b) Implementar as seguintes funções:
+ bool existe(nodo* raiz, int valor) - devolve verdadeiro se o valor existir na árvore, e falso caso contrário (pesquisa recursiva). void imprimirFolhas(nodo* raiz) - imprime no ecrã os valores de todos os nós folha da árvore (nós sem filhos). int somaValores(nodo* raiz) - calcula recursivamente e retorna a soma total dos valores de todos os nós da árvore. Nota: A estrutura da árvore deve usar a seguinte definição:
+ struct nodo {
+ int dados;
+ nodo* esq;
+ nodo* dir;
+};","A dia de hoje-08/05/2025, não tenho praticado nada sobre arvores de pesquisa binaria.",0.0,1.9998178782641922,1.9998178782641922
+756,32,"Considere a seguinte árvore binária de pesquisa (BST):
+ 
+
+ 48
+ / \
+ 31 66
+ / \ / \
+ 20 39 54 72
+ / \
+ 13 27
+ 
+
+ a) Explique, de forma teórica e geral, como funcionam os dois métodos de remoção de nós numa árvore binária de pesquisa: fusão e cópia;
+ b) Apresente a estrutura final da árvore após a remoção do valor 31 utilizando:
+ o método de remoção por fusão; o método de remoção por cópia.",a) e b) metodo de remoção por fusão faz com que o nó filho faz uma rotação para cima e o metodo da copia faz com que substitua os valores.,1.75,7.1688563031624675,5.4188563031624675
+762,38,"Considere o seguinte programa C++:
+ 
+
+ #include <iostream>
+using namespace std;
+
+void mostrar(int* v, int n) {
+ if (n == 0)
+ return;
+ cout << v[0] * v[0] << "" "";
+ mostrar(v + 1, n - 1);
+}
+
+int main() {
+ int* v = new int[3];
+ v[0] = 4;
+ v[1] = 7;
+ v[2] = 2;
+ mostrar(v, 3);
+ delete[] v;
+ return 0;
+}
+ 
+
+ Qual será a saída do programa?
+ a) 4 7 2
+ b) 16 49 4
+ c) 2 7 4
+ d) Erro",d,0.0,15.168566401230859,15.168566401230859
+763,39,"Considere o seguinte vetor: int v[6] = {9, 1, 6, 3, 8, 2};
+ 
+
+ E a seguinte implementação do algoritmo Selection Sort :
+ void SelectionSort(int a[], int n)
+{
+ for (int i = 0; i < n - 1; i++) {
+ int min = i;
+ for (int j = i + 1; j < n; j++) {
+ if (a[j] < a[min])
+ min = j;
+ }
+ if (min != i)
+ swap(a[i], a[min]);
+ }
+}
+ 
+
+ Descrição: O algoritmo percorre o vetor à procura do menor elemento e troca-o com o que está na posição atual. Repete este processo para todas as posições até o vetor ficar ordenado.
+ Qual será o estado do vetor após a segunda iteração (i = 1) do algoritmo? 
+ a) 9 8 3 6 2 1
+ b) 1 3 6 9 8 2
+ c) 1 2 6 3 8 9
+ d) 1 2 6 8 9 3",c,20.0,14.594177780006978,5.405822219993022
+766,32,"Considere a seguinte árvore binária de pesquisa (BST):
+ 
+
+ 48
+ / \
+ 31 66
+ / \ / \
+ 20 39 54 72
+ / \
+ 13 27
+ 
+
+ a) Explique, de forma teórica e geral, como funcionam os dois métodos de remoção de nós numa árvore binária de pesquisa: fusão e cópia;
+ b) Apresente a estrutura final da árvore após a remoção do valor 31 utilizando:
+ o método de remoção por fusão; o método de remoção por cópia.","Temos de verificar sempre se :O nó é uma folha, se um único filho ou se tem dois filhos.
+a)
+O método por fusão, um elemento é retirado, e os apontadores para esse elemento são colocados noutros elementos adjacentes
+Ou seja,
+Identificar os filhos de um elemento
+Encontrar maior valor da subárvore esquerda
+Ligar o filho direito do elemento a trocar com o maior valor da subárvore esquerda, colocando à sua direita.
+Substituir o maior valor da subarvore esquerda com o valor a remover
+
+b) O método por cópia, é escolhido um elemento para assumir a sua posição, que é copiado para lá 
+
+Ou seja,
+Substituímos o valor a remover pelo maior valor da subárvore esquerda ou o menor valor da subárvore da direita.
+
+Identificamos o valor.
+Copiamos o elemento que escolhemos para o lugar do elemento a remover (trocamos na realidade)
+Removemos o “elemento a remover”.
+
+B)
+Por fusão: 31
+Filhos esq 20, dir 39
+20 tem filhos – 13 e 27
+39 não tem filhos
+27 maior valor da subárvore esquerda
+
+(arvore parcial) 
+27
+20 39
+13 31 
+
+ 48
+27 66
+20 39 54 72
+13 31 
+
+Depois é so apagar o 31, (arvore parcial) 
+20
+13
+
+Por cópia
+Escolho o maior valor da subárvore esquerda, que é o 39
+
+(arvore parcial) 
+39 
+ 20 31
+13 27
+
+Depois é só apagar o valor 27
+ (arvore parcial) 
+ 39
+ 20 31
+13 27",23.25,25.668127987828257,2.4181279878282567
+771,32,"Considere a seguinte árvore binária de pesquisa (BST):
+ 
+
+ 48
+ / \
+ 31 66
+ / \ / \
+ 20 39 54 72
+ / \
+ 13 27
+ 
+
+ a) Explique, de forma teórica e geral, como funcionam os dois métodos de remoção de nós numa árvore binária de pesquisa: fusão e cópia;
+ b) Apresente a estrutura final da árvore após a remoção do valor 31 utilizando:
+ o método de remoção por fusão; o método de remoção por cópia.","a) por fusao, o nó a subarvore esquerda sobe para o local removido e a subarvore que estava á direita, fica conectada ao nó com o maior elemento (que está mais a direita), objetivo é preservar a ordem ordenada da arvore de pesquisa sem copiar somentr reorganizando.
+por copia, escolhemos o maior valor da subarvore da esquerda ou o menor da subarvore da direita para ser removido efetuamos a troca do valor escolhido pelo valor que será removido e apagamos o valor que fica no valor escolhido, objetivo é remover o nó com o minimo de intervenção
+
+b)
+por fusao:
+ 48 
+ / \ 
+ 20 66 
+ / \ / \ 
+ 13 27 54 72 
+ \ 
+ 39 
+por copia:
+
+ 48 
+ / \ 
+ 27 66 
+ / \ / \ 
+ 20 39 54 72 
+ / 
+ 13",43.5,25.37121325742492,18.12878674257508
+772,38,"Considere o seguinte programa C++:
+ 
+
+ #include <iostream>
+using namespace std;
+
+void mostrar(int* v, int n) {
+ if (n == 0)
+ return;
+ cout << v[0] * v[0] << "" "";
+ mostrar(v + 1, n - 1);
+}
+
+int main() {
+ int* v = new int[3];
+ v[0] = 4;
+ v[1] = 7;
+ v[2] = 2;
+ mostrar(v, 3);
+ delete[] v;
+ return 0;
+}
+ 
+
+ Qual será a saída do programa?
+ a) 4 7 2
+ b) 16 49 4
+ c) 2 7 4
+ d) Erro",b),20.0,15.168566401230859,4.8314335987691415

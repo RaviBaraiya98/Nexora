@@ -1,0 +1,38 @@
+{
+  "model_name": "question_aware_tfidf_ridge",
+  "target": "median human overall rows per response_id (provisional)",
+  "score_range": [
+    0,
+    90
+  ],
+  "split_unit": "question_id",
+  "random_seeds": {
+    "test_split": 42,
+    "validation_split": 43
+  },
+  "counts": {
+    "usable_responses": 729,
+    "students": 73,
+    "questions": 15,
+    "development_responses": 584,
+    "test_responses": 145,
+    "development_questions": 12,
+    "test_questions": 3,
+    "responses_with_conflicting_source_scores": 0
+  },
+  "selected_alpha": 0.1,
+  "validation_mae": 10.9988,
+  "test": {
+    "model": {
+      "mae": 10.7425,
+      "rmse": 17.4157,
+      "r2": -0.0613
+    },
+    "mean_baseline": {
+      "mae": 10.4799,
+      "rmse": 17.4277,
+      "r2": -0.0627
+    }
+  },
+  "warning": "Experimental text-regression baseline. Some response IDs have conflicting human overall rows; median aggregation is provisional until source-label semantics are verified. This model does not directly measure technical correctness or generate evidence-grounded feedback. Results may be unstable because the dataset has few distinct questions."
+}

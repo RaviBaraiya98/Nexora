@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Public Sans', 'Segoe UI', sans-serif;
+  --font-data: 'IBM Plex Mono', Consolas, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-positive: var(--positive);
+  --color-accent-foreground: var(--accent-foreground);
+}
+
+:root {
+  --background: #12161c;
+  --foreground: #e7e4dc;
+  --muted: #171c23;
+  --muted-foreground: #9da3aa;
+  --card: #1b2028;
+  --border: #2b333c;
+  --accent: #e0a84d;
+  --accent-2: #5b8db8;
+  --positive: #6e9b7d;
+  --accent-foreground: #12161c;
+  --shadow-soft: 0 20px 70px rgba(0, 0, 0, 0.22);
+  --radius-sm: 0.45rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.2rem;
+}
+
+.light {
+  --background: #f1eee7;
+  --foreground: #252a2f;
+  --muted: #e6e1d7;
+  --muted-foreground: #687079;
+  --card: #faf8f3;
+  --border: #d5cec1;
+  --accent: #a06c1d;
+  --accent-2: #416f95;
+  --positive: #47765a;
+  --accent-foreground: #fffaf0;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  background-image: linear-gradient(rgba(231, 228, 220, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(231, 228, 220, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes landing-glow-drift {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 200% 50%;
+  }
+}
+
+.landing-glow {
+  animation: landing-glow-drift 18s linear infinite;
+}
+
+.font-data {
+  font-family: var(--font-data);
+}
+
+.eyebrow {
+  color: var(--muted-foreground);
+  font-family: var(--font-data);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ink-surface {
+  background: var(--card);
+  box-shadow: var(--shadow-soft);
+}
+
+.annotation {
+  color: var(--accent);
+  font-family: var(--font-data);
+}
+
+.data-line {
+  background: linear-gradient(90deg, var(--accent-2), transparent);
+  height: 1px;
+  opacity: 0.5;
+}
+
+.report-grid {
+  background-image: linear-gradient(rgba(231, 228, 220, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(231, 228, 220, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.report-mark {
+  color: var(--accent);
+  font-family: var(--font-data);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.text-positive {
+  color: var(--positive);
+}
+
+.bg-positive {
+  background-color: var(--positive);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+.text-foreground {
+  color: var(--foreground);
+}
+
+.text-muted-foreground {
+  color: var(--muted-foreground);
+}
+
+.bg-background {
+  background-color: var(--background);
+}
+
+.bg-card {
+  background-color: var(--card);
+}
+
+.bg-muted {
+  background-color: var(--muted);
+}
+
+.border-border {
+  border-color: var(--border);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-accent-foreground {
+  color: var(--accent-foreground);
+}
+
+.from-accent {
+  --tw-gradient-from: var(--accent) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(91 140 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-accent-2 {
+  --tw-gradient-to: var(--accent-2) var(--tw-gradient-to-position);
+}

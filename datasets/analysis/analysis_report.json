@@ -1,0 +1,115 @@
+{
+  "onet": {
+    "rows": 31821,
+    "unique_occupations": 923,
+    "unique_technologies": 8753,
+    "hot_technology": {
+      "N": 20250,
+      "Y": 11571
+    },
+    "in_demand": {
+      "N": 29396,
+      "Y": 2425
+    },
+    "software_it_rows": 5483,
+    "software_it_occupations": 35,
+    "top_technologies": {
+      "Microsoft Excel": 859,
+      "Microsoft Office software": 817,
+      "Microsoft Word": 784,
+      "Microsoft Outlook": 642,
+      "Microsoft PowerPoint": 629,
+      "Web browser software": 431,
+      "Microsoft Access": 372,
+      "SAP software": 283,
+      "Email software": 276,
+      "Microsoft Windows": 241,
+      "Microsoft Project": 201,
+      "Autodesk AutoCAD": 171,
+      "Microsoft SharePoint": 166,
+      "Database software": 166,
+      "Adobe Acrobat": 165,
+      "Structured query language SQL": 151,
+      "Microsoft Visio": 149,
+      "Adobe Photoshop": 144,
+      "Facebook": 135,
+      "Python": 132,
+      "Linux": 122,
+      "SAS": 119,
+      "Microsoft Dynamics": 118,
+      "The MathWorks MATLAB": 111,
+      "C++": 110
+    }
+  },
+  "software_interview": {
+    "conversations": 200,
+    "system_messages": 200,
+    "assistant_messages": 260,
+    "candidate_placeholder_messages": 260,
+    "actual_interview_questions": 260,
+    "unique_normalized_questions": 199,
+    "follow_up_candidates": 9,
+    "role_counts": {
+      "system": 200,
+      "assistant": 260,
+      "user": 260
+    }
+  },
+  "mohler_asag": {
+    "rows": 2273,
+    "unique_questions": 79,
+    "missing_values": {
+      "id": 0,
+      "question": 0,
+      "instructor_answer": 0,
+      "student_answer": 0,
+      "score_grader_1": 0,
+      "score_grader_2": 0,
+      "score_avg": 0
+    },
+    "duplicate_records": 0,
+    "duplicate_student_answers": 98,
+    "score_summary": {
+      "score_grader_1": {
+        "count": 2273.0,
+        "mean": 5.4721,
+        "std": 2.2509,
+        "min": 0.0,
+        "25%": 4.0,
+        "50%": 5.0,
+        "75%": 5.0,
+        "max": 10.0
+      },
+      "score_grader_2": {
+        "count": 2273.0,
+        "mean": 4.861,
+        "std": 2.6607,
+        "min": 0.0,
+        "25%": 3.0,
+        "50%": 5.0,
+        "75%": 5.0,
+        "max": 10.0
+      },
+      "score_avg": {
+        "count": 2273.0,
+        "mean": 4.1839,
+        "std": 1.0966,
+        "min": 0.0,
+        "25%": 3.5,
+        "50%": 4.5,
+        "75%": 5.0,
+        "max": 5.0
+      }
+    },
+    "student_answer_word_count": {
+      "count": 2273.0,
+      "mean": 21.0418,
+      "std": 16.2094,
+      "min": 2.0,
+      "25%": 11.0,
+      "50%": 18.0,
+      "75%": 27.0,
+      "max": 193.0
+    }
+  }
+}

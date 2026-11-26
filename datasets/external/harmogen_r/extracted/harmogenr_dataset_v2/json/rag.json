@@ -1,0 +1,41 @@
+[
+  {
+    "id": 3,
+    "teacher_id": 4,
+    "assignment_id": 7,
+    "collection": "QO6SaO4MbnITXdWn",
+    "name": "EDA 1 - Arrays Estaticos",
+    "subject": "C++ Ficha Formativa 1",
+    "start_date": "2025-02-03T14:00:00",
+    "end_date": "2025-07-31T20:00:00",
+    "is_active": 1,
+    "created_at": "2025-02-05T14:31:36",
+    "updated_at": "2025-07-01T07:32:33"
+  },
+  {
+    "id": 4,
+    "teacher_id": 4,
+    "assignment_id": 8,
+    "collection": "uIEg6TSqWeG19Zvb",
+    "name": "EDA 2 - Apontadores",
+    "subject": "C++ Ficha Formativa 2",
+    "start_date": "2025-02-03T14:00:00",
+    "end_date": "2025-07-31T20:00:00",
+    "is_active": 1,
+    "created_at": "2025-06-12T16:53:23",
+    "updated_at": null
+  },
+  {
+    "id": 5,
+    "teacher_id": 4,
+    "assignment_id": 9,
+    "collection": "lo3ahUJpohayesZP",
+    "name": "EDA 3 - Algoritmos e Arvores",
+    "subject": "C++ Ficha Formativa 3",
+    "start_date": "2025-02-03T14:00:00",
+    "end_date": "2025-07-31T20:00:00",
+    "is_active": 1,
+    "created_at": "2025-06-12T16:57:11",
+    "updated_at": null
+  }
+]

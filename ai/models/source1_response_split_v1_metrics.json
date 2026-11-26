@@ -1,0 +1,40 @@
+{
+  "model_name": "source1_tfidf_ridge",
+  "target": "Original instructor-created rubric (source 1) human final_score, one score per response_id",
+  "score_range": [
+    0,
+    90
+  ],
+  "split_unit": "response_id",
+  "evaluation_purpose": "Generalization to held-out responses; questions may overlap between development and test sets.",
+  "random_seeds": {
+    "test_split": 42,
+    "validation_split": 43
+  },
+  "counts": {
+    "usable_responses": 729,
+    "students": 73,
+    "questions": 15,
+    "development_responses": 583,
+    "test_responses": 146,
+    "development_questions": 15,
+    "test_questions": 15,
+    "overlapping_questions": 15,
+    "responses_with_conflicting_source_scores": 0
+  },
+  "selected_alpha": 0.1,
+  "validation_mae": 8.1223,
+  "test": {
+    "model": {
+      "mae": 7.7155,
+      "rmse": 9.9018,
+      "r2": 0.6435
+    },
+    "mean_baseline": {
+      "mae": 10.9292,
+      "rmse": 16.8633,
+      "r2": -0.034
+    }
+  },
+  "warning": "Experimental text-regression baseline trained on HARMOGEN-R source 1 human scores. The dataset contains Portuguese DSA coursework responses and only 15 distinct questions, so results may not generalize to English software interviews. The model does not directly measure technical correctness or generate evidence-grounded feedback. Test performance must be compared against the baseline before considering deployment."
+}
